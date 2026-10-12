@@ -1,15 +1,15 @@
-.venv/
-.env
-.env.*
-!.env.example
-__pycache__/
-.pytest_cache/
-*.egg-info/
-state/
-*.db
+# This checkout also holds the Linux engine locally. Only the static site is tracked.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/.github/
+!/frontend/
+
 frontend/node_modules/
 frontend/.next/
 frontend/out/
-*.log
-
 frontend/*.tsbuildinfo
+*.log
+.env
+.env.*

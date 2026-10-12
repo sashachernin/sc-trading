@@ -1,8 +1,0 @@
-[Unit]
-Description=AI Investment Lab open schedule in New York time
-[Timer]
-OnCalendar=Mon *-*-* 09:35:00 America/New_York
-AccuracySec=1s
-Persistent=false
-[Install]
-WantedBy=timers.target
