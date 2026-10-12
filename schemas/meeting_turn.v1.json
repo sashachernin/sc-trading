@@ -1,0 +1,154 @@
+{
+  "$defs": {
+    "Closing": {
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "maxLength": 120,
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "standfirst": {
+          "maxLength": 500,
+          "title": "Standfirst",
+          "type": "string"
+        },
+        "recap": {
+          "maxLength": 1500,
+          "title": "Recap",
+          "type": "string"
+        },
+        "takeaways": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 5,
+          "title": "Takeaways",
+          "type": "array"
+        },
+        "focus_areas": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 5,
+          "title": "Focus Areas",
+          "type": "array"
+        },
+        "open_questions": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 3,
+          "title": "Open Questions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "title",
+        "standfirst",
+        "recap",
+        "takeaways",
+        "focus_areas",
+        "open_questions"
+      ],
+      "title": "Closing",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "meeting_id": {
+      "title": "Meeting Id",
+      "type": "string"
+    },
+    "sequence": {
+      "maximum": 11,
+      "minimum": 1,
+      "title": "Sequence",
+      "type": "integer"
+    },
+    "speaker": {
+      "enum": [
+        "researcher_a",
+        "researcher_b",
+        "manager",
+        "analyst"
+      ],
+      "title": "Speaker",
+      "type": "string"
+    },
+    "phase": {
+      "enum": [
+        "opening",
+        "updates",
+        "discussion",
+        "wrap-up"
+      ],
+      "title": "Phase",
+      "type": "string"
+    },
+    "message_markdown": {
+      "maxLength": 1400,
+      "minLength": 1,
+      "title": "Message Markdown",
+      "type": "string"
+    },
+    "reply_to_turn_ids": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 10,
+      "title": "Reply To Turn Ids",
+      "type": "array"
+    },
+    "evidence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 12,
+      "title": "Evidence Ids",
+      "type": "array"
+    },
+    "next_speaker": {
+      "anyOf": [
+        {
+          "enum": [
+            "researcher_a",
+            "researcher_b",
+            "manager",
+            "analyst"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Next Speaker"
+    },
+    "closing": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Closing"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "meeting_id",
+    "sequence",
+    "speaker",
+    "phase",
+    "message_markdown",
+    "reply_to_turn_ids",
+    "evidence_ids",
+    "next_speaker",
+    "closing"
+  ],
+  "title": "MeetingTurn",
+  "type": "object"
+}

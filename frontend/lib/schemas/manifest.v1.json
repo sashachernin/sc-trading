@@ -1,0 +1,105 @@
+{
+  "$defs": {
+    "FileEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        },
+        "bytes": {
+          "maximum": 4000000,
+          "minimum": 0,
+          "title": "Bytes",
+          "type": "integer"
+        },
+        "schema_version": {
+          "const": "1",
+          "title": "Schema Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "bytes",
+        "schema_version"
+      ],
+      "title": "FileEntry",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "snapshot_id": {
+      "title": "Snapshot Id",
+      "type": "string"
+    },
+    "source_revision": {
+      "minimum": 0,
+      "title": "Source Revision",
+      "type": "integer"
+    },
+    "experiment_id": {
+      "title": "Experiment Id",
+      "type": "string"
+    },
+    "label": {
+      "const": "PAPER / SIMULATED",
+      "title": "Label",
+      "type": "string"
+    },
+    "synthetic": {
+      "title": "Synthetic",
+      "type": "boolean"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    },
+    "source_cutoff": {
+      "title": "Source Cutoff",
+      "type": "string"
+    },
+    "valuation_time": {
+      "title": "Valuation Time",
+      "type": "string"
+    },
+    "next_expected_publication": {
+      "title": "Next Expected Publication",
+      "type": "string"
+    },
+    "files": {
+      "items": {
+        "$ref": "#/$defs/FileEntry"
+      },
+      "title": "Files",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "snapshot_id",
+    "source_revision",
+    "experiment_id",
+    "label",
+    "synthetic",
+    "created_at",
+    "source_cutoff",
+    "valuation_time",
+    "next_expected_publication",
+    "files"
+  ],
+  "title": "Manifest",
+  "type": "object"
+}

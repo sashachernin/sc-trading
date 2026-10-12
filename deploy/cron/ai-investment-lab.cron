@@ -1,0 +1,8 @@
+# Install only on a cron implementation supporting CRON_TZ (e.g. Cronie).
+# Verify implementation and DST behavior before enabling.
+CRON_TZ=America/New_York
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin
+35 9 * * 1 aiinvest /opt/ai-investment-lab/deploy/cron/open.sh
+45 15 * * 5 aiinvest /opt/ai-investment-lab/deploy/cron/close.sh
+0 12 * * 0 aiinvest /opt/ai-investment-lab/deploy/cron/meeting.sh

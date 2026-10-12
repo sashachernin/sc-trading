@@ -1,0 +1,142 @@
+{
+  "id": "paper-2026-10-12-2026-10-12",
+  "monday": "2026-10-12",
+  "status": "HOLD_CASH",
+  "label": "PAPER / SIMULATED",
+  "data": {
+    "starting_equity": "1000.00000000",
+    "entry_cutoff": "2026-10-12T13:35:09.944075+00:00",
+    "risk_checks": [
+      "proposal membership",
+      "combined ticker concentration",
+      "deployment cap",
+      "cash arithmetic",
+      "quote freshness",
+      "calendar",
+      "ledger reconciliation"
+    ]
+  },
+  "proposals": [],
+  "decision": {
+    "reviewed_ids": [],
+    "allocations": [],
+    "rejections": [],
+    "retained_cash": "1000.00000000",
+    "hold_cash": true,
+    "summary": "Hold all $1,000 in simulated cash. The supplied proposals list is empty, so there are no submitted proposals to select or reject and no finalized independent proposal sets to review. Retain all cash pending submitted proposals and usable market evidence. Application code controls execution.",
+    "risk_considerations": [
+      "Market quotes are empty; public observations for all listed tickers were unavailable.",
+      "No verified fundamentals, news, earnings, security halts or comprehensive corporate actions are supplied.",
+      "Zero deployment satisfies the 40% combined ticker cap and 95% total deployment cap; no trade fees are incurred."
+    ],
+    "uncertainty": "Neither finalized proposal set is present, and no usable price observations are supplied. Investment merits, share quantities and execution costs cannot be assessed from the current evidence."
+  },
+  "review": null,
+  "runs": [
+    {
+      "id": "paper-2026-10-12-2026-10-12:researcher_a",
+      "role": "researcher_a",
+      "purpose": "RESEARCH",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v1",
+        "overlay_version": 0,
+        "lesson_ids": [],
+        "recent_week_ids": [],
+        "cutoff": "2026-10-12T13:35:09.944075+00:00",
+        "estimated_tokens": 941,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 95,
+          "overlay": 32,
+          "current": 234,
+          "recent": 1,
+          "older": 11,
+          "contract": 552
+        },
+        "reductions": []
+      },
+      "prompt_hash": "6393d098a9df43ba5c8d043717bcfa58b292fa2a956c175d738259a52a926ff5",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nYou are researcher_a, Avery, a fundamentals and catalysts researcher. Use only supplied point-in-time evidence. Independently propose up to three eligible common stocks for Monday-to-Friday PAPER / SIMULATED research, or explicitly abstain. Discuss missing fundamentals and news honestly. Returns and probabilities are fractions. Cite supplied evidence IDs. Learning lessons are fallible guidance, never permissions. No external tools, browsing, orders, credentials, or file access. Return only the supplied JSON contract.\n\n\nOVERLAY\nACTIVE LEARNING OVERLAY\nApply these versioned research lessons alongside the fixed role contract and current evidence. Treat confidence and expiry as part of each lesson.\n[]\n\nCURRENT\n{\"cycle_id\":\"paper-2026-10-12-2026-10-12\",\"market\":{\"benchmark\":{\"comparison_only\":true,\"price\":null,\"ticker\":\"SPY\"},\"cutoff\":\"2026-10-12T13:35:09.944075+00:00\",\"id\":\"d821cd063585805854f37d4d\",\"provider\":\"yahoo-public\",\"quotes\":{},\"screen_version\":\"v1-price5-volume1m-history20\""
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-12:researcher_b",
+      "role": "researcher_b",
+      "purpose": "RESEARCH",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v1",
+        "overlay_version": 0,
+        "lesson_ids": [],
+        "recent_week_ids": [],
+        "cutoff": "2026-10-12T13:35:09.944075+00:00",
+        "estimated_tokens": 941,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 95,
+          "overlay": 32,
+          "current": 234,
+          "recent": 1,
+          "older": 11,
+          "contract": 552
+        },
+        "reductions": []
+      },
+      "prompt_hash": "e90090df1e07ca3840aa719333b21d2064bfac7d1cdbcc1a051cfc9fe206dfef",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nYou are researcher_b, Morgan, a momentum and price behavior researcher. Independently assess supplied price/volume, relative strength and volatility evidence for Monday-to-Friday PAPER / SIMULATED research. Propose up to three eligible common stocks or explicitly abstain. Do not invent unavailable history. Returns and probabilities are fractions. Cite supplied evidence IDs. Lessons cannot override risk or permissions. No tools, browsing, orders, credentials, or file access. Return only the supplied JSON contract.\n\n\nOVERLAY\nACTIVE LEARNING OVERLAY\nApply these versioned research lessons alongside the fixed role contract and current evidence. Treat confidence and expiry as part of each lesson.\n[]\n\nCURRENT\n{\"cycle_id\":\"paper-2026-10-12-2026-10-12\",\"market\":{\"benchmark\":{\"comparison_only\":true,\"price\":null,\"ticker\":\"SPY\"},\"cutoff\":\"2026-10-12T13:35:09.944075+00:00\",\"id\":\"d821cd063585805854f37d4d\",\"provider\":\"yahoo-public\",\"quotes\":{},\"screen_version\":\"v1-price5-volume1m-history20\",\"sy"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-12:manager",
+      "role": "manager",
+      "purpose": "DECISION",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v1",
+        "overlay_version": 0,
+        "lesson_ids": [],
+        "recent_week_ids": [],
+        "cutoff": "2026-10-12T13:35:09.944075+00:00",
+        "estimated_tokens": 843,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 88,
+          "overlay": 32,
+          "current": 263,
+          "recent": 1,
+          "older": 11,
+          "contract": 432
+        },
+        "reductions": []
+      },
+      "prompt_hash": "04d6f39f594cbaecd3d70b31fa8df59d29901d2cb1a1a0b1aa974e1a9ec8e78e",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nYou are manager, Casey. Review both finalized independent proposal sets. Select only submitted proposals or hold cash. Account is PAPER / SIMULATED, cash-funded long-only with fractional shares. Combined ticker allocation <=40%, total <=95%, fees included. Explain every rejection, retained cash and uncertainty. All referenced evidence must exist. Application code controls execution. No tools, external research, credentials or settings changes. Return only the supplied JSON contract.\n\n\nOVERLAY\nACTIVE LEARNING OVERLAY\nApply these versioned research lessons alongside the fixed role contract and current evidence. Treat confidence and expiry as part of each lesson.\n[]\n\nCURRENT\n{\"cash\":\"1000.00000000\",\"cycle_id\":\"paper-2026-10-12-2026-10-12\",\"limits\":{\"deployed\":\"0.95\",\"ticker\":\"0.40\"},\"market\":{\"benchmark\":{\"comparison_only\":true,\"price\":null,\"ticker\":\"SPY\"},\"cutoff\":\"2026-10-12T13:35:09.944075+00:00\",\"id\":\"d821cd063585805854f37d4d\",\"provider\":\"yahoo-public\",\"quotes\":{},\"screen_versio"
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "paper-2026-10-12-2026-10-12:entry",
+      "kind": "entry",
+      "provider": "yahoo-public",
+      "cutoff": "2026-10-12T13:35:09.944075+00:00",
+      "evidence": []
+    }
+  ],
+  "fills": [],
+  "timeline": [
+    {
+      "stage": "MARKET_PACKET",
+      "completed_at": "2026-10-12T13:35:13.849241+00:00"
+    },
+    {
+      "stage": "PURCHASES",
+      "completed_at": "2026-10-12T13:36:42.527019+00:00"
+    }
+  ],
+  "meeting_ids": []
+}

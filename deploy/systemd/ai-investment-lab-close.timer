@@ -1,0 +1,8 @@
+[Unit]
+Description=AI Investment Lab close schedule in New York time
+[Timer]
+OnCalendar=Fri *-*-* 15:45:00 America/New_York
+AccuracySec=1s
+Persistent=false
+[Install]
+WantedBy=timers.target

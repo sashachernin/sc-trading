@@ -1,0 +1,32 @@
+{
+  "label": "PAPER / SIMULATED",
+  "currency": "USD",
+  "initial_cash": "1000.00",
+  "equity": "1000.00",
+  "cash": "1000.00",
+  "invested_value": "0.00",
+  "realized_pnl": "0.00",
+  "unrealized_pnl": "0.00",
+  "cumulative_pnl": "0.00",
+  "cumulative_return": "0E-8",
+  "monthly_pnl": "0.00",
+  "rolling_four_week_pnl": "0.00",
+  "target_monthly_profit": "100.00",
+  "target_is_experimental": true,
+  "completed_cycles": 0,
+  "skipped_cycles": 0,
+  "valuation_time": "2026-10-12T13:35:09.944075+00:00",
+  "equity_series": [
+    {
+      "week": "Inception",
+      "date": "2026-10-12",
+      "equity": "1000.00",
+      "pnl": "0.00",
+      "benchmark_equity": "1000.00",
+      "drawdown": "0"
+    }
+  ],
+  "positions": [],
+  "fills": [],
+  "latest_meeting": null
+}

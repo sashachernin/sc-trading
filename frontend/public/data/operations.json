@@ -1,0 +1,68 @@
+{
+  "observed_at": "2026-10-12T13:36:43.432505+00:00",
+  "paused": false,
+  "worker_status": "Snapshot observation; live status available only through Linux CLI",
+  "queue": {
+    "QUEUED": 0,
+    "RUNNING": 1,
+    "COMPLETED": 1,
+    "FAILED": 0
+  },
+  "incidents": [],
+  "audit": [
+    {
+      "action": "CRON_OPEN",
+      "data": {
+        "date": "2026-10-12"
+      },
+      "created_at": "2026-10-12T13:35:07.222487+00:00"
+    }
+  ],
+  "settings": {
+    "provider": "yahoo",
+    "synthetic": false,
+    "learning_mode": "auto_bounded",
+    "site_visibility": "private",
+    "private_access_verified": false,
+    "max_stock_allocation": "0.40",
+    "max_deployed": "0.95",
+    "start": "2026-10-12",
+    "end": "2027-10-12",
+    "participants": {
+      "researcher_a": {
+        "name": "Avery",
+        "role": "Fundamentals & catalysts"
+      },
+      "researcher_b": {
+        "name": "Morgan",
+        "role": "Momentum & price"
+      },
+      "manager": {
+        "name": "Casey",
+        "role": "Portfolio manager"
+      },
+      "analyst": {
+        "name": "Riley",
+        "role": "Research analyst"
+      }
+    },
+    "schedule": {
+      "Monday": "09:35 America/New_York",
+      "Friday": "15:45 America/New_York",
+      "Sunday": "12:00 America/New_York"
+    },
+    "meeting_turn_limit": 11,
+    "active_memory_cap": 12,
+    "models": {
+      "researcher_a": "gpt-6.1-sol",
+      "researcher_b": "gpt-6.1-sol",
+      "manager": "gpt-6.1-sol",
+      "analyst": "gpt-6.1-sol"
+    }
+  },
+  "meetings": [],
+  "previous_delivery": {
+    "snapshot_id": "paper-2026-10-12-r0",
+    "status": "VALIDATED"
+  }
+}

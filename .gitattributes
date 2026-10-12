@@ -1,0 +1,5 @@
+# Curated snapshot hashes cover exact bytes, including standard CSV CRLF endings.
+frontend/public/data/** -text
+frontend/public/transcripts/** -text
+frontend/content/meetings/** -text
+*.csv whitespace=cr-at-eol
