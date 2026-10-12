@@ -19,3 +19,9 @@ sudo -u aiinvest bash -c 'set -a; source /etc/ai-investment-lab/engine.env; set 
 This invokes both researchers through the deployed gateway, validates their contracts/references and saves a private report under `state/research-checks/`. It never places orders, creates proposals in the account workflow, updates the ledger or replaces cycle history. Publication of a sanitized verification report is a separate operator action.
 
 Compatibility: original stored researcher records retain defaults for newly added fields. The CLI receives a normalized strict JSON Schema with every property required; new model responses must supply the research fields. Synthetic fixture runs continue using supplied synthetic data without web access.
+
+## One-time replacement on 2026-10-12
+
+The user explicitly authorized replacing the failed morning opening once. `scripts/replace-failed-monday-once.py` runs fresh independent research and a manager decision for the existing forward cycle, using the actual later cutoff. This is an audited exception to the Monday 11:00 New York deadline, bounded to the same Monday before 15:45; normal scheduled openings retain their deadline.
+
+The replacement requires a previously finished cash-only opening, no positions or proposals, and no prior replacement. Original agent runs remain intact; the original snapshot is archived as `entry-original`, and the original decision and stage timestamps are preserved in the operator audit and cycle data. New run IDs contain `:replacement:`. A durable marker prevents repeating the override even if research or execution fails. Current executable-price, calendar, cash and allocation checks still apply. The script is restricted to experiment `paper-2026-10-12`; it does not alter future schedules.

@@ -310,7 +310,7 @@ class Lab:
                 priority=20,
             )
 
-    def open(self, monday, now=None):
+    def open(self, monday, now=None, *, replace_failed_once=False):
         if monday.weekday() != 0:
             raise ValueError("Opening date must be Monday")
         now = now or utcnow()
@@ -323,6 +323,76 @@ class Lab:
         with self.lock():
             with self.sessions.begin() as s:
                 c = self.cycle(s, monday)
+                if replace_failed_once:
+                    if (
+                        now.astimezone(NY).date() != monday
+                        or now >= datetime.fromisoformat(scheduled(monday, 15, 45))
+                        or c.status != "HOLD_CASH"
+                        or c.data.get("one_time_replacement")
+                        or not self.stage_done(s, c, "PURCHASES")
+                        or s.scalar(
+                            select(func.count())
+                            .select_from(Position)
+                            .where(Position.account_id == cfg.experiment_id)
+                        )
+                        or s.scalar(
+                            select(func.count())
+                            .select_from(Proposal)
+                            .where(Proposal.cycle_id == c.id)
+                        )
+                    ):
+                        raise ValueError(
+                            "Replacement requires an unreplaced, cash-only failed Monday cycle during market hours"
+                        )
+                    old_decision = s.get(Decision, c.id)
+                    if old_decision and old_decision.data.get("allocations"):
+                        raise ValueError("Cannot replace an allocated decision")
+                    prior_stages = list(
+                        s.scalars(select(Stage).where(Stage.cycle_id == c.id))
+                    )
+                    saved = s.get(Snapshot, c.id + ":entry")
+                    archive = {
+                        "cycle_id": c.id,
+                        "authorized_at": iso(now),
+                        "authorization": "User requested replacement of failed morning research, just once",
+                        "original_status": c.status,
+                        "original_data": c.data,
+                        "original_decision": old_decision.data
+                        if old_decision
+                        else None,
+                        "original_decision_run_id": old_decision.run_id
+                        if old_decision
+                        else None,
+                        "original_stages": [
+                            {
+                                "name": stage.name,
+                                "completed_at": iso(stage.completed_at),
+                            }
+                            for stage in prior_stages
+                        ],
+                        "original_snapshot": saved.data if saved else None,
+                    }
+                    s.add(
+                        Audit(
+                            experiment_id=cfg.experiment_id,
+                            action="replace-failed-open-once",
+                            data=archive,
+                        )
+                    )
+                    if old_decision:
+                        s.delete(old_decision)
+                    for stage in prior_stages:
+                        if stage.name in ("PURCHASES", "MARKET_PACKET"):
+                            s.delete(stage)
+                    if saved:
+                        saved.id = c.id + ":entry-original"
+                        saved.kind = "entry-original"
+                    c.data = {
+                        "one_time_replacement": archive,
+                        "entry_deadline_override": "This replacement only; current Monday market session",
+                    }
+                    self.bump(s)
+                    s.flush()
                 if (
                     self.stage_done(s, c, "PURCHASES")
                     or c.status.startswith("SKIPPED")
@@ -331,11 +401,14 @@ class Lab:
                     return
                 if not self.allowed(s, monday):
                     return
-                if self.settings.market_provider != "synthetic" and now.astimezone(
-                    NY
-                ) > datetime.fromisoformat(
-                    scheduled(monday, cfg.monday_deadline_hour)
-                ).astimezone(NY):
+                if (
+                    not replace_failed_once
+                    and self.settings.market_provider != "synthetic"
+                    and now.astimezone(NY)
+                    > datetime.fromisoformat(
+                        scheduled(monday, cfg.monday_deadline_hour)
+                    ).astimezone(NY)
+                ):
                     c.status = "MISSED"
                     c.data = {"reason": "Monday entry deadline passed"}
                     self.bump(s)
@@ -402,7 +475,9 @@ class Lab:
                             },
                             packet["cutoff"],
                             cycle_id,
-                            cycle_id + ":" + role,
+                            cycle_id
+                            + (":replacement:" if replace_failed_once else ":")
+                            + role,
                         )
                         return role, output, None
                     except (RunnerError, ValueError) as exc:
@@ -459,7 +534,8 @@ class Lab:
                     },
                     packet["cutoff"],
                     cycle_id,
-                    cycle_id + ":manager",
+                    cycle_id
+                    + (":replacement:manager" if replace_failed_once else ":manager"),
                 )
                 with self.sessions.begin() as s:
                     c = s.get(Cycle, cycle_id)
@@ -481,7 +557,13 @@ class Lab:
                             cfg.market_provider != "synthetic"
                             and utcnow()
                             > datetime.fromisoformat(
-                                scheduled(monday, cfg.monday_deadline_hour)
+                                scheduled(
+                                    monday,
+                                    15
+                                    if replace_failed_once
+                                    else cfg.monday_deadline_hour,
+                                    45 if replace_failed_once else 0,
+                                )
                             )
                         ):
                             raise ValueError("Monday execution deadline passed")

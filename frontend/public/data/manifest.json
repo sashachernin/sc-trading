@@ -1,13 +1,13 @@
 {
   "schema_version": "1",
-  "snapshot_id": "paper-2026-10-12-r6",
-  "source_revision": 6,
+  "snapshot_id": "paper-2026-10-12-r12",
+  "source_revision": 12,
   "experiment_id": "paper-2026-10-12",
   "label": "PAPER / SIMULATED",
   "synthetic": false,
-  "created_at": "2026-10-12T13:36:43.432505+00:00",
-  "source_cutoff": "2026-10-12T13:35:09.944075+00:00",
-  "valuation_time": "2026-10-12T13:35:09.944075+00:00",
+  "created_at": "2026-10-12T18:47:02.023634+00:00",
+  "source_cutoff": "2026-10-12T18:38:38.920344+00:00",
+  "valuation_time": "2026-10-12T18:38:38.920344+00:00",
   "next_expected_publication": "Next scheduled Monday / Friday / Sunday workflow, America/New_York",
   "files": [
     {
@@ -24,32 +24,32 @@
     },
     {
       "path": "frontend/public/data/operations.json",
-      "sha256": "f6f067d6c9e7c77008ef504259018f35807128d541eeac368761d4c179408fbc",
-      "bytes": 1619,
+      "sha256": "7353fdad9b71a5fb446b1598e917f3138c3a9de26eed7a682f97615feb34e6de",
+      "bytes": 5136,
       "schema_version": "1"
     },
     {
       "path": "frontend/public/data/overview.json",
-      "sha256": "bc3d610caa0d942d2c533c5eb106b9562b79a2a73da2b59175e06b6b89caa91e",
-      "bytes": 765,
+      "sha256": "4dd48224afd65fd292f6aa84bb680bf5c68c1f536375426af564611a38a50f01",
+      "bytes": 1497,
       "schema_version": "1"
     },
     {
       "path": "frontend/public/data/performance.csv",
-      "sha256": "eb8f8d71c532c15e60dbb08d9ecaf1adb40da2b4a1fb743db80087da5d7d146e",
-      "bytes": 89,
+      "sha256": "62d1893dae1ae27a208c5029e67d28d10b99057f4080e2156c10e03aaadb15ad",
+      "bytes": 84,
       "schema_version": "1"
     },
     {
       "path": "frontend/public/data/weeks/index.json",
-      "sha256": "9048a5a574c7f702e338b86b79e84e318c2b7b836abc164ecb121d0d0daeb612",
-      "bytes": 180,
+      "sha256": "709d53d88280a6fdabf7bbf94e36b8152ab631837b84e920e2cc48f511cc70b5",
+      "bytes": 175,
       "schema_version": "1"
     },
     {
       "path": "frontend/public/data/weeks/paper-2026-10-12-2026-10-12.json",
-      "sha256": "8044a8e71f710e36a2cbfa5eb20bf0fffbb2780fdbedd0584fe8f07c41cc756b",
-      "bytes": 7635,
+      "sha256": "1819a74e003d43847aef4d37a58c952ccd33e87a891d12b8145975909f4ee3de",
+      "bytes": 51233,
       "schema_version": "1"
     }
   ]

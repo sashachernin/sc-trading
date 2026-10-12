@@ -1,11 +1,11 @@
 {
-  "observed_at": "2026-10-12T13:36:43.432505+00:00",
+  "observed_at": "2026-10-12T18:47:02.023634+00:00",
   "paused": false,
   "worker_status": "Snapshot observation; live status available only through Linux CLI",
   "queue": {
-    "QUEUED": 0,
-    "RUNNING": 1,
-    "COMPLETED": 1,
+    "QUEUED": 1,
+    "RUNNING": 0,
+    "COMPLETED": 2,
     "FAILED": 0
   },
   "incidents": [],
@@ -16,6 +16,79 @@
         "date": "2026-10-12"
       },
       "created_at": "2026-10-12T13:35:07.222487+00:00"
+    },
+    {
+      "action": "replace-failed-open-once",
+      "data": {
+        "cycle_id": "paper-2026-10-12-2026-10-12",
+        "authorized_at": "2026-10-12T18:38:38.920344+00:00",
+        "authorization": "User requested replacement of failed morning research, just once",
+        "original_status": "HOLD_CASH",
+        "original_data": {
+          "starting_equity": "1000.00000000",
+          "entry_cutoff": "2026-10-12T13:35:09.944075+00:00",
+          "risk_checks": [
+            "proposal membership",
+            "combined ticker concentration",
+            "deployment cap",
+            "cash arithmetic",
+            "quote freshness",
+            "calendar",
+            "ledger reconciliation"
+          ]
+        },
+        "original_decision": {
+          "reviewed_ids": [],
+          "allocations": [],
+          "rejections": [],
+          "retained_cash": "1000.00000000",
+          "hold_cash": true,
+          "summary": "Hold all $1,000 in simulated cash. The supplied proposals list is empty, so there are no submitted proposals to select or reject and no finalized independent proposal sets to review. Retain all cash pending submitted proposals and usable market evidence. Application code controls execution.",
+          "risk_considerations": [
+            "Market quotes are empty; public observations for all listed tickers were unavailable.",
+            "No verified fundamentals, news, earnings, security halts or comprehensive corporate actions are supplied.",
+            "Zero deployment satisfies the 40% combined ticker cap and 95% total deployment cap; no trade fees are incurred."
+          ],
+          "uncertainty": "Neither finalized proposal set is present, and no usable price observations are supplied. Investment merits, share quantities and execution costs cannot be assessed from the current evidence."
+        },
+        "original_decision_run_id": "paper-2026-10-12-2026-10-12:manager",
+        "original_stages": [
+          {
+            "name": "MARKET_PACKET",
+            "completed_at": "2026-10-12T13:35:13.849241+00:00"
+          },
+          {
+            "name": "PURCHASES",
+            "completed_at": "2026-10-12T13:36:42.527019+00:00"
+          }
+        ],
+        "original_snapshot": {
+          "provider": "yahoo-public",
+          "cutoff": "2026-10-12T13:35:09.944075+00:00",
+          "synthetic": false,
+          "quotes": {},
+          "benchmark": {
+            "ticker": "SPY",
+            "comparison_only": true,
+            "price": null
+          },
+          "unavailable": [
+            "AAPL: public observation unavailable (ValueError)",
+            "AMZN: public observation unavailable (ValueError)",
+            "GOOGL: public observation unavailable (ValueError)",
+            "META: public observation unavailable (ValueError)",
+            "MSFT: public observation unavailable (ValueError)",
+            "NVDA: public observation unavailable (ValueError)",
+            "SPY: public observation unavailable (ValueError)",
+            "Unofficial public endpoint: variable delay, rate limits and no uptime guarantee.",
+            "No verified fundamentals, news, earnings, security halts or comprehensive corporate actions.",
+            "Personal research use; private dashboard. Prices are observations, not executable quotes."
+          ],
+          "id": "d821cd063585805854f37d4d",
+          "screen_version": "v1-price5-volume1m-history20"
+        }
+      },
+      "created_at": "2026-10-12T18:38:39.423125+00:00"
     }
   ],
   "settings": {
@@ -62,7 +135,7 @@
   },
   "meetings": [],
   "previous_delivery": {
-    "snapshot_id": "paper-2026-10-12-r0",
+    "snapshot_id": "paper-2026-10-12-r6",
     "status": "VALIDATED"
   }
 }

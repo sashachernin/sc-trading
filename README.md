@@ -93,3 +93,5 @@ Credentials belong in protected Linux configuration; none belong in frontend var
 ## Documentation
 
 [Architecture](docs/architecture.md) · [Agent contracts](docs/agent-contracts.md) · [Context and memory](docs/context-and-memory.md) · [Learning methodology](docs/learning-methodology.md) · [Paper accounting](docs/paper-trading.md) · [Team meetings](docs/team-meetings.md) · [Website publisher](docs/website-publisher.md) · [Operations](docs/operations.md) · [UI walkthrough](docs/ui-walkthrough.md) · [Verification](docs/verification.md)
+
+The failed 2026-10-12 morning opening received a user-authorized one-time replacement with fresh browsing and a new manager decision. See [the replacement report](docs/results/2026-10-12-replacement.md). Original morning records remain preserved; future Monday deadlines are unchanged.

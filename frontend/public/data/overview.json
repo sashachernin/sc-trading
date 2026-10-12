@@ -2,20 +2,20 @@
   "label": "PAPER / SIMULATED",
   "currency": "USD",
   "initial_cash": "1000.00",
-  "equity": "1000.00",
-  "cash": "1000.00",
-  "invested_value": "0.00",
+  "equity": "999.94",
+  "cash": "900.00",
+  "invested_value": "99.94",
   "realized_pnl": "0.00",
-  "unrealized_pnl": "0.00",
-  "cumulative_pnl": "0.00",
-  "cumulative_return": "0E-8",
+  "unrealized_pnl": "-0.06",
+  "cumulative_pnl": "-0.06",
+  "cumulative_return": "-0.0059587811500",
   "monthly_pnl": "0.00",
   "rolling_four_week_pnl": "0.00",
   "target_monthly_profit": "100.00",
   "target_is_experimental": true,
   "completed_cycles": 0,
   "skipped_cycles": 0,
-  "valuation_time": "2026-10-12T13:35:09.944075+00:00",
+  "valuation_time": "2026-10-12T18:38:38.920344+00:00",
   "equity_series": [
     {
       "week": "Inception",
@@ -26,7 +26,33 @@
       "drawdown": "0"
     }
   ],
-  "positions": [],
-  "fills": [],
+  "positions": [
+    {
+      "id": "paper-2026-10-12-2026-10-12:AMZN",
+      "ticker": "AMZN",
+      "quantity": "0.38451190",
+      "basis": "100.00",
+      "value": "99.94",
+      "status": "OPEN",
+      "label": "PAPER / SIMULATED",
+      "valuation_time": "2026-10-12T18:38:38+00:00"
+    }
+  ],
+  "fills": [
+    {
+      "id": "paper-2026-10-12-2026-10-12:BUY:AMZN",
+      "ticker": "AMZN",
+      "quantity": "0.38451190",
+      "price": "260.06997000",
+      "fee": "0E-8",
+      "side": "BUY",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-12T18:46:58+00:00",
+      "fill_time": "2026-10-12T18:46:58+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "259.94"
+    }
+  ],
   "latest_meeting": null
 }

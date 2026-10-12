@@ -1,11 +1,81 @@
 {
   "id": "paper-2026-10-12-2026-10-12",
   "monday": "2026-10-12",
-  "status": "HOLD_CASH",
+  "status": "OPEN",
   "label": "PAPER / SIMULATED",
   "data": {
+    "one_time_replacement": {
+      "cycle_id": "paper-2026-10-12-2026-10-12",
+      "authorized_at": "2026-10-12T18:38:38.920344+00:00",
+      "authorization": "User requested replacement of failed morning research, just once",
+      "original_status": "HOLD_CASH",
+      "original_data": {
+        "starting_equity": "1000.00000000",
+        "entry_cutoff": "2026-10-12T13:35:09.944075+00:00",
+        "risk_checks": [
+          "proposal membership",
+          "combined ticker concentration",
+          "deployment cap",
+          "cash arithmetic",
+          "quote freshness",
+          "calendar",
+          "ledger reconciliation"
+        ]
+      },
+      "original_decision": {
+        "reviewed_ids": [],
+        "allocations": [],
+        "rejections": [],
+        "retained_cash": "1000.00000000",
+        "hold_cash": true,
+        "summary": "Hold all $1,000 in simulated cash. The supplied proposals list is empty, so there are no submitted proposals to select or reject and no finalized independent proposal sets to review. Retain all cash pending submitted proposals and usable market evidence. Application code controls execution.",
+        "risk_considerations": [
+          "Market quotes are empty; public observations for all listed tickers were unavailable.",
+          "No verified fundamentals, news, earnings, security halts or comprehensive corporate actions are supplied.",
+          "Zero deployment satisfies the 40% combined ticker cap and 95% total deployment cap; no trade fees are incurred."
+        ],
+        "uncertainty": "Neither finalized proposal set is present, and no usable price observations are supplied. Investment merits, share quantities and execution costs cannot be assessed from the current evidence."
+      },
+      "original_decision_run_id": "paper-2026-10-12-2026-10-12:manager",
+      "original_stages": [
+        {
+          "name": "MARKET_PACKET",
+          "completed_at": "2026-10-12T13:35:13.849241+00:00"
+        },
+        {
+          "name": "PURCHASES",
+          "completed_at": "2026-10-12T13:36:42.527019+00:00"
+        }
+      ],
+      "original_snapshot": {
+        "provider": "yahoo-public",
+        "cutoff": "2026-10-12T13:35:09.944075+00:00",
+        "synthetic": false,
+        "quotes": {},
+        "benchmark": {
+          "ticker": "SPY",
+          "comparison_only": true,
+          "price": null
+        },
+        "unavailable": [
+          "AAPL: public observation unavailable (ValueError)",
+          "AMZN: public observation unavailable (ValueError)",
+          "GOOGL: public observation unavailable (ValueError)",
+          "META: public observation unavailable (ValueError)",
+          "MSFT: public observation unavailable (ValueError)",
+          "NVDA: public observation unavailable (ValueError)",
+          "SPY: public observation unavailable (ValueError)",
+          "Unofficial public endpoint: variable delay, rate limits and no uptime guarantee.",
+          "No verified fundamentals, news, earnings, security halts or comprehensive corporate actions.",
+          "Personal research use; private dashboard. Prices are observations, not executable quotes."
+        ],
+        "id": "d821cd063585805854f37d4d",
+        "screen_version": "v1-price5-volume1m-history20"
+      }
+    },
+    "entry_deadline_override": "This replacement only; current Monday market session",
     "starting_equity": "1000.00000000",
-    "entry_cutoff": "2026-10-12T13:35:09.944075+00:00",
+    "entry_cutoff": "2026-10-12T18:38:38.920344+00:00",
     "risk_checks": [
       "proposal membership",
       "combined ticker concentration",
@@ -16,20 +86,195 @@
       "ledger reconciliation"
     ]
   },
-  "proposals": [],
+  "proposals": [
+    {
+      "id": "paper-2026-10-12-2026-10-12:researcher_a:1",
+      "run_id": "paper-2026-10-12-2026-10-12:replacement:researcher_a",
+      "role": "researcher_a",
+      "ticker": "NVDA",
+      "company": "NVIDIA Corporation",
+      "rank": 1,
+      "max_allocation": "0.15",
+      "expected_return": 0.012,
+      "downside": -0.065,
+      "probability_profit": 0.55,
+      "confidence": 0.55,
+      "thesis": "NVIDIA offers the strongest sourced combination of operating growth and relatively recent capital-return support. Its August results reported revenue growth of 106% and Data Center growth of 117%; the September authorization added $150 billion to repurchase capacity. AWS's planned additional GPU deployments support longer-term demand visibility. My judgment is a modest positive continuation opportunity through Friday, with limited confidence because these facts are public and no verified earnings catalyst falls within the week.",
+      "catalysts": [
+        "Possible continued investor response to the September 28 repurchase authorization.",
+        "AWS deployment plans support the AI demand narrative; deployments are planned for 2027–2028, not this week."
+      ],
+      "risks": [
+        "Existing announcements may already be fully priced.",
+        "Repurchase authorization does not establish this week's actual purchases.",
+        "AI spending, supply constraints and export policy can reverse sentiment.",
+        "No supported NVDA quote or valuation assessment is available in the supplied snapshot."
+      ],
+      "invalidation": "Withdraw if verified disclosures reduce AI demand or deployment expectations, introduce material export restrictions, or contradict the capital-return thesis. No paper fill without backend price and risk approval.",
+      "assumptions": [
+        "Forecast horizon is the remaining October 12–16 trading week.",
+        "AI infrastructure sentiment remains supportive.",
+        "Backend obtains fresh supported prices and passes all execution checks."
+      ],
+      "evidence_ids": [
+        "web-researcher_a-1",
+        "web-researcher_a-2",
+        "web-researcher_a-3"
+      ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-12:researcher_a:2",
+      "run_id": "paper-2026-10-12-2026-10-12:replacement:researcher_a",
+      "role": "researcher_a",
+      "ticker": "AMZN",
+      "company": "Amazon.com, Inc.",
+      "rank": 2,
+      "max_allocation": "0.1",
+      "expected_return": 0.007,
+      "downside": -0.045,
+      "probability_profit": 0.53,
+      "confidence": 0.51,
+      "thesis": "Amazon's July release reported 20% sales growth, 43% operating-income growth and 37% AWS sales growth. These operating measures support the thesis more directly than headline EPS, which included large investment gains. The NVIDIA collaboration corroborates management's AI capacity expansion plans, while the completed Prime event provides seasonal context rather than proven incremental earnings. I estimate only a small positive weekly return, warranting a restrained paper allocation.",
+      "catalysts": [
+        "Potential holiday-season attention following the October 6–7 Prime event; no verified event sales results were found.",
+        "Continued attention to AWS growth and its expanded NVIDIA infrastructure plans."
+      ],
+      "risks": [
+        "No confirmed material event within the experiment week was established.",
+        "Infrastructure investment can pressure cash generation.",
+        "Reported net income included substantial non-operating investment gains.",
+        "Retail discounts and labor costs can constrain margins.",
+        "AMZN and NVDA share substantial AI spending exposure."
+      ],
+      "invalidation": "Withdraw on verified evidence of material AWS demand weakness, reduced operating guidance, or adverse retail margin developments. Do not treat investment gains or promotional activity as recurring operating earnings.",
+      "assumptions": [
+        "Forecast horizon is the remaining October 12–16 trading week.",
+        "AWS growth remains the principal fundamental support.",
+        "No sales outcome is inferred from the completed October retail promotion.",
+        "Backend independently approves prices, liquidity, cash and portfolio risk."
+      ],
+      "evidence_ids": [
+        "web-researcher_a-3",
+        "web-researcher_a-4",
+        "web-researcher_a-5"
+      ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-12:researcher_b:1",
+      "run_id": "paper-2026-10-12-2026-10-12:replacement:researcher_b",
+      "role": "researcher_b",
+      "ticker": "MSFT",
+      "company": "Microsoft Corporation",
+      "rank": 1,
+      "max_allocation": "0.2",
+      "expected_return": 0.012,
+      "downside": -0.045,
+      "probability_profit": 0.57,
+      "confidence": 0.62,
+      "thesis": "MSFT offers the clearest sustained momentum among the six stocks reviewed. October 2–9 closing-price appreciation was approximately 3.39%, versus SPY's 1.16% and QQQ's 0.23%. Its October 9 close of 535.07 exceeded the preceding four sessions' closes, recovering Thursday's decline. Yahoo and Stock Analysis agree on closes but differ on Friday volume, so volume is not treated as breakout confirmation. Microsoft's July disclosure provides business context rather than a new weekly catalyst. Expected return, downside and probability are subjective scenario estimates, not fitted forecasts.",
+      "catalysts": [
+        "Continuation of recent market and Nasdaq relative strength.",
+        "Sustained investor interest in the previously disclosed cloud growth."
+      ],
+      "risks": [
+        "Friday's rebound lacked expanding volume relative to Thursday.",
+        "Recent daily ranges show meaningful reversal risk.",
+        "Cloud and AI expectations create correlated exposure to technology sentiment.",
+        "Fresh engine quote was unavailable in the supplied snapshot."
+      ],
+      "invalidation": "A daily close below 518.79, the October 8 low, would undermine the recent recovery. Failure to maintain relative strength versus SPY and QQQ also weakens the thesis. These are research conditions, not executable stop instructions.",
+      "assumptions": [
+        "Backend confirms eligibility, fresh price, liquidity and allocation limits.",
+        "The experiment holds through Friday, October 16, 2026.",
+        "Entry remains near the observed price range; estimates require reassessment after a material gap."
+      ],
+      "evidence_ids": [
+        "web-researcher_b-1",
+        "web-researcher_b-2",
+        "web-researcher_b-3",
+        "web-researcher_b-9",
+        "web-researcher_b-10"
+      ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-12:researcher_b:2",
+      "run_id": "paper-2026-10-12-2026-10-12:replacement:researcher_b",
+      "role": "researcher_b",
+      "ticker": "AMZN",
+      "company": "Amazon.com, Inc.",
+      "rank": 2,
+      "max_allocation": "0.15",
+      "expected_return": 0.009,
+      "downside": -0.05,
+      "probability_profit": 0.54,
+      "confidence": 0.56,
+      "thesis": "AMZN gained approximately 4.34% from October 2 to October 9, outperforming both comparison ETFs. Friday closed at 262.43 near its 262.80 session high and above September 21's 258.45 close. However, Thursday fell sharply and Friday volume decreased, while the supplied Monday observation indicates a pullback. This supports a smaller, lower-confidence continuation proposal than MSFT. July's issuer release supplies AWS growth context, not a fresh catalyst. Numerical outcomes are subjective weekly scenario estimates.",
+      "catalysts": [
+        "Continuation above the recent September trading range.",
+        "Persistent investor interest in previously disclosed AWS growth."
+      ],
+      "risks": [
+        "Monday's supplied 259.915 observation is below Friday's close.",
+        "Friday's advance occurred on less volume than Thursday's decline.",
+        "Large recent daily reversals make trend continuation uncertain.",
+        "Heavy capital investment and technology sentiment may overwhelm price momentum."
+      ],
+      "invalidation": "A daily close below 253.78, the October 8 low, would invalidate the immediate recovery thesis; inability to regain Friday's 262.43 close would reduce confidence. Backend must reassess if entry differs materially from the frozen observation.",
+      "assumptions": [
+        "Backend confirms fresh price, liquidity and permitted allocation.",
+        "Friday's recovery remains intact despite Monday's observed pullback.",
+        "The experiment holds through Friday, October 16, 2026."
+      ],
+      "evidence_ids": [
+        "web-researcher_b-4",
+        "web-researcher_b-5",
+        "web-researcher_b-9",
+        "web-researcher_b-10"
+      ]
+    }
+  ],
   "decision": {
-    "reviewed_ids": [],
-    "allocations": [],
-    "rejections": [],
-    "retained_cash": "1000.00000000",
-    "hold_cash": true,
-    "summary": "Hold all $1,000 in simulated cash. The supplied proposals list is empty, so there are no submitted proposals to select or reject and no finalized independent proposal sets to review. Retain all cash pending submitted proposals and usable market evidence. Application code controls execution.",
-    "risk_considerations": [
-      "Market quotes are empty; public observations for all listed tickers were unavailable.",
-      "No verified fundamentals, news, earnings, security halts or comprehensive corporate actions are supplied.",
-      "Zero deployment satisfies the 40% combined ticker cap and 95% total deployment cap; no trade fees are incurred."
+    "reviewed_ids": [
+      "paper-2026-10-12-2026-10-12:researcher_a:1",
+      "paper-2026-10-12-2026-10-12:researcher_a:2",
+      "paper-2026-10-12-2026-10-12:researcher_b:1",
+      "paper-2026-10-12-2026-10-12:researcher_b:2"
     ],
-    "uncertainty": "Neither finalized proposal set is present, and no usable price observations are supplied. Investment merits, share quantities and execution costs cannot be assessed from the current evidence."
+    "allocations": [
+      {
+        "proposal_id": "paper-2026-10-12-2026-10-12:researcher_b:2",
+        "amount": "100.00",
+        "percent": "0.10",
+        "rationale": "Approve a restrained AMZN allocation. web-researcher_b-4 supports recent price strength, and web-researcher_b-5 supplies AWS operating context. The supported snapshot observation is 259.915 (yahoo:AMZN:2026-10-12T18:38:38+00:00). Monday's pullback and weaker Friday volume justify sizing below the proposal's 15% maximum. The $100 budget includes fees; application code must size and validate the simulated purchase within that budget."
+      }
+    ],
+    "rejections": [
+      {
+        "proposal_id": "paper-2026-10-12-2026-10-12:researcher_a:1",
+        "rationale": "NVDA has no supported quote in the frozen snapshot. Its historical operating growth and repurchase authorization do not establish a catalyst this week; planned AWS deployments occur in 2027–2028 (web-researcher_a-1 through web-researcher_a-3). The late-week price retreat in web-researcher_b-7 further weakens the continuation case. Reject rather than assume a future quote will resolve current eligibility and entry uncertainty."
+      },
+      {
+        "proposal_id": "paper-2026-10-12-2026-10-12:researcher_a:2",
+        "rationale": "Reject additional AMZN exposure because it duplicates the selected proposal's AWS thesis and supplies no confirmed weekly catalyst. web-researcher_a-5 establishes promotional timing but no realized sales results, while web-researcher_a-3 concerns future infrastructure deployments. Independent reports do not make overlapping evidence independent confirmation; the selected $100 AMZN budget adequately expresses the modest shared thesis."
+      },
+      {
+        "proposal_id": "paper-2026-10-12-2026-10-12:researcher_b:1",
+        "rationale": "MSFT's historical momentum is supported by web-researcher_b-1 and web-researcher_b-2, but the frozen snapshot lacks a supported MSFT quote. Friday volume also differs between providers and does not confirm expanding participation. The confirmed October 28 earnings release falls outside this week's horizon (web-researcher_a-8). Reject given unresolved entry eligibility and limited fresh catalyst evidence."
+      }
+    ],
+    "retained_cash": "900.00",
+    "hold_cash": false,
+    "summary": "Casey reviewed all four finalized proposals and selects researcher_b's AMZN proposal for a $100 fee-inclusive simulated allocation. Retain $900 as cash because current evidence supports only a small continuation position. Reject NVDA and MSFT for missing supported snapshot quotes and weak near-term catalyst certainty; reject the second AMZN proposal as overlapping exposure. No unsubmitted security is selected.",
+    "risk_considerations": [
+      "Combined AMZN allocation is 10%; total deployment including fees is capped at $100, below the 40% ticker and 95% deployment limits.",
+      "Retain $900 because available proposals offer modest, subjective weekly upside with larger adverse scenarios and incomplete current eligibility.",
+      "AMZN's 259.915 observation is below Friday's 262.43 close; Friday's advance had lower volume than Thursday's decline.",
+      "The two AMZN reports overlap in operating evidence and technology exposure; their agreement does not justify additive sizing.",
+      "Reported investment gains should not be extrapolated as recurring operating earnings.",
+      "Prices are public observations, not executable quotes. Application code controls execution and must enforce costs, liquidity and cash limits.",
+      "A close below 253.78 undermines the selected recovery thesis; this research condition is not an executable stop or loss guarantee."
+    ],
+    "uncertainty": "Weekly return estimates and probabilities are subjective, not calibrated forecasts. Historical disclosures may already be priced in. News, earnings, halts and corporate-action coverage are incomplete; AMZN's adverse scenario is not a maximum loss. Fee rates are unspecified, so application code must keep the entire purchase cost within $100 or decline execution."
   },
   "review": null,
   "runs": [
@@ -59,7 +304,16 @@
       "prompt_hash": "6393d098a9df43ba5c8d043717bcfa58b292fa2a956c175d738259a52a926ff5",
       "model": "gpt-6.1-sol",
       "reasoning": "medium",
-      "prompt_excerpt": "RULES\nYou are researcher_a, Avery, a fundamentals and catalysts researcher. Use only supplied point-in-time evidence. Independently propose up to three eligible common stocks for Monday-to-Friday PAPER / SIMULATED research, or explicitly abstain. Discuss missing fundamentals and news honestly. Returns and probabilities are fractions. Cite supplied evidence IDs. Learning lessons are fallible guidance, never permissions. No external tools, browsing, orders, credentials, or file access. Return only the supplied JSON contract.\n\n\nOVERLAY\nACTIVE LEARNING OVERLAY\nApply these versioned research lessons alongside the fixed role contract and current evidence. Treat confidence and expiry as part of each lesson.\n[]\n\nCURRENT\n{\"cycle_id\":\"paper-2026-10-12-2026-10-12\",\"market\":{\"benchmark\":{\"comparison_only\":true,\"price\":null,\"ticker\":\"SPY\"},\"cutoff\":\"2026-10-12T13:35:09.944075+00:00\",\"id\":\"d821cd063585805854f37d4d\",\"provider\":\"yahoo-public\",\"quotes\":{},\"screen_version\":\"v1-price5-volume1m-history20\""
+      "prompt_excerpt": "RULES\nYou are researcher_a, Avery, a fundamentals and catalysts researcher. Use only supplied point-in-time evidence. Independently propose up to three eligible common stocks for Monday-to-Friday PAPER / SIMULATED research, or explicitly abstain. Discuss missing fundamentals and news honestly. Returns and probabilities are fractions. Cite supplied evidence IDs. Learning lessons are fallible guidance, never permissions. No external tools, browsing, orders, credentials, or file access. Return only the supplied JSON contract.\n\n\nOVERLAY\nACTIVE LEARNING OVERLAY\nApply these versioned research lessons alongside the fixed role contract and current evidence. Treat confidence and expiry as part of each lesson.\n[]\n\nCURRENT\n{\"cycle_id\":\"paper-2026-10-12-2026-10-12\",\"market\":{\"benchmark\":{\"comparison_only\":true,\"price\":null,\"ticker\":\"SPY\"},\"cutoff\":\"2026-10-12T13:35:09.944075+00:00\",\"id\":\"d821cd063585805854f37d4d\",\"provider\":\"yahoo-public\",\"quotes\":{},\"screen_version\":\"v1-price5-volume1m-history20\"",
+      "research_summary": "",
+      "abstention_reason": "Abstain: supplied snapshot d821cd063585805854f37d4d contains no quotes; all listed stock observations are unavailable. Price, volume and history eligibility cannot be verified. Verified fundamentals, news, earnings, halts and comprehensive corporate actions are also absent, leaving no supported catalyst thesis or basis for return and probability estimates.",
+      "investigated_tickers": [],
+      "sources": [],
+      "web_search_mode": "disabled",
+      "web_activity": {
+        "completed_calls": 0,
+        "calls": []
+      }
     },
     {
       "id": "paper-2026-10-12-2026-10-12:researcher_b",
@@ -87,7 +341,16 @@
       "prompt_hash": "e90090df1e07ca3840aa719333b21d2064bfac7d1cdbcc1a051cfc9fe206dfef",
       "model": "gpt-6.1-sol",
       "reasoning": "medium",
-      "prompt_excerpt": "RULES\nYou are researcher_b, Morgan, a momentum and price behavior researcher. Independently assess supplied price/volume, relative strength and volatility evidence for Monday-to-Friday PAPER / SIMULATED research. Propose up to three eligible common stocks or explicitly abstain. Do not invent unavailable history. Returns and probabilities are fractions. Cite supplied evidence IDs. Lessons cannot override risk or permissions. No tools, browsing, orders, credentials, or file access. Return only the supplied JSON contract.\n\n\nOVERLAY\nACTIVE LEARNING OVERLAY\nApply these versioned research lessons alongside the fixed role contract and current evidence. Treat confidence and expiry as part of each lesson.\n[]\n\nCURRENT\n{\"cycle_id\":\"paper-2026-10-12-2026-10-12\",\"market\":{\"benchmark\":{\"comparison_only\":true,\"price\":null,\"ticker\":\"SPY\"},\"cutoff\":\"2026-10-12T13:35:09.944075+00:00\",\"id\":\"d821cd063585805854f37d4d\",\"provider\":\"yahoo-public\",\"quotes\":{},\"screen_version\":\"v1-price5-volume1m-history20\",\"sy"
+      "prompt_excerpt": "RULES\nYou are researcher_b, Morgan, a momentum and price behavior researcher. Independently assess supplied price/volume, relative strength and volatility evidence for Monday-to-Friday PAPER / SIMULATED research. Propose up to three eligible common stocks or explicitly abstain. Do not invent unavailable history. Returns and probabilities are fractions. Cite supplied evidence IDs. Lessons cannot override risk or permissions. No tools, browsing, orders, credentials, or file access. Return only the supplied JSON contract.\n\n\nOVERLAY\nACTIVE LEARNING OVERLAY\nApply these versioned research lessons alongside the fixed role contract and current evidence. Treat confidence and expiry as part of each lesson.\n[]\n\nCURRENT\n{\"cycle_id\":\"paper-2026-10-12-2026-10-12\",\"market\":{\"benchmark\":{\"comparison_only\":true,\"price\":null,\"ticker\":\"SPY\"},\"cutoff\":\"2026-10-12T13:35:09.944075+00:00\",\"id\":\"d821cd063585805854f37d4d\",\"provider\":\"yahoo-public\",\"quotes\":{},\"screen_version\":\"v1-price5-volume1m-history20\",\"sy",
+      "research_summary": "",
+      "abstention_reason": "Abstain: snapshot d821cd063585805854f37d4d contains no quotes; all supplied stock observations and the SPY benchmark are unavailable. No price/volume history, relative strength or volatility evidence supports verifying eligibility or estimating Monday-to-Friday simulated returns and profit probabilities.",
+      "investigated_tickers": [],
+      "sources": [],
+      "web_search_mode": "disabled",
+      "web_activity": {
+        "completed_calls": 0,
+        "calls": []
+      }
     },
     {
       "id": "paper-2026-10-12-2026-10-12:manager",
@@ -115,27 +378,436 @@
       "prompt_hash": "04d6f39f594cbaecd3d70b31fa8df59d29901d2cb1a1a0b1aa974e1a9ec8e78e",
       "model": "gpt-6.1-sol",
       "reasoning": "medium",
-      "prompt_excerpt": "RULES\nYou are manager, Casey. Review both finalized independent proposal sets. Select only submitted proposals or hold cash. Account is PAPER / SIMULATED, cash-funded long-only with fractional shares. Combined ticker allocation <=40%, total <=95%, fees included. Explain every rejection, retained cash and uncertainty. All referenced evidence must exist. Application code controls execution. No tools, external research, credentials or settings changes. Return only the supplied JSON contract.\n\n\nOVERLAY\nACTIVE LEARNING OVERLAY\nApply these versioned research lessons alongside the fixed role contract and current evidence. Treat confidence and expiry as part of each lesson.\n[]\n\nCURRENT\n{\"cash\":\"1000.00000000\",\"cycle_id\":\"paper-2026-10-12-2026-10-12\",\"limits\":{\"deployed\":\"0.95\",\"ticker\":\"0.40\"},\"market\":{\"benchmark\":{\"comparison_only\":true,\"price\":null,\"ticker\":\"SPY\"},\"cutoff\":\"2026-10-12T13:35:09.944075+00:00\",\"id\":\"d821cd063585805854f37d4d\",\"provider\":\"yahoo-public\",\"quotes\":{},\"screen_versio"
+      "prompt_excerpt": "RULES\nYou are manager, Casey. Review both finalized independent proposal sets. Select only submitted proposals or hold cash. Account is PAPER / SIMULATED, cash-funded long-only with fractional shares. Combined ticker allocation <=40%, total <=95%, fees included. Explain every rejection, retained cash and uncertainty. All referenced evidence must exist. Application code controls execution. No tools, external research, credentials or settings changes. Return only the supplied JSON contract.\n\n\nOVERLAY\nACTIVE LEARNING OVERLAY\nApply these versioned research lessons alongside the fixed role contract and current evidence. Treat confidence and expiry as part of each lesson.\n[]\n\nCURRENT\n{\"cash\":\"1000.00000000\",\"cycle_id\":\"paper-2026-10-12-2026-10-12\",\"limits\":{\"deployed\":\"0.95\",\"ticker\":\"0.40\"},\"market\":{\"benchmark\":{\"comparison_only\":true,\"price\":null,\"ticker\":\"SPY\"},\"cutoff\":\"2026-10-12T13:35:09.944075+00:00\",\"id\":\"d821cd063585805854f37d4d\",\"provider\":\"yahoo-public\",\"quotes\":{},\"screen_versio",
+      "research_summary": "",
+      "abstention_reason": null,
+      "investigated_tickers": [],
+      "sources": [],
+      "web_search_mode": "disabled",
+      "web_activity": {
+        "completed_calls": 0,
+        "calls": []
+      }
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-12:replacement:researcher_b",
+      "role": "researcher_b",
+      "purpose": "RESEARCH",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v2-independent-web",
+        "overlay_version": 0,
+        "lesson_ids": [],
+        "recent_week_ids": [],
+        "cutoff": "2026-10-12T18:38:38.920344+00:00",
+        "estimated_tokens": 2176,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 372,
+          "overlay": 32,
+          "current": 966,
+          "recent": 1,
+          "older": 11,
+          "contract": 778
+        },
+        "reductions": []
+      },
+      "prompt_hash": "c358e8ebac244a642647e17a5d06de5c07064f30e9f4cdeed512776513eb5ab1",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nYou are researcher_b, Morgan, an independent momentum and price-behavior researcher for a PAPER / SIMULATED Monday-to-Friday experiment. When independent_web_research is true, actively use live web search and open sources yourself for price/volume history, market/sector relative strength, volatility and trend stability. Search public financial data and issuer disclosures; verify dates, distinguish adjusted history from raw observations, and compare several stocks in research_universe. Do not simply assess the supplied packet or abstain because it is empty. Independently choose up to three eligible configured common stocks with sourced theses, or give a substantive source-backed abstention. Never receive the other researcher's findings before finalizing yours.\n\nReturn research_summary explaining searches, comparisons, findings and limitations; investigated_tickers; and sources with IDs web-researcher_b-1, web-researcher_b-2, etc., HTTPS URLs, titles, actual publication timestamps ",
+      "research_summary": "Independently searched public histories for all six configured stocks, SPY and QQQ, and opened issuer disclosures and accessible history pages. Compared completed October 2–9 sessions: AMZN +4.34%, MSFT +3.39%, GOOGL +2.38%, AAPL +0.88%, META -1.29%, NVDA -2.00%; SPY +1.16%, QQQ +0.23%. These are arithmetic closing-price returns, not annualized estimates. MSFT had the more sustained recent advance; AMZN had stronger weekly appreciation but sharper reversals and a Monday pullback. GOOGL recovered, although Friday volume was below Thursday's; AAPL's Friday decline weakened follow-through. META and NVDA weakened late last week, making their Monday observations insufficient to establish stable reversals. Selected two proposals rather than filling three slots. Yahoo labels Close as split-adjusted and Adj Close as additionally distribution-adjusted; the compared dates show equal columns. No raw unadjusted historical series, ATR or realized-volatility estimate is claimed. Dynamic history pages lack publication timestamps, so published_at is null; only dated completed sessions through October 9 support historical comparisons. Search-index extracts supplied several Yahoo tables because direct opens failed. MSFT closes were independently cross-checked; volume discrepancies between providers limit volume conclusions. Opened issuer releases predate cutoff, but exact publication times were unavailable. Ignored undated news summaries, social commentary and unfinished October 12 history rows. QQQ is a growth/technology-heavy comparison, not a precise sector benchmark. No complete halt, corporate-action or weekly event calendar was verified. Web observations are research evidence, not executable quotes. Return, downside, confidence and probability estimates are subjective; backend validation remains necessary.",
+      "abstention_reason": null,
+      "investigated_tickers": [
+        "AAPL",
+        "MSFT",
+        "NVDA",
+        "AMZN",
+        "GOOGL",
+        "META"
+      ],
+      "sources": [
+        {
+          "id": "web-researcher_b-1",
+          "url": "https://stockanalysis.com/stocks/msft/history/",
+          "title": "Microsoft Stock Price History — Stock Analysis",
+          "published_at": null,
+          "finding": "Completed sessions show MSFT closing at 517.53 on October 2 and 535.07 on October 9. October 8 low was 518.79. Friday volume was 17,812,412, below Thursday's 19,575,828. The unfinished Monday row was excluded."
+        },
+        {
+          "id": "web-researcher_b-2",
+          "url": "https://finance.yahoo.com/quote/MSFT/history/?ltr=1",
+          "title": "Microsoft Corporation Historical Prices — Yahoo Finance",
+          "published_at": null,
+          "finding": "Yahoo confirms the MSFT closes used in comparison but reports October 9 volume of 18,483,600, differing from Stock Analysis. Its Close and Adj Close columns agree for the comparison dates. Dynamic page publication time is unknown."
+        },
+        {
+          "id": "web-researcher_b-3",
+          "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+          "title": "Microsoft FY26 Q4 Earnings Release",
+          "published_at": "2026-07-29",
+          "finding": "Issuer release dated July 29, 2026 reports quarterly revenue of $90.0 billion, up 18%, and operating income of $40.6 billion, up 18%. This supplies existing business context rather than a new October catalyst; exact publication time is unknown."
+        },
+        {
+          "id": "web-researcher_b-4",
+          "url": "https://finance.yahoo.com/quote/AMZN/history/?p=AMZN",
+          "title": "Amazon.com Historical Prices — Yahoo Finance",
+          "published_at": null,
+          "finding": "AMZN closed at 251.52 on October 2 and 262.43 on October 9. Friday high was 262.80 and volume 34,710,500, below Thursday's 38,649,900. October 8 low was 253.78. Unfinished Monday history was excluded."
+        },
+        {
+          "id": "web-researcher_b-5",
+          "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
+          "title": "Amazon.com Announces Second Quarter Results",
+          "published_at": "2026-07-30",
+          "finding": "Issuer release dated July 30 reports second-quarter sales growth of 20%, operating income of $27.5 billion and AWS sales growth of 37%. Guidance describes substantial uncertainty and exposure to supply, energy and demand conditions. Exact publication time is unknown."
+        },
+        {
+          "id": "web-researcher_b-6",
+          "url": "https://finance.yahoo.com/quote/GOOGL/history/",
+          "title": "Alphabet Historical Prices — Yahoo Finance",
+          "published_at": null,
+          "finding": "GOOGL closed at 343.50 on October 2 and 351.66 on October 9. Friday volume of 17,259,800 was below Thursday's 23,511,100. The recovery therefore lacks increasing-volume confirmation. Publication timestamp is unavailable."
+        },
+        {
+          "id": "web-researcher_b-7",
+          "url": "https://finance.yahoo.co.jp/quote/NVDA/history",
+          "title": "NVIDIA Historical Prices — Yahoo Japan Finance",
+          "published_at": null,
+          "finding": "NVDA closed at 233.95 on October 2, reached a 243.37 high on October 6 and closed at 229.28 on October 9. The late-week retreat weakens immediate continuation despite its longer advance. History-page publication timestamp is unknown."
+        },
+        {
+          "id": "web-researcher_b-8",
+          "url": "https://finance.yahoo.com/quote/AAPL/history/?fr=sycsrp_catchall",
+          "title": "Apple Historical Prices — Yahoo Finance",
+          "published_at": null,
+          "finding": "AAPL closed at 333.69 on October 2 and 336.64 on October 9, below October 8's 340.42. Its modest weekly gain and Friday reversal compare less favorably with MSFT and AMZN. Publication timestamp is unknown."
+        },
+        {
+          "id": "web-researcher_b-9",
+          "url": "https://stockanalysis.com/etf/spy/history/",
+          "title": "SPY Historical Stock Price Data — Stock Analysis",
+          "published_at": null,
+          "finding": "SPY closed at 769.64 on October 2 and 778.57 on October 9, approximately 1.16% appreciation. Used only as a market comparison. Historical session dates are explicit; page publication timestamp is unavailable."
+        },
+        {
+          "id": "web-researcher_b-10",
+          "url": "https://finance.yahoo.com/quote/QQQ/history/",
+          "title": "Invesco QQQ Trust Historical Prices — Yahoo Finance",
+          "published_at": null,
+          "finding": "QQQ closed at 749.58 on October 2 and 751.27 on October 9, approximately 0.23% appreciation. It retreated from October 6's 759.66 close. Used as a technology-heavy comparison only; publication timestamp is unknown."
+        },
+        {
+          "id": "web-researcher_b-11",
+          "url": "https://finance.yahoo.com/quote/META/history/",
+          "title": "Meta Platforms Historical Prices — Yahoo Finance",
+          "published_at": null,
+          "finding": "META closed at 728.08 on October 2 and 718.67 on October 9, after closing at 741.90 on October 5. This late-week deterioration argues against a stable continuation proposal. Unfinished Monday history was excluded; publication timestamp is unknown."
+        }
+      ],
+      "web_search_mode": "live",
+      "web_activity": {
+        "completed_calls": 4,
+        "calls": [
+          {
+            "type": "search",
+            "queries": [
+              "AMZN GOOGL NVDA stock October 12 2026 market",
+              "site.finance.yahoo.com quote AMZN history",
+              "site.finance.yahoo.com quote GOOGL history"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.finance.yahoo.com/quote/NVDA/history October 9 2026",
+              "site.finance.yahoo.com/quote/MSFT/history October 9 2026",
+              "site.finance.yahoo.com/quote/SPY/history October 9 2026",
+              "site.ir.aboutamazon.com 2026 second quarter results"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.finance.yahoo.com/quote/AAPL/history \"Oct 9, 2026\"",
+              "site.finance.yahoo.com/quote/META/history \"Oct 9, 2026\"",
+              "site.microsoft.com investor earnings FY 2026 Q4 July 2026",
+              "site.finance.yahoo.com/quote/QQQ/history \"Oct 9, 2026\""
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.finance.yahoo.com/quote/AMZN/history \"Oct 9, 2026\"",
+              "site.stockanalysis.com/stocks/msft/history \"Oct 9, 2026\""
+            ]
+          }
+        ],
+        "event_stream_sha256": "b2b89f92cf14dc0f8613ddd6a43e79961ebd88a45f56aa4164d8183df97ffb15",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-12:replacement:researcher_a",
+      "role": "researcher_a",
+      "purpose": "RESEARCH",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v2-independent-web",
+        "overlay_version": 0,
+        "lesson_ids": [],
+        "recent_week_ids": [],
+        "cutoff": "2026-10-12T18:38:38.920344+00:00",
+        "estimated_tokens": 2206,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 402,
+          "overlay": 32,
+          "current": 966,
+          "recent": 1,
+          "older": 11,
+          "contract": 778
+        },
+        "reductions": []
+      },
+      "prompt_hash": "eee8f018e7ffaa7c488bbc9b14af8b7d677623f99be4956cfe9bc79906496332",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nYou are researcher_a, Avery, an independent fundamentals and catalysts researcher for a PAPER / SIMULATED Monday-to-Friday experiment. When independent_web_research is true, actively use live web search and open primary sources yourself: issuer investor-relations releases, SEC filings, earnings/calendar announcements and credible timestamped reporting. Run several targeted searches; do not simply assess the supplied packet or abstain because its quotes/fundamentals/news are empty. Independently investigate the configured research_universe; choose up to three eligible common stocks with sourced theses, or provide a substantive, source-backed abstention. Do not see or depend on the other researcher's work.\n\nReturn research_summary explaining searches, comparisons, findings and limitations; investigated_tickers; and sources with stable IDs web-researcher_a-1, web-researcher_a-2, etc., HTTPS URLs, titles, publication timestamps when actually known (null otherwise), and paraphrased fi",
+      "research_summary": "Ran multiple targeted live searches across all six configured issuers for recent results, earnings dates, retail events, AI infrastructure announcements and capital returns; opened issuer releases and Alphabet's SEC earnings exhibit. NVIDIA ranks first for exceptional operating growth plus its September repurchase expansion; Amazon ranks second for AWS and operating-income growth. Alphabet showed strong revenue and operating growth, but its headline earnings included substantial unrealized investment gains and I did not establish a sufficiently fresh weekly catalyst. Microsoft had strong cloud results, but its confirmed October 28 earnings date is outside October 12–16. Meta's expenses grew faster than revenue and operating income declined. Apple's growth was strong, but tariff refunds benefited margins and EPS. Each proposal cites at least two distinct primary announcements. These are modest continuation judgments, not identified valuation bargains or confirmed event trades. July/August results are stale for predicting one week, and a complete news, regulatory and earnings-calendar audit was not achieved. Search snippets sometimes showed inconsistent dates; the opened release's explicit date governed. October 12 NVIDIA archive entries lacked verified intraday publication times and were excluded from the theses because availability before the precise cutoff could not be established. No subsequent announcements were used. Retained sources disclose publication dates but generally no clock time; dates are reported without invented times. No undated page is relied upon. Return, downside and probability figures are subjective fractions for the remaining week; downside is an adverse scenario, not a maximum loss. Missing engine quotes did not prevent research, but NVDA requires a fresh backend-supported observation before any simulated fill. Web snippets were never used as executable prices.",
+      "abstention_reason": null,
+      "investigated_tickers": [
+        "AAPL",
+        "MSFT",
+        "NVDA",
+        "AMZN",
+        "GOOGL",
+        "META"
+      ],
+      "sources": [
+        {
+          "id": "web-researcher_a-1",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "title": "NVIDIA Announces Financial Results for Second Quarter Fiscal 2027",
+          "published_at": "2026-08-26",
+          "finding": "Reported second-quarter fiscal 2027 revenue of $96.2 billion, up 106% year over year, and Data Center revenue of $89.0 billion, up 117%. Both GAAP and non-GAAP gross margins were 75.0%. Historical results support operating strength but do not establish a weekly trading edge."
+        },
+        {
+          "id": "web-researcher_a-2",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-a-150-Billion-Share-Repurchase-Authorization-Increase/default.aspx",
+          "title": "NVIDIA Announces a $150 Billion Share Repurchase Authorization Increase",
+          "published_at": "2026-09-28",
+          "finding": "The board authorized an additional $150 billion of repurchases, bringing remaining authorization to $235 billion. The company expects execution through fiscal 2028; the release does not identify purchases during the experiment week."
+        },
+        {
+          "id": "web-researcher_a-3",
+          "url": "https://nvidianews.nvidia.com/news/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+          "title": "AWS and NVIDIA to Deliver 2 Million Additional GPUs and Next-Generation Infrastructure for Agentic and Physical AI",
+          "published_at": "2026-08-26",
+          "finding": "AWS and NVIDIA announced plans for two million additional NVIDIA GPUs across AWS infrastructure in 2027–2028, alongside expanded CPU, networking, software and robotics integration. This is a forward-looking deployment plan, not realized revenue or an October catalyst."
+        },
+        {
+          "id": "web-researcher_a-4",
+          "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
+          "title": "Amazon.com Announces Second Quarter Results",
+          "published_at": "2026-07-30",
+          "finding": "Second-quarter sales rose 20% to $200.6 billion, operating income rose 43% to $27.5 billion, and AWS sales rose 37% to $42.2 billion. Net income included $53.4 billion of non-operating pre-tax other income, primarily from Anthropic investments. Third-quarter sales guidance was $197–202 billion."
+        },
+        {
+          "id": "web-researcher_a-5",
+          "url": "https://press.aboutamazon.com/2026/9/prime-big-deal-days-is-back-october-6-7-kicking-off-the-season-with-two-days-of-exclusive-savings-for-prime-members",
+          "title": "Prime Big Deal Days is Back October 6-7, Kicking Off the Season with Two Days of Exclusive Savings for Prime Members",
+          "published_at": "2026-09-14",
+          "finding": "Announced Prime Big Deal Days for October 6–7, with promotional discounts and shopping features. The announcement establishes event timing but supplies no realized sales, profitability or incremental demand results."
+        },
+        {
+          "id": "web-researcher_a-6",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+          "title": "Alphabet Announces Second Quarter 2026 Results — SEC Exhibit 99.1",
+          "published_at": "2026-07-22",
+          "finding": "Alphabet's issuer earnings exhibit reported revenue growth of 24% to $119.8 billion and operating-income growth of 30%, with a 34% operating margin. Other income included $98.0 billion of net gains, primarily unrealized equity-security gains, limiting headline EPS's usefulness as recurring earnings evidence."
+        },
+        {
+          "id": "web-researcher_a-7",
+          "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+          "title": "Microsoft Cloud and AI Strength Fuels Fourth Quarter Results",
+          "published_at": "2026-07-29",
+          "finding": "Microsoft reported fiscal fourth-quarter revenue of $90.0 billion, up 18%, operating income of $40.6 billion, up 18%, and Azure and other cloud-services revenue growth of 43%. Discrete items benefited diluted EPS by $0.27 relative to guidance."
+        },
+        {
+          "id": "web-researcher_a-8",
+          "url": "https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarterly-earnings-release-date-69",
+          "title": "Microsoft announces quarterly earnings release date",
+          "published_at": "2026-10-07",
+          "finding": "Confirmed fiscal 2027 first-quarter results will be released after market close on October 28, 2026, outside the October 12–16 experiment window."
+        },
+        {
+          "id": "web-researcher_a-9",
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/",
+          "title": "Meta Reports Second Quarter 2026 Results",
+          "published_at": "2026-07-29",
+          "finding": "Meta reported second-quarter revenue growth of 28%, costs and expenses growth of 55%, and an 8% decline in operating income. Its operating margin fell from 43% to 31%; management projected 2026 capital expenditures including finance-lease principal of $130–145 billion."
+        },
+        {
+          "id": "web-researcher_a-10",
+          "url": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/",
+          "title": "Apple reports third quarter results",
+          "published_at": "2026-07-30",
+          "finding": "Apple reported fiscal third-quarter revenue of $109.4 billion, up 16%, and diluted EPS of $2.02, up 29%. Tariff refunds contributed approximately two percentage points to gross margin and $0.11 to EPS, requiring care when extrapolating profitability."
+        }
+      ],
+      "web_search_mode": "live",
+      "web_activity": {
+        "completed_calls": 7,
+        "calls": [
+          {
+            "type": "search",
+            "queries": [
+              "site.apple.com/newsroom 2026 fourth quarter results October 2026",
+              "site.microsoft.com investor earnings fiscal 2027 first quarter October 2026",
+              "site.nvidianews.nvidia.com 2026 second quarter fiscal 2027 results"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.ir.aboutamazon.com 2026 second quarter results October Prime Big Deal Days 2026",
+              "site.abc.xyz 2026 second quarter results October earnings",
+              "site.investor.atmeta.com 2026 second quarter results October",
+              "site.apple.com/newsroom/2026/07 apple third quarter results 2026"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.abc.xyz \"2026\" \"Second Quarter\" \"July\"",
+              "site.nvidianews.nvidia.com \"October\" \"2026\"",
+              "site.ir.aboutamazon.com \"2026\" \"October\" \"third\"",
+              "site.abc.xyz \"2026\" \"October\" earnings"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "AWS NVIDIA \"2026\" \"October\" \"strategic collaboration\"",
+              "site.nvidianews.nvidia.com \"2026\" \"$150 Billion\"",
+              "site.microsoft.com \"July 29, 2026\" \"90\" \"Azure\""
+            ]
+          },
+          {
+            "type": "other"
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.nvidianews.nvidia.com/news \"AWS\" \"two million\" \"2026\"",
+              "site.press.aboutamazon.com \"NVIDIA\" \"2026\" \"September\""
+            ]
+          },
+          {
+            "type": "open_page",
+            "url": "https://nvidianews.nvidia.com/news/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai"
+          }
+        ],
+        "event_stream_sha256": "ee74abb95fa2ddcb20bfe48460e8e599087baee499b44e4f8ef4e0e7a198dd36",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-12:replacement:manager",
+      "role": "manager",
+      "purpose": "DECISION",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v1",
+        "overlay_version": 0,
+        "lesson_ids": [],
+        "recent_week_ids": [],
+        "cutoff": "2026-10-12T18:38:38.920344+00:00",
+        "estimated_tokens": 7805,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 107,
+          "overlay": 32,
+          "current": 7205,
+          "recent": 1,
+          "older": 11,
+          "contract": 432
+        },
+        "reductions": []
+      },
+      "prompt_hash": "6a77a799c24f8a314cb80ed995fc8cf6a5f5e428df0f339819a8e738df7e37ab",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nFor this DECISION task, use only supplied records. Web browsing is disabled for this purpose.\nYou are manager, Casey. Review both finalized independent proposal sets. Select only submitted proposals or hold cash. Account is PAPER / SIMULATED, cash-funded long-only with fractional shares. Combined ticker allocation <=40%, total <=95%, fees included. Explain every rejection, retained cash and uncertainty. All referenced evidence must exist. Application code controls execution. No tools, external research, credentials or settings changes. Return only the supplied JSON contract.\n\n\nOVERLAY\nACTIVE LEARNING OVERLAY\nApply these versioned research lessons alongside the fixed role contract and current evidence. Treat confidence and expiry as part of each lesson.\n[]\n\nCURRENT\n{\"cash\":\"1000.00000000\",\"cycle_id\":\"paper-2026-10-12-2026-10-12\",\"limits\":{\"deployed\":\"0.95\",\"ticker\":\"0.40\"},\"market\":{\"benchmark\":{\"comparison_only\":true,\"price\":null,\"ticker\":\"SPY\"},\"cutoff\":\"2026-10-12T18:38:38.9203",
+      "research_summary": "",
+      "abstention_reason": null,
+      "investigated_tickers": [],
+      "sources": [],
+      "web_search_mode": "disabled",
+      "web_activity": {
+        "completed_calls": 0,
+        "calls": [],
+        "event_stream_sha256": "1288c7d019d02aa20fe3d6b7ab2d0c29b48838109f78cb346162d51c355211d4",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
     }
   ],
   "snapshots": [
     {
-      "id": "paper-2026-10-12-2026-10-12:entry",
-      "kind": "entry",
+      "id": "paper-2026-10-12-2026-10-12:entry-original",
+      "kind": "entry-original",
       "provider": "yahoo-public",
       "cutoff": "2026-10-12T13:35:09.944075+00:00",
       "evidence": []
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-12:entry",
+      "kind": "entry",
+      "provider": "yahoo-public",
+      "cutoff": "2026-10-12T18:38:38.920344+00:00",
+      "evidence": [
+        {
+          "id": "yahoo:AMZN:2026-10-12T18:38:38+00:00",
+          "ticker": "AMZN",
+          "observed_at": "2026-10-12T18:38:38+00:00",
+          "price": "259.915",
+          "redistribution": "metadata only; verify provider terms"
+        },
+        {
+          "id": "yahoo:GOOGL:2026-10-12T18:38:36+00:00",
+          "ticker": "GOOGL",
+          "observed_at": "2026-10-12T18:38:36+00:00",
+          "price": "352.12",
+          "redistribution": "metadata only; verify provider terms"
+        }
+      ]
     }
   ],
-  "fills": [],
+  "fills": [
+    {
+      "id": "paper-2026-10-12-2026-10-12:BUY:AMZN",
+      "ticker": "AMZN",
+      "quantity": "0.38451190",
+      "price": "260.06997000",
+      "fee": "0E-8",
+      "side": "BUY",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-12T18:46:58+00:00",
+      "fill_time": "2026-10-12T18:46:58+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "259.94"
+    }
+  ],
   "timeline": [
     {
       "stage": "MARKET_PACKET",
-      "completed_at": "2026-10-12T13:35:13.849241+00:00"
+      "completed_at": "2026-10-12T18:38:43.513639+00:00"
     },
     {
       "stage": "PURCHASES",
-      "completed_at": "2026-10-12T13:36:42.527019+00:00"
+      "completed_at": "2026-10-12T18:47:00.678183+00:00"
     }
   ],
   "meeting_ids": []
