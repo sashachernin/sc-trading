@@ -50,6 +50,8 @@ def main():
             "database_dialect": lab.engine.dialect.name,
             "market_provider": cfg.market_provider,
             "codex_mode": cfg.codex_mode,
+            "independent_web_research": cfg.independent_web_research,
+            "research_timeout": cfg.research_timeout,
             "visibility": cfg.site_visibility,
             "private_access_verified": cfg.private_access_verified,
             "models": {

@@ -4,6 +4,10 @@ A native Linux research engine and read-only Next.js dashboard for an autonomous
 
 **Current default:** deterministic synthetic market data and a fake Codex executable. Three demonstration weeks and their Sunday discussions are included. No real-money broker order API exists. See [verification and implementation status](docs/verification.md) for executed checks and remaining production limitations.
 
+## Independent research
+
+Both Codex researchers now browse independently using live web search, return sourced findings, and compare stocks before proposing or abstaining. Empty supplied market data no longer stops their investigation. Actual web-tool activity is recorded separately from model claims. The manager receives both research reports; fresh execution prices and risk checks remain deterministic. See [independent research](docs/independent-research.md). The initial October 12 cash-only run is preserved. A [later deployed verification](docs/results/2026-10-12-web-verification.md) recorded five web-tool calls per researcher, sourced comparisons across six stocks, one researched abstention and one MSFT proposal, with no trades.
+
 ## Latest forward result
 
 [Monday, October 12, 2026](docs/results/2026-10-12.md): opening research completed with **HOLD_CASH**. Both researchers abstained because no market observations passed validation. Paper cash remains **$1,000.00**, with no positions or trades. The committed dashboard data is the real forward snapshot `paper-2026-10-12-r6`; the synthetic demonstration remains a separate local experiment.

@@ -2,6 +2,7 @@ import json, os, signal, subprocess, tempfile, time, sys
 from pathlib import Path
 from app.config import ROOT
 from app.context.compiler import canonical
+from app.codex_runner.provenance import web_activity, codex_output_schema
 
 
 class RunnerError(RuntimeError):
@@ -21,13 +22,21 @@ class CodexRunner:
         )
         if not model:
             raise RunnerError("MODEL_NOT_CONFIGURED")
+        browse = (
+            cfg.codex_mode == "real"
+            and cfg.independent_web_research
+            and purpose == "RESEARCH"
+        )
+        timeout = cfg.research_timeout if browse else cfg.runner_timeout
         run_root = cfg.state_dir / "runs"
         run_root.mkdir(parents=True, exist_ok=True, mode=0o700)
         with tempfile.TemporaryDirectory(prefix="run-", dir=run_root) as folder:
             workspace = Path(folder)
             workspace.chmod(0o700)
             schema = workspace / "schema.json"
-            schema.write_text(canonical(contract.model_json_schema()))
+            schema.write_text(
+                canonical(codex_output_schema(contract.model_json_schema()))
+            )
             output = workspace / "final.json"
             if cfg.codex_mode == "fake":
                 args = [
@@ -58,7 +67,9 @@ class CodexRunner:
                     "-c",
                     'shell_environment_policy.inherit="none"',
                     "-c",
-                    'web_search="disabled"',
+                    f'web_search="{"live" if browse else "disabled"}"',
+                    "-c",
+                    f"lab_timeout_seconds={timeout}",
                     "--cd",
                     str(workspace),
                     "--output-schema",
@@ -100,7 +111,9 @@ class CodexRunner:
                     cwd=workspace,
                 )
                 try:
-                    proc.communicate(stdin.encode(), timeout=cfg.runner_timeout)
+                    proc.communicate(
+                        stdin.encode(), timeout=timeout + (15 if browse else 0)
+                    )
                 except subprocess.TimeoutExpired:
                     os.killpg(proc.pid, signal.SIGKILL)
                     proc.wait()
@@ -142,9 +155,17 @@ class CodexRunner:
                 result = contract.model_validate_json(output.read_bytes())
             except Exception as exc:
                 raise RunnerError("VALIDATION") from exc
+            activity = web_activity((workspace / "events").read_bytes())
+            if browse and activity["completed_calls"] == 0:
+                raise RunnerError("WEB_RESEARCH_NOT_PERFORMED")
             return result.model_dump(mode="json"), {
                 "model": model,
                 "reasoning": cfg.codex_reasoning,
+                "web_search_mode": "live" if browse else "disabled",
+                "web_activity": activity,
+                "completed_at": __import__("datetime")
+                .datetime.now(__import__("datetime").timezone.utc)
+                .isoformat(),
                 "duration_seconds": round(time.monotonic() - start, 3),
                 "exit_code": proc.returncode,
                 "runner": "fresh-subprocess",

@@ -25,6 +25,7 @@ with open(output,'w') as f:json.dump({{'role':'researcher_a','cutoff':'now','sna
             "codex_mode": "real",
             "codex_binary": executable(tmp_path, body),
             "codex_model_researcher_a": "operator-model",
+            "independent_web_research": False,
         }
     )
     monkeypatch.setenv("ALPACA_SECRET_KEY", "secret-for-test")
@@ -65,7 +66,8 @@ def test_runner_failure_categories(lab, tmp_path, body, category):
             "codex_mode": "real",
             "codex_binary": executable(tmp_path, body),
             "codex_model_researcher_a": "configured",
-            "runner_timeout": 1,
+            "runner_timeout": 1 if category == "TIMEOUT" else 10,
+            "independent_web_research": False,
         }
     )
     with pytest.raises(RunnerError) as e:

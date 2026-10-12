@@ -280,6 +280,8 @@ def executable_packet(settings, tickers, kind, order_time):
     while True:
         cutoff = iso(datetime.now(timezone.utc))
         packet = provider(settings).packet(tickers, cutoff, kind)
+        if kind == "entry":
+            packet = screen(packet, settings)
         if all(
             t in packet["quotes"]
             and parse(packet["quotes"][t]["observed_at"]) >= parse(order_time)

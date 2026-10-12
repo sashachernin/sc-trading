@@ -233,6 +233,14 @@ def build_files(lab, s, pub):
                 "model": r.metadata_.get("model"),
                 "reasoning": r.metadata_.get("reasoning"),
                 "prompt_excerpt": r.prompt[:1000],
+                "research_summary": r.output.get("research_summary", ""),
+                "abstention_reason": r.output.get("abstention_reason"),
+                "investigated_tickers": r.output.get("investigated_tickers", []),
+                "sources": r.output.get("sources", []),
+                "web_search_mode": r.metadata_.get("web_search_mode", "disabled"),
+                "web_activity": r.metadata_.get(
+                    "web_activity", {"completed_calls": 0, "calls": []}
+                ),
             }
             for r in s.scalars(
                 select(AgentRun).where(

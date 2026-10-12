@@ -1,6 +1,8 @@
 from decimal import Decimal
 from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field, model_validator
+from urllib.parse import urlsplit
+import ipaddress
 
 Role = Literal["researcher_a", "researcher_b", "manager", "analyst"]
 
@@ -26,17 +28,52 @@ class Candidate(Strict):
     evidence_ids: list[str] = Field(min_length=1, max_length=12)
 
 
+class ResearchSource(Strict):
+    id: str = Field(pattern=r"^web-[a-zA-Z0-9_-]{1,60}$")
+    url: str = Field(max_length=2000)
+    title: str = Field(min_length=1, max_length=200)
+    published_at: str | None
+    finding: str = Field(min_length=1, max_length=1000)
+
+    @model_validator(mode="after")
+    def public_url(self):
+        parsed = urlsplit(self.url)
+        host = parsed.hostname or ""
+        if (
+            parsed.scheme != "https"
+            or not host
+            or parsed.username
+            or parsed.password
+            or parsed.port not in (None, 443)
+        ):
+            raise ValueError("Public HTTPS source required")
+        if host == "localhost" or host.endswith((".localhost", ".local", ".internal")):
+            raise ValueError("Non-public source")
+        try:
+            if not ipaddress.ip_address(host).is_global:
+                raise ValueError("Non-public source")
+        except ValueError as exc:
+            if str(exc) == "Non-public source":
+                raise
+        return self
+
+
 class Research(Strict):
     role: Literal["researcher_a", "researcher_b"]
     cutoff: str
     snapshot_id: str
     candidates: list[Candidate] = Field(max_length=3)
     abstention_reason: str | None
+    research_summary: str = Field(default="", max_length=2500)
+    investigated_tickers: list[str] = Field(default_factory=list, max_length=20)
+    sources: list[ResearchSource] = Field(default_factory=list, max_length=12)
 
     @model_validator(mode="after")
     def abstention(self):
         if not self.candidates and not self.abstention_reason:
             raise ValueError("Explicit abstention required")
+        if len({s.id for s in self.sources}) != len(self.sources):
+            raise ValueError("Duplicate source IDs")
         if len({c.ticker for c in self.candidates}) != len(self.candidates):
             raise ValueError("Duplicate candidate")
         if [c.rank for c in self.candidates] != list(

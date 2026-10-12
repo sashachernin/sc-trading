@@ -8,6 +8,8 @@ ALLOWED = {
     "codex_model_manager",
     "codex_model_analyst",
     "codex_reasoning",
+    "independent_web_research",
+    "research_timeout",
     "learning_mode",
     "max_stock_allocation",
     "max_deployed",

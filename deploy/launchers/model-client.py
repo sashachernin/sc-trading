@@ -9,7 +9,7 @@ import sys
 
 def request(payload):
     with socket.socket(socket.AF_UNIX) as connection:
-        connection.settimeout(195)
+        connection.settimeout(620)
         connection.connect("/run/ai-investment-lab-model/gateway.sock")
         connection.sendall(json.dumps(payload).encode() + b"\n")
         response = bytearray()
@@ -37,6 +37,18 @@ def main():
     response = request(
         {
             "model": model,
+            "web_search": next(
+                x.split("=", 1)[1].strip('"')
+                for x in args
+                if x.startswith("web_search=")
+            ),
+            "timeout_seconds": int(
+                next(
+                    x.split("=", 1)[1]
+                    for x in args
+                    if x.startswith("lab_timeout_seconds=")
+                )
+            ),
             "reasoning": reasoning,
             "schema": json.loads(Path(schema).read_bytes()),
             "prompt": sys.stdin.read(1048576),
@@ -45,6 +57,7 @@ def main():
     if response.get("error"):
         print(response["error"], file=sys.stderr)
         raise SystemExit(1)
+    print(json.dumps({"type": "lab.web_activity", "data": response["web_activity"]}))
     Path(output).write_text(json.dumps(response["output"]))
 
 

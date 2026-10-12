@@ -22,6 +22,8 @@ class Settings(BaseSettings):
     codex_model_manager: str = ""
     codex_model_analyst: str = ""
     codex_reasoning: str = "medium"
+    independent_web_research: bool = True
+    research_timeout: int = Field(default=300, ge=30, le=600)
     codex_auth_home: str = "/var/lib/ai-investment-lab/codex-auth"
     state_dir: Path = ROOT / "state"
     learning_mode: Literal["auto_bounded", "manual", "shadow_then_promote"] = (

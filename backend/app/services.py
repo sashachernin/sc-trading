@@ -204,6 +204,36 @@ class Lab:
         if purpose == "RESEARCH":
             packet = current["market"]
             allowed = {q["evidence_id"] for q in packet["quotes"].values()}
+            browsing = (
+                self.settings.independent_web_research
+                and self.settings.codex_mode == "real"
+            )
+            sources = out.get("sources", [])
+            if not browsing and sources:
+                raise RunnerError("VALIDATION")
+            if browsing:
+                from app.market_data.providers import parse
+
+                allowed |= {s["id"] for s in sources}
+                for source in sources:
+                    if not source["id"].startswith("web-" + role + "-"):
+                        raise RunnerError("VALIDATION")
+                    if source["published_at"] is not None:
+                        try:
+                            if parse(source["published_at"]) > parse(packet["cutoff"]):
+                                raise RunnerError("VALIDATION")
+                        except (ValueError, TypeError):
+                            raise RunnerError("VALIDATION")
+                if not out.get("research_summary") or not out.get(
+                    "investigated_tickers"
+                ):
+                    raise RunnerError("VALIDATION")
+                if not set(out["investigated_tickers"]) <= set(
+                    self.settings.universe.split(",")
+                ):
+                    raise RunnerError("VALIDATION")
+                if out["candidates"] and len(sources) < 2:
+                    raise RunnerError("VALIDATION")
             if (
                 out["role"] != role
                 or out["cutoff"] != packet["cutoff"]
@@ -212,7 +242,12 @@ class Lab:
                 raise RunnerError("VALIDATION")
             for c in out["candidates"]:
                 if (
-                    c["ticker"] not in packet["quotes"]
+                    c["ticker"]
+                    not in (
+                        self.settings.universe.split(",")
+                        if browsing
+                        else packet["quotes"]
+                    )
                     or not set(c["evidence_ids"]) <= allowed
                 ):
                     raise RunnerError("VALIDATION")
@@ -358,7 +393,13 @@ class Lab:
                         output = self.invoke(
                             role,
                             "RESEARCH",
-                            {"cycle_id": cycle_id, "market": packet},
+                            {
+                                "cycle_id": cycle_id,
+                                "market": packet,
+                                "research_universe": cfg.universe.split(","),
+                                "independent_web_research": cfg.independent_web_research
+                                and cfg.codex_mode == "real",
+                            },
                             packet["cutoff"],
                             cycle_id,
                             cycle_id + ":" + role,
@@ -405,6 +446,11 @@ class Lab:
                         "cycle_id": cycle_id,
                         "cash": cash,
                         "proposals": proposals,
+                        "research_reports": [
+                            {"role": r, **result[0]}
+                            for r, result, error in results
+                            if result
+                        ],
                         "market": packet,
                         "limits": {
                             "ticker": cfg.max_stock_allocation,

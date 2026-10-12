@@ -139,6 +139,12 @@ export type Week = {
     model: string;
     manifest: Record<string, unknown>;
     prompt_excerpt: string;
+    research_summary?: string;
+    abstention_reason?: string | null;
+    investigated_tickers?: string[];
+    web_search_mode?: string;
+    web_activity?: { completed_calls: number };
+    sources?: { id: string; url: string; title: string; published_at: string | null; finding: string }[];
   }[];
   timeline: { stage: string; completed_at: string }[];
   meeting_ids: string[];

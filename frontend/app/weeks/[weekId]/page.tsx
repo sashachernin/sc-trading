@@ -113,6 +113,23 @@ export default async function WeekPage({
           </Panel>
         ))}
       </div>
+      <Panel title="Research reports and sources">
+        {w.runs.filter((r) => r.purpose === "RESEARCH").map((r) => (
+          <div key={r.id}>
+            <h3>{names[r.role]?.name ?? r.role}</h3>
+            <p>{r.research_summary || r.abstention_reason || "No research narrative was exported for this historical run."}</p>
+            <p className="subtle">Observed web-tool calls: {r.web_activity?.completed_calls ?? 0} · Stocks investigated: {r.investigated_tickers?.join(", ") || "Not recorded"}</p>
+            {r.sources?.map((s) => (
+              <details key={s.id}>
+                <summary>{s.title}</summary>
+                <p>{s.finding}</p>
+                <p className="subtle">Publication time: {s.published_at ?? "Unknown"} · Evidence: {s.id}</p>
+                <a href={s.url} target="_blank" rel="noopener noreferrer">Open source ↗</a>
+              </details>
+            ))}
+          </div>
+        ))}
+      </Panel>
       <Panel title="Casey’s capital decision">
         {w.decision ? (
           <>

@@ -61,12 +61,12 @@ class YahooProvider:
         observed = datetime.fromtimestamp(meta["regularMarketTime"], timezone.utc)
         age = (parse(cutoff) - observed).total_seconds()
         price = Decimal(str(meta["regularMarketPrice"]))
-        if (
-            not price.is_finite()
-            or price <= 0
-            or not 0 <= age <= self.settings.quote_max_age_seconds
-        ):
-            raise ValueError("Missing, stale or future public observation")
+        if not price.is_finite() or price <= 0:
+            raise ValueError("Invalid public price")
+        if age < 0:
+            raise ValueError("Public observation after frozen cutoff")
+        if age > self.settings.quote_max_age_seconds:
+            raise ValueError("Stale public observation")
         # Explicitly exclude extended-hours observations.
         session = meta.get("currentTradingPeriod", {}).get("regular", {})
         if not session.get("start", 0) <= observed.timestamp() <= session.get("end", 0):
@@ -153,7 +153,21 @@ class YahooProvider:
                     TypeError,
                     InvalidOperation,
                 ) as exc:
-                    return ticker, None, type(exc).__name__
+                    reason = (
+                        str(exc)
+                        if str(exc)
+                        in {
+                            "Invalid market symbol",
+                            "Public chart unavailable",
+                            "Unsupported security metadata",
+                            "Invalid public price",
+                            "Public observation after frozen cutoff",
+                            "Stale public observation",
+                            "Observation outside regular session",
+                        }
+                        else type(exc).__name__
+                    )
+                    return ticker, None, reason
 
             with ThreadPoolExecutor(max_workers=4) as pool:
                 for ticker, quote, error in pool.map(fetch, symbols):

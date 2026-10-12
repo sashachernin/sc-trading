@@ -92,6 +92,13 @@ class PromptCompiler:
             "net_pnl": str(sum(float(w.data.get("pnl", 0)) for w in weeks[8:])),
         }
         rules = (ROOT / "prompts" / ROLES[role] / "v1.md").read_text()
+        if purpose != "RESEARCH":
+            rules = (
+                "For this "
+                + purpose
+                + " task, use only supplied records. Web browsing is disabled for this purpose.\n"
+                + rules
+            )
         if purpose == "MEETING_TURN":
             rules += "\n" + (ROOT / "prompts/meeting/v1.md").read_text()
             recent = []
@@ -139,7 +146,7 @@ class PromptCompiler:
         if estimate(prompt) > limit:
             raise ValueError("Total context budget exceeded")
         manifest = {
-            "base_prompt": "v1",
+            "base_prompt": "v2-independent-web" if purpose == "RESEARCH" else "v1",
             "overlay_version": (
                 pinned["version"]
                 if pinned is not None

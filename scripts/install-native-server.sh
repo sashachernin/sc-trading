@@ -18,6 +18,8 @@ install -o root -g root -m 755 "$project_dir/deploy/launchers/model-gateway.py" 
 install -o root -g root -m 755 "$project_dir/deploy/launchers/model-client.py" /usr/local/bin/lab-codex
 install -o root -g root -m 755 "$project_dir/scripts/limited_exec.py" /usr/local/libexec/lab-limited-exec.py
 install -o root -g root -m 755 /home/ubuntu/.local/bin/codex /usr/local/libexec/lab-codex-binary
+install -o root -g root -m 644 "$project_dir/backend/app/codex_runner/provenance.py" /usr/local/libexec/lab_model_events.py
+install -o root -g root -m 755 /home/ubuntu/.codex/packages/standalone/current/bin/codex-code-mode-host /usr/local/libexec/codex-code-mode-host
 systemctl enable --now postgresql
 if [ "$(runuser -u postgres -- psql -Atqc "SELECT 1 FROM pg_roles WHERE rolname='aiinvest'")" != "1" ]; then
  runuser -u postgres -- createuser --no-superuser --no-createdb --no-createrole aiinvest

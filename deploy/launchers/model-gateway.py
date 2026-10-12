@@ -15,6 +15,7 @@ import struct
 import subprocess
 import sys
 import tempfile
+from lab_model_events import web_activity
 
 SOCKET = "/run/ai-investment-lab-model/gateway.sock"
 BINARY = "/usr/local/libexec/lab-codex-binary"
@@ -41,7 +42,14 @@ def execute(request):
                 [BINARY, "--version"], text=True, timeout=10
             ).strip()
         }
-    if set(request) != {"model", "reasoning", "schema", "prompt"}:
+    if set(request) != {
+        "model",
+        "reasoning",
+        "schema",
+        "prompt",
+        "web_search",
+        "timeout_seconds",
+    }:
         raise ValueError("Unsupported request")
     if not isinstance(request["model"], str) or not re.fullmatch(
         r"[A-Za-z0-9_.-]{1,80}", request["model"]
@@ -53,6 +61,12 @@ def execute(request):
         request["prompt"], str
     ):
         raise ValueError("Invalid input")
+    if (
+        request["web_search"] not in ("live", "disabled")
+        or type(request["timeout_seconds"]) is not int
+        or not 1 <= request["timeout_seconds"] <= 600
+    ):
+        raise ValueError("Unsupported web mode or timeout")
     with tempfile.TemporaryDirectory(prefix="model-") as folder:
         workspace = Path(folder)
         schema = workspace / "schema.json"
@@ -77,7 +91,7 @@ def execute(request):
             "-c",
             'shell_environment_policy.inherit="none"',
             "-c",
-            'web_search="disabled"',
+            f'web_search="{request["web_search"]}"',
             "--cd",
             folder,
             "--output-schema",
@@ -100,7 +114,7 @@ def execute(request):
                 [
                     "/usr/bin/python3",
                     "/usr/local/libexec/lab-limited-exec.py",
-                    "131072",
+                    "1048576",
                     *args,
                 ],
                 stdin=subprocess.PIPE,
@@ -111,7 +125,9 @@ def execute(request):
                 start_new_session=True,
             )
             try:
-                process.communicate(request["prompt"].encode(), timeout=180)
+                process.communicate(
+                    request["prompt"].encode(), timeout=request["timeout_seconds"]
+                )
             except subprocess.TimeoutExpired:
                 os.killpg(process.pid, signal.SIGKILL)
                 process.wait()
@@ -137,12 +153,15 @@ def execute(request):
             return {"error": category}
         if not final.exists() or final.stat().st_size > 131072:
             return {"error": "MISSING_OR_OVERSIZED_OUTPUT"}
-        return {"output": json.loads(final.read_bytes())}
+        return {
+            "output": json.loads(final.read_bytes()),
+            "web_activity": web_activity((workspace / "events").read_bytes()),
+        }
 
 
 def handle(connection):
     with connection:
-        connection.settimeout(195)
+        connection.settimeout(620)
         uid = struct.unpack(
             "3i", connection.getsockopt(socket.SOL_SOCKET, socket.SO_PEERCRED, 12)
         )[1]

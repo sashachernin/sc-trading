@@ -1,0 +1,310 @@
+{
+  "label": "PAPER / SIMULATED \u2014 RESEARCH-ONLY VERIFICATION",
+  "cutoff": "2026-10-12T17:29:07.026247+00:00",
+  "completed_at": "2026-10-12T17:31:24.410539+00:00",
+  "account_mutations": false,
+  "original_monday_result_preserved": true,
+  "researchers": [
+    {
+      "role": "researcher_a",
+      "output": {
+        "role": "researcher_a",
+        "cutoff": "2026-10-12T17:29:07.026247+00:00",
+        "snapshot_id": "03a9839f4faff2f78c8a7636",
+        "candidates": [],
+        "abstention_reason": "The researched evidence supports several long-term growth theses, but does not establish a sufficiently defensible positive-return edge through Friday, October 16. NVIDIA's strong results and repurchase authorization are the strongest combination, but the authorization extends through fiscal 2028 and specifies no purchases this week. Microsoft\u2019s growth is strong, while Amazon and Alphabet require adjustment for investment gains and Meta faces substantial expense pressure. This is a research judgment, not an execution-eligibility rejection.",
+        "research_summary": "Conducted several targeted live searches across all six issuers for earnings releases, SEC exhibits, recent announcements and earnings calendars; independently opened primary sources. NVIDIA had the strongest reported growth and a recent substantial buyback authorization (web-researcher_a-3, web-researcher_a-4). Microsoft also showed strong cloud growth (web-researcher_a-2). These facts support longer-term demand, but do not establish an incremental catalyst or valuation edge for the remaining October 12\u201316 window. Apple\u2019s reported earnings benefited from tariff refunds (web-researcher_a-1). Amazon\u2019s AWS growth was strong, but trailing free cash flow was negative and investment gains materially boosted net income (web-researcher_a-5). Alphabet\u2019s operating growth was strong, but investment gains inflated earnings and financing introduced dilution considerations (web-researcher_a-6). Meta\u2019s expenses outpaced revenue growth (web-researcher_a-7). NVIDIA's repurchase execution is expected through fiscal 2028, rather than on a verified weekly schedule. Calendar searches were incomplete: Microsoft's live IR page displayed October 28, but its publication time was unknown; Apple's indexed calendar differed from opened page content. Neither was treated as cutoff-qualified decisive evidence. October 12 NVIDIA headlines lacked verified intraday publication times and were excluded, as were any subsequent announcements. Listed dated releases precede the cutoff; publication dates are known only to the day, with no invented clock times. No executable prices were taken from web snippets. Supplied quote availability did not prevent research. This was an off-schedule verification; no trades were placed. Abstention reflects insufficient short-horizon evidence, not a claim that these businesses lack investment merit.",
+        "investigated_tickers": [
+          "AAPL",
+          "MSFT",
+          "NVDA",
+          "AMZN",
+          "GOOGL",
+          "META"
+        ],
+        "sources": [
+          {
+            "id": "web-researcher_a-1",
+            "url": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/",
+            "title": "Apple reports third quarter results",
+            "published_at": "2026-07-30",
+            "finding": "Apple reported fiscal third-quarter revenue of $109.4 billion, up 16%, and EPS of $2.02, up 29%. Tariff refunds contributed approximately two percentage points to gross margin and $0.11 to EPS, limiting extrapolation of headline profitability."
+          },
+          {
+            "id": "web-researcher_a-2",
+            "url": "https://news.microsoft.com/source/2026/07/29/microsoft-cloud-and-ai-strength-fuels-fourth-quarter-results-4/",
+            "title": "Microsoft Cloud and AI strength fuels fourth quarter results",
+            "published_at": "2026-07-29",
+            "finding": "Microsoft reported quarterly revenue of $90.0 billion and operating income of $40.6 billion, both up 18%. Azure and other cloud services revenue increased 43%. Discrete items benefited diluted EPS by $0.27 relative to guidance, so headline earnings require adjustment."
+          },
+          {
+            "id": "web-researcher_a-3",
+            "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+            "title": "NVIDIA Announces Financial Results for Second Quarter Fiscal 2027",
+            "published_at": "2026-08-26",
+            "finding": "NVIDIA reported fiscal second-quarter revenue of $96.2 billion, up 106%, and Data Center revenue of $89.0 billion, up 117%. Gross margin was 75%. Management guided third-quarter revenue to $108 billion plus or minus 2%, assuming no Data Center compute revenue from China. Guidance is a forecast, not a realized result."
+          },
+          {
+            "id": "web-researcher_a-4",
+            "url": "https://nvidianews.nvidia.com/news/nvidia-announces-a-150-billion-share-repurchase-authorization-increase",
+            "title": "NVIDIA Announces a $150 Billion Share Repurchase Authorization Increase",
+            "published_at": "2026-09-28",
+            "finding": "NVIDIA announced an additional $150 billion repurchase authorization, bringing the remaining authorization to $235 billion. It expects execution through fiscal 2028. The release establishes authorization and an expected broad timeline, not confirmed purchases during October 12\u201316."
+          },
+          {
+            "id": "web-researcher_a-5",
+            "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
+            "title": "Amazon.com Announces Second Quarter Results",
+            "published_at": "2026-07-30",
+            "finding": "Amazon reported revenue of $200.6 billion, up 20%, operating income of $27.5 billion, and AWS sales growth of 37%. Net income included $53.4 billion of non-operating pre-tax other income, primarily from Anthropic investments. Trailing twelve-month free cash flow was an outflow of $7.6 billion amid increased capital spending."
+          },
+          {
+            "id": "web-researcher_a-6",
+            "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+            "title": "Alphabet Announces Second Quarter 2026 Results \u2014 SEC Exhibit 99.1",
+            "published_at": "2026-07-22",
+            "finding": "Alphabet's issuer earnings exhibit reported revenue growth of 24%, Cloud growth of 82%, and operating income growth of 30%. Other income included a $98 billion net gain, primarily unrealized equity gains. The release also disclosed $49.6 billion of equity financing proceeds and an unused-at-quarter-end $40 billion ATM program, relevant to dilution analysis."
+          },
+          {
+            "id": "web-researcher_a-7",
+            "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/",
+            "title": "Meta Reports Second Quarter 2026 Results",
+            "published_at": "2026-07-29",
+            "finding": "Meta reported revenue growth of 28%, expense growth of 55%, and an 8% decline in operating income. Expenses included legal and severance charges. Quarterly capital expenditures were $31.08 billion and free cash flow was $784 million. Management projected annual capital expenditures of $130\u2013145 billion and highlighted ongoing legal risks."
+          }
+        ]
+      },
+      "metadata": {
+        "model": "gpt-6.1-sol",
+        "reasoning": "medium",
+        "web_search_mode": "live",
+        "web_activity": {
+          "completed_calls": 5,
+          "calls": [
+            {
+              "type": "search",
+              "queries": [
+                "site.apple.com/newsroom 2026 October earnings",
+                "site.microsoft.com investor earnings 2026 October July results",
+                "site.nvidianews.nvidia.com 2026 October August financial results"
+              ]
+            },
+            {
+              "type": "search",
+              "queries": [
+                "site.ir.aboutamazon.com 2026 second quarter results October",
+                "site.abc.xyz 2026 second quarter results October earnings",
+                "site.investor.atmeta.com 2026 second quarter results October",
+                "site.nvidianews.nvidia.com October 2026 October 12"
+              ]
+            },
+            {
+              "type": "search",
+              "queries": [
+                "site.news.microsoft.com/source/2026/10/07 \"earnings\"",
+                "site.apple.com October 2026 earnings October 29",
+                "site.abc.xyz October 2026 earnings third quarter",
+                "site.nvidianews.nvidia.com/news \"October 08, 2026\" science"
+              ]
+            },
+            {
+              "type": "other"
+            },
+            {
+              "type": "other"
+            }
+          ],
+          "event_stream_sha256": "c8b6aa9caa7cd02b5bcae8937ff8976884778dbed54442fb67a10f7163af93dd",
+          "verification": "observed Codex item.completed web_search events; source claims are model reports"
+        },
+        "completed_at": "2026-10-12T17:31:19.108549+00:00",
+        "duration_seconds": 130.102,
+        "exit_code": 0,
+        "runner": "fresh-subprocess",
+        "codex_version": "codex-cli 0.162.1",
+        "usage": null,
+        "usage_status": "unavailable"
+      }
+    },
+    {
+      "role": "researcher_b",
+      "output": {
+        "role": "researcher_b",
+        "cutoff": "2026-10-12T17:29:07.026247+00:00",
+        "snapshot_id": "03a9839f4faff2f78c8a7636",
+        "candidates": [
+          {
+            "ticker": "MSFT",
+            "company": "Microsoft Corporation",
+            "rank": 1,
+            "max_allocation": "0.2",
+            "expected_return": 0.012,
+            "downside": -0.04,
+            "probability_profit": 0.57,
+            "confidence": 0.61,
+            "thesis": "MSFT offers the strongest sustained continuation setup among the six reviewed stocks. Its completed October 2\u20139 close return was approximately 3.39%, exceeding SPY's 1.16% and QQQ's 0.23%. AMZN gained more, but showed larger alternating daily reversals and was lower in Monday's timestamped observation. MSFT advanced from 512.90 on September 30 to 535.07 on October 9, recovered the October 8 decline, and the supplied Monday price of 540.34 exceeds Friday's 537.22 high. Investing.com independently corroborates the completed closes. Volume does not establish strong accumulation: Friday's reported 17.81 million shares was below October 5's 26.60 million. July issuer disclosures provide cloud-growth context, not a new weekly catalyst. A modest allocation reflects this incomplete confirmation.",
+            "catalysts": [
+              "Continuation above Friday's 537.22 high, supported by the supplied Monday observation.",
+              "Continued investor attention to cloud and AI growth disclosed in July."
+            ],
+            "risks": [
+              "Friday's advance lacked clear volume expansion; sources disagree on exact volume.",
+              "Recent gains increase reversal risk if the breakout fails.",
+              "Technology weakness can overwhelm company-specific strength.",
+              "AI infrastructure spending and monetization expectations can shift abruptly.",
+              "No independently verified complete earnings, halt or corporate-action calendar."
+            ],
+            "invalidation": "A completed daily close below 522.61, the October 8 pullback close, would undermine the continuation thesis. Failure to hold Friday's 535.07 close while underperforming SPY and QQQ would weaken it earlier. These are research conditions, not executable stop orders.",
+            "assumptions": [
+              "Friday exit is the experimental horizon; this is an off-schedule Monday assessment.",
+              "Backend independently validates prices, liquidity, history and allocation limits.",
+              "Return, downside and probability estimates are subjective scenarios, not calibrated forecasts.",
+              "Recent relative strength persists without a material adverse announcement."
+            ],
+            "evidence_ids": [
+              "web-researcher_b-1",
+              "web-researcher_b-7",
+              "web-researcher_b-8",
+              "web-researcher_b-9",
+              "web-researcher_b-10",
+              "yahoo:MSFT:2026-10-12T17:29:06+00:00"
+            ]
+          }
+        ],
+        "abstention_reason": null,
+        "research_summary": "Independently searched public historical-price sources and Microsoft issuer disclosures, then opened histories for all six configured stocks plus SPY and QQQ. Calculated October 2\u20139 close returns: AMZN 4.34%, MSFT 3.39%, GOOGL 2.38%, AAPL 0.88%, META -1.29%, NVDA -2.00%; SPY 1.16%, QQQ 0.23%. QQQ is a growth/technology-heavy comparison, not a pure sector index. MSFT's sustained advance and recovery favored it over AMZN's stronger but less stable weekly move. GOOGL had improving closes but weaker momentum; AAPL lagged SPY. NVDA's late-week decline and META's four consecutive declining closes made their continuation setups less convincing despite META's supplied Monday rebound. Reviewed daily reversals and ranges qualitatively; no annualized volatility, ATR or volume-normalized indicator was estimated. Stock Analysis labels past prices split-adjusted and separately displays dividend-adjusted closes; calculations use its Close column over October 2\u20139, where displayed Close and Adj. Close coincide. Investing.com corroborated MSFT closes but reported different volumes. Monday rows are incomplete observations, never final closes or executable quotes. Dynamic histories lack publication timestamps: null denotes unknown publication time, and completed-session rows provide dated evidence. Timestamped MSFT and AMZN observations preceded cutoff; untimed Monday peer/ETF rows were excluded from selection calculations. Microsoft's October 12 blog lacked a publication time and was excluded as a cutoff-qualified catalyst. July disclosures were safely before cutoff. Only one proposal clears my subjective evidence threshold; estimates are uncalibrated and backend validation remains necessary. No trades or morning-run claim.",
+        "investigated_tickers": [
+          "AAPL",
+          "MSFT",
+          "NVDA",
+          "AMZN",
+          "GOOGL",
+          "META"
+        ],
+        "sources": [
+          {
+            "id": "web-researcher_b-1",
+            "url": "https://stockanalysis.com/stocks/msft/history/",
+            "title": "Microsoft Stock Price History",
+            "published_at": null,
+            "finding": "Completed closes rose from 517.53 on October 2 to 535.07 on October 9, approximately 3.39%. Friday's high was 537.22 and volume 17,812,412, below October 5's 26,604,760. A timestamped October 12 observation at 13:13 EDT showed 540.15 before cutoff. History is split-adjusted with a separate adjusted-close column; publication timestamp is unknown."
+          },
+          {
+            "id": "web-researcher_b-2",
+            "url": "https://stockanalysis.com/stocks/amzn/history/",
+            "title": "Amazon Stock Price History",
+            "published_at": null,
+            "finding": "October 2\u20139 closes increased from 251.52 to 262.43, approximately 4.34%. October 8 fell 2.25% and October 9 rose 3.29%, indicating substantial reversals. Friday's 33.43 million volume was below Thursday's 35.48 million. October 12 at 13:20 EDT showed a partial observation of 259.69, down 1.04%, before cutoff. Publication time is unknown."
+          },
+          {
+            "id": "web-researcher_b-3",
+            "url": "https://stockanalysis.com/stocks/nvda/history/",
+            "title": "NVIDIA Stock Price History",
+            "published_at": null,
+            "finding": "Completed closes declined from 233.95 on October 2 to 229.28 on October 9, approximately 2.00%. October 8 fell 2.94% on 114.19 million reported shares, followed by another declining close. This weakens short-horizon continuation despite earlier gains. Publication time is unknown; the untimed Monday row was excluded."
+          },
+          {
+            "id": "web-researcher_b-4",
+            "url": "https://stockanalysis.com/stocks/meta/history/",
+            "title": "Meta Platforms Stock Price History",
+            "published_at": null,
+            "finding": "Completed closes decreased from 728.08 on October 2 to 718.67 on October 9, approximately 1.29%, with four consecutive declining closes after October 5. That trend makes the supplied Monday rebound less convincing as stable momentum. Publication timestamp is unknown; the Monday web row was excluded."
+          },
+          {
+            "id": "web-researcher_b-5",
+            "url": "https://stockanalysis.com/stocks/googl/history/",
+            "title": "Alphabet Stock Price History",
+            "published_at": null,
+            "finding": "October 2\u20139 completed closes increased from 343.50 to 351.66, approximately 2.38%. The advance included an October 8 decline of 0.63%; Friday's reported volume was 17.20 million versus October 5's 25.60 million, providing limited volume confirmation. Publication time is unknown; the untimed Monday row was excluded."
+          },
+          {
+            "id": "web-researcher_b-6",
+            "url": "https://stockanalysis.com/stocks/aapl/history/",
+            "title": "Apple Stock Price History",
+            "published_at": null,
+            "finding": "October 2\u20139 completed closes rose from 333.69 to 336.64, approximately 0.88%, below SPY's comparable gain. October 8's 340.42 close was followed by a 1.11% decline on Friday, indicating weaker persistence. Publication time is unknown; Monday web observations were excluded."
+          },
+          {
+            "id": "web-researcher_b-7",
+            "url": "https://stockanalysis.com/etf/spy/history/",
+            "title": "SPY Historical Stock Price Data",
+            "published_at": null,
+            "finding": "SPY's completed October 2 and October 9 closes were 769.64 and 778.57, yielding approximately 1.16% price appreciation for the comparison interval. Separate Close and Adj. Close columns coincide for those rows. Publication time is unknown; Monday's incomplete row was excluded."
+          },
+          {
+            "id": "web-researcher_b-8",
+            "url": "https://stockanalysis.com/etf/qqq/history/",
+            "title": "QQQ Historical Stock Price Data",
+            "published_at": null,
+            "finding": "QQQ's completed October 2 and October 9 closes were 749.58 and 751.27, approximately 0.23% appreciation. Its October 8 decline of 1.34% illustrates an uneven technology-heavy market backdrop. Publication time is unknown; Monday's incomplete row was excluded."
+          },
+          {
+            "id": "web-researcher_b-9",
+            "url": "https://www.investing.com/equities/microsoft-corp-historical-data",
+            "title": "Microsoft Stock Price History \u2014 Investing.com",
+            "published_at": null,
+            "finding": "Independently corroborates MSFT closes of 517.53 on October 2, 522.61 on October 8 and 535.07 on October 9, plus Friday's 537.22 high. Reports Friday volume of 18.50 million versus Stock Analysis's 17.81 million, so precise volume conclusions are limited. Publication timestamp and adjustment methodology are not established."
+          },
+          {
+            "id": "web-researcher_b-10",
+            "url": "https://news.microsoft.com/source/2026/07/29/microsoft-cloud-and-ai-strength-fuels-fourth-quarter-results-4",
+            "title": "Microsoft Cloud and AI strength fuels fourth quarter results",
+            "published_at": "2026-07-29",
+            "finding": "Issuer release dated July 29, 2026 reports June-quarter revenue of $90.0 billion, up 18%, Microsoft Cloud revenue of $59.3 billion, up 27%, and Azure/cloud-services growth of 43%. This supplies established business context rather than a fresh weekly catalyst. Exact publication time is unavailable; the disclosed date precedes cutoff."
+          },
+          {
+            "id": "web-researcher_b-11",
+            "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+            "title": "Microsoft to expand Azure Maia system to multi-gigawatt deployments",
+            "published_at": null,
+            "finding": "Issuer page carries October 12, 2026 and discusses expanding Maia deployments beginning in 2027. No actual publication time was visible, so availability by the intraday cutoff could not be verified. Excluded from the proposal's cutoff-qualified catalysts and evidence."
+          }
+        ]
+      },
+      "metadata": {
+        "model": "gpt-6.1-sol",
+        "reasoning": "medium",
+        "web_search_mode": "live",
+        "web_activity": {
+          "completed_calls": 5,
+          "calls": [
+            {
+              "type": "search",
+              "queries": [
+                "MSFT stock historical data October 9 2026 October 12 2026",
+                "AMZN NVDA META GOOGL AAPL stocks October 12 2026 market"
+              ]
+            },
+            {
+              "type": "open_page",
+              "url": "https://stockanalysis.com/stocks/msft/history/"
+            },
+            {
+              "type": "search",
+              "queries": [
+                "site.microsoft.com October 12 2026 Maia AI silicon",
+                "site.microsoft.com investor earnings July 29 2026 revenue Azure"
+              ]
+            },
+            {
+              "type": "other"
+            },
+            {
+              "type": "find_in_page",
+              "pattern": "Oct 09, 2026"
+            }
+          ],
+          "event_stream_sha256": "9118e08a63bbf4a960cd555fbe24a2348307e1f648eb65b0632759e85318a058",
+          "verification": "observed Codex item.completed web_search events; source claims are model reports"
+        },
+        "completed_at": "2026-10-12T17:31:23.927506+00:00",
+        "duration_seconds": 134.918,
+        "exit_code": 0,
+        "runner": "fresh-subprocess",
+        "codex_version": "codex-cli 0.162.1",
+        "usage": null,
+        "usage_status": "unavailable"
+      }
+    }
+  ]
+}
