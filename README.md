@@ -33,10 +33,13 @@ For Vercel, import this repository and set:
 | Setting | Value |
 | --- | --- |
 | Root directory | `frontend` |
+| Framework preset | **Other** (static export) |
 | Install command | `npm ci` |
 | Build command | `npm run build` |
 | Output directory | `out` |
 | Production branch | `main` |
+
+The committed `frontend/vercel.json` sets `framework: null` so Vercel serves the exported `out/` files as a static site. Selecting the Next.js preset together with `out` can cause a missing `routes-manifest.json` error.
 
 Configure website access in the hosting provider. No database, brokerage, model or server credentials belong in this repository or the hosting environment.
 
