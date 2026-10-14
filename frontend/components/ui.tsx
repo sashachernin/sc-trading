@@ -5,7 +5,20 @@ export function Badge({ status }: { status: string }) {
     <span
       className={`badge ${status.includes("COMPLETED") || status.includes("READY") || status === "ACTIVE" ? "good" : status.includes("FAIL") || status.includes("RECOVERY") ? "bad" : "neutral"}`}
     >
-      {status.replaceAll("_", " ").toLowerCase()}
+      {(
+        {
+          OPEN: "Invested",
+          HOLD_CASH: "Holding cash",
+          COMPLETED: "Completed",
+          RESEARCHING: "Researching",
+          SELECTED: "Selected",
+          REJECTED: "Passed",
+          MISSED: "Missed",
+          CONTENT_READY: "Published",
+          CONTENT_READY_PARTIAL: "Partial",
+          SKIPPED_NONSTANDARD_WEEK: "Skipped",
+        } as Record<string, string>
+      )[status] || status.replaceAll("_", " ").toLowerCase()}
     </span>
   );
 }
@@ -15,17 +28,17 @@ export function Heading({
   description,
   action,
 }: {
-  eyebrow: string;
+  eyebrow?: string;
   title: string;
-  description: string;
+  description?: string;
   action?: React.ReactNode;
 }) {
   return (
     <div className="page-heading">
       <div>
-        <div className="eyebrow">{eyebrow}</div>
+        {eyebrow && <div className="eyebrow">{eyebrow}</div>}
         <h1>{title}</h1>
-        <p>{description}</p>
+        {description && <p>{description}</p>}
       </div>
       {action}
     </div>

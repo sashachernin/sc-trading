@@ -21,43 +21,45 @@ export default function History({ weeks }: { weeks: WeekIndex[] }) {
     );
   return (
     <>
-      <div className="filters">
-        <label className="search">
-          <Search size={16} />
-          <input
-            value={q}
-            onChange={(e) => setQ(e.target.value)}
-            placeholder="Search weeks…"
-            aria-label="Search published weeks"
-          />
-        </label>
-        <select
-          aria-label="Filter by status"
-          value={status}
-          onChange={(e) => setStatus(e.target.value)}
-        >
-          <option value="ALL">All statuses</option>
-          {[...new Set(weeks.map((w) => w.status))].map((s) => (
-            <option key={s}>{s}</option>
-          ))}
-        </select>
-        <select
-          aria-label="Sort weeks"
-          value={sort}
-          onChange={(e) => setSort(e.target.value)}
-        >
-          <option value="newest">Newest first</option>
-          <option value="pnl">Highest profit</option>
-        </select>
-      </div>
+      {weeks.length > 4 && (
+        <div className="filters">
+          <label className="search">
+            <Search size={16} />
+            <input
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+              placeholder="Search weeks…"
+              aria-label="Search published weeks"
+            />
+          </label>
+          <select
+            aria-label="Filter by status"
+            value={status}
+            onChange={(e) => setStatus(e.target.value)}
+          >
+            <option value="ALL">All statuses</option>
+            {[...new Set(weeks.map((w) => w.status))].map((s) => (
+              <option key={s}>{s}</option>
+            ))}
+          </select>
+          <select
+            aria-label="Sort weeks"
+            value={sort}
+            onChange={(e) => setSort(e.target.value)}
+          >
+            <option value="newest">Newest first</option>
+            <option value="pnl">Highest profit</option>
+          </select>
+        </div>
+      )}
       <div className="table-scroll">
         <table>
           <thead>
             <tr>
               <th>Week of</th>
               <th>Status</th>
-              <th>Proposals</th>
-              <th>Net paper P&L</th>
+
+              <th>Result</th>
               <th>Review</th>
               <th />
             </tr>
@@ -71,16 +73,16 @@ export default function History({ weeks }: { weeks: WeekIndex[] }) {
                 <td>
                   <Badge status={w.status} />
                 </td>
-                <td>{w.proposal_count}</td>
+
                 <td className={Number(w.pnl) >= 0 ? "positive" : "negative"}>
                   {w.pnl === null
-                    ? "Unavailable"
+                    ? "Pending"
                     : new Intl.NumberFormat("en-US", {
                         style: "currency",
                         currency: "USD",
                       }).format(Number(w.pnl))}
                 </td>
-                <td>{w.review_available ? "Published" : "Unavailable"}</td>
+                <td>{w.review_available ? "Published" : "Pending"}</td>
                 <td>
                   <Link
                     href={`/weeks/${w.id}/`}
@@ -93,7 +95,7 @@ export default function History({ weeks }: { weeks: WeekIndex[] }) {
             ))}
           </tbody>
         </table>
-        {!rows.length && <p className="empty">No matching published cycles.</p>}
+        {!rows.length && <p className="empty">No weeks yet.</p>}
       </div>
     </>
   );

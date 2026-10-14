@@ -18,24 +18,25 @@ export default function Archive({ items }: { items: MeetingIndex[] }) {
       </div>
       {!items.length && (
         <p className="empty">
-          The first team discussion will appear after a completed meeting is
-          published.
+          The first team discussion is scheduled for Sunday.
         </p>
       )}
-      <div className="pagination">
-        <button disabled={page === 0} onClick={() => setPage(page - 1)}>
-          Previous
-        </button>
-        <span>
-          Page {page + 1} of {Math.max(1, Math.ceil(items.length / 6))}
-        </span>
-        <button
-          disabled={(page + 1) * 6 >= items.length}
-          onClick={() => setPage(page + 1)}
-        >
-          Next
-        </button>
-      </div>
+      {items.length > 6 && (
+        <div className="pagination">
+          <button disabled={page === 0} onClick={() => setPage(page - 1)}>
+            Previous
+          </button>
+          <span>
+            Page {page + 1} of {Math.max(1, Math.ceil(items.length / 6))}
+          </span>
+          <button
+            disabled={(page + 1) * 6 >= items.length}
+            onClick={() => setPage(page + 1)}
+          >
+            Next
+          </button>
+        </div>
+      )}
     </>
   );
 }

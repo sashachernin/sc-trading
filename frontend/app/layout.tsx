@@ -7,13 +7,12 @@ import {
   MessagesSquare,
   BookOpen,
   Activity,
-  ArrowUpRight,
 } from "lucide-react";
 import { manifest } from "@/lib/data";
 import "./globals.css";
 export const metadata: Metadata = {
-  title: "AI Investment Lab · Paper research",
-  description: "A read-only record of a bounded AI paper-trading experiment.",
+  title: "AI Trading Firm",
+  description: "The firm’s decisions, holdings and results.",
 };
 export default function RootLayout({
   children,
@@ -30,18 +29,16 @@ export default function RootLayout({
               <span className="brand-icon">
                 <FlaskConical size={23} />
               </span>
-              <span>
-                Investment Lab<small>AN AUTONOMOUS EXPERIMENT</small>
-              </span>
+              <span>AI Trading Firm</span>
             </Link>
-            <div className="nav-label">RESEARCH WORKSPACE</div>
+
             <nav aria-label="Main navigation">
               {[
                 ["/", "Overview", LayoutDashboard],
-                ["/weeks/", "Weekly research", CalendarRange],
-                ["/meetings/", "Team meetings", MessagesSquare],
-                ["/learning/", "Learning journal", BookOpen],
-                ["/operations/", "Operations", Activity],
+                ["/weeks/", "Weeks", CalendarRange],
+                ["/meetings/", "Meetings", MessagesSquare],
+                ["/learning/", "Learning", BookOpen],
+                ["/operations/", "Status", Activity],
               ].map(([href, label, Icon]) => {
                 const Component = Icon as typeof Activity;
                 return (
@@ -52,51 +49,34 @@ export default function RootLayout({
                 );
               })}
             </nav>
-            <div className="sidebar-note">
-              <span className="dot" /> Paper research only
-              <p>
-                Four perspectives.
-                <br />
-                One transparent experiment.
-              </p>
-              <a href="/data/manifest.json">
-                Snapshot manifest <ArrowUpRight size={14} />
-              </a>
-            </div>
-            <div className="sidebar-bottom">
-              <span className="avatar">IL</span>
-              <span>
-                AI Investment Lab<small>Read-only workspace</small>
-              </span>
-            </div>
           </aside>
           <div className="workspace">
             <header className="topbar">
               <span>
-                WORKSPACE <span className="slash">/</span>{" "}
-                <strong>Investment Lab</strong>
+                <strong>AI Trading Firm</strong>
               </span>
-              <div className="top-status">
-                <span className="badge paper">PAPER / SIMULATED</span>
-                <span className="badge">
-                  {m.synthetic ? "Synthetic demonstration" : "Forward research"}
-                </span>
-              </div>
             </header>
             <nav className="mobile-nav" aria-label="Mobile navigation">
               <Link href="/">Overview</Link>
-              <Link href="/weeks/">Research</Link>
+              <Link href="/weeks/">Weeks</Link>
               <Link href="/meetings/">Meetings</Link>
               <Link href="/learning/">Learning</Link>
-              <Link href="/operations/">Operations</Link>
+              <Link href="/operations/">Status</Link>
             </nav>
             <main>{children}</main>
             <footer>
               <span>
-                Published {new Date(m.created_at).toUTCString()} ·{" "}
-                {m.snapshot_id}
+                Updated{" "}
+                {new Date(m.created_at).toLocaleString("en-US", {
+                  timeZone: "America/New_York",
+                  month: "short",
+                  day: "numeric",
+                  hour: "numeric",
+                  minute: "2-digit",
+                })}{" "}
+                ET
               </span>
-              <span>USD · America/New_York · Read-only snapshot</span>
+              <span>Simulated account</span>
             </footer>
           </div>
         </div>

@@ -105,8 +105,7 @@ nav a {
   border-radius: 7px;
   font-size: 12px;
 }
-nav a:hover,
-nav a:first-child {
+nav a:hover {
   background: #e9efe3;
   color: #365c40;
 }
@@ -1428,5 +1427,25 @@ main {
   .overview-grid,
   .research-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Keep the main summaries compact across desktop and mobile. */
+.metrics.compact {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.agent-card {
+  min-height: auto;
+}
+.table-scroll details {
+  min-width: 120px;
+  max-width: 480px;
+}
+.table-scroll details p {
+  white-space: normal;
+}
+@media (max-width: 700px) {
+  .metrics.compact {
+    grid-template-columns: 1fr;
   }
 }

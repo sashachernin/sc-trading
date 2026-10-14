@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { meeting, meetings, names, usd } from "@/lib/data";
-import { Badge } from "@/components/ui";
 export function generateStaticParams() {
   const records = meetings();
   return records.length
@@ -26,13 +25,6 @@ export default async function Article({
       <div className="eyebrow">THE SUNDAY TABLE · {m.sunday}</div>
       <h1>{m.data.title}</h1>
       <p className="standfirst">{m.data.standfirst}</p>
-      <div className="article-labels">
-        <Badge status={m.status} />
-        <span className="badge paper">AI-GENERATED · PAPER / SIMULATED</span>
-        {m.data.synthetic && (
-          <span className="badge">Synthetic test-double speech</span>
-        )}
-      </div>
       <div className="participants">
         {Object.entries(names).map(([role, p]) => (
           <div key={role}>
@@ -48,18 +40,13 @@ export default async function Article({
         <span className="eyebrow">THE REFERENCED WEEK</span>
         <p>
           Status: {m.context.source.status.replaceAll("_", " ").toLowerCase()} ·
-          Recorded net paper result:{" "}
-          <strong>{usd(m.context.source.pnl)}</strong>
+          Result: <strong>{usd(m.context.source.pnl)}</strong>
         </p>
         {m.week_id && (
           <Link href={`/weeks/${m.week_id}/`}>
             Open the week’s proposals and Friday review →
           </Link>
         )}
-        <small>
-          Source cutoff: {m.context.cutoff} · Actual generation:{" "}
-          {m.data.generated_at}
-        </small>
       </div>
       {m.status === "CONTENT_READY_PARTIAL" && (
         <p className="notice">
@@ -118,36 +105,6 @@ export default async function Article({
           ))}
         </ul>
       </section>
-      <details className="provenance">
-        <summary>Source, run provenance & transcript</summary>
-        <p>
-          Upcoming cycle: {m.upcoming_monday}. Source packet frozen at{" "}
-          {m.context.cutoff}.
-        </p>
-        {m.turns.map((t) => (
-          <details key={t.id}>
-            <summary>
-              Turn {t.sequence} · {names[t.speaker].name}
-            </summary>
-            <pre>
-              {JSON.stringify(
-                {
-                  id: t.id,
-                  run_id: t.run_id,
-                  evidence_ids: t.evidence_ids,
-                  reply_to_turn_ids: t.reply_to_turn_ids,
-                  ...t.provenance,
-                },
-                null,
-                2,
-              )}
-            </pre>
-          </details>
-        ))}
-        <a href={`/transcripts/${m.id}.md`} download>
-          Download canonical Markdown transcript
-        </a>
-      </details>
       <div className="article-nav">
         {archive[i + 1] ? (
           <Link href={`/meetings/${archive[i + 1].id}/`}>

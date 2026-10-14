@@ -1,4 +1,4 @@
-import { Panel, Empty } from "./ui";
+import { Panel } from "./ui";
 export type PaperFill = {
   id: string;
   ticker: string;
@@ -12,11 +12,9 @@ export type PaperFill = {
   label: string;
 };
 export default function Execution({ fills }: { fills: PaperFill[] }) {
+  if (!fills.length) return null;
   return (
-    <Panel
-      title="Paper execution record"
-      aside={<span className="badge paper">PAPER / SIMULATED</span>}
-    >
+    <Panel title="Trades">
       {fills.length ? (
         <div className="table-scroll">
           <table>
@@ -24,35 +22,36 @@ export default function Execution({ fills }: { fills: PaperFill[] }) {
               <tr>
                 <th>Symbol</th>
                 <th>Side</th>
-                <th>Fractional shares</th>
-                <th>Fill price (USD)</th>
-                <th>Fee (USD)</th>
-                <th>Supported observation (UTC)</th>
+                <th>Shares</th>
+                <th>Price</th>
+
+                <th>Date</th>
               </tr>
             </thead>
             <tbody>
               {fills.map((f) => (
                 <tr key={f.id}>
                   <td>{f.ticker}</td>
-                  <td>{f.side}</td>
-                  <td>{Number(f.quantity).toFixed(8)}</td>
-                  <td>{Number(f.price).toFixed(6)}</td>
-                  <td>{Number(f.fee).toFixed(2)}</td>
+                  <td>{f.side === "BUY" ? "Bought" : "Sold"}</td>
+                  <td>{Number(f.quantity).toFixed(4)}</td>
+                  <td>{Number(f.price).toFixed(2)}</td>
+
                   <td>
-                    {f.observation_time.replace("T", " ").replace("+00:00", "")}
+                    {new Date(f.fill_time).toLocaleString("en-US", {
+                      timeZone: "America/New_York",
+                      month: "short",
+                      day: "numeric",
+                      hour: "numeric",
+                      minute: "2-digit",
+                    })}{" "}
+                    ET
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-      ) : (
-        <Empty text="No paper fills recorded in this cycle." />
-      )}
-      <p className="subtle">
-        Deterministic spread/slippage/fees. Prices are observations, not live
-        quotes. Unsupported exits remain open until recovery.
-      </p>
+      ) : null}
     </Panel>
   );
 }

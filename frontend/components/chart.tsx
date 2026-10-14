@@ -28,11 +28,11 @@ export default function EquityChart({
       <div className="chart-controls">
         <div className="legend">
           <span className="dot" />
-          Paper account
+          Account
           {view === "equity" && (
             <>
               <span className="dot gray" />
-              SPY comparison
+              S&P 500
             </>
           )}
         </div>
@@ -57,7 +57,7 @@ export default function EquityChart({
             ? `$${Number(series[selected].equity).toFixed(2)}`
             : `${Number(series[selected].drawdown).toFixed(2)}%`}
         </strong>
-        <span>{series[selected].date} · PAPER / SIMULATED</span>
+        <span>{series[selected].date}</span>
       </div>
       <svg
         className="chart"
