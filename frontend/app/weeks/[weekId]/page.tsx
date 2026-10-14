@@ -61,9 +61,17 @@ export default async function WeekPage({
             </strong>
           </div>
           <div className="metric">
-            <span>Weekly result</span>
+            <span>
+              {w.data.pnl !== undefined
+                ? "Weekly result"
+                : "Current gain / loss"}
+            </span>
             <strong>
-              {w.data.pnl !== undefined ? usd(w.data.pnl) : "Pending"}
+              {w.data.pnl !== undefined
+                ? usd(w.data.pnl)
+                : w.data.current_pnl !== undefined
+                  ? usd(w.data.current_pnl)
+                  : "Pending"}
             </strong>
           </div>
         </div>

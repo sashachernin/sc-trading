@@ -49,7 +49,7 @@ The Linux engine exports validated snapshots into `frontend/public/data/`, trans
 
 The current October 12, 2026 opening is the one-time replacement of the failed morning research: both researchers browsed independently, the manager selected a $100 AMZN allocation, and the simulated account opened a position. Original morning records remain in the published audit data. See the Weeks page for the research, sources, decision and fill.
 
-Future snapshots are generated on Linux after scheduled workflows. Updating GitHub and deploying the website are separate steps; the displayed snapshot identifies which results are actually published.
+The Linux server refreshes holdings and account profit/loss once each trading day at **12:45 p.m. New York time**, skipping exchange holidays. It also publishes Monday, Friday and Sunday workflow results. Valuation updates do not run new research or change trades. Updating GitHub and deploying the website are separate steps; the displayed snapshot identifies which results are actually published.
 
 ## Repository layout
 

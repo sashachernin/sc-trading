@@ -49,7 +49,7 @@ export const overviewSchema = z
         date: z.string(),
         equity: decimal,
         pnl: decimal,
-        benchmark_equity: decimal,
+        benchmark_equity: decimal.nullable(),
         drawdown: decimal,
       }),
     ),
@@ -95,6 +95,8 @@ export type Week = {
     pnl?: string;
     reason?: string;
     starting_equity?: string;
+    current_equity?: string;
+    current_pnl?: string;
     ending_equity?: string;
     risk_checks?: string[];
     benchmark_return?: string;
@@ -144,7 +146,13 @@ export type Week = {
     investigated_tickers?: string[];
     web_search_mode?: string;
     web_activity?: { completed_calls: number };
-    sources?: { id: string; url: string; title: string; published_at: string | null; finding: string }[];
+    sources?: {
+      id: string;
+      url: string;
+      title: string;
+      published_at: string | null;
+      finding: string;
+    }[];
   }[];
   timeline: { stage: string; completed_at: string }[];
   meeting_ids: string[];

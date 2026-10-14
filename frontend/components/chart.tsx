@@ -8,9 +8,13 @@ export default function EquityChart({
 }) {
   const [selected, setSelected] = useState(series.length - 1);
   const [view, setView] = useState<"equity" | "drawdown">("equity");
+  const hasBenchmark = series.every((s) => s.benchmark_equity !== null);
   const all = series.flatMap((s) =>
     view === "equity"
-      ? [Number(s.equity), Number(s.benchmark_equity)]
+      ? [
+          Number(s.equity),
+          ...(hasBenchmark ? [Number(s.benchmark_equity)] : []),
+        ]
       : [Number(s.drawdown)],
   );
   const min = Math.min(...all) - (view === "equity" ? 10 : 1);
@@ -29,7 +33,7 @@ export default function EquityChart({
         <div className="legend">
           <span className="dot" />
           Account
-          {view === "equity" && (
+          {view === "equity" && hasBenchmark && (
             <>
               <span className="dot gray" />
               S&P 500
@@ -95,7 +99,7 @@ export default function EquityChart({
           points={`50,195 ${pts} ${x(series.length - 1)},195`}
           fill="url(#chart-fill)"
         />
-        {view === "equity" && (
+        {view === "equity" && hasBenchmark && (
           <polyline
             points={series
               .map((s, i) => `${x(i)},${y(Number(s.benchmark_equity))}`)
