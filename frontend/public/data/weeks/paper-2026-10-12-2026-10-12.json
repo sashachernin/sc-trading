@@ -85,8 +85,8 @@
       "calendar",
       "ledger reconciliation"
     ],
-    "current_equity": "998.72",
-    "current_pnl": "-1.28"
+    "current_equity": "997.38",
+    "current_pnl": "-2.62"
   },
   "proposals": [
     {
@@ -796,6 +796,21 @@
           "ticker": "AMZN",
           "observed_at": "2026-10-14T14:46:58+00:00",
           "price": "256.75",
+          "redistribution": "metadata only; verify provider terms"
+        }
+      ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-12:valuation:2026-10-15",
+      "kind": "valuation-2026-10-15",
+      "provider": "yahoo-public",
+      "cutoff": "2026-10-15T16:45:03.853568+00:00",
+      "evidence": [
+        {
+          "id": "yahoo:AMZN:2026-10-15T16:45:01+00:00",
+          "ticker": "AMZN",
+          "observed_at": "2026-10-15T16:45:01+00:00",
+          "price": "253.25",
           "redistribution": "metadata only; verify provider terms"
         }
       ]
