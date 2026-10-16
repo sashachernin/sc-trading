@@ -1,14 +1,33 @@
 {
-  "observed_at": "2026-10-16T16:45:05.272747+00:00",
+  "observed_at": "2026-10-16T22:36:28.319471+00:00",
   "paused": false,
   "worker_status": "Snapshot observation; live status available only through Linux CLI",
   "queue": {
-    "QUEUED": 0,
-    "RUNNING": 0,
-    "COMPLETED": 3,
+    "QUEUED": 1,
+    "RUNNING": 1,
+    "COMPLETED": 4,
     "FAILED": 0
   },
-  "incidents": [],
+  "incidents": [
+    {
+      "id": "4e646e05-a72f-42e6-ab24-5ea612f5a9d2",
+      "category": "JOB_FAILURE",
+      "summary": "CLOSE job failed; see local CLI status and audit records.",
+      "observed_at": "2026-10-16T19:46:14.509075+00:00"
+    },
+    {
+      "id": "0d276c0a-b918-486c-a0bc-d6e0d848fa96",
+      "category": "JOB_FAILURE",
+      "summary": "CLOSE job failed; see local CLI status and audit records.",
+      "observed_at": "2026-10-16T19:47:14.766890+00:00"
+    },
+    {
+      "id": "11afbe18-2f8f-4116-a816-1a83e63ce652",
+      "category": "JOB_FAILURE",
+      "summary": "CLOSE job failed; see local CLI status and audit records.",
+      "observed_at": "2026-10-16T19:49:15.915002+00:00"
+    }
+  ],
   "audit": [
     {
       "action": "CRON_OPEN",
@@ -116,6 +135,23 @@
         "trades": false
       },
       "created_at": "2026-10-16T16:45:05.240671+00:00"
+    },
+    {
+      "action": "CRON_CLOSE",
+      "data": {
+        "date": "2026-10-16"
+      },
+      "created_at": "2026-10-16T19:45:03.824298+00:00"
+    },
+    {
+      "action": "retry",
+      "data": {
+        "date": "2026-10-16",
+        "id": "paper-2026-10-12:CLOSE:2026-10-16",
+        "key": null,
+        "value": null
+      },
+      "created_at": "2026-10-16T22:36:24.229177+00:00"
     }
   ],
   "settings": {
@@ -162,7 +198,7 @@
   },
   "meetings": [],
   "previous_delivery": {
-    "snapshot_id": "paper-2026-10-12-r14",
+    "snapshot_id": "paper-2026-10-12-r15",
     "status": "VALIDATED"
   }
 }

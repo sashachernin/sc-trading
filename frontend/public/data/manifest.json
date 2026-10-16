@@ -1,19 +1,19 @@
 {
   "schema_version": "1",
-  "snapshot_id": "paper-2026-10-12-r15",
-  "source_revision": 15,
+  "snapshot_id": "paper-2026-10-12-r23",
+  "source_revision": 23,
   "experiment_id": "paper-2026-10-12",
   "label": "PAPER / SIMULATED",
   "synthetic": false,
-  "created_at": "2026-10-16T16:45:05.272747+00:00",
-  "source_cutoff": "2026-10-16T16:45:04.116556+00:00",
-  "valuation_time": "2026-10-16T16:45:04.116556+00:00",
+  "created_at": "2026-10-16T22:36:28.319471+00:00",
+  "source_cutoff": "2026-10-16T19:45:15.544771+00:00",
+  "valuation_time": "2026-10-16T19:45:15.544771+00:00",
   "next_expected_publication": "Trading days at 12:45 America/New_York, plus Monday / Friday / Sunday workflow results",
   "files": [
     {
       "path": "frontend/public/data/learning/index.json",
-      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-      "bytes": 3,
+      "sha256": "c156ec1234101680bd642a00da527d27e6967a69f45f259d2e5592c5254d7798",
+      "bytes": 1594,
       "schema_version": "1"
     },
     {
@@ -24,32 +24,32 @@
     },
     {
       "path": "frontend/public/data/operations.json",
-      "sha256": "baf77f5852f10d14c5a48d5ec5d4c2333082d134e3931551c878084ab96650d3",
-      "bytes": 5842,
+      "sha256": "c27fea8e986dc2a07d8abf1792357322045cedf1a630dfd0ac1d783f1777c9f6",
+      "bytes": 6934,
       "schema_version": "1"
     },
     {
       "path": "frontend/public/data/overview.json",
-      "sha256": "71fefb907d37bddd3e5497e07e7245d40e391206c8c1c8e2a81d1249075e2db4",
-      "bytes": 2079,
+      "sha256": "0d32273d95142591c13585d08c2df86415ef67439b38d72be9f4538ecf1ab1a8",
+      "bytes": 2516,
       "schema_version": "1"
     },
     {
       "path": "frontend/public/data/performance.csv",
-      "sha256": "62d1893dae1ae27a208c5029e67d28d10b99057f4080e2156c10e03aaadb15ad",
-      "bytes": 84,
+      "sha256": "a376909dac9ba52855d67d4c77c2101916d7ae3cb04374838c960aa5576201db",
+      "bytes": 94,
       "schema_version": "1"
     },
     {
       "path": "frontend/public/data/weeks/index.json",
-      "sha256": "709d53d88280a6fdabf7bbf94e36b8152ab631837b84e920e2cc48f511cc70b5",
-      "bytes": 175,
+      "sha256": "b90a9cd16107361e84862fff3cc90e6e18eae4d2e839998ce766e59c8c2834ac",
+      "bytes": 182,
       "schema_version": "1"
     },
     {
       "path": "frontend/public/data/weeks/paper-2026-10-12-2026-10-12.json",
-      "sha256": "46275123d8eb282f7abb011be602e666062ee5d5a143b66378efa3af9a82a3f0",
-      "bytes": 52741,
+      "sha256": "7d9666647274d3647d5dfac72da6ebd7363c566d0c706a3c7a65574c314a5f0f",
+      "bytes": 65289,
       "schema_version": "1"
     }
   ]

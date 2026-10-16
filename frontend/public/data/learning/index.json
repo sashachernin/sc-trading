@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "id": "paper-2026-10-12-2026-10-12:patch:0",
+    "role": "manager",
+    "status": "REJECTED",
+    "version": 1,
+    "week_id": "paper-2026-10-12-2026-10-12",
+    "target": "manager",
+    "operation": "hypothesis",
+    "lesson_id": "riley-manager-comparison-context-v1",
+    "text": "For four weeks, include available proposal dispositions, forecast horizons, return definitions and allocation rationale in review context, explicitly marking unavailable fields. This cycle has two AMZN forecast comparisons but no replacement selection or sizing record. Test whether fuller context supports matched-window selection review; do not infer that either AMZN proposal was rejected or alter allocation rules from this outcome.",
+    "parameter": null,
+    "value": null,
+    "evidence_ids": [
+      "yahoo:AMZN:2026-10-12T18:38:38+00:00",
+      "yahoo:AMZN:2026-10-16T19:45:14+00:00"
+    ],
+    "confidence": 0.6,
+    "expected_effect": "Make forecast errors and selected-versus-rejected comparisons interpretable without inferring missing decision details.",
+    "duration_weeks": 4,
+    "success_metric": "Across the next four weekly reviews, report the fraction of selected and rejected proposals with explicit disposition, forecast horizon, comparable return basis and linked decision evidence.",
+    "rollback_condition": "Retire at expiry or earlier if the review context duplicates existing records without improving comparison completeness.",
+    "expiry": "2026-11-13T19:45:15.544771+00:00",
+    "validation_errors": [
+      "invalid expiry"
+    ],
+    "mode": "auto_bounded"
+  }
+]

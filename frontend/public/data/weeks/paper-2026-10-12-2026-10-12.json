@@ -1,7 +1,7 @@
 {
   "id": "paper-2026-10-12-2026-10-12",
   "monday": "2026-10-12",
-  "status": "OPEN",
+  "status": "COMPLETED",
   "label": "PAPER / SIMULATED",
   "data": {
     "one_time_replacement": {
@@ -85,8 +85,39 @@
       "calendar",
       "ledger reconciliation"
     ],
-    "current_equity": "996.70",
-    "current_pnl": "-3.30"
+    "pnl": "-4.18",
+    "pnl_precise": "-4.18142465",
+    "ending_equity": "995.82",
+    "exit_cutoff": "2026-10-16T19:45:07.216040+00:00",
+    "comparisons": [
+      {
+        "proposal_id": "paper-2026-10-12-2026-10-12:researcher_a:2",
+        "ticker": "AMZN",
+        "expected_return": 0.007,
+        "observed_return": -0.040763326472115884,
+        "label": "HYPOTHETICAL matched-window raw-price comparison"
+      },
+      {
+        "proposal_id": "paper-2026-10-12-2026-10-12:researcher_b:2",
+        "ticker": "AMZN",
+        "expected_return": 0.009,
+        "observed_return": -0.040763326472115884,
+        "label": "HYPOTHETICAL matched-window raw-price comparison"
+      }
+    ],
+    "benchmark_return": null,
+    "extended_holding": false,
+    "summary": "Riley's review: the PAPER / SIMULATED cycle ended at $995.82 from $1,000, with precise P&L of -$4.18142465, approximately -0.4181%. Research quality is unassessable without proposal rationale and supporting analysis. Forecasting shows two positive AMZN estimates versus a -4.0763% hypothetical matched-window return, subject to unverified horizon and return-definition alignment. Selection and sizing are unassessable without the replacement decision and allocations. Execution attribution is unassessable without fills and costs. The original morning cash decision was supported by missing proposals and quotes; the later replacement was explicitly authorized once. One shared ticker outcome does not support changing confidence thresholds, catalyst weights or allocation policy. A four-week review-context hypothesis is the only proposed learning.",
+    "learning_results": [
+      {
+        "id": "paper-2026-10-12-2026-10-12:patch:0",
+        "status": "REJECTED",
+        "errors": [
+          "invalid expiry"
+        ]
+      }
+    ],
+    "review_status": "AVAILABLE"
   },
   "proposals": [
     {
@@ -278,7 +309,77 @@
     ],
     "uncertainty": "Weekly return estimates and probabilities are subjective, not calibrated forecasts. Historical disclosures may already be priced in. News, earnings, halts and corporate-action coverage are incomplete; AMZN's adverse scenario is not a maximum loss. Fee rates are unspecified, so application code must keep the entire purchase cost within $100 or decline execution."
   },
-  "review": null,
+  "review": {
+    "summary": "Riley's review: the PAPER / SIMULATED cycle ended at $995.82 from $1,000, with precise P&L of -$4.18142465, approximately -0.4181%. Research quality is unassessable without proposal rationale and supporting analysis. Forecasting shows two positive AMZN estimates versus a -4.0763% hypothetical matched-window return, subject to unverified horizon and return-definition alignment. Selection and sizing are unassessable without the replacement decision and allocations. Execution attribution is unassessable without fills and costs. The original morning cash decision was supported by missing proposals and quotes; the later replacement was explicitly authorized once. One shared ticker outcome does not support changing confidence thresholds, catalyst weights or allocation policy. A four-week review-context hypothesis is the only proposed learning.",
+    "scorecards": [
+      {
+        "role": "researcher_a",
+        "score": 0.5,
+        "assessment": "Neutral placeholder for insufficient overall evidence. The AMZN +0.70% forecast missed the negative observed direction, with 4.7763 percentage points absolute error. Research quality, confidence calibration and proposal rationale cannot be assessed from the supplied excerpt."
+      },
+      {
+        "role": "researcher_b",
+        "score": 0.5,
+        "assessment": "Neutral placeholder for insufficient overall evidence. The AMZN +0.90% forecast missed the negative observed direction, with 4.9763 percentage points absolute error. Research quality, confidence calibration and proposal rationale cannot be assessed from the supplied excerpt."
+      },
+      {
+        "role": "manager",
+        "score": 0.5,
+        "assessment": "Neutral placeholder for insufficient overall evidence. Original cash retention was supported by empty proposals and unavailable quotes. Replacement selection, sizing and execution quality cannot be graded because the replacement decision and ledger details are absent. Portfolio loss alone does not establish a management error."
+      }
+    ],
+    "forecast_comparisons": [
+      "Researcher A AMZN: expected +0.70%; hypothetical matched-window observation -4.0763%; observed minus expected -4.7763 percentage points.",
+      "Researcher B AMZN: expected +0.90%; hypothetical matched-window observation -4.0763%; observed minus expected -4.9763 percentage points.",
+      "Both positive forecasts missed the observed direction. A's absolute error was 0.20 percentage points smaller. These are two forecasts of one ticker-window, not two independent outcomes; forecast horizons and return definitions are not supplied."
+    ],
+    "selected_vs_rejected": "A selected-versus-rejected matched-window comparison cannot be completed. The two AMZN entries are labeled hypothetical matched-window raw-price comparisons but have no supplied selection dispositions. Their identical observed return permits comparison between the two forecasts only. MSFT, NVDA and GOOGL evidence identifiers do not establish selections, rejections or comparable returns. The original morning decision reviewed no proposals; its empty rejection list cannot identify replacement rejections.",
+    "execution_effects": "The reconciled simulated portfolio lost $4.18142465. Replacement allocations, quantities, fills, fees, spreads and cash movements are absent, so execution effects cannot be separated from market exposure or sizing. Hypothetical AMZN raw-price returns are not executable or net portfolio returns. Listed risk checks establish review scope, but their individual results are not supplied.",
+    "error_categories": [
+      "Positive directional forecasts versus negative matched-window return",
+      "Incomplete research and decision evidence",
+      "Unavailable execution attribution"
+    ],
+    "successes": [
+      "The original manager decision appropriately retained simulated cash when proposals and usable quotes were absent.",
+      "Reconciled starting equity, ending equity and precise P&L provide an aggregate outcome.",
+      "Both AMZN forecasts have the same labeled hypothetical observation window, supporting a limited relative forecast-error comparison."
+    ],
+    "weaknesses": [
+      "Both supplied AMZN point forecasts missed the observed direction; this does not establish a recurring forecasting bias.",
+      "Missing replacement dispositions prevent selected-versus-rejected evaluation.",
+      "Missing allocations and execution details prevent sizing and cost attribution.",
+      "No benchmark return is supplied, so relative performance cannot be assessed."
+    ],
+    "limitations": "Small sample: one cycle, one shared AMZN outcome, no recent or older observations. Hindsight cannot establish that the decline was foreseeable or identify its cause. Full research, forecast confidence and horizons, replacement selection and sizing, execution records and benchmark return are missing. Evidence identifiers alone do not expose underlying quote values. Neutral scorecards indicate insufficient evidence for overall role grading, not measured average performance.",
+    "evidence_ids": [
+      "yahoo:AMZN:2026-10-16T19:45:14+00:00",
+      "yahoo:AMZN:2026-10-12T18:38:38+00:00",
+      "yahoo:MSFT:2026-10-16T19:45:15+00:00",
+      "yahoo:NVDA:2026-10-16T19:45:14+00:00",
+      "yahoo:GOOGL:2026-10-12T18:38:36+00:00"
+    ],
+    "patches": [
+      {
+        "target": "manager",
+        "operation": "hypothesis",
+        "lesson_id": "riley-manager-comparison-context-v1",
+        "text": "For four weeks, include available proposal dispositions, forecast horizons, return definitions and allocation rationale in review context, explicitly marking unavailable fields. This cycle has two AMZN forecast comparisons but no replacement selection or sizing record. Test whether fuller context supports matched-window selection review; do not infer that either AMZN proposal was rejected or alter allocation rules from this outcome.",
+        "parameter": null,
+        "value": null,
+        "evidence_ids": [
+          "yahoo:AMZN:2026-10-12T18:38:38+00:00",
+          "yahoo:AMZN:2026-10-16T19:45:14+00:00"
+        ],
+        "confidence": 0.6,
+        "expected_effect": "Make forecast errors and selected-versus-rejected comparisons interpretable without inferring missing decision details.",
+        "duration_weeks": 4,
+        "success_metric": "Across the next four weekly reviews, report the fraction of selected and rejected proposals with explicit disposition, forecast horizon, comparable return basis and linked decision evidence.",
+        "rollback_condition": "Retire at expiry or earlier if the review context duplicates existing records without improving comparison completeness.",
+        "expiry": "2026-11-13T19:45:15.544771+00:00"
+      }
+    ]
+  },
   "runs": [
     {
       "id": "paper-2026-10-12-2026-10-12:researcher_a",
@@ -753,6 +854,45 @@
         "event_stream_sha256": "1288c7d019d02aa20fe3d6b7ab2d0c29b48838109f78cb346162d51c355211d4",
         "verification": "observed Codex item.completed web_search events; source claims are model reports"
       }
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-12:analyst",
+      "role": "analyst",
+      "purpose": "REVIEW",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v1",
+        "overlay_version": 0,
+        "lesson_ids": [],
+        "recent_week_ids": [],
+        "cutoff": "2026-10-16T19:45:15.544771+00:00",
+        "estimated_tokens": 1992,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 105,
+          "overlay": 32,
+          "current": 1057,
+          "recent": 1,
+          "older": 11,
+          "contract": 770
+        },
+        "reductions": []
+      },
+      "prompt_hash": "07ad98b6c5c0989779a4a62e14744c80d2bdb966cb3c485b8c964343c7e15ea3",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nFor this REVIEW task, use only supplied records. Web browsing is disabled for this purpose.\nYou are analyst, Riley. Review reconciled PAPER / SIMULATED outcomes before proposing bounded learning. Evaluate research, forecasting, selection, sizing and execution separately. Use selected and rejected matched-window comparisons; distinguish missing evidence from mistakes. Explicitly state small sample and hindsight limitations. Propose evidence-linked, expiring lessons only for researchers or manager. No tools, trading, credentials or base-contract changes. Return only the supplied JSON contract.\n\n\nOVERLAY\nACTIVE LEARNING OVERLAY\nApply these versioned research lessons alongside the fixed role contract and current evidence. Treat confidence and expiry as part of each lesson.\n[]\n\nCURRENT\n{\"benchmark_return\":null,\"comparisons\":[{\"expected_return\":0.007,\"label\":\"HYPOTHETICAL matched-window raw-price comparison\",\"observed_return\":-0.040763326472115884,\"proposal_id\":\"paper-2026-10-12-2026-1",
+      "research_summary": "",
+      "abstention_reason": null,
+      "investigated_tickers": [],
+      "sources": [],
+      "web_search_mode": "disabled",
+      "web_activity": {
+        "completed_calls": 0,
+        "calls": [],
+        "event_stream_sha256": "3b0678b859b34fc7f50c0eb625a6c77f7b3c4b680330222695344d82a7698414",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
     }
   ],
   "snapshots": [
@@ -829,6 +969,35 @@
           "redistribution": "metadata only; verify provider terms"
         }
       ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-12:exit",
+      "kind": "exit",
+      "provider": "yahoo-public",
+      "cutoff": "2026-10-16T19:45:15.544771+00:00",
+      "evidence": [
+        {
+          "id": "yahoo:AMZN:2026-10-16T19:45:14+00:00",
+          "ticker": "AMZN",
+          "observed_at": "2026-10-16T19:45:14+00:00",
+          "price": "249.32",
+          "redistribution": "metadata only; verify provider terms"
+        },
+        {
+          "id": "yahoo:MSFT:2026-10-16T19:45:15+00:00",
+          "ticker": "MSFT",
+          "observed_at": "2026-10-16T19:45:15+00:00",
+          "price": "525.725",
+          "redistribution": "metadata only; verify provider terms"
+        },
+        {
+          "id": "yahoo:NVDA:2026-10-16T19:45:14+00:00",
+          "ticker": "NVDA",
+          "observed_at": "2026-10-16T19:45:14+00:00",
+          "price": "214.16",
+          "redistribution": "metadata only; verify provider terms"
+        }
+      ]
     }
   ],
   "fills": [
@@ -845,6 +1014,22 @@
       "fill_time": "2026-10-12T18:46:58+00:00",
       "fill_model": "spread-slippage-v1",
       "raw_price": "259.94"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-12:SELL:AMZN",
+      "ticker": "AMZN",
+      "quantity": "0.38451190",
+      "price": "249.19534000",
+      "fee": "0E-8",
+      "side": "SELL",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-16T19:45:14+00:00",
+      "fill_time": "2026-10-16T19:45:14+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "249.32",
+      "cost_basis_sold": "99.99999830",
+      "realized_pnl": "-4.18142465"
     }
   ],
   "timeline": [
@@ -855,6 +1040,14 @@
     {
       "stage": "PURCHASES",
       "completed_at": "2026-10-12T18:47:00.678183+00:00"
+    },
+    {
+      "stage": "LIQUIDATION",
+      "completed_at": "2026-10-16T19:45:16.311241+00:00"
+    },
+    {
+      "stage": "REVIEW",
+      "completed_at": "2026-10-16T22:36:27.805119+00:00"
     }
   ],
   "meeting_ids": []

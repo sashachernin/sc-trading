@@ -2,20 +2,20 @@
   "label": "PAPER / SIMULATED",
   "currency": "USD",
   "initial_cash": "1000.00",
-  "equity": "996.70",
-  "cash": "900.00",
-  "invested_value": "96.70",
-  "realized_pnl": "0.00",
-  "unrealized_pnl": "-3.30",
-  "cumulative_pnl": "-3.30",
-  "cumulative_return": "-0.32952554500",
-  "monthly_pnl": "0.00",
-  "rolling_four_week_pnl": "0.00",
+  "equity": "995.82",
+  "cash": "995.82",
+  "invested_value": "0.00",
+  "realized_pnl": "-4.18",
+  "unrealized_pnl": "0.00",
+  "cumulative_pnl": "-4.18",
+  "cumulative_return": "-0.41814246500",
+  "monthly_pnl": "-4.18",
+  "rolling_four_week_pnl": "-4.18",
   "target_monthly_profit": "100.00",
   "target_is_experimental": true,
-  "completed_cycles": 0,
+  "completed_cycles": 1,
   "skipped_cycles": 0,
-  "valuation_time": "2026-10-16T16:45:04.116556+00:00",
+  "valuation_time": "2026-10-16T19:45:15.544771+00:00",
   "equity_series": [
     {
       "week": "Inception",
@@ -48,20 +48,17 @@
       "pnl": "0.00",
       "benchmark_equity": null,
       "drawdown": "-0.3300"
-    }
-  ],
-  "positions": [
+    },
     {
-      "id": "paper-2026-10-12-2026-10-12:AMZN",
-      "ticker": "AMZN",
-      "quantity": "0.38451190",
-      "basis": "100.00",
-      "value": "96.70",
-      "status": "OPEN",
-      "label": "PAPER / SIMULATED",
-      "valuation_time": "2026-10-16T16:45:03+00:00"
+      "week": "paper-2026-10-12-2026-10-12",
+      "date": "2026-10-16",
+      "equity": "995.82",
+      "pnl": "-4.18",
+      "benchmark_equity": "1000.00",
+      "drawdown": "-0.41800"
     }
   ],
+  "positions": [],
   "fills": [
     {
       "id": "paper-2026-10-12-2026-10-12:BUY:AMZN",
@@ -76,6 +73,22 @@
       "fill_time": "2026-10-12T18:46:58+00:00",
       "fill_model": "spread-slippage-v1",
       "raw_price": "259.94"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-12:SELL:AMZN",
+      "ticker": "AMZN",
+      "quantity": "0.38451190",
+      "price": "249.19534000",
+      "fee": "0E-8",
+      "side": "SELL",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-16T19:45:14+00:00",
+      "fill_time": "2026-10-16T19:45:14+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "249.32",
+      "cost_basis_sold": "99.99999830",
+      "realized_pnl": "-4.18142465"
     }
   ],
   "latest_meeting": null
