@@ -107,14 +107,17 @@
     ],
     "benchmark_return": null,
     "extended_holding": false,
-    "summary": "Riley's review: the PAPER / SIMULATED cycle ended at $995.82 from $1,000, with precise P&L of -$4.18142465, approximately -0.4181%. Research quality is unassessable without proposal rationale and supporting analysis. Forecasting shows two positive AMZN estimates versus a -4.0763% hypothetical matched-window return, subject to unverified horizon and return-definition alignment. Selection and sizing are unassessable without the replacement decision and allocations. Execution attribution is unassessable without fills and costs. The original morning cash decision was supported by missing proposals and quotes; the later replacement was explicitly authorized once. One shared ticker outcome does not support changing confidence thresholds, catalyst weights or allocation policy. A four-week review-context hypothesis is the only proposed learning.",
+    "summary": "The PAPER / SIMULATED cycle lost $4.18142465, ending at $995.81857535 before display rounding to $995.82. AMZN exposure caused the loss: approximately $4.08351438 came from movement between raw execution observations and $0.09791027 from modeled spread/slippage. Retained cash contributed no recorded gain or loss and limited exposure; no financing or cash-yield movement is recorded. Both positive AMZN forecasts missed the same declining window, while their adverse scenarios were not exceeded. At entry, AWS operating strength and prior price momentum supported a modest continuation thesis, but neither established a fresh weekly catalyst. The outcome contradicted immediate continuation, not the underlying historical operating disclosures. Research quality, selection discipline, sizing and execution remain separately assessable from this losing outcome. The finalized replacement decision and reconciled records supersede the earlier review's claims that these areas were unassessable. The useful bounded improvement is to make the weekly transmission mechanism and observable continuation checkpoints clearer; this sample does not justify parameter or allocation-policy changes.",
     "learning_results": [
       {
         "id": "paper-2026-10-12-2026-10-12:patch:0",
-        "status": "REJECTED",
-        "errors": [
-          "invalid expiry"
-        ]
+        "status": "ACTIVE",
+        "errors": []
+      },
+      {
+        "id": "paper-2026-10-12-2026-10-12:patch:1",
+        "status": "ACTIVE",
+        "errors": []
       }
     ],
     "review_status": "AVAILABLE"
@@ -310,73 +313,117 @@
     "uncertainty": "Weekly return estimates and probabilities are subjective, not calibrated forecasts. Historical disclosures may already be priced in. News, earnings, halts and corporate-action coverage are incomplete; AMZN's adverse scenario is not a maximum loss. Fee rates are unspecified, so application code must keep the entire purchase cost within $100 or decline execution."
   },
   "review": {
-    "summary": "Riley's review: the PAPER / SIMULATED cycle ended at $995.82 from $1,000, with precise P&L of -$4.18142465, approximately -0.4181%. Research quality is unassessable without proposal rationale and supporting analysis. Forecasting shows two positive AMZN estimates versus a -4.0763% hypothetical matched-window return, subject to unverified horizon and return-definition alignment. Selection and sizing are unassessable without the replacement decision and allocations. Execution attribution is unassessable without fills and costs. The original morning cash decision was supported by missing proposals and quotes; the later replacement was explicitly authorized once. One shared ticker outcome does not support changing confidence thresholds, catalyst weights or allocation policy. A four-week review-context hypothesis is the only proposed learning.",
+    "summary": "The PAPER / SIMULATED cycle lost $4.18142465, ending at $995.81857535 before display rounding to $995.82. AMZN exposure caused the loss: approximately $4.08351438 came from movement between raw execution observations and $0.09791027 from modeled spread/slippage. Retained cash contributed no recorded gain or loss and limited exposure; no financing or cash-yield movement is recorded. Both positive AMZN forecasts missed the same declining window, while their adverse scenarios were not exceeded. At entry, AWS operating strength and prior price momentum supported a modest continuation thesis, but neither established a fresh weekly catalyst. The outcome contradicted immediate continuation, not the underlying historical operating disclosures. Research quality, selection discipline, sizing and execution remain separately assessable from this losing outcome. The finalized replacement decision and reconciled records supersede the earlier review's claims that these areas were unassessable. The useful bounded improvement is to make the weekly transmission mechanism and observable continuation checkpoints clearer; this sample does not justify parameter or allocation-policy changes.",
     "scorecards": [
       {
         "role": "researcher_a",
-        "score": 0.5,
-        "assessment": "Neutral placeholder for insufficient overall evidence. The AMZN +0.70% forecast missed the negative observed direction, with 4.7763 percentage points absolute error. Research quality, confidence calibration and proposal rationale cannot be assessed from the supplied excerpt."
+        "score": 0.78,
+        "assessment": "Research carefully separated operating growth from investment gains, authorization from actual repurchases, and future deployments from current catalysts. Source timing exclusions were disciplined. The principal weakness was the limited bridge from historical fundamentals to positive weekly forecasts. AMZN missed direction; NVDA's holding-window forecast is untestable with the supplied entry quotes."
       },
       {
         "role": "researcher_b",
-        "score": 0.5,
-        "assessment": "Neutral placeholder for insufficient overall evidence. The AMZN +0.90% forecast missed the negative observed direction, with 4.9763 percentage points absolute error. Research quality, confidence calibration and proposal rationale cannot be assessed from the supplied excerpt."
+        "score": 0.8,
+        "assessment": "Research quantified prior relative strength, cross-checked MSFT closes and disclosed volume discrepancies. AMZN's Monday pullback and weak volume confirmation were identified before entry. Its positive continuation forecast failed over the window, but adverse-scenario awareness was present. The record does not establish a daily-close invalidation breach or permit an MSFT matched-window test."
       },
       {
         "role": "manager",
-        "score": 0.5,
-        "assessment": "Neutral placeholder for insufficient overall evidence. Original cash retention was supported by empty proposals and unavailable quotes. Replacement selection, sizing and execution quality cannot be graded because the replacement decision and ledger details are absent. Portfolio loss alone does not establish a management error."
+        "score": 0.87,
+        "assessment": "The finalized decision reviewed all four proposals, selected an eligible AMZN observation, rejected duplicate exposure and retained 90% cash. A 10% fee-inclusive allocation restrained portfolio damage despite the failed continuation outcome. Quote eligibility and catalyst uncertainty supported the other rejections. Neither the loss nor unavailable matched-window alternatives establishes poor selection or optimal sizing."
       }
     ],
     "forecast_comparisons": [
-      "Researcher A AMZN: expected +0.70%; hypothetical matched-window observation -4.0763%; observed minus expected -4.7763 percentage points.",
-      "Researcher B AMZN: expected +0.90%; hypothetical matched-window observation -4.0763%; observed minus expected -4.9763 percentage points.",
-      "Both positive forecasts missed the observed direction. A's absolute error was 0.20 percentage points smaller. These are two forecasts of one ticker-window, not two independent outcomes; forecast horizons and return definitions are not supplied."
+      "Selected researcher_b AMZN: +0.90% expected versus -4.0763% matched-window snapshot return, a 4.9763 percentage-point shortfall. Its -5% adverse scenario was not exceeded. The actual filled-position return was -4.1814%, including timing and modeled execution costs.",
+      "Rejected researcher_a AMZN: +0.70% expected versus the same -4.0763% hypothetical raw-price return, a 4.7763 percentage-point shortfall. Its -4.5% adverse scenario was not exceeded. This is the same ticker outcome, not independent confirmation.",
+      "Researcher_a NVDA: +1.20% expected, -6.5% adverse scenario and 55% profit probability. Historical growth, repurchase capacity and future AWS deployments supported business strength at entry; no supported entry-window quote permits a realized holding-window forecast test.",
+      "Researcher_b MSFT: +1.20% expected, -4.5% adverse scenario and 57% profit probability. Prior relative strength supported continuation, tempered by weak volume confirmation and earnings outside the window. No supported entry-window quote permits a matched-window forecast test.",
+      "AMZN profit probabilities of 53% and 54% accompanied a losing outcome. One shared realization cannot establish probability calibration, confidence-threshold changes or optimal catalyst weights."
     ],
-    "selected_vs_rejected": "A selected-versus-rejected matched-window comparison cannot be completed. The two AMZN entries are labeled hypothetical matched-window raw-price comparisons but have no supplied selection dispositions. Their identical observed return permits comparison between the two forecasts only. MSFT, NVDA and GOOGL evidence identifiers do not establish selections, rejections or comparable returns. The original morning decision reviewed no proposals; its empty rejection list cannot identify replacement rejections.",
-    "execution_effects": "The reconciled simulated portfolio lost $4.18142465. Replacement allocations, quantities, fills, fees, spreads and cash movements are absent, so execution effects cannot be separated from market exposure or sizing. Hypothetical AMZN raw-price returns are not executable or net portfolio returns. Listed risk checks establish review scope, but their individual results are not supplied.",
+    "selected_vs_rejected": "The selected researcher_b AMZN proposal had documented prior strength and AWS context, with weaker volume and Monday's pullback supporting restraint. Its 259.915-to-249.32 matched-window return was -4.0763%. Rejected researcher_a AMZN would have had that identical hypothetical raw-price return; selecting one report over the other produced no security-return advantage. Rejecting additive AMZN exposure avoided increasing the same realized loss, though this does not establish optimal sizing. NVDA and MSFT rejections were supported at entry by absent supported frozen quotes and limited weekly catalyst evidence. Their exit prices alone cannot establish avoided losses or missed gains; historical source prices are not matched entry observations.",
+    "execution_effects": "The simulated purchase used $99.99999830 for 0.38451190 shares; sale proceeds were $95.81857365, reconciling to -$4.18142465. Raw execution observations of 259.94 and 249.32 imply -$4.08351438 before modeled costs. Adverse spread/slippage of 5 bps per side added approximately $0.09791027 of loss; fees were zero. The entry raw price was $0.025 above the frozen 259.915 snapshot, a small timing difference. Budget enforcement and liquidation reconciled; no execution failure is evidenced.",
     "error_categories": [
-      "Positive directional forecasts versus negative matched-window return",
-      "Incomplete research and decision evidence",
-      "Unavailable execution attribution"
+      "Positive weekly return forecasts missed the realized AMZN decline",
+      "Limited evidence connecting historical business strength to weekly returns",
+      "Prior review incorrectly treated supplied finalized process records as unavailable"
     ],
     "successes": [
-      "The original manager decision appropriately retained simulated cash when proposals and usable quotes were absent.",
-      "Reconciled starting equity, ending equity and precise P&L provide an aggregate outcome.",
-      "Both AMZN forecasts have the same labeled hypothetical observation window, supporting a limited relative forecast-error comparison."
+      "Research distinguished dated operating evidence from current catalysts and disclosed uncertainty instead of inventing event outcomes.",
+      "The manager recognized overlapping AMZN evidence and did not treat two reports as independent confirmation.",
+      "Sizing deployed only 10% of starting equity and retained approximately $900, limiting the portfolio decline to about 0.4181%.",
+      "Simulated fills, zero fees and cash movements reconcile to the precise recorded loss."
     ],
     "weaknesses": [
-      "Both supplied AMZN point forecasts missed the observed direction; this does not establish a recurring forecasting bias.",
-      "Missing replacement dispositions prevent selected-versus-rejected evaluation.",
-      "Missing allocations and execution details prevent sizing and cost attribution.",
-      "No benchmark return is supplied, so relative performance cannot be assessed."
+      "Both AMZN proposals assigned positive weekly expected returns despite limited fresh catalyst evidence; the realized direction was negative.",
+      "Historical business strength supplied context but only a weak demonstrated mechanism for repricing during October 12–16.",
+      "AMZN failed to regain 262.43 in the supplied subsequent close observations and finished at an intraday 249.32, weakening the recovery thesis. A daily close below 253.78 is not established by that intraday observation."
     ],
-    "limitations": "Small sample: one cycle, one shared AMZN outcome, no recent or older observations. Hindsight cannot establish that the decline was foreseeable or identify its cause. Full research, forecast confidence and horizons, replacement selection and sizing, execution records and benchmark return are missing. Evidence identifiers alone do not expose underlying quote values. Neutral scorecards indicate insufficient evidence for overall role grading, not measured average performance.",
+    "limitations": "Small sample: one cycle and one held ticker; both AMZN comparisons share that outcome. Hindsight limits conclusions about selection quality and optimal sizing. Supplied finalized reports, decision and fills support process assessment and supersede the prior review's unavailable-record claims. NVDA/MSFT lack comparable entry-window quotes; SPY lacks an entry benchmark observation. Event coverage and price paths are incomplete. The exit observation is intraday, so it cannot establish a daily-close invalidation. Scores reflect qualitative process assessments, not calibrated performance estimates.",
     "evidence_ids": [
-      "yahoo:AMZN:2026-10-16T19:45:14+00:00",
+      "paper-2026-10-12-2026-10-12:replacement:researcher_a",
+      "paper-2026-10-12-2026-10-12:replacement:researcher_b",
+      "paper-2026-10-12-2026-10-12:replacement:manager",
+      "paper-2026-10-12-2026-10-12:researcher_a:1",
+      "paper-2026-10-12-2026-10-12:researcher_a:2",
+      "paper-2026-10-12-2026-10-12:researcher_b:1",
+      "paper-2026-10-12-2026-10-12:researcher_b:2",
+      "paper-2026-10-12-2026-10-12:BUY:AMZN",
+      "paper-2026-10-12-2026-10-12:SELL:AMZN",
       "yahoo:AMZN:2026-10-12T18:38:38+00:00",
-      "yahoo:MSFT:2026-10-16T19:45:15+00:00",
-      "yahoo:NVDA:2026-10-16T19:45:14+00:00",
-      "yahoo:GOOGL:2026-10-12T18:38:36+00:00"
+      "yahoo:AMZN:2026-10-16T19:45:14+00:00",
+      "web-researcher_a-1",
+      "web-researcher_a-2",
+      "web-researcher_a-3",
+      "web-researcher_a-4",
+      "web-researcher_a-5",
+      "web-researcher_a-8",
+      "web-researcher_b-1",
+      "web-researcher_b-2",
+      "web-researcher_b-4",
+      "web-researcher_b-5",
+      "web-researcher_b-7"
     ],
     "patches": [
       {
-        "target": "manager",
+        "target": "researcher_a",
         "operation": "hypothesis",
-        "lesson_id": "riley-manager-comparison-context-v1",
-        "text": "For four weeks, include available proposal dispositions, forecast horizons, return definitions and allocation rationale in review context, explicitly marking unavailable fields. This cycle has two AMZN forecast comparisons but no replacement selection or sizing record. Test whether fuller context supports matched-window selection review; do not infer that either AMZN proposal was rejected or alter allocation rules from this outcome.",
+        "lesson_id": null,
+        "text": "For four weeks, add a brief horizon bridge to each weekly proposal: distinguish operating context, future plans and events within the holding window, then explain why a price response is expected during that window. Preserve the existing distinction between repurchase authorization and actual purchases, promotional timing and realized sales, and investment gains and operating earnings. Do not infer a weekly catalyst merely from strong historical growth.",
         "parameter": null,
         "value": null,
         "evidence_ids": [
+          "paper-2026-10-12-2026-10-12:replacement:researcher_a",
+          "paper-2026-10-12-2026-10-12:researcher_a:1",
+          "paper-2026-10-12-2026-10-12:researcher_a:2",
+          "web-researcher_a-2",
+          "web-researcher_a-3",
+          "web-researcher_a-5"
+        ],
+        "confidence": 0.7,
+        "expected_effect": "Make the link between sourced business evidence and the forecast horizon easier to assess without treating this loss as proof that continuation research is ineffective.",
+        "duration_weeks": 4,
+        "success_metric": "During four weeks, each proposal explicitly identifies its within-window transmission mechanism, or states that none is established and explains the remaining basis for its directional estimate.",
+        "rollback_condition": "Retire if the trial only repeats existing caveats or encourages unsupported catalyst claims; do not extend without reviewing completed trial proposals.",
+        "expiry": "2026-11-13"
+      },
+      {
+        "target": "researcher_b",
+        "operation": "hypothesis",
+        "lesson_id": null,
+        "text": "For four weeks, make continuation checkpoints explicit before entry. Where a pullback already exists, state how it affects the forecast and what observable recovery would support continuation. Distinguish intraday observations from daily-close conditions, and report an unobserved condition as unassessed. These checkpoints remain research statements and do not create execution instructions or guaranteed loss limits.",
+        "parameter": null,
+        "value": null,
+        "evidence_ids": [
+          "paper-2026-10-12-2026-10-12:researcher_b:2",
+          "paper-2026-10-12-2026-10-12:replacement:researcher_b",
+          "web-researcher_b-4",
           "yahoo:AMZN:2026-10-12T18:38:38+00:00",
           "yahoo:AMZN:2026-10-16T19:45:14+00:00"
         ],
-        "confidence": 0.6,
-        "expected_effect": "Make forecast errors and selected-versus-rejected comparisons interpretable without inferring missing decision details.",
+        "confidence": 0.68,
+        "expected_effect": "Improve auditability of continuation forecasts when the latest observation already weakens the historical setup.",
         "duration_weeks": 4,
-        "success_metric": "Across the next four weekly reviews, report the fraction of selected and rejected proposals with explicit disposition, forecast horizon, comparable return basis and linked decision evidence.",
-        "rollback_condition": "Retire at expiry or earlier if the review context duplicates existing records without improving comparison completeness.",
-        "expiry": "2026-11-13T19:45:15.544771+00:00"
+        "success_metric": "Each continuation proposal specifies observable confirmation and weakening conditions, their observation frequency, and whether the latest supported observation already weakens the thesis.",
+        "rollback_condition": "Retire if checkpoints imply executable stops, require unavailable observations, or add no decision-relevant information across the trial.",
+        "expiry": "2026-11-13"
       }
     ]
   },
@@ -891,6 +938,47 @@
         "completed_calls": 0,
         "calls": [],
         "event_stream_sha256": "3b0678b859b34fc7f50c0eb625a6c77f7b3c4b680330222695344d82a7698414",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-12:analyst:complete-context-v2",
+      "role": "analyst",
+      "purpose": "REVIEW",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v2-complete-evidence",
+        "overlay_version": 0,
+        "lesson_ids": [],
+        "recent_week_ids": [
+          "paper-2026-10-12-2026-10-12"
+        ],
+        "cutoff": "2026-10-16T19:45:15.544771+00:00",
+        "estimated_tokens": 10232,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 313,
+          "overlay": 32,
+          "current": 8885,
+          "recent": 204,
+          "older": 11,
+          "contract": 770
+        },
+        "reductions": []
+      },
+      "prompt_hash": "2af7e2e36f4bad740f6cc63d4f9f127cf56ee14591a321950524f2cd1a8bba69",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nFor this REVIEW task, use only supplied records. Web browsing is disabled for this purpose.\nYou are analyst, Riley. Review reconciled PAPER / SIMULATED outcomes before proposing bounded learning. Evaluate research, forecasting, selection, sizing and execution separately. Use selected and rejected matched-window comparisons; distinguish missing evidence from mistakes. Explicitly state small sample and hindsight limitations. Propose evidence-linked, expiring lessons only for researchers or manager. No tools, trading, credentials or base-contract changes. Return only the supplied JSON contract.\n\nUse the supplied finalized research reports, source findings, proposals, actual manager decision, entry/exit observations, fills, execution costs and cash movements. Analyze each thesis and forecast against the realized holding window; explain what supported the choice at entry, what the outcome contradicted, and what cannot be inferred. Attribute portfolio results to exposure, retained cash",
+      "research_summary": "",
+      "abstention_reason": null,
+      "investigated_tickers": [],
+      "sources": [],
+      "web_search_mode": "disabled",
+      "web_activity": {
+        "completed_calls": 0,
+        "calls": [],
+        "event_stream_sha256": "b13f8fde242012f02341fb6e30e775b47ef44f2e0eba3f0d82199b20b1573fcc",
         "verification": "observed Codex item.completed web_search events; source claims are model reports"
       }
     }

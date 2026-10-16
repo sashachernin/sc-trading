@@ -1,29 +1,59 @@
 [
   {
     "id": "paper-2026-10-12-2026-10-12:patch:0",
-    "role": "manager",
-    "status": "REJECTED",
+    "role": "researcher_a",
+    "status": "ACTIVE",
     "version": 1,
     "week_id": "paper-2026-10-12-2026-10-12",
-    "target": "manager",
+    "target": "researcher_a",
     "operation": "hypothesis",
-    "lesson_id": "riley-manager-comparison-context-v1",
-    "text": "For four weeks, include available proposal dispositions, forecast horizons, return definitions and allocation rationale in review context, explicitly marking unavailable fields. This cycle has two AMZN forecast comparisons but no replacement selection or sizing record. Test whether fuller context supports matched-window selection review; do not infer that either AMZN proposal was rejected or alter allocation rules from this outcome.",
+    "lesson_id": null,
+    "text": "For four weeks, add a brief horizon bridge to each weekly proposal: distinguish operating context, future plans and events within the holding window, then explain why a price response is expected during that window. Preserve the existing distinction between repurchase authorization and actual purchases, promotional timing and realized sales, and investment gains and operating earnings. Do not infer a weekly catalyst merely from strong historical growth.",
     "parameter": null,
     "value": null,
     "evidence_ids": [
+      "paper-2026-10-12-2026-10-12:replacement:researcher_a",
+      "paper-2026-10-12-2026-10-12:researcher_a:1",
+      "paper-2026-10-12-2026-10-12:researcher_a:2",
+      "web-researcher_a-2",
+      "web-researcher_a-3",
+      "web-researcher_a-5"
+    ],
+    "confidence": 0.7,
+    "expected_effect": "Make the link between sourced business evidence and the forecast horizon easier to assess without treating this loss as proof that continuation research is ineffective.",
+    "duration_weeks": 4,
+    "success_metric": "During four weeks, each proposal explicitly identifies its within-window transmission mechanism, or states that none is established and explains the remaining basis for its directional estimate.",
+    "rollback_condition": "Retire if the trial only repeats existing caveats or encourages unsupported catalyst claims; do not extend without reviewing completed trial proposals.",
+    "expiry": "2026-11-13",
+    "validation_errors": [],
+    "mode": "auto_bounded"
+  },
+  {
+    "id": "paper-2026-10-12-2026-10-12:patch:1",
+    "role": "researcher_b",
+    "status": "ACTIVE",
+    "version": 1,
+    "week_id": "paper-2026-10-12-2026-10-12",
+    "target": "researcher_b",
+    "operation": "hypothesis",
+    "lesson_id": null,
+    "text": "For four weeks, make continuation checkpoints explicit before entry. Where a pullback already exists, state how it affects the forecast and what observable recovery would support continuation. Distinguish intraday observations from daily-close conditions, and report an unobserved condition as unassessed. These checkpoints remain research statements and do not create execution instructions or guaranteed loss limits.",
+    "parameter": null,
+    "value": null,
+    "evidence_ids": [
+      "paper-2026-10-12-2026-10-12:researcher_b:2",
+      "paper-2026-10-12-2026-10-12:replacement:researcher_b",
+      "web-researcher_b-4",
       "yahoo:AMZN:2026-10-12T18:38:38+00:00",
       "yahoo:AMZN:2026-10-16T19:45:14+00:00"
     ],
-    "confidence": 0.6,
-    "expected_effect": "Make forecast errors and selected-versus-rejected comparisons interpretable without inferring missing decision details.",
+    "confidence": 0.68,
+    "expected_effect": "Improve auditability of continuation forecasts when the latest observation already weakens the historical setup.",
     "duration_weeks": 4,
-    "success_metric": "Across the next four weekly reviews, report the fraction of selected and rejected proposals with explicit disposition, forecast horizon, comparable return basis and linked decision evidence.",
-    "rollback_condition": "Retire at expiry or earlier if the review context duplicates existing records without improving comparison completeness.",
-    "expiry": "2026-11-13T19:45:15.544771+00:00",
-    "validation_errors": [
-      "invalid expiry"
-    ],
+    "success_metric": "Each continuation proposal specifies observable confirmation and weakening conditions, their observation frequency, and whether the latest supported observation already weakens the thesis.",
+    "rollback_condition": "Retire if checkpoints imply executable stops, require unavailable observations, or add no decision-relevant information across the trial.",
+    "expiry": "2026-11-13",
+    "validation_errors": [],
     "mode": "auto_bounded"
   }
 ]
