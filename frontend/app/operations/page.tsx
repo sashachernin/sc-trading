@@ -10,18 +10,17 @@ export default function OperationsPage() {
       />
       <Panel title="Weekly schedule">
         <div className="account-line">
-          <strong>Monday · 9:35 am</strong>
+          <strong>Monday · 9:35 am ET</strong>
           <span>Research and investment decisions</span>
         </div>
         <div className="account-line">
-          <strong>Friday · 3:45 pm</strong>
+          <strong>Friday · 3:45 pm ET</strong>
           <span>Close positions and review results</span>
         </div>
         <div className="account-line">
-          <strong>Sunday · noon</strong>
+          <strong>Sunday · 08:00 UTC</strong>
           <span>Team discussion</span>
         </div>
-        <p className="subtle">New York time</p>
       </Panel>
       <Panel title="Recent activity">
         {o.audit.length ? (
