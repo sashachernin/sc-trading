@@ -56,6 +56,13 @@ export default async function Article({
         </p>
       )}
       <div className="dialogue">
+        {m.context.ceo_message && (
+          <section className="turn">
+            <h2 className="phase">Opening message</h2>
+            <div className="speaker"><strong>CEO</strong></div>
+            {m.context.ceo_message.message_markdown.split("\n\n").map((p, i) => <p key={i}>{p}</p>)}
+          </section>
+        )}
         {m.turns.map((t, index) => (
           <section key={t.id} className="turn">
             {(index === 0 || m.turns[index - 1].phase !== t.phase) && (

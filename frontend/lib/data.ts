@@ -170,6 +170,7 @@ export type MeetingIndex = {
 };
 export type Meeting = MeetingIndex & {
   context: {
+    ceo_message?: { author: string; sunday: string; message_markdown: string; sha256: string } | null;
     cutoff: string;
     source: { pnl: string; status: string; cash: string };
   };

@@ -61,3 +61,7 @@ The Linux server refreshes holdings and account profit/loss once each trading da
 - `frontend/public/`: published data and downloadable assets.
 - `frontend/content/`: curated meeting articles.
 - `.github/workflows/`: static build and snapshot validation.
+
+## CEO opening messages
+
+On the Linux server, edit `ceo/CEO_MESSAGES.md` in the project workspace before Sunday 08:00 UTC. It contains dated placeholders for the remaining 51 meetings, starting October 25, 2026. The selected message opens that week’s published discussion and is supplied to every participant; future drafts stay local. Blank placeholders are skipped. Edits after a meeting starts do not change its frozen opening.
