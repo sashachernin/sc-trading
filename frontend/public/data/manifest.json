@@ -1,15 +1,21 @@
 {
   "schema_version": "1",
-  "snapshot_id": "paper-2026-10-12-r26",
-  "source_revision": 26,
+  "snapshot_id": "paper-2026-10-12-r58",
+  "source_revision": 58,
   "experiment_id": "paper-2026-10-12",
   "label": "PAPER / SIMULATED",
   "synthetic": false,
-  "created_at": "2026-10-16T22:51:01.708408+00:00",
-  "source_cutoff": "2026-10-16T19:45:15.544771+00:00",
+  "created_at": "2026-10-18T11:25:37.755272+00:00",
+  "source_cutoff": "2026-10-18T08:00:00+00:00",
   "valuation_time": "2026-10-16T19:45:15.544771+00:00",
   "next_expected_publication": "Trading days at 12:45 America/New_York, plus Monday / Friday / Sunday workflow results",
   "files": [
+    {
+      "path": "frontend/content/meetings/paper-2026-10-12-meeting-2026-10-18.md",
+      "sha256": "686a6fae006b8f3b4ddfd470783351169e23e041e2d61482f0c7858d5dc5fe12",
+      "bytes": 10618,
+      "schema_version": "1"
+    },
     {
       "path": "frontend/public/data/learning/index.json",
       "sha256": "0b7d85ee1a27514ff8bee1a229c579004927697683eb495a38d8b84d73a7375e",
@@ -18,20 +24,26 @@
     },
     {
       "path": "frontend/public/data/meetings/index.json",
-      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-      "bytes": 3,
+      "sha256": "2f381d49f3666d4b26e3d1fc7b7470b35bb9f014da82658c5b83a2d7723a342f",
+      "bytes": 644,
+      "schema_version": "1"
+    },
+    {
+      "path": "frontend/public/data/meetings/paper-2026-10-12-meeting-2026-10-18.json",
+      "sha256": "502a6e524288c1aa83e6aa321a423b7438b14f1f0cb3ed6d5b09dbe660f39af5",
+      "bytes": 40782,
       "schema_version": "1"
     },
     {
       "path": "frontend/public/data/operations.json",
-      "sha256": "dc5dccb5d3b6b31106361c91076356dd29da93c9c7bc58034f167cf460c7be9c",
-      "bytes": 16444,
+      "sha256": "e8c12b0129f173fc4fa7ff3293496086ec9d67bbfc85a658af5aef326644b534",
+      "bytes": 31709,
       "schema_version": "1"
     },
     {
       "path": "frontend/public/data/overview.json",
-      "sha256": "0d32273d95142591c13585d08c2df86415ef67439b38d72be9f4538ecf1ab1a8",
-      "bytes": 2516,
+      "sha256": "1c273eccebdc5756ebe3b4b92f6545b0dca8154c96cb9794f7d90aa74e4d3f56",
+      "bytes": 2549,
       "schema_version": "1"
     },
     {
@@ -48,8 +60,14 @@
     },
     {
       "path": "frontend/public/data/weeks/paper-2026-10-12-2026-10-12.json",
-      "sha256": "8f1eae883a370bc160dd26e7c710d1e2b4d4e9e673b917cd1aa200a478ce274f",
-      "bytes": 72685,
+      "sha256": "24d99ec74be19354e41b83f25d3f77d905f2575ff81997a60ef0c8c4c1339cb6",
+      "bytes": 72730,
+      "schema_version": "1"
+    },
+    {
+      "path": "frontend/public/transcripts/paper-2026-10-12-meeting-2026-10-18.md",
+      "sha256": "686a6fae006b8f3b4ddfd470783351169e23e041e2d61482f0c7858d5dc5fe12",
+      "bytes": 10618,
       "schema_version": "1"
     }
   ]

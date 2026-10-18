@@ -1,11 +1,11 @@
 {
-  "observed_at": "2026-10-16T22:51:01.708408+00:00",
+  "observed_at": "2026-10-18T11:25:37.755272+00:00",
   "paused": false,
   "worker_status": "Snapshot observation; live status available only through Linux CLI",
   "queue": {
     "QUEUED": 0,
     "RUNNING": 1,
-    "COMPLETED": 6,
+    "COMPLETED": 8,
     "FAILED": 0
   },
   "incidents": [
@@ -26,6 +26,24 @@
       "category": "JOB_FAILURE",
       "summary": "CLOSE job failed; see local CLI status and audit records.",
       "observed_at": "2026-10-16T19:49:15.915002+00:00"
+    },
+    {
+      "id": "7094dd03-bc4c-4d7d-b615-024c8a75f372",
+      "category": "JOB_FAILURE",
+      "summary": "MEETING job failed; see local CLI status and audit records.",
+      "observed_at": "2026-10-18T11:16:24.350595+00:00"
+    },
+    {
+      "id": "4f61933e-bc28-411e-b556-4757109f65aa",
+      "category": "JOB_FAILURE",
+      "summary": "MEETING job failed; see local CLI status and audit records.",
+      "observed_at": "2026-10-18T11:17:47.040135+00:00"
+    },
+    {
+      "id": "6e92bc43-3c4b-4e38-848a-853045a1589d",
+      "category": "JOB_FAILURE",
+      "summary": "MEETING job failed; see local CLI status and audit records.",
+      "observed_at": "2026-10-18T11:20:19.955589+00:00"
     }
   ],
   "audit": [
@@ -261,6 +279,267 @@
         "reason": "Original analyst input omitted finalized research, manager decision and fills; user reported unhelpful review."
       },
       "created_at": "2026-10-16T22:50:48.016582+00:00"
+    },
+    {
+      "action": "whole-share-purchases",
+      "data": {
+        "whole_shares_only": true,
+        "unused_budget": "retained as cash",
+        "historical_trades": "preserved",
+        "authorization": "User requested only full-stock purchases"
+      },
+      "created_at": "2026-10-17T10:57:46.226283+00:00"
+    },
+    {
+      "action": "CRON_MEETING",
+      "data": {
+        "date": "2026-10-18"
+      },
+      "created_at": "2026-10-18T11:15:41.128292+00:00"
+    },
+    {
+      "action": "meeting-instructions-fixed",
+      "data": {
+        "meeting_id": "paper-2026-10-12-meeting-2026-10-18",
+        "reason": "Opening next_speaker violated fixed routing; trading instructions incorrectly included in discussion prompt",
+        "old_context": {
+          "cutoff": "2026-10-18T08:00:00+00:00",
+          "source": {
+            "status": "COMPLETED",
+            "pnl": "-4.18",
+            "week_id": "paper-2026-10-12-2026-10-12",
+            "cash": "995.81857535",
+            "summary": "The PAPER / SIMULATED cycle lost $4.18142465, ending at $995.81857535 before display rounding to $995.82. AMZN exposure caused the loss: approximately $4.08351438 came from movement between raw execution observations and $0.09791027 from modeled spread/slippage. Retained cash contributed no recorded gain or loss and limited exposure; no financing or cash-yield movement is recorded. Both positive AMZN forecasts missed the same declining window, while their adverse scenarios were not exceeded. At entry, AWS operating strength and prior price momentum supported a modest continuation thesis, but neither established a fresh weekly catalyst. The outcome contradicted immediate continuation, not the underlying historical operating disclosures. Research quality, selection discipline, sizing and execution remain separately assessable from this losing outcome. The finalized replacement decision and reconciled records supersede the earlier review's claims that these areas were unassessable. The useful bounded improvement is to make the weekly transmission mechanism and observable continuation checkpoints clearer; this sample does not justify parameter or allocation-policy changes.",
+            "reason": null,
+            "proposals": [
+              {
+                "id": "paper-2026-10-12-2026-10-12:researcher_a:1",
+                "role": "researcher_a",
+                "ticker": "NVDA",
+                "thesis": "NVIDIA offers the strongest sourced combination of operating growth and relatively recent capital-return support. Its August results reported revenue growth of 106% and Data Center growth of 117%; the September authorization added $150 billion to repurchase capacity. AWS's planned additional GPU dep",
+                "expected_return": 0.012,
+                "evidence_ids": [
+                  "web-researcher_a-1",
+                  "web-researcher_a-2",
+                  "web-researcher_a-3"
+                ],
+                "selected": false
+              },
+              {
+                "id": "paper-2026-10-12-2026-10-12:researcher_a:2",
+                "role": "researcher_a",
+                "ticker": "AMZN",
+                "thesis": "Amazon's July release reported 20% sales growth, 43% operating-income growth and 37% AWS sales growth. These operating measures support the thesis more directly than headline EPS, which included large investment gains. The NVIDIA collaboration corroborates management's AI capacity expansion plans, w",
+                "expected_return": 0.007,
+                "evidence_ids": [
+                  "web-researcher_a-3",
+                  "web-researcher_a-4",
+                  "web-researcher_a-5"
+                ],
+                "selected": false
+              },
+              {
+                "id": "paper-2026-10-12-2026-10-12:researcher_b:1",
+                "role": "researcher_b",
+                "ticker": "MSFT",
+                "thesis": "MSFT offers the clearest sustained momentum among the six stocks reviewed. October 2–9 closing-price appreciation was approximately 3.39%, versus SPY's 1.16% and QQQ's 0.23%. Its October 9 close of 535.07 exceeded the preceding four sessions' closes, recovering Thursday's decline. Yahoo and Stock An",
+                "expected_return": 0.012,
+                "evidence_ids": [
+                  "web-researcher_b-1",
+                  "web-researcher_b-2",
+                  "web-researcher_b-3",
+                  "web-researcher_b-9",
+                  "web-researcher_b-10"
+                ],
+                "selected": false
+              },
+              {
+                "id": "paper-2026-10-12-2026-10-12:researcher_b:2",
+                "role": "researcher_b",
+                "ticker": "AMZN",
+                "thesis": "AMZN gained approximately 4.34% from October 2 to October 9, outperforming both comparison ETFs. Friday closed at 262.43 near its 262.80 session high and above September 21's 258.45 close. However, Thursday fell sharply and Friday volume decreased, while the supplied Monday observation indicates a p",
+                "expected_return": 0.009,
+                "evidence_ids": [
+                  "web-researcher_b-4",
+                  "web-researcher_b-5",
+                  "web-researcher_b-9",
+                  "web-researcher_b-10"
+                ],
+                "selected": true
+              }
+            ],
+            "decision": {
+              "summary": "Casey reviewed all four finalized proposals and selects researcher_b's AMZN proposal for a $100 fee-inclusive simulated allocation. Retain $900 as cash because current evidence supports only a small continuation position. Reject NVDA and MSFT for missing supported snapshot quotes and weak near-term catalyst certainty; reject the second AMZN proposal as overlapping exposure. No unsubmitted security is selected.",
+              "retained_cash": "900.00",
+              "allocations": [
+                {
+                  "proposal_id": "paper-2026-10-12-2026-10-12:researcher_b:2",
+                  "amount": "100.00",
+                  "percent": "0.10",
+                  "rationale": "Approve a restrained AMZN allocation. web-researcher_b-4 supports recent price strength, and web-researcher_b-5 supplies AWS operating context. The supported snapshot observation is 259.915 (yahoo:AMZN:2026-10-12T18:38:38+00:00). Monday's pullback and weaker Friday volume justify sizing below the proposal's 15% maximum. The $100 budget includes fees; application code must size and validate the simulated purchase within that budget."
+                }
+              ]
+            },
+            "outcomes": [
+              {
+                "proposal_id": "paper-2026-10-12-2026-10-12:researcher_a:2",
+                "ticker": "AMZN",
+                "expected_return": 0.007,
+                "observed_return": -0.040763326472115884,
+                "label": "HYPOTHETICAL matched-window raw-price comparison"
+              },
+              {
+                "proposal_id": "paper-2026-10-12-2026-10-12:researcher_b:2",
+                "ticker": "AMZN",
+                "expected_return": 0.009,
+                "observed_return": -0.040763326472115884,
+                "label": "HYPOTHETICAL matched-window raw-price comparison"
+              }
+            ],
+            "fills": [
+              {
+                "id": "paper-2026-10-12-2026-10-12:BUY:AMZN",
+                "ticker": "AMZN",
+                "quantity": "0.38451190",
+                "price": "260.06997000",
+                "side": "BUY"
+              },
+              {
+                "id": "paper-2026-10-12-2026-10-12:SELL:AMZN",
+                "ticker": "AMZN",
+                "quantity": "0.38451190",
+                "price": "249.19534000",
+                "side": "SELL"
+              }
+            ],
+            "incidents": [
+              {
+                "category": "JOB_FAILURE",
+                "summary": "CLOSE job failed; see local CLI status and audit records."
+              },
+              {
+                "category": "JOB_FAILURE",
+                "summary": "CLOSE job failed; see local CLI status and audit records."
+              },
+              {
+                "category": "JOB_FAILURE",
+                "summary": "CLOSE job failed; see local CLI status and audit records."
+              }
+            ],
+            "upcoming_calendar": {
+              "monday": "2026-10-19",
+              "full_week_eligible": true,
+              "reason": "",
+              "news_events": "Unavailable; no upcoming news inferred"
+            }
+          },
+          "evidence_ids": [
+            "paper-2026-10-12-2026-10-12:replacement:researcher_a",
+            "paper-2026-10-12-2026-10-12:replacement:researcher_b",
+            "paper-2026-10-12-2026-10-12:replacement:manager",
+            "paper-2026-10-12-2026-10-12:researcher_a:1",
+            "paper-2026-10-12-2026-10-12:researcher_a:2",
+            "paper-2026-10-12-2026-10-12:researcher_b:1",
+            "paper-2026-10-12-2026-10-12:researcher_b:2",
+            "paper-2026-10-12-2026-10-12:BUY:AMZN",
+            "paper-2026-10-12-2026-10-12:SELL:AMZN",
+            "yahoo:AMZN:2026-10-12T18:38:38+00:00",
+            "yahoo:AMZN:2026-10-16T19:45:14+00:00",
+            "web-researcher_a-1",
+            "web-researcher_a-2",
+            "web-researcher_a-3",
+            "web-researcher_a-4",
+            "web-researcher_a-5",
+            "web-researcher_a-8",
+            "web-researcher_b-1",
+            "web-researcher_b-2",
+            "web-researcher_b-4",
+            "web-researcher_b-5",
+            "web-researcher_b-7"
+          ],
+          "previous_recap": "",
+          "overlay_ids": {
+            "researcher_a": [
+              "paper-2026-10-12-2026-10-12:patch:0"
+            ],
+            "researcher_b": [
+              "paper-2026-10-12-2026-10-12:patch:1"
+            ],
+            "manager": [],
+            "analyst": []
+          },
+          "overlays": {
+            "researcher_a": {
+              "version": 1,
+              "lessons": [
+                {
+                  "id": "paper-2026-10-12-2026-10-12:patch:0",
+                  "target": "researcher_a",
+                  "operation": "hypothesis",
+                  "lesson_id": null,
+                  "text": "For four weeks, add a brief horizon bridge to each weekly proposal: distinguish operating context, future plans and events within the holding window, then explain why a price response is expected during that window. Preserve the existing distinction between repurchase authorization and actual purchases, promotional timing and realized sales, and investment gains and operating earnings. Do not infer a weekly catalyst merely from strong historical growth.",
+                  "parameter": null,
+                  "value": null,
+                  "evidence_ids": [
+                    "paper-2026-10-12-2026-10-12:replacement:researcher_a",
+                    "paper-2026-10-12-2026-10-12:researcher_a:1",
+                    "paper-2026-10-12-2026-10-12:researcher_a:2",
+                    "web-researcher_a-2",
+                    "web-researcher_a-3",
+                    "web-researcher_a-5"
+                  ],
+                  "confidence": 0.7,
+                  "expected_effect": "Make the link between sourced business evidence and the forecast horizon easier to assess without treating this loss as proof that continuation research is ineffective.",
+                  "duration_weeks": 4,
+                  "success_metric": "During four weeks, each proposal explicitly identifies its within-window transmission mechanism, or states that none is established and explains the remaining basis for its directional estimate.",
+                  "rollback_condition": "Retire if the trial only repeats existing caveats or encourages unsupported catalyst claims; do not extend without reviewing completed trial proposals.",
+                  "expiry": "2026-11-13",
+                  "validation_errors": [],
+                  "mode": "auto_bounded"
+                }
+              ]
+            },
+            "researcher_b": {
+              "version": 1,
+              "lessons": [
+                {
+                  "id": "paper-2026-10-12-2026-10-12:patch:1",
+                  "target": "researcher_b",
+                  "operation": "hypothesis",
+                  "lesson_id": null,
+                  "text": "For four weeks, make continuation checkpoints explicit before entry. Where a pullback already exists, state how it affects the forecast and what observable recovery would support continuation. Distinguish intraday observations from daily-close conditions, and report an unobserved condition as unassessed. These checkpoints remain research statements and do not create execution instructions or guaranteed loss limits.",
+                  "parameter": null,
+                  "value": null,
+                  "evidence_ids": [
+                    "paper-2026-10-12-2026-10-12:researcher_b:2",
+                    "paper-2026-10-12-2026-10-12:replacement:researcher_b",
+                    "web-researcher_b-4",
+                    "yahoo:AMZN:2026-10-12T18:38:38+00:00",
+                    "yahoo:AMZN:2026-10-16T19:45:14+00:00"
+                  ],
+                  "confidence": 0.68,
+                  "expected_effect": "Improve auditability of continuation forecasts when the latest observation already weakens the historical setup.",
+                  "duration_weeks": 4,
+                  "success_metric": "Each continuation proposal specifies observable confirmation and weakening conditions, their observation frequency, and whether the latest supported observation already weakens the thesis.",
+                  "rollback_condition": "Retire if checkpoints imply executable stops, require unavailable observations, or add no decision-relevant information across the trial.",
+                  "expiry": "2026-11-13",
+                  "validation_errors": [],
+                  "mode": "auto_bounded"
+                }
+              ]
+            },
+            "manager": {
+              "version": 0,
+              "lessons": []
+            },
+            "analyst": {
+              "version": 0,
+              "lessons": []
+            }
+          }
+        }
+      },
+      "created_at": "2026-10-18T11:22:22.706988+00:00"
     }
   ],
   "settings": {
@@ -294,7 +573,7 @@
     "schedule": {
       "Monday": "09:35 America/New_York",
       "Friday": "15:45 America/New_York",
-      "Sunday": "12:00 America/New_York"
+      "Sunday": "08:00 UTC"
     },
     "meeting_turn_limit": 11,
     "active_memory_cap": 12,
@@ -305,9 +584,17 @@
       "analyst": "gpt-6.1-sol"
     }
   },
-  "meetings": [],
+  "meetings": [
+    {
+      "id": "paper-2026-10-12-meeting-2026-10-18",
+      "sunday": "2026-10-18",
+      "status": "CONTENT_READY",
+      "turn_count": 11,
+      "unavailable": []
+    }
+  ],
   "previous_delivery": {
-    "snapshot_id": "paper-2026-10-12-r23",
+    "snapshot_id": "paper-2026-10-12-r26",
     "status": "VALIDATED"
   }
 }
