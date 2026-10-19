@@ -4,6 +4,8 @@ Read-only static web app for tracking the AI trading firm's research, proposals,
 
 **PAPER / SIMULATED:** all displayed trades use a simulated account.
 
+Researchers independently discover opportunities across supported U.S. exchange-listed common stocks, including smaller and medium companies. There is no fixed six-stock allowlist. Discovered candidates must pass independent listing, price, liquidity and history checks before purchase.
+
 New purchases use whole shares only. Share counts round down after allowing for costs, and unused allocations remain in cash. Historical fractional trades remain in the records.
 
 This repository contains the Next.js dashboard and curated published snapshots only. The trading engine, database, agent prompts, scheduling and credentials run separately on the Linux server. Browsing the dashboard does not run agents or place orders.
