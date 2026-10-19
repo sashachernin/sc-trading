@@ -1,12 +1,12 @@
 {
-  "observed_at": "2026-10-18T11:25:37.755272+00:00",
+  "observed_at": "2026-10-19T14:12:47.406765+00:00",
   "paused": false,
   "worker_status": "Snapshot observation; live status available only through Linux CLI",
   "queue": {
     "QUEUED": 0,
     "RUNNING": 1,
-    "COMPLETED": 8,
-    "FAILED": 0
+    "COMPLETED": 10,
+    "FAILED": 1
   },
   "incidents": [
     {
@@ -44,6 +44,24 @@
       "category": "JOB_FAILURE",
       "summary": "MEETING job failed; see local CLI status and audit records.",
       "observed_at": "2026-10-18T11:20:19.955589+00:00"
+    },
+    {
+      "id": "755f81b1-6924-47ed-ac04-4783b18479d7",
+      "category": "JOB_FAILURE",
+      "summary": "PUBLISH job failed; see local CLI status and audit records.",
+      "observed_at": "2026-10-19T13:42:33.480136+00:00"
+    },
+    {
+      "id": "e4a78ff6-5b73-446f-85ce-eeb8a52e34ef",
+      "category": "JOB_FAILURE",
+      "summary": "PUBLISH job failed; see local CLI status and audit records.",
+      "observed_at": "2026-10-19T13:43:33.723052+00:00"
+    },
+    {
+      "id": "3a956eab-4dca-4208-ad3a-ecf35ab3129d",
+      "category": "JOB_FAILURE",
+      "summary": "PUBLISH job failed; see local CLI status and audit records.",
+      "observed_at": "2026-10-19T13:45:33.967506+00:00"
     }
   ],
   "audit": [
@@ -540,6 +558,25 @@
         }
       },
       "created_at": "2026-10-18T11:22:22.706988+00:00"
+    },
+    {
+      "action": "CRON_OPEN",
+      "data": {
+        "date": "2026-10-19"
+      },
+      "created_at": "2026-10-19T13:35:03.804397+00:00"
+    },
+    {
+      "action": "restore-execution-observations",
+      "data": {
+        "cycle_id": "paper-2026-10-12-2026-10-19",
+        "fill_ids": [
+          "paper-2026-10-12-2026-10-19:BUY:AAPL",
+          "paper-2026-10-12-2026-10-19:BUY:NVDA"
+        ],
+        "reason": "Publication lacked saved executable quotes for purchased holdings"
+      },
+      "created_at": "2026-10-19T14:12:47.040247+00:00"
     }
   ],
   "settings": {
@@ -594,7 +631,7 @@
     }
   ],
   "previous_delivery": {
-    "snapshot_id": "paper-2026-10-12-r26",
+    "snapshot_id": "paper-2026-10-12-r58",
     "status": "VALIDATED"
   }
 }

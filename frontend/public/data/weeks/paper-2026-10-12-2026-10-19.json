@@ -1,0 +1,588 @@
+{
+  "id": "paper-2026-10-12-2026-10-19",
+  "monday": "2026-10-19",
+  "status": "OPEN",
+  "label": "PAPER / SIMULATED",
+  "data": {
+    "starting_equity": "995.81857535",
+    "share_policy": "whole_shares_only",
+    "purchase_outcomes": [
+      {
+        "ticker": "AAPL",
+        "status": "FILLED",
+        "quantity": "1",
+        "cost": "344.31207000",
+        "unspent_allocation": "4.2244313725"
+      },
+      {
+        "ticker": "NVDA",
+        "status": "FILLED",
+        "quantity": "1",
+        "cost": "215.43266250",
+        "unspent_allocation": "3.647424077"
+      }
+    ],
+    "entry_cutoff": "2026-10-19T13:35:04.741612+00:00",
+    "risk_checks": [
+      "proposal membership",
+      "combined ticker concentration",
+      "deployment cap",
+      "cash arithmetic",
+      "quote freshness",
+      "calendar",
+      "ledger reconciliation"
+    ],
+    "current_equity": "995.54",
+    "current_pnl": "-0.28"
+  },
+  "proposals": [
+    {
+      "id": "paper-2026-10-12-2026-10-19:researcher_a:1",
+      "run_id": "paper-2026-10-12-2026-10-19:researcher_a",
+      "role": "researcher_a",
+      "ticker": "NVDA",
+      "company": "NVIDIA Corporation",
+      "rank": 1,
+      "max_allocation": "0.3",
+      "expected_return": 0.012,
+      "downside": -0.07,
+      "probability_profit": 0.54,
+      "confidence": 0.56,
+      "thesis": "NVIDIA offers the clearest researched event bridge into October 19–23. Its August release reported strong Data Center growth and further sequential revenue guidance, providing operating context rather than a fresh weekly catalyst. The October 21 Berlin keynote creates a specific opportunity for investors to reassess deployment demand during the holding window. My modest positive estimate assumes commercially substantive customer or infrastructure detail supports that reassessment; it does not assume an unannounced deal or derive weekly upside mechanically from historical growth. Confidence is limited because expectations, valuation and current positioning are unverified. November earnings and previously completed shareholder returns do not supply this week's catalyst.",
+      "catalysts": [
+        "October 21 GTC Berlin keynote, confirmed in NVIDIA's August earnings-call transcript and pre-cutoff October event coverage.",
+        "October 20–22 conference coverage could prompt reassessment of European enterprise and sovereign AI demand; this is a possible transmission mechanism, not guaranteed incremental revenue."
+      ],
+      "risks": [
+        "The scheduled keynote is widely known and expectations may already be reflected in valuation.",
+        "Announcements may describe future plans rather than binding orders or realized sales.",
+        "Export restrictions, customer concentration and infrastructure deployment constraints can overwhelm positive event coverage.",
+        "Market declines or adverse hyperscaler spending commentary could produce losses exceeding the estimated adverse scenario.",
+        "No verified cutoff price, valuation multiple or recent price history is available; affordability and market positioning remain unresolved."
+      ],
+      "invalidation": "The event is postponed, disclosures indicate weaker demand or deployment delays, or the keynote supplies no commercially substantive evidence beyond previously announced plans. Failure of whole-share affordability or backend eligibility prevents entry. The downside estimate is an adverse scenario, not a guaranteed loss limit.",
+      "assumptions": [
+        "The holding window ends Friday, October 23, 2026.",
+        "GTC provides commercially relevant updates; no particular announcement or contract is assumed.",
+        "At a 0.30 allocation, the budget is $298.7456. One whole share must fit within that amount including modeled costs; otherwise skip without increasing the allocation.",
+        "Backend checks independently establish fresh supported prices, liquidity, history, available cash and risk eligibility."
+      ],
+      "evidence_ids": [
+        "web-researcher_a-1",
+        "web-researcher_a-2",
+        "web-researcher_a-11"
+      ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-19:researcher_b:1",
+      "run_id": "paper-2026-10-12-2026-10-19:researcher_b",
+      "role": "researcher_b",
+      "ticker": "AAPL",
+      "company": "Apple Inc.",
+      "rank": 1,
+      "max_allocation": "0.36",
+      "expected_return": 0.008,
+      "downside": -0.045,
+      "probability_profit": 0.54,
+      "confidence": 0.56,
+      "thesis": "AAPL has the clearest affordable relative-strength setup among the six configured stocks. Its October 9–16 close rose from $336.64 to $343.46, approximately 2.03%, while the S&P 500 fell 1.9% and Nasdaq fell 4.5%. Independent historical tables agree on those closes and Friday volume near 59.95 million. Recent daily closes held above $340 despite sector selling. This supports a modest continuation hypothesis, not a strong breakout forecast: Friday traded as high as $347.82 but closed below its $346.08–346.09 open, and the $348.15 weekly high remains unreclaimed. Daily-close confirmation and weakening checkpoints are specified before entry. The latest supported daily bar already tempers confidence; Monday intraday behavior is unassessed.",
+      "catalysts": [
+        "Possible continuation of demand for AAPL after it gained approximately 2.03% during a declining technology-market week.",
+        "A daily close above the October 13 high of $348.15 would confirm renewed continuation; this remains unobserved."
+      ],
+      "risks": [
+        "Technology weakness can spread to the recent relative-strength leader.",
+        "Friday closed below its open and the week's highs, weakening immediate breakout expectations despite a positive daily return.",
+        "Friday's approximately 59.95 million shares accompanied a mixed price bar; volume does not establish accumulation.",
+        "No verified imminent company event supplies a strong Monday-to-Friday transmission mechanism.",
+        "Whole-share sizing leaves little room between the historical share price and the proposed allocation ceiling."
+      ],
+      "invalidation": "Assess daily closes: below $337.60 weakens the setup; below the October 9 close of $336.64 defeats the recent weekly-strength premise. A close above $348.15 confirms continuation. Intraday crossings alone do not confirm either condition. Monday recovery and subsequent closes are unassessed. These are research checkpoints, not execution instructions or loss guarantees.",
+      "assumptions": [
+        "The forecast covers Monday October 19 through Friday October 23; estimates are subjective, not calibrated statistical outputs.",
+        "At a 0.36 allocation, approximately $358.49 is available. One share fits at the historical $343.46 close, subject to fresh price and cost validation; higher prices could make it unaffordable.",
+        "Historical observations are research evidence, not executable quotes.",
+        "No fresh weekly earnings catalyst is assumed."
+      ],
+      "evidence_ids": [
+        "web-researcher_b-1",
+        "web-researcher_b-2",
+        "web-researcher_b-3",
+        "web-researcher_b-9"
+      ]
+    }
+  ],
+  "decision": {
+    "reviewed_ids": [
+      "paper-2026-10-12-2026-10-19:researcher_a:1",
+      "paper-2026-10-12-2026-10-19:researcher_b:1"
+    ],
+    "allocations": [
+      {
+        "proposal_id": "paper-2026-10-12-2026-10-19:researcher_a:1",
+        "amount": "219.080086577",
+        "percent": "0.22",
+        "rationale": "Select NVDA at 22%, below its 30% proposal ceiling. Sources web-researcher_a-2 and web-researcher_a-11 establish the October 21 keynote within the holding window. Reduce sizing because web-researcher_b-7 shows a 6.61% weekly decline without confirmed recovery. Its supplied historical $214.13 price implies $214.237065 for one share including 5 bps modeled costs and zero fees, within this budget. Entry remains subject to application price and eligibility checks."
+      },
+      {
+        "proposal_id": "paper-2026-10-12-2026-10-19:researcher_b:1",
+        "amount": "348.5365013725",
+        "percent": "0.35",
+        "rationale": "Select AAPL at 35%, below its 36% proposal ceiling. Sources web-researcher_b-1 through web-researcher_b-3 support relative strength during a declining market week. The supplied historical $343.46 price implies $343.63173 for one share including 5 bps modeled costs and zero fees, within this budget. The unreclaimed $348.15 high and Friday close below its open temper conviction. Entry remains subject to application price and eligibility checks."
+      }
+    ],
+    "rejections": [],
+    "retained_cash": "428.2019874005",
+    "hold_cash": false,
+    "summary": "Casey selects both submitted proposals for the PAPER / SIMULATED account, budgeting 22% to NVDA and 35% to AAPL. NVDA supplies a dated weekly event, while AAPL supplies observed relative strength with explicit continuation checkpoints. Both budgets cover one whole share at supplied historical prices plus modeled costs. Neither proposal is rejected. Retain 43% as unallocated cash because the evidence supports only modest conviction; actual retained cash also includes rounding leftovers or skipped allocations.",
+    "risk_considerations": [
+      "Budgeted deployment is 57%, below the 95% limit; NVDA at 22% and AAPL at 35% each satisfy the 40% combined ticker limit and their respective proposal ceilings.",
+      "Both selected stocks share technology-market exposure; holding two tickers provides limited protection against sector selling.",
+      "NVDA's scheduled event establishes timing, not a favorable surprise. Announcements may already be priced in or lack commercially substantive information.",
+      "AAPL's continuation remains unconfirmed. Daily closes below $337.60 weaken the setup; below $336.64 defeat its weekly-strength premise. These checkpoints are not guaranteed loss limits.",
+      "Retained cash limits exposure given modest subjective forecasts and incomplete current market evidence. At unchanged supplied historical prices, one share of each would leave total cash of $437.94978035, including unused allocation budgets.",
+      "Application code controls execution. Whole-share counts round down, unused budgets remain cash without automatic redistribution, and price changes or failed eligibility checks can cause either allocation to be skipped."
+    ],
+    "uncertainty": "The frozen market snapshot contains no executable quotes. Affordability calculations use supplied October 16 historical observations, not verified October 19 prices. Fresh prices, corporate actions and execution eligibility remain unresolved. Return estimates and profit probabilities are subjective; event direction, current positioning and continuation are unverified, and losses can exceed the stated adverse scenarios."
+  },
+  "review": null,
+  "runs": [
+    {
+      "id": "paper-2026-10-12-2026-10-19:researcher_a",
+      "role": "researcher_a",
+      "purpose": "RESEARCH",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v2-independent-web",
+        "overlay_version": 1,
+        "lesson_ids": [
+          "paper-2026-10-12-2026-10-12:patch:0"
+        ],
+        "recent_week_ids": [
+          "paper-2026-10-12-2026-10-12"
+        ],
+        "cutoff": "2026-10-19T13:35:04.741612+00:00",
+        "estimated_tokens": 2185,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 436,
+          "overlay": 373,
+          "current": 316,
+          "recent": 253,
+          "older": 11,
+          "contract": 778
+        },
+        "reductions": []
+      },
+      "prompt_hash": "53a56ec4d857ef4abc454335c51880b7722c9fbfd0a922f14585891ef30f192e",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nYou are researcher_a, Avery, an independent fundamentals and catalysts researcher for a PAPER / SIMULATED Monday-to-Friday experiment. When independent_web_research is true, actively use live web search and open primary sources yourself: issuer investor-relations releases, SEC filings, earnings/calendar announcements and credible timestamped reporting. Run several targeted searches; do not simply assess the supplied packet or abstain because its quotes/fundamentals/news are empty. Independently investigate the configured research_universe; choose up to three eligible common stocks with sourced theses, or provide a substantive, source-backed abstention. Do not see or depend on the other researcher's work.\n\nReturn research_summary explaining searches, comparisons, findings and limitations; investigated_tickers; and sources with stable IDs web-researcher_a-1, web-researcher_a-2, etc., HTTPS URLs, titles, publication timestamps when actually known (null otherwise), and paraphrased fi",
+      "research_summary": "Ran several targeted live searches across all six configured issuers, then opened issuer releases, an SEC earnings exhibit, earnings-date announcements and NVIDIA event evidence. Selected only NVDA, conditionally on execution eligibility: GTC Berlin supplies an identifiable within-week information event, although its favorable direction remains a judgment. META also reports October 21, but its July results combine 28% revenue growth with an 8% operating-income decline and substantial spending; I found insufficient evidence for a favorable earnings surprise. MSFT and AMZN have dated announcements placing earnings October 28 and 29, outside this holding window. Their cloud growth supplies business context, not an established weekly catalyst. AMZN's investment gains are distinct from operating earnings and its trailing free cash flow was negative. AAPL's July growth includes tariff-refund benefits; GOOGL's release combines strong operating growth with large unrealized investment gains. Neither historical release establishes a directional catalyst for this week. I did not establish a complete current calendar for AAPL or GOOGL and do not claim that no events exist. Applied the active lesson by separating operating context, future plans and the actual within-window transmission mechanism. Dates below are issuer-stated calendar dates; intraday publication times generally are unknown. The NVIDIA transcript's posting date is unknown, so its August call date is not presented as a publication timestamp. Its event schedule is corroborated by explicitly dated pre-cutoff October blog entries. The rolling blog spans later dates; only entries dated October 17 or earlier were used, excluding subsequent announcements. Missing engine quotes did not prevent research. No web snippet was treated as an executable price. The proposed 30% allocation preserves the 40% cap and requires a whole share plus costs to fit within approximately $298.75; affordability is unconfirmed.",
+      "abstention_reason": null,
+      "investigated_tickers": [
+        "AAPL",
+        "MSFT",
+        "NVDA",
+        "AMZN",
+        "GOOGL",
+        "META"
+      ],
+      "sources": [
+        {
+          "id": "web-researcher_a-1",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027/",
+          "title": "NVIDIA Announces Financial Results for Second Quarter Fiscal 2027",
+          "published_at": "2026-08-26",
+          "finding": "Reported quarterly revenue of $96.2 billion and Data Center revenue of $89.0 billion, with third-quarter revenue guidance of $108.0 billion plus or minus 2%. These are historical results and management guidance, respectively. Remaining repurchase authorization does not establish purchases during the holding week."
+        },
+        {
+          "id": "web-researcher_a-2",
+          "url": "https://investor.nvidia.com/files/content_files/TRANSCRIPT_-NVIDIA-Corp-NVDA-US-Q2-2027-Earnings-Call-26-August-2026-5_00-PM-ET.pdf",
+          "title": "NVIDIA Q2 FY2027 Earnings Call — August 26, 2026",
+          "published_at": null,
+          "finding": "Issuer-hosted transcript of the August 26 call states that Jensen Huang will deliver a GTC Berlin keynote October 21 and schedules the next earnings call for November 17. The PDF's actual posting date is unknown; the call date is not substituted for publication time."
+        },
+        {
+          "id": "web-researcher_a-3",
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+          "title": "Meta Reports Second Quarter 2026 Results",
+          "published_at": "2026-07-29",
+          "finding": "Revenue increased 28% to $60.80 billion, while operating income declined 8%. Expenses included legal and severance charges. Management guided third-quarter revenue to $61–64 billion and annual capital expenditures to $130–145 billion, leaving material spending and margin uncertainty."
+        },
+        {
+          "id": "web-researcher_a-4",
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-to-Announce-Third-Quarter-2026-Results/default.aspx",
+          "title": "Meta to Announce Third Quarter 2026 Results",
+          "published_at": "2026-10-12",
+          "finding": "Announced third-quarter results for October 21 after market close, followed by a 4:30 p.m. Eastern conference call. This establishes a within-window event, without establishing the direction of its stock-price response."
+        },
+        {
+          "id": "web-researcher_a-5",
+          "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+          "title": "Microsoft Cloud and AI Strength Fuels Fourth Quarter Results",
+          "published_at": "2026-07-29",
+          "finding": "Reported quarterly revenue of $90.0 billion, operating income of $40.6 billion and Azure and other cloud-services growth of 43%. These historical operating results do not independently establish a catalyst during October 19–23."
+        },
+        {
+          "id": "web-researcher_a-6",
+          "url": "https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarterly-earnings-release-date-69/",
+          "title": "Microsoft announces quarterly earnings release date",
+          "published_at": "2026-10-07",
+          "finding": "Schedules fiscal 2027 first-quarter results for October 28 after market close, outside the assumed Monday-to-Friday holding window."
+        },
+        {
+          "id": "web-researcher_a-7",
+          "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx?mode=light",
+          "title": "Amazon.com Announces Second Quarter Results",
+          "published_at": "2026-07-30",
+          "finding": "Reported AWS sales growth of 37% and company operating income of $27.5 billion. Net income included $53.4 billion of non-operating pre-tax other income, primarily from Anthropic investments. Trailing twelve-month free cash flow was a $7.6 billion outflow."
+        },
+        {
+          "id": "web-researcher_a-8",
+          "url": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q3-2026-report",
+          "title": "Amazon will share its Q3 2026 earnings on October 29",
+          "published_at": null,
+          "finding": "Schedules the third-quarter earnings conference call for October 29 at 5 p.m. Eastern, outside the holding week. Search metadata identifies October 15 as publication date; the opened body does not display that date, introducing publication-date uncertainty."
+        },
+        {
+          "id": "web-researcher_a-9",
+          "url": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/",
+          "title": "Apple reports third quarter results",
+          "published_at": "2026-07-30",
+          "finding": "Reported revenue of $109.4 billion, up 16%, and EPS of $2.02. Tariff refunds favorably affected gross margin by approximately two percentage points and EPS by $0.11, limiting a simple extrapolation of headline profitability."
+        },
+        {
+          "id": "web-researcher_a-10",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+          "title": "Alphabet Announces Second Quarter 2026 Results",
+          "published_at": "2026-07-22",
+          "finding": "SEC-hosted issuer release reported revenue growth of 24%, Cloud growth of 82% and operating-income growth of 30%. Other income reflected a $98.0 billion net gain, primarily unrealized equity gains, which should be distinguished from operating performance."
+        },
+        {
+          "id": "web-researcher_a-11",
+          "url": "https://blogs.nvidia.com/gtc-berlin-2026-news/",
+          "title": "NVIDIA Lands in Europe for GTC Berlin",
+          "published_at": null,
+          "finding": "Rolling issuer blog lists GTC Berlin October 20–22. Its explicitly dated October 17 entry confirms the October 21 keynote at 11 a.m. CEST. Used only entries dated October 17 or earlier; the page spans October 12–24 and has no single reliable publication timestamp for its changing contents."
+        }
+      ],
+      "web_search_mode": "live",
+      "web_activity": {
+        "completed_calls": 6,
+        "calls": [
+          {
+            "type": "search",
+            "queries": [
+              "site.apple.com/newsroom 2026 fourth quarter results October 2026",
+              "site.microsoft.com investor earnings October 2026 first quarter 2027",
+              "site.nvidianews.nvidia.com 2026 second quarter fiscal 2027 results"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.ir.aboutamazon.com 2026 second quarter results October 2026 earnings",
+              "site.abc.xyz 2026 third quarter financial results October announce",
+              "site.investor.atmeta.com 2026 third quarter results October 2026"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.abc.xyz \"2026\" \"Second Quarter\" \"revenue\"",
+              "site.abc.xyz \"2026\" \"October\" \"earnings\"",
+              "site.apple.com/newsroom/2026/ \"third quarter results\"",
+              "site.nvidianews.nvidia.com \"October\" \"2026\" \"19\""
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.nvidianews.nvidia.com \"2026\" \"Berlin\" October 21",
+              "site.microsoft.com \"July 29, 2026\" \"revenue\" \"Azure\""
+            ]
+          },
+          {
+            "type": "search",
+            "query": "\"NVIDIA Lands in Europe for GTC Berlin\""
+          },
+          {
+            "type": "other"
+          }
+        ],
+        "event_stream_sha256": "35e88a64528d577f2506bc866ea0288549a42dfd04609171fb6a8d99020024aa",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-19:researcher_b",
+      "role": "researcher_b",
+      "purpose": "RESEARCH",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v2-independent-web",
+        "overlay_version": 1,
+        "lesson_ids": [
+          "paper-2026-10-12-2026-10-12:patch:1"
+        ],
+        "recent_week_ids": [
+          "paper-2026-10-12-2026-10-12"
+        ],
+        "cutoff": "2026-10-19T13:35:04.741612+00:00",
+        "estimated_tokens": 2143,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 406,
+          "overlay": 361,
+          "current": 316,
+          "recent": 253,
+          "older": 11,
+          "contract": 778
+        },
+        "reductions": []
+      },
+      "prompt_hash": "16686fd91c94b0be81fffcf91aef00f3a888b73e0a60cd228264423cc535adc9",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nYou are researcher_b, Morgan, an independent momentum and price-behavior researcher for a PAPER / SIMULATED Monday-to-Friday experiment. When independent_web_research is true, actively use live web search and open sources yourself for price/volume history, market/sector relative strength, volatility and trend stability. Search public financial data and issuer disclosures; verify dates, distinguish adjusted history from raw observations, and compare several stocks in research_universe. Do not simply assess the supplied packet or abstain because it is empty. Independently choose up to three eligible configured common stocks with sourced theses, or give a substantive source-backed abstention. Never receive the other researcher's findings before finalizing yours.\n\nReturn research_summary explaining searches, comparisons, findings and limitations; investigated_tickers; and sources with IDs web-researcher_b-1, web-researcher_b-2, etc., HTTPS URLs, titles, actual publication timestamps ",
+      "research_summary": "Independently searched all six stocks for dated historical prices and volume, market/sector performance, and Apple issuer disclosures; opened ChartExchange, Investing.com, Stock Analysis, ABC/AP and Apple's archive. Several Yahoo opens returned HTTP 429; indexed historical tables remained available. October 9–16 close-to-close calculations show AAPL +2.03%, MSFT -1.13%, META -1.30%, GOOGL -3.15%, AMZN -4.74%, NVDA -6.61%, versus AP's S&P 500 -1.9% and Nasdaq -4.5%. These index comparisons are proxies, not measured excess returns against SPY. MSFT and META showed relative resilience but their $529.05 and $709.33 historical share prices exceed the $398.33 configured ticker cap. Affordable AMZN, GOOGL and NVDA ended Friday near their session lows; their declines lacked demonstrated daily-close recovery. AAPL alone merits a small positive forecast, with explicit weakening and confirmation checkpoints. Friday's AAPL range was about 2.14% of its close; this is an observed range, not a volatility estimate. No realized volatility, ATR or moving-average statistics are asserted. Yahoo labels Close as split-adjusted and Adj Close as dividend/split-adjusted; cited recent endpoints coincide. Other tables' adjustment methodology was not fully verified, so their values are treated as displayed historical observations. Minor opening-price differences and changing MSFT volume figures discourage false precision. Dynamic pages have unknown publication timestamps (null); only explicitly dated pre-cutoff historical rows and issuer entries inform the decision, not undated current headers. No Monday quote is used. Apple's dated archive provides context but establishes no fresh weekly catalyst. Forecasts are subjective; backend eligibility, corporate-action checks, fresh prices, liquidity and whole-share affordability remain unverified.",
+      "abstention_reason": null,
+      "investigated_tickers": [
+        "AAPL",
+        "MSFT",
+        "NVDA",
+        "AMZN",
+        "GOOGL",
+        "META"
+      ],
+      "sources": [
+        {
+          "id": "web-researcher_b-1",
+          "url": "https://chartexchange.com/symbol/nasdaq-aapl/historical/",
+          "title": "AAPL Historical Prices — ChartExchange",
+          "published_at": null,
+          "finding": "Displayed October 9 and 16 AAPL closes are $336.64 and $343.46; Friday volume is 59,946,369. October 13 high is $348.15 and October 12 low $337.60. Friday open is $346.08, high $347.82 and low $340.46. Dynamic page publication time and full adjustment methodology are unknown; dated rows precede cutoff."
+        },
+        {
+          "id": "web-researcher_b-2",
+          "url": "https://www.investing.com/equities/apple-computer-inc-historical-data",
+          "title": "Apple Stock Price History — Investing.com",
+          "published_at": null,
+          "finding": "Independently corroborates AAPL October 16 close $343.46, volume 59.95 million and October 9 close $336.64. Friday open $346.09 differs by one cent from ChartExchange. Publication timestamp is unavailable; only dated completed-session observations are used."
+        },
+        {
+          "id": "web-researcher_b-3",
+          "url": "https://abcnews.com/Business/wireStory/major-us-stock-indexes-fared-friday-10162026-137331951",
+          "title": "How major US stock indexes fared Friday 10/16/2026 — AP via ABC News",
+          "published_at": "2026-10-16T20:17:22Z",
+          "finding": "AP reports the S&P 500 lost 1.9% and Nasdaq 4.5% for the week ended October 16, with Friday losses of 1.1% and 2.1%. Technology and chip selling weakened the momentum backdrop."
+        },
+        {
+          "id": "web-researcher_b-4",
+          "url": "https://stockanalysis.com/stocks/msft/history/",
+          "title": "Microsoft Stock Price History — Stock Analysis",
+          "published_at": null,
+          "finding": "MSFT October 9 and 16 closes are $535.07 and $529.05, approximately -1.13%. One historical-price share exceeds the configured $398.33 cap. Volume differed between indexed and opened versions, so no precise volume inference is made. Publication timestamp unknown."
+        },
+        {
+          "id": "web-researcher_b-5",
+          "url": "https://finance.yahoo.com/quote/AMZN/history/?p=AMZN",
+          "title": "Amazon.com Historical Prices — Yahoo Finance",
+          "published_at": null,
+          "finding": "Indexed historical rows show AMZN October 9 close $262.43 and October 16 close $250.00, approximately -4.74%; Friday low $248.60 and volume 40,306,000. Recent Close and Adj Close coincide. Publication timestamp unknown; direct open was rate-limited."
+        },
+        {
+          "id": "web-researcher_b-6",
+          "url": "https://finance.yahoo.com/quote/GOOGL/history/",
+          "title": "Alphabet Historical Prices — Yahoo Finance",
+          "published_at": null,
+          "finding": "Indexed rows show GOOGL October 9 close $351.66 and October 16 close $340.59, approximately -3.15%. Friday low $339.08 and volume 28,516,200 indicate a close near the session low. Recent Close and Adj Close coincide; publication timestamp unknown."
+        },
+        {
+          "id": "web-researcher_b-7",
+          "url": "https://finance.yahoo.com/quote/NVDA/history/",
+          "title": "NVIDIA Historical Prices — Yahoo Finance",
+          "published_at": null,
+          "finding": "Indexed rows show NVDA October 9 close $229.28 and October 16 close $214.13, approximately -6.61%. Friday low $213.32 and volume 120,855,100 support a weak finish rather than confirmed recovery. Recent Close and Adj Close coincide; publication timestamp unknown."
+        },
+        {
+          "id": "web-researcher_b-8",
+          "url": "https://finance.yahoo.com/quote/META/history/",
+          "title": "Meta Platforms Historical Prices — Yahoo Finance",
+          "published_at": null,
+          "finding": "Indexed rows show META October 9 close $718.67 and October 16 close $709.33, approximately -1.30%; Friday lost 3.72%. One share exceeds the configured cap. Recent Close and Adj Close coincide; older dividend-adjusted values differ. Publication timestamp unknown."
+        },
+        {
+          "id": "web-researcher_b-9",
+          "url": "https://www.apple.com/newsroom/archive/",
+          "title": "All Topics Archive — Apple Newsroom",
+          "published_at": null,
+          "finding": "Opened issuer archive lists October 13 home-product announcements and October 15 iPhone content, all before cutoff. These provide company context but do not establish a new catalyst during October 19–23. Archive publication timestamp is unknown; individual entries carry dates without exact times."
+        }
+      ],
+      "web_search_mode": "live",
+      "web_activity": {
+        "completed_calls": 6,
+        "calls": [
+          {
+            "type": "search",
+            "queries": [
+              "NVDA AAPL MSFT AMZN GOOGL META stocks October 16 2026 closing price",
+              "S&P 500 October 16 2026 technology stocks weekly performance"
+            ]
+          },
+          {
+            "type": "open_page",
+            "url": "https://finance.yahoo.com/quote/AAPL/history/"
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.finance.yahoo.com/quote/AAPL/history \"Oct 16, 2026\"",
+              "site:finance.yahoo.com/quote/AMZN/history \"Oct 16, 2026\"",
+              "site:finance.yahoo.com/quote/GOOGL/history \"Oct 16, 2026\"",
+              "site:finance.yahoo.com/quote/META/history \"Oct 16, 2026\""
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "MSFT historical October 16 2026 October 9 2026 stock price",
+              "AMZN historical October 16 2026 October 9 2026 stock price",
+              "GOOGL historical October 16 2026 October 9 2026 stock price",
+              "site:apple.com/newsroom October 2026 earnings October 29"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site:apple.com/newsroom/2026/ \"October\" \"2026\" Apple",
+              "site:finance.yahoo.com/quote/NVDA/history \"Oct 9, 2026\" \"Oct 16, 2026\"",
+              "site:stockanalysis.com/stocks/aapl/history \"Oct 16, 2026\""
+            ]
+          },
+          {
+            "type": "open_page",
+            "url": "https://www.apple.com/newsroom/archive/"
+          }
+        ],
+        "event_stream_sha256": "884c36ebb6cf92eb1f8c91b8001437c39d3cb094676e0a77e15b68b733a63262",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-19:manager",
+      "role": "manager",
+      "purpose": "DECISION",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v1",
+        "overlay_version": 0,
+        "lesson_ids": [],
+        "recent_week_ids": [
+          "paper-2026-10-12-2026-10-12"
+        ],
+        "cutoff": "2026-10-19T13:35:04.741612+00:00",
+        "estimated_tokens": 6618,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 172,
+          "overlay": 32,
+          "current": 5700,
+          "recent": 253,
+          "older": 11,
+          "contract": 432
+        },
+        "reductions": []
+      },
+      "prompt_hash": "53421e9849e06b0037112fe25adf8b3ea2ef60791b622ec2aa647bfa5ef1d60a",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nFor this DECISION task, use only supplied records. Web browsing is disabled for this purpose.\nYou are manager, Casey. Review both finalized independent proposal sets. Select only submitted proposals or hold cash. Account is PAPER / SIMULATED, cash-funded long-only with whole shares only. Combined ticker allocation <=40%, total <=95%, fees included. Explain every rejection, retained cash and uncertainty. All referenced evidence must exist. Application code controls execution. No tools, external research, credentials or settings changes. Return only the supplied JSON contract.\n\nAllocate enough for at least one whole share at the supplied price plus spread, slippage and fees, within researcher and ticker limits. Share counts round down; unused allocations remain cash and are not redistributed automatically. Reject unaffordable proposals rather than requesting fractional shares. Price changes can cause an allocation to be skipped at execution.\n\n\nOVERLAY\nACTIVE LEARNING OVERLAY\nApply ",
+      "research_summary": "",
+      "abstention_reason": null,
+      "investigated_tickers": [],
+      "sources": [],
+      "web_search_mode": "disabled",
+      "web_activity": {
+        "completed_calls": 0,
+        "calls": [],
+        "event_stream_sha256": "d1849ae336e5b431c1f1ef9c8565c35175bb3e32a600f164d3a6a8520577ab7e",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "paper-2026-10-12-2026-10-19:entry",
+      "kind": "entry",
+      "provider": "yahoo-public",
+      "cutoff": "2026-10-19T13:35:04.741612+00:00",
+      "evidence": []
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-19:entry-execution",
+      "kind": "entry-execution",
+      "provider": "yahoo-public",
+      "cutoff": "2026-10-19T13:42:17.872070+00:00",
+      "evidence": [
+        {
+          "id": "fill-observation:paper-2026-10-12-2026-10-19:BUY:AAPL",
+          "ticker": "AAPL",
+          "observed_at": "2026-10-19T13:42:31+00:00",
+          "price": "344.14",
+          "redistribution": "metadata only; verify provider terms"
+        },
+        {
+          "id": "fill-observation:paper-2026-10-12-2026-10-19:BUY:NVDA",
+          "ticker": "NVDA",
+          "observed_at": "2026-10-19T13:42:31+00:00",
+          "price": "215.325",
+          "redistribution": "metadata only; verify provider terms"
+        }
+      ]
+    }
+  ],
+  "fills": [
+    {
+      "id": "paper-2026-10-12-2026-10-19:BUY:AAPL",
+      "ticker": "AAPL",
+      "quantity": "1.00000000",
+      "price": "344.31207000",
+      "fee": "0E-8",
+      "side": "BUY",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-19T13:42:31+00:00",
+      "fill_time": "2026-10-19T13:42:31+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "344.14"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-19:BUY:NVDA",
+      "ticker": "NVDA",
+      "quantity": "1.00000000",
+      "price": "215.43266250",
+      "fee": "0E-8",
+      "side": "BUY",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-19T13:42:31+00:00",
+      "fill_time": "2026-10-19T13:42:31+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "215.325"
+    }
+  ],
+  "timeline": [
+    {
+      "stage": "MARKET_PACKET",
+      "completed_at": "2026-10-19T13:35:07.976992+00:00"
+    },
+    {
+      "stage": "PURCHASES",
+      "completed_at": "2026-10-19T13:42:32.971186+00:00"
+    }
+  ],
+  "meeting_ids": []
+}

@@ -2,20 +2,20 @@
   "label": "PAPER / SIMULATED",
   "currency": "USD",
   "initial_cash": "1000.00",
-  "equity": "995.82",
-  "cash": "995.82",
-  "invested_value": "0.00",
+  "equity": "995.54",
+  "cash": "436.07",
+  "invested_value": "559.46",
   "realized_pnl": "-4.18",
-  "unrealized_pnl": "0.00",
-  "cumulative_pnl": "-4.18",
-  "cumulative_return": "-0.41814246500",
+  "unrealized_pnl": "-0.28",
+  "cumulative_pnl": "-4.46",
+  "cumulative_return": "-0.44611571500",
   "monthly_pnl": "-4.18",
   "rolling_four_week_pnl": "-4.18",
   "target_monthly_profit": "100.00",
   "target_is_experimental": true,
   "completed_cycles": 1,
   "skipped_cycles": 0,
-  "valuation_time": "2026-10-16T19:45:15.544771+00:00",
+  "valuation_time": "2026-10-19T13:42:17.872070+00:00",
   "equity_series": [
     {
       "week": "Inception",
@@ -58,7 +58,28 @@
       "drawdown": "-0.41800"
     }
   ],
-  "positions": [],
+  "positions": [
+    {
+      "id": "paper-2026-10-12-2026-10-19:AAPL",
+      "ticker": "AAPL",
+      "quantity": "1.00000000",
+      "basis": "344.31",
+      "value": "344.14",
+      "status": "OPEN",
+      "label": "PAPER / SIMULATED",
+      "valuation_time": "2026-10-19T13:42:31+00:00"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-19:NVDA",
+      "ticker": "NVDA",
+      "quantity": "1.00000000",
+      "basis": "215.43",
+      "value": "215.32",
+      "status": "OPEN",
+      "label": "PAPER / SIMULATED",
+      "valuation_time": "2026-10-19T13:42:31+00:00"
+    }
+  ],
   "fills": [
     {
       "id": "paper-2026-10-12-2026-10-12:BUY:AMZN",
@@ -89,6 +110,34 @@
       "raw_price": "249.32",
       "cost_basis_sold": "99.99999830",
       "realized_pnl": "-4.18142465"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-19:BUY:AAPL",
+      "ticker": "AAPL",
+      "quantity": "1.00000000",
+      "price": "344.31207000",
+      "fee": "0E-8",
+      "side": "BUY",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-19T13:42:31+00:00",
+      "fill_time": "2026-10-19T13:42:31+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "344.14"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-19:BUY:NVDA",
+      "ticker": "NVDA",
+      "quantity": "1.00000000",
+      "price": "215.43266250",
+      "fee": "0E-8",
+      "side": "BUY",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-19T13:42:31+00:00",
+      "fill_time": "2026-10-19T13:42:31+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "215.325"
     }
   ],
   "latest_meeting": "paper-2026-10-12-meeting-2026-10-18"
