@@ -1,3 +1,4 @@
+import AgentAvatar from "@/components/agent-avatar";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { meeting, meetings, names, usd } from "@/lib/data";
@@ -28,7 +29,7 @@ export default async function Article({
       <div className="participants">
         {Object.entries(names).map(([role, p]) => (
           <div key={role}>
-            <span className="avatar">{p.initials}</span>
+            <AgentAvatar agent={role} />
             <span>
               {p.name}
               <small>{p.role}</small>
@@ -77,11 +78,7 @@ export default async function Article({
               </h2>
             )}
             <div className="speaker">
-              <span
-                className={`avatar ${t.speaker === "manager" ? "sand" : t.speaker === "analyst" ? "rose" : t.speaker === "researcher_b" ? "blue" : "sage"}`}
-              >
-                {names[t.speaker].initials}
-              </span>
+              <AgentAvatar agent={t.speaker} />
               <div>
                 <strong>{names[t.speaker].name}</strong>
                 <span>{names[t.speaker].role}</span>

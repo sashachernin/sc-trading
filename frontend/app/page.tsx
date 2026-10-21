@@ -1,3 +1,4 @@
+import AgentAvatar from "@/components/agent-avatar";
 import Link from "next/link";
 import { overview, weeks, meetings, usd } from "@/lib/data";
 import { Heading, Panel, ArticleCard } from "@/components/ui";
@@ -103,31 +104,27 @@ export default function Home() {
         {[
           {
             name: "Avery",
-            initials: "AV",
+            agent: "researcher_a",
             role: "Company research",
-            color: "sage",
           },
           {
             name: "Morgan",
-            initials: "MO",
+            agent: "researcher_b",
             role: "Price trends",
-            color: "blue",
           },
           {
             name: "Casey",
-            initials: "CA",
+            agent: "manager",
             role: "Portfolio manager",
-            color: "sand",
           },
           {
             name: "Riley",
-            initials: "RI",
+            agent: "analyst",
             role: "Results & lessons",
-            color: "rose",
           },
         ].map((a) => (
           <div className="agent-card" key={a.name}>
-            <span className={`avatar ${a.color}`}>{a.initials}</span>
+            <AgentAvatar agent={a.agent} />
             <h3>{a.name}</h3>
             <span className="role-label">{a.role}</span>
           </div>

@@ -274,14 +274,30 @@ export function percent(value: string | number) {
 }
 export const names: Record<
   string,
-  { name: string; role: string; initials: string }
+  { name: string; role: string; avatar: string; color: string }
 > = {
   researcher_a: {
     name: "Avery",
     role: "Fundamentals & catalysts",
-    initials: "AV",
+    avatar: "/images/agents/avery.png",
+    color: "sage",
   },
-  researcher_b: { name: "Morgan", role: "Momentum & price", initials: "MO" },
-  manager: { name: "Casey", role: "Portfolio manager", initials: "CA" },
-  analyst: { name: "Riley", role: "Research analyst", initials: "RI" },
+  researcher_b: {
+    name: "Morgan",
+    role: "Momentum & price",
+    avatar: "/images/agents/morgan.png",
+    color: "blue",
+  },
+  manager: {
+    name: "Casey",
+    role: "Portfolio manager",
+    avatar: "/images/agents/casey.png",
+    color: "sand",
+  },
+  analyst: {
+    name: "Riley",
+    role: "Research analyst",
+    avatar: "/images/agents/riley.png",
+    color: "rose",
+  },
 };

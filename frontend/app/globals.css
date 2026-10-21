@@ -530,6 +530,7 @@ p {
   justify-content: center;
   width: 34px;
   height: 34px;
+  overflow: hidden;
   border: 1px solid #dfe7d8;
   border-radius: 50%;
   font-size: 10px;
@@ -537,6 +538,17 @@ p {
   color: #648055;
   background: #edf3e7;
   flex-shrink: 0;
+}
+.avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: pixelated;
+}
+.agent-card .avatar {
+  width: 56px;
+  height: 56px;
 }
 .avatar.blue {
   background: #eaf0f2;
