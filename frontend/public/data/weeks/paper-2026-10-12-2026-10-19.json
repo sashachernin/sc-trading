@@ -32,8 +32,8 @@
       "calendar",
       "ledger reconciliation"
     ],
-    "current_equity": "1001.03",
-    "current_pnl": "5.21"
+    "current_equity": "994.35",
+    "current_pnl": "-1.46"
   },
   "proposals": [
     {
@@ -605,6 +605,28 @@
           "ticker": "NVDA",
           "observed_at": "2026-10-21T16:45:03+00:00",
           "price": "220.97",
+          "redistribution": "metadata only; verify provider terms"
+        }
+      ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-19:valuation:2026-10-22",
+      "kind": "valuation-2026-10-22",
+      "provider": "yahoo-public",
+      "cutoff": "2026-10-22T16:45:03.924513+00:00",
+      "evidence": [
+        {
+          "id": "yahoo:AAPL:2026-10-22T16:45:02+00:00",
+          "ticker": "AAPL",
+          "observed_at": "2026-10-22T16:45:02+00:00",
+          "price": "345.42",
+          "redistribution": "metadata only; verify provider terms"
+        },
+        {
+          "id": "yahoo:NVDA:2026-10-22T16:45:03+00:00",
+          "ticker": "NVDA",
+          "observed_at": "2026-10-22T16:45:03+00:00",
+          "price": "212.86",
           "redistribution": "metadata only; verify provider terms"
         }
       ]
