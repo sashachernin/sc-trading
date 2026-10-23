@@ -2,20 +2,20 @@
   "label": "PAPER / SIMULATED",
   "currency": "USD",
   "initial_cash": "1000.00",
-  "equity": "995.06",
-  "cash": "436.07",
-  "invested_value": "558.99",
-  "realized_pnl": "-4.18",
-  "unrealized_pnl": "-0.75",
-  "cumulative_pnl": "-4.94",
-  "cumulative_return": "-0.49351571500",
-  "monthly_pnl": "-4.18",
-  "rolling_four_week_pnl": "-4.18",
+  "equity": "994.82",
+  "cash": "994.82",
+  "invested_value": "0.00",
+  "realized_pnl": "-5.18",
+  "unrealized_pnl": "0.00",
+  "cumulative_pnl": "-5.18",
+  "cumulative_return": "-0.51756721500",
+  "monthly_pnl": "-5.18",
+  "rolling_four_week_pnl": "-5.18",
   "target_monthly_profit": "100.00",
   "target_is_experimental": true,
-  "completed_cycles": 1,
+  "completed_cycles": 2,
   "skipped_cycles": 0,
-  "valuation_time": "2026-10-23T16:45:03.916964+00:00",
+  "valuation_time": "2026-10-23T19:45:11.655509+00:00",
   "equity_series": [
     {
       "week": "Inception",
@@ -96,30 +96,17 @@
       "pnl": "0.00",
       "benchmark_equity": null,
       "drawdown": "-0.5963857227056132183850633800"
-    }
-  ],
-  "positions": [
-    {
-      "id": "paper-2026-10-12-2026-10-19:AAPL",
-      "ticker": "AAPL",
-      "quantity": "1.00000000",
-      "basis": "344.31",
-      "value": "346.90",
-      "status": "OPEN",
-      "label": "PAPER / SIMULATED",
-      "valuation_time": "2026-10-23T16:45:03+00:00"
     },
     {
-      "id": "paper-2026-10-12-2026-10-19:NVDA",
-      "ticker": "NVDA",
-      "quantity": "1.00000000",
-      "basis": "215.43",
-      "value": "212.09",
-      "status": "OPEN",
-      "label": "PAPER / SIMULATED",
-      "valuation_time": "2026-10-23T16:45:02+00:00"
+      "week": "paper-2026-10-12-2026-10-19",
+      "date": "2026-10-23",
+      "equity": "994.82",
+      "pnl": "-0.99",
+      "benchmark_equity": "1000.00",
+      "drawdown": "-0.6203610281410147548025533700"
     }
   ],
+  "positions": [],
   "fills": [
     {
       "id": "paper-2026-10-12-2026-10-12:BUY:AMZN",
@@ -178,6 +165,38 @@
       "fill_time": "2026-10-19T13:42:31+00:00",
       "fill_model": "spread-slippage-v1",
       "raw_price": "215.325"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-19:SELL:AAPL",
+      "ticker": "AAPL",
+      "quantity": "1.00000000",
+      "price": "347.39621500",
+      "fee": "0E-8",
+      "side": "SELL",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-23T19:45:10+00:00",
+      "fill_time": "2026-10-23T19:45:10+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "347.57",
+      "cost_basis_sold": "344.31207000",
+      "realized_pnl": "3.08414500"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-19:SELL:NVDA",
+      "ticker": "NVDA",
+      "quantity": "1.00000000",
+      "price": "211.35427000",
+      "fee": "0E-8",
+      "side": "SELL",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-23T19:45:11+00:00",
+      "fill_time": "2026-10-23T19:45:11+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "211.46",
+      "cost_basis_sold": "215.43266250",
+      "realized_pnl": "-4.07839250"
     }
   ],
   "latest_meeting": "paper-2026-10-12-meeting-2026-10-18"

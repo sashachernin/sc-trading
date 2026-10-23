@@ -55,5 +55,60 @@
     "expiry": "2026-11-13",
     "validation_errors": [],
     "mode": "auto_bounded"
+  },
+  {
+    "id": "paper-2026-10-12-2026-10-19:patch:0",
+    "role": "researcher_a",
+    "status": "ACTIVE",
+    "version": 2,
+    "week_id": "paper-2026-10-12-2026-10-19",
+    "target": "researcher_a",
+    "operation": "add",
+    "lesson_id": null,
+    "text": "For within-window events, extend the existing timing-versus-direction distinction with explicit observable outcomes that would support or defeat the positive forecast. State what evidence, if any, establishes incremental information relative to expectations; otherwise mark that unresolved. NVDA's verified keynote timing supported eligibility for consideration, but its negative realized return did not reveal the event's content or cause. Do not infer those from price alone.",
+    "parameter": null,
+    "value": null,
+    "evidence_ids": [
+      "paper-2026-10-12-2026-10-19:researcher_a",
+      "paper-2026-10-12-2026-10-19:researcher_a:1",
+      "web-researcher_a-2",
+      "web-researcher_a-11",
+      "paper-2026-10-12-2026-10-19:SELL:NVDA"
+    ],
+    "confidence": 0.74,
+    "expected_effect": "Make event-driven direction and subsequent thesis assessment more testable without assuming that a scheduled event creates upside.",
+    "duration_weeks": 4,
+    "success_metric": "Each relevant proposal specifies an observable positive event outcome, an adverse or neutral outcome, and whether expectations evidence is established or unresolved.",
+    "rollback_condition": "Retire if the next four relevant proposals show only generic restatements or unsupported expectations claims.",
+    "expiry": "2026-11-20",
+    "validation_errors": [],
+    "mode": "auto_bounded"
+  },
+  {
+    "id": "paper-2026-10-12-2026-10-19:patch:1",
+    "role": "researcher_b",
+    "status": "ACTIVE",
+    "version": 2,
+    "week_id": "paper-2026-10-12-2026-10-19",
+    "target": "researcher_b",
+    "operation": "add",
+    "lesson_id": null,
+    "text": "Preserve the distinction between daily-close checkpoints and intraday observations. When reviewing a continuation proposal, map each checkpoint to dated close evidence where supplied; otherwise leave its status unassessed. AAPL's positive endpoint return supports realized direction, but the exit quote and undated history alone do not establish the timing of a $348.15 closing confirmation or breaches of $337.60/$336.64. Keep these as research conditions, without introducing execution instructions.",
+    "parameter": null,
+    "value": null,
+    "evidence_ids": [
+      "paper-2026-10-12-2026-10-19:researcher_b:1",
+      "web-researcher_b-1",
+      "yahoo:AAPL:2026-10-23T19:45:10+00:00",
+      "paper-2026-10-12-2026-10-19:SELL:AAPL"
+    ],
+    "confidence": 0.8,
+    "expected_effect": "Improve checkpoint auditability and prevent endpoint returns or undated history from being mistaken for daily-close confirmation.",
+    "duration_weeks": 4,
+    "success_metric": "Every reviewed price checkpoint is classified as confirmed, breached or unassessed using an explicitly dated observation and the specified price semantics.",
+    "rollback_condition": "Retire if checkpoint reporting duplicates existing dated evidence without improving assessment across four applicable reviews.",
+    "expiry": "2026-11-20",
+    "validation_errors": [],
+    "mode": "auto_bounded"
   }
 ]
