@@ -2,20 +2,20 @@
   "label": "PAPER / SIMULATED",
   "currency": "USD",
   "initial_cash": "1000.00",
-  "equity": "994.35",
+  "equity": "995.06",
   "cash": "436.07",
-  "invested_value": "558.28",
+  "invested_value": "558.99",
   "realized_pnl": "-4.18",
-  "unrealized_pnl": "-1.46",
-  "cumulative_pnl": "-5.65",
-  "cumulative_return": "-0.56461571500",
+  "unrealized_pnl": "-0.75",
+  "cumulative_pnl": "-4.94",
+  "cumulative_return": "-0.49351571500",
   "monthly_pnl": "-4.18",
   "rolling_four_week_pnl": "-4.18",
   "target_monthly_profit": "100.00",
   "target_is_experimental": true,
   "completed_cycles": 1,
   "skipped_cycles": 0,
-  "valuation_time": "2026-10-22T16:45:03.924513+00:00",
+  "valuation_time": "2026-10-23T16:45:03.916964+00:00",
   "equity_series": [
     {
       "week": "Inception",
@@ -88,6 +88,14 @@
       "pnl": "0.00",
       "benchmark_equity": null,
       "drawdown": "-0.6673126679520094302868045900"
+    },
+    {
+      "week": "paper-2026-10-12-2026-10-19",
+      "date": "2026-10-23",
+      "equity": "995.06",
+      "pnl": "0.00",
+      "benchmark_equity": null,
+      "drawdown": "-0.5963857227056132183850633800"
     }
   ],
   "positions": [
@@ -96,20 +104,20 @@
       "ticker": "AAPL",
       "quantity": "1.00000000",
       "basis": "344.31",
-      "value": "345.42",
+      "value": "346.90",
       "status": "OPEN",
       "label": "PAPER / SIMULATED",
-      "valuation_time": "2026-10-22T16:45:02+00:00"
+      "valuation_time": "2026-10-23T16:45:03+00:00"
     },
     {
       "id": "paper-2026-10-12-2026-10-19:NVDA",
       "ticker": "NVDA",
       "quantity": "1.00000000",
       "basis": "215.43",
-      "value": "212.86",
+      "value": "212.09",
       "status": "OPEN",
       "label": "PAPER / SIMULATED",
-      "valuation_time": "2026-10-22T16:45:03+00:00"
+      "valuation_time": "2026-10-23T16:45:02+00:00"
     }
   ],
   "fills": [
