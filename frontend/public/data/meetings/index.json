@@ -1,5 +1,32 @@
 [
   {
+    "id": "paper-2026-10-12-meeting-2026-10-25",
+    "sunday": "2026-10-25",
+    "title": "Paper portfolio ends at $994.82; forecast questions remain",
+    "excerpt": "The simulated week lost approximately $0.99, or 0.10%.",
+    "status": "CONTENT_READY",
+    "week_id": "paper-2026-10-12-2026-10-19",
+    "participants": [
+      {
+        "name": "Avery",
+        "role": "Fundamentals & catalysts"
+      },
+      {
+        "name": "Morgan",
+        "role": "Momentum & price"
+      },
+      {
+        "name": "Casey",
+        "role": "Portfolio manager"
+      },
+      {
+        "name": "Riley",
+        "role": "Research analyst"
+      }
+    ],
+    "reading_minutes": 7
+  },
+  {
     "id": "paper-2026-10-12-meeting-2026-10-18",
     "sunday": "2026-10-18",
     "title": "AMZN paper-trading week: $4.18 loss",
