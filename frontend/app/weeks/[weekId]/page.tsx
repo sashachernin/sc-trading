@@ -212,11 +212,6 @@ export default async function WeekPage({
           <Empty text="Available after Friday’s close." />
         )}
       </Panel>
-      {w.meeting_ids.map((id) => (
-        <Link key={id} href={`/meetings/${id}/`} className="button">
-          Read the team discussion →
-        </Link>
-      ))}
     </>
   );
 }

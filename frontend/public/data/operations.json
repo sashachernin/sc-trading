@@ -1,11 +1,11 @@
 {
-  "observed_at": "2026-10-25T08:03:55.074333+00:00",
+  "observed_at": "2026-10-26T08:08:09.858089+00:00",
   "paused": false,
   "worker_status": "Snapshot observation; live status available only through Linux CLI",
   "queue": {
     "QUEUED": 0,
-    "RUNNING": 1,
-    "COMPLETED": 15,
+    "RUNNING": 0,
+    "COMPLETED": 16,
     "FAILED": 1
   },
   "incidents": [
@@ -647,6 +647,15 @@
         "date": "2026-10-25"
       },
       "created_at": "2026-10-25T08:00:04.022058+00:00"
+    },
+    {
+      "action": "weekly-discussions-discontinued",
+      "data": {
+        "authorized_by": "CEO",
+        "previous_meetings_removed": 2,
+        "trading_schedule_unchanged": true
+      },
+      "created_at": "2026-10-26T08:08:09.834511+00:00"
     }
   ],
   "settings": {
@@ -679,10 +688,8 @@
     },
     "schedule": {
       "Monday": "09:35 America/New_York",
-      "Friday": "15:45 America/New_York",
-      "Sunday": "08:00 UTC"
+      "Friday": "15:45 America/New_York"
     },
-    "meeting_turn_limit": 11,
     "active_memory_cap": 12,
     "models": {
       "researcher_a": "gpt-6.1-sol",
@@ -691,24 +698,8 @@
       "analyst": "gpt-6.1-sol"
     }
   },
-  "meetings": [
-    {
-      "id": "paper-2026-10-12-meeting-2026-10-25",
-      "sunday": "2026-10-25",
-      "status": "CONTENT_READY",
-      "turn_count": 11,
-      "unavailable": []
-    },
-    {
-      "id": "paper-2026-10-12-meeting-2026-10-18",
-      "sunday": "2026-10-18",
-      "status": "CONTENT_READY",
-      "turn_count": 11,
-      "unavailable": []
-    }
-  ],
   "previous_delivery": {
-    "snapshot_id": "paper-2026-10-12-r78",
+    "snapshot_id": "paper-2026-10-12-r102",
     "status": "VALIDATED"
   }
 }

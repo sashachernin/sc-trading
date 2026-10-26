@@ -155,48 +155,7 @@ export type Week = {
     }[];
   }[];
   timeline: { stage: string; completed_at: string }[];
-  meeting_ids: string[];
   snapshots: unknown[];
-};
-export type MeetingIndex = {
-  id: string;
-  sunday: string;
-  title: string;
-  excerpt: string;
-  status: string;
-  week_id: string | null;
-  participants: { name: string; role: string }[];
-  reading_minutes: number;
-};
-export type Meeting = MeetingIndex & {
-  context: {
-    ceo_message?: { author: string; sunday: string; message_markdown: string; sha256: string } | null;
-    cutoff: string;
-    source: { pnl: string; status: string; cash: string };
-  };
-  upcoming_monday: string;
-  data: {
-    title: string;
-    standfirst: string;
-    recap: string;
-    takeaways: string[];
-    focus_areas: string[];
-    open_questions: string[];
-    generated_at: string;
-    synthetic: boolean;
-    unavailable: string[];
-  };
-  turns: {
-    id: string;
-    run_id: string;
-    sequence: number;
-    speaker: string;
-    phase: string;
-    message_markdown: string;
-    reply_to_turn_ids: string[];
-    evidence_ids: string[];
-    provenance: Record<string, unknown>;
-  }[];
 };
 export type Lesson = {
   id: string;
@@ -239,7 +198,6 @@ export type Operations = {
     end: string;
     participants: Record<string, { name: string; role: string }>;
     schedule: Record<string, string>;
-    meeting_turn_limit: number;
     active_memory_cap: number;
     models: Record<string, string>;
   };
@@ -258,8 +216,6 @@ export function overview() {
 }
 export const weeks = () => read<WeekIndex[]>("weeks/index.json");
 export const week = (id: string) => read<Week>(`weeks/${id}.json`);
-export const meetings = () => read<MeetingIndex[]>("meetings/index.json");
-export const meeting = (id: string) => read<Meeting>(`meetings/${id}.json`);
 export const lessons = () => read<Lesson[]>("learning/index.json");
 export const operations = () => read<Operations>("operations.json");
 export function usd(value: string | number) {

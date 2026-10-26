@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { ArrowUpRight, Clock3 } from "lucide-react";
 export function Badge({ status }: { status: string }) {
   return (
     <span
@@ -67,37 +65,4 @@ export function Panel({
 }
 export function Empty({ text }: { text: string }) {
   return <div className="empty">{text}</div>;
-}
-export function ArticleCard({
-  id,
-  title,
-  date,
-  excerpt,
-  minutes,
-  status,
-}: {
-  id: string;
-  title: string;
-  date: string;
-  excerpt: string;
-  minutes: number;
-  status: string;
-}) {
-  return (
-    <Link href={`/meetings/${id}/`} className="article-card">
-      <div className="article-meta">
-        <span>THE SUNDAY DISCUSSION</span>
-        <span>{date}</span>
-      </div>
-      <h3>{title}</h3>
-      <p>{excerpt}</p>
-      <div className="article-bottom">
-        <span>
-          <Clock3 size={14} />
-          {minutes} min read · {status.replaceAll("_", " ").toLowerCase()}
-        </span>
-        <ArrowUpRight size={18} />
-      </div>
-    </Link>
-  );
 }

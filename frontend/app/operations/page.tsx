@@ -17,10 +17,6 @@ export default function OperationsPage() {
           <strong>Friday · 3:45 pm ET</strong>
           <span>Close positions and review results</span>
         </div>
-        <div className="account-line">
-          <strong>Sunday · 08:00 UTC</strong>
-          <span>Team discussion</span>
-        </div>
       </Panel>
       <Panel title="Recent activity">
         {o.audit.length ? (

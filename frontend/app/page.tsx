@@ -1,13 +1,12 @@
 import AgentAvatar from "@/components/agent-avatar";
 import Link from "next/link";
-import { overview, weeks, meetings, usd } from "@/lib/data";
-import { Heading, Panel, ArticleCard } from "@/components/ui";
+import { overview, weeks, usd } from "@/lib/data";
+import { Heading, Panel } from "@/components/ui";
 import EquityChart from "@/components/chart";
 import History from "@/components/history";
 export default function Home() {
   const o = overview(),
-    ws = weeks(),
-    ms = meetings();
+    ws = weeks();
   return (
     <>
       <Heading
@@ -72,31 +71,17 @@ export default function Home() {
       <Panel title="Account performance">
         <EquityChart series={o.equity_series} />
       </Panel>
-      <div className="bottom-grid">
-        <Panel
-          title="Recent weeks"
-          aside={
-            <Link href="/weeks/" className="text-link">
-              View all →
-            </Link>
-          }
-        >
-          <History weeks={ws.slice(0, 4)} />
-        </Panel>
-        <Panel title="Latest meeting">
-          {ms[0] ? (
-            <ArticleCard
-              {...ms[0]}
-              date={ms[0].sunday}
-              minutes={ms[0].reading_minutes}
-            />
-          ) : (
-            <p className="empty">
-              The first team discussion is scheduled for Sunday.
-            </p>
-          )}
-        </Panel>
-      </div>
+      <Panel
+        title="Recent weeks"
+        aside={
+          <Link href="/weeks/" className="text-link">
+            View all →
+          </Link>
+        }
+      >
+        <History weeks={ws.slice(0, 4)} />
+      </Panel>
+
       <div className="section-title">
         <h2>The team</h2>
       </div>
@@ -138,10 +123,6 @@ export default function Home() {
         <div>
           <strong>Friday</strong>
           <small>Sell & review</small>
-        </div>
-        <div>
-          <strong>Sunday</strong>
-          <small>Team discussion</small>
         </div>
       </div>
       <p className="freshness">

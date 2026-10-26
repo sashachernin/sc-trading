@@ -12,7 +12,6 @@ for (const name of [
   "research",
   "decision",
   "review",
-  "meeting_turn",
   "manifest",
   "overview",
 ])
@@ -79,22 +78,5 @@ for (const w of read("weeks/index.json")) {
   }
   if (detail.id !== w.id || detail.label !== "PAPER / SIMULATED")
     throw Error("Invalid week route");
-}
-for (const row of read("meetings/index.json")) {
-  const detail = read(`meetings/${row.id}.json`);
-  if (
-    detail.turns[0]?.speaker !== "manager" ||
-    detail.turns.at(-1)?.speaker !== "manager"
-  )
-    throw Error("Manager must open and close");
-  const md = fs.readFileSync(
-    path.join(base, "public/transcripts", `${row.id}.md`),
-    "utf8",
-  );
-  for (const t of detail.turns) {
-    const { id, run_id, provenance, ...turn } = t;
-    validate("meeting_turn", turn);
-    if (!md.includes(t.message_markdown)) throw Error("Transcript mismatch");
-  }
 }
 console.log(`Validated snapshot ${m.snapshot_id}: ${m.files.length} files`);

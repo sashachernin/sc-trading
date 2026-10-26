@@ -4,7 +4,6 @@ import {
   FlaskConical,
   LayoutDashboard,
   CalendarRange,
-  MessagesSquare,
   BookOpen,
   Activity,
 } from "lucide-react";
@@ -36,7 +35,6 @@ export default function RootLayout({
               {[
                 ["/", "Overview", LayoutDashboard],
                 ["/weeks/", "Weeks", CalendarRange],
-                ["/meetings/", "Meetings", MessagesSquare],
                 ["/learning/", "Learning", BookOpen],
                 ["/operations/", "Status", Activity],
               ].map(([href, label, Icon]) => {
@@ -59,7 +57,6 @@ export default function RootLayout({
             <nav className="mobile-nav" aria-label="Mobile navigation">
               <Link href="/">Overview</Link>
               <Link href="/weeks/">Weeks</Link>
-              <Link href="/meetings/">Meetings</Link>
               <Link href="/learning/">Learning</Link>
               <Link href="/operations/">Status</Link>
             </nav>
