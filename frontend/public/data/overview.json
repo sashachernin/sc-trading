@@ -2,20 +2,20 @@
   "label": "PAPER / SIMULATED",
   "currency": "USD",
   "initial_cash": "1000.00",
-  "equity": "994.82",
-  "cash": "994.82",
-  "invested_value": "0.00",
+  "equity": "994.60",
+  "cash": "555.09",
+  "invested_value": "439.52",
   "realized_pnl": "-5.18",
-  "unrealized_pnl": "0.00",
-  "cumulative_pnl": "-5.18",
-  "cumulative_return": "-0.51756721500",
+  "unrealized_pnl": "-0.22",
+  "cumulative_pnl": "-5.40",
+  "cumulative_return": "-0.53954296500",
   "monthly_pnl": "-5.18",
   "rolling_four_week_pnl": "-5.18",
   "target_monthly_profit": "100.00",
   "target_is_experimental": true,
   "completed_cycles": 2,
   "skipped_cycles": 0,
-  "valuation_time": "2026-10-23T19:45:11.655509+00:00",
+  "valuation_time": "2026-10-26T13:40:24.224314+00:00",
   "equity_series": [
     {
       "week": "Inception",
@@ -106,7 +106,28 @@
       "drawdown": "-0.6203610281410147548025533700"
     }
   ],
-  "positions": [],
+  "positions": [
+    {
+      "id": "paper-2026-10-12-2026-10-26:RHI",
+      "ticker": "RHI",
+      "quantity": "4.00000000",
+      "basis": "180.33",
+      "value": "180.24",
+      "status": "OPEN",
+      "label": "PAPER / SIMULATED",
+      "valuation_time": "2026-10-26T13:40:23+00:00"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-26:SLB",
+      "ticker": "SLB",
+      "quantity": "5.00000000",
+      "basis": "259.40",
+      "value": "259.28",
+      "status": "OPEN",
+      "label": "PAPER / SIMULATED",
+      "valuation_time": "2026-10-26T13:40:18+00:00"
+    }
+  ],
   "fills": [
     {
       "id": "paper-2026-10-12-2026-10-12:BUY:AMZN",
@@ -197,6 +218,34 @@
       "raw_price": "211.46",
       "cost_basis_sold": "215.43266250",
       "realized_pnl": "-4.07839250"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-26:BUY:RHI",
+      "ticker": "RHI",
+      "quantity": "4.00000000",
+      "price": "45.08253000",
+      "fee": "0E-8",
+      "side": "BUY",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-26T13:40:23+00:00",
+      "fill_time": "2026-10-26T13:40:23+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "45.06"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-26:BUY:SLB",
+      "ticker": "SLB",
+      "quantity": "5.00000000",
+      "price": "51.88092750",
+      "fee": "0E-8",
+      "side": "BUY",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-26T13:40:18+00:00",
+      "fill_time": "2026-10-26T13:40:18+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "51.855"
     }
   ],
   "latest_meeting": null
