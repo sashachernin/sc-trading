@@ -1,11 +1,11 @@
 {
-  "observed_at": "2026-10-26T13:40:25.206382+00:00",
+  "observed_at": "2026-10-26T16:45:07.736778+00:00",
   "paused": false,
   "worker_status": "Snapshot observation; live status available only through Linux CLI",
   "queue": {
     "QUEUED": 0,
-    "RUNNING": 1,
-    "COMPLETED": 17,
+    "RUNNING": 0,
+    "COMPLETED": 18,
     "FAILED": 1
   },
   "incidents": [
@@ -663,6 +663,15 @@
         "date": "2026-10-26"
       },
       "created_at": "2026-10-26T13:35:04.176678+00:00"
+    },
+    {
+      "action": "daily-valuation",
+      "data": {
+        "day": "2026-10-26",
+        "cutoff": "2026-10-26T16:45:06.352889+00:00",
+        "trades": false
+      },
+      "created_at": "2026-10-26T16:45:07.706398+00:00"
     }
   ],
   "settings": {
@@ -706,7 +715,7 @@
     }
   },
   "previous_delivery": {
-    "snapshot_id": "paper-2026-10-12-r103",
+    "snapshot_id": "paper-2026-10-12-r109",
     "status": "VALIDATED"
   }
 }
