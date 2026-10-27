@@ -1,13 +1,13 @@
 {
   "schema_version": "1",
-  "snapshot_id": "paper-2026-10-12-r110",
-  "source_revision": 110,
+  "snapshot_id": "paper-2026-10-12-r111",
+  "source_revision": 111,
   "experiment_id": "paper-2026-10-12",
   "label": "PAPER / SIMULATED",
   "synthetic": false,
-  "created_at": "2026-10-26T16:45:07.736778+00:00",
-  "source_cutoff": "2026-10-26T16:45:06.352889+00:00",
-  "valuation_time": "2026-10-26T16:45:06.352889+00:00",
+  "created_at": "2026-10-27T16:45:08.790160+00:00",
+  "source_cutoff": "2026-10-27T16:45:07.333114+00:00",
+  "valuation_time": "2026-10-27T16:45:07.333114+00:00",
   "next_expected_publication": "Trading days at 12:45 America/New_York, plus Monday / Friday workflow results",
   "files": [
     {
@@ -18,14 +18,14 @@
     },
     {
       "path": "frontend/public/data/operations.json",
-      "sha256": "433c05b8756d4b14a4ce2f0003b5ffd82a5c250d07467c42d41bee0a0abc1f61",
-      "bytes": 35240,
+      "sha256": "865091593962086496ddf68590133c22aa84fa15c927b5ef41908fba2d7b0ed6",
+      "bytes": 35475,
       "schema_version": "1"
     },
     {
       "path": "frontend/public/data/overview.json",
-      "sha256": "c31d947a1dc3532e9fb9be18f388cb7c3e3c11e09348a1ee12fa8265a377aef5",
-      "bytes": 7299,
+      "sha256": "276e904b8772d3ad4f8b6bc148b0a0558e8e96001099427b64f3e4e13cb26bfa",
+      "bytes": 7516,
       "schema_version": "1"
     },
     {
@@ -54,8 +54,8 @@
     },
     {
       "path": "frontend/public/data/weeks/paper-2026-10-12-2026-10-26.json",
-      "sha256": "c188d535684b2cb2f5b25fa88101860828e60cbd3fe29befd8f5c41a441693a7",
-      "bytes": 45532,
+      "sha256": "9e7f75323710776607abe4b0fc80e4116a95e532f464d728314fe89630fabf93",
+      "bytes": 46265,
       "schema_version": "1"
     }
   ]
