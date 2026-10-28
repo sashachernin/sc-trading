@@ -34,8 +34,8 @@
       "calendar",
       "ledger reconciliation"
     ],
-    "current_equity": "995.38",
-    "current_pnl": "0.56"
+    "current_equity": "991.77",
+    "current_pnl": "-3.05"
   },
   "proposals": [
     {
@@ -686,6 +686,28 @@
           "ticker": "SLB",
           "observed_at": "2026-10-27T16:44:55+00:00",
           "price": "53.635",
+          "redistribution": "metadata only; verify provider terms"
+        }
+      ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-26:valuation:2026-10-28",
+      "kind": "valuation-2026-10-28",
+      "provider": "yahoo-public",
+      "cutoff": "2026-10-28T16:45:08.125228+00:00",
+      "evidence": [
+        {
+          "id": "yahoo:RHI:2026-10-28T16:44:57+00:00",
+          "ticker": "RHI",
+          "observed_at": "2026-10-28T16:44:57+00:00",
+          "price": "41.44",
+          "redistribution": "metadata only; verify provider terms"
+        },
+        {
+          "id": "yahoo:SLB:2026-10-28T16:45:01+00:00",
+          "ticker": "SLB",
+          "observed_at": "2026-10-28T16:45:01+00:00",
+          "price": "54.185",
           "redistribution": "metadata only; verify provider terms"
         }
       ]
