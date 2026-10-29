@@ -2,20 +2,20 @@
   "label": "PAPER / SIMULATED",
   "currency": "USD",
   "initial_cash": "1000.00",
-  "equity": "991.77",
+  "equity": "993.64",
   "cash": "555.09",
-  "invested_value": "436.68",
+  "invested_value": "438.55",
   "realized_pnl": "-5.18",
-  "unrealized_pnl": "-3.05",
-  "cumulative_pnl": "-8.23",
-  "cumulative_return": "-0.82254296500",
+  "unrealized_pnl": "-1.18",
+  "cumulative_pnl": "-6.36",
+  "cumulative_return": "-0.63604296500",
   "monthly_pnl": "-5.18",
   "rolling_four_week_pnl": "-5.18",
   "target_monthly_profit": "100.00",
   "target_is_experimental": true,
   "completed_cycles": 2,
   "skipped_cycles": 0,
-  "valuation_time": "2026-10-28T16:45:08.125228+00:00",
+  "valuation_time": "2026-10-29T16:45:06.939245+00:00",
   "equity_series": [
     {
       "week": "Inception",
@@ -128,6 +128,14 @@
       "pnl": "0.00",
       "benchmark_equity": null,
       "drawdown": "-0.9250472013825759467748219300"
+    },
+    {
+      "week": "paper-2026-10-12-2026-10-26",
+      "date": "2026-10-29",
+      "equity": "993.64",
+      "pnl": "0.00",
+      "benchmark_equity": null,
+      "drawdown": "-0.7382396131984056421885458000"
     }
   ],
   "positions": [
@@ -136,20 +144,20 @@
       "ticker": "RHI",
       "quantity": "4.00000000",
       "basis": "180.33",
-      "value": "165.76",
+      "value": "168.80",
       "status": "OPEN",
       "label": "PAPER / SIMULATED",
-      "valuation_time": "2026-10-28T16:44:57+00:00"
+      "valuation_time": "2026-10-29T16:44:11+00:00"
     },
     {
       "id": "paper-2026-10-12-2026-10-26:SLB",
       "ticker": "SLB",
       "quantity": "5.00000000",
       "basis": "259.40",
-      "value": "270.92",
+      "value": "269.75",
       "status": "OPEN",
       "label": "PAPER / SIMULATED",
-      "valuation_time": "2026-10-28T16:45:01+00:00"
+      "valuation_time": "2026-10-29T16:45:05+00:00"
     }
   ],
   "fills": [
