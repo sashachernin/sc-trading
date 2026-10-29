@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  FlaskConical,
-  LayoutDashboard,
-  CalendarRange,
-  BookOpen,
-  Activity,
-} from "lucide-react";
+import { ChartNoAxesCombined } from "lucide-react";
+import Navigation from "@/components/navigation";
 import { manifest } from "@/lib/data";
 import "./globals.css";
 export const metadata: Metadata = {
@@ -22,45 +17,41 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <a className="skip-link" href="#main-content">
+          Skip to content
+        </a>
         <div className="shell">
           <aside className="sidebar">
-            <Link href="/" className="brand">
+            <Link href="/" className="brand" aria-label="AI Trading Firm home">
               <span className="brand-icon">
-                <FlaskConical size={23} />
+                <ChartNoAxesCombined size={23} />
               </span>
-              <span>AI Trading Firm</span>
+              <span className="brand-name">AI Trading Firm</span>
             </Link>
 
-            <nav aria-label="Main navigation">
-              {[
-                ["/", "Overview", LayoutDashboard],
-                ["/weeks/", "Weeks", CalendarRange],
-                ["/learning/", "Learning", BookOpen],
-                ["/operations/", "Status", Activity],
-              ].map(([href, label, Icon]) => {
-                const Component = Icon as typeof Activity;
-                return (
-                  <Link href={href as string} key={href as string}>
-                    <Component size={18} />
-                    {label as string}
-                  </Link>
-                );
-              })}
-            </nav>
+            <div className="nav-label">WORKSPACE</div>
+            <Navigation />
           </aside>
           <div className="workspace">
             <header className="topbar">
-              <span>
-                <strong>AI Trading Firm</strong>
-              </span>
+              <div className="topbar-brand">
+                <img
+                  className="spglobal-logo"
+                  src="/images/brand/sp-global.svg"
+                  alt="S&P Global"
+                  width={151}
+                  height={33}
+                />
+                <span className="topbar-title">
+                  <strong>AI Trading Firm</strong>
+                </span>
+              </div>
+              <span className="badge paper">Simulated account</span>
             </header>
-            <nav className="mobile-nav" aria-label="Mobile navigation">
-              <Link href="/">Overview</Link>
-              <Link href="/weeks/">Weeks</Link>
-              <Link href="/learning/">Learning</Link>
-              <Link href="/operations/">Status</Link>
-            </nav>
-            <main>{children}</main>
+            <Navigation mobile />
+            <main id="main-content" tabIndex={-1}>
+              {children}
+            </main>
             <footer>
               <span>
                 Updated{" "}

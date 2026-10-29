@@ -71,8 +71,8 @@ export default function EquityChart({
       >
         <defs>
           <linearGradient id="chart-fill" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0%" stopColor="#278568" stopOpacity=".18" />
-            <stop offset="100%" stopColor="#278568" stopOpacity="0" />
+            <stop offset="0%" stopColor="var(--accent)" stopOpacity=".18" />
+            <stop offset="100%" stopColor="var(--accent)" stopOpacity="0" />
           </linearGradient>
         </defs>
         {[0, 1, 2, 3].map((i) => {
@@ -84,10 +84,10 @@ export default function EquityChart({
                 x2="750"
                 y1={y(value)}
                 y2={y(value)}
-                stroke="#e8ece8"
+                stroke="var(--line)"
                 strokeDasharray="4 4"
               />
-              <text x="0" y={y(value) + 4} fontSize="10" fill="#829087">
+              <text x="0" y={y(value) + 4} fontSize="10" fill="var(--muted)">
                 {view === "equity"
                   ? `$${Math.round(value)}`
                   : `${value.toFixed(1)}%`}
@@ -104,13 +104,13 @@ export default function EquityChart({
             points={series
               .map((s, i) => `${x(i)},${y(Number(s.benchmark_equity))}`)
               .join(" ")}
-            stroke="#b0bab3"
+            stroke="#737373"
             strokeWidth="2"
             strokeDasharray="5 5"
             fill="none"
           />
         )}
-        <polyline points={pts} fill="none" stroke="#278568" strokeWidth="2.5" />
+        <polyline points={pts} fill="none" stroke="var(--accent)" strokeWidth="2.5" />
         {series.map((s, i) => (
           <g key={i} onMouseEnter={() => setSelected(i)}>
             <circle
@@ -118,7 +118,7 @@ export default function EquityChart({
               cy={y(Number(view === "equity" ? s.equity : s.drawdown))}
               r={selected === i ? 5 : 3}
               fill="#fff"
-              stroke="#278568"
+              stroke="var(--accent)"
               strokeWidth="2"
             />
             <text
@@ -126,7 +126,7 @@ export default function EquityChart({
               y="217"
               textAnchor="middle"
               fontSize="10"
-              fill="#829087"
+              fill="var(--muted)"
             >
               {s.date.slice(5)}
             </text>
