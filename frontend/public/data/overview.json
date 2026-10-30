@@ -2,20 +2,20 @@
   "label": "PAPER / SIMULATED",
   "currency": "USD",
   "initial_cash": "1000.00",
-  "equity": "999.83",
-  "cash": "555.09",
-  "invested_value": "444.74",
-  "realized_pnl": "-5.18",
-  "unrealized_pnl": "5.01",
-  "cumulative_pnl": "-0.17",
-  "cumulative_return": "-0.01704296500",
-  "monthly_pnl": "-5.18",
-  "rolling_four_week_pnl": "-5.18",
+  "equity": "998.30",
+  "cash": "998.30",
+  "invested_value": "0.00",
+  "realized_pnl": "-1.70",
+  "unrealized_pnl": "0.00",
+  "cumulative_pnl": "-1.70",
+  "cumulative_return": "-0.17021446500",
+  "monthly_pnl": "-1.70",
+  "rolling_four_week_pnl": "-1.70",
   "target_monthly_profit": "100.00",
   "target_is_experimental": true,
-  "completed_cycles": 2,
+  "completed_cycles": 3,
   "skipped_cycles": 0,
-  "valuation_time": "2026-10-30T16:45:08.413526+00:00",
+  "valuation_time": "2026-10-30T19:45:11.642410+00:00",
   "equity_series": [
     {
       "week": "Inception",
@@ -144,30 +144,17 @@
       "pnl": "0.00",
       "benchmark_equity": null,
       "drawdown": "-0.1198765271770076820874499300"
-    }
-  ],
-  "positions": [
-    {
-      "id": "paper-2026-10-12-2026-10-26:RHI",
-      "ticker": "RHI",
-      "quantity": "4.00000000",
-      "basis": "180.33",
-      "value": "176.44",
-      "status": "OPEN",
-      "label": "PAPER / SIMULATED",
-      "valuation_time": "2026-10-30T16:44:38+00:00"
     },
     {
-      "id": "paper-2026-10-12-2026-10-26:SLB",
-      "ticker": "SLB",
-      "quantity": "5.00000000",
-      "basis": "259.40",
-      "value": "268.30",
-      "status": "OPEN",
-      "label": "PAPER / SIMULATED",
-      "valuation_time": "2026-10-30T16:45:01+00:00"
+      "week": "paper-2026-10-12-2026-10-26",
+      "date": "2026-10-30",
+      "equity": "998.30",
+      "pnl": "3.47",
+      "benchmark_equity": "1000.00",
+      "drawdown": "-0.2727190993276924767489485800"
     }
   ],
+  "positions": [],
   "fills": [
     {
       "id": "paper-2026-10-12-2026-10-12:BUY:AMZN",
@@ -286,6 +273,38 @@
       "fill_time": "2026-10-26T13:40:18+00:00",
       "fill_model": "spread-slippage-v1",
       "raw_price": "51.855"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-26:SELL:RHI",
+      "ticker": "RHI",
+      "quantity": "4.00000000",
+      "price": "43.52322750",
+      "fee": "0E-8",
+      "side": "SELL",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-30T19:45:06+00:00",
+      "fill_time": "2026-10-30T19:45:06+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "43.545",
+      "cost_basis_sold": "180.33012000",
+      "realized_pnl": "-6.23721000"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-26:SELL:SLB",
+      "ticker": "SLB",
+      "quantity": "5.00000000",
+      "price": "53.82307500",
+      "fee": "0E-8",
+      "side": "SELL",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-30T19:45:11+00:00",
+      "fill_time": "2026-10-30T19:45:11+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "53.85",
+      "cost_basis_sold": "259.40463750",
+      "realized_pnl": "9.71073750"
     }
   ],
   "latest_meeting": null

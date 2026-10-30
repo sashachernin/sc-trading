@@ -110,5 +110,32 @@
     "expiry": "2026-11-20",
     "validation_errors": [],
     "mode": "auto_bounded"
+  },
+  {
+    "id": "paper-2026-10-12-2026-10-26:patch:0",
+    "role": "researcher_b",
+    "status": "ACTIVE",
+    "version": 3,
+    "week_id": "paper-2026-10-12-2026-10-26",
+    "target": "researcher_b",
+    "operation": "hypothesis",
+    "lesson_id": null,
+    "text": "For the next four weeks, distinguish structural retention from a positive weekly return forecast. RHI retained the $41 gap floor yet lost money over the actual holding window; SLB both advanced and subsequently showed completed closes above its confirmation level. State what additional demand or observable continuation would support the weekly forecast, and identify when that remains unassessed at the fresh entry price. Preserve subjective probability labels and treat checkpoints as research conditions.",
+    "parameter": null,
+    "value": null,
+    "evidence_ids": [
+      "paper-2026-10-12-2026-10-26:researcher_b:1",
+      "paper-2026-10-12-2026-10-26:researcher_b:2",
+      "yahoo:RHI:2026-10-30T19:45:06+00:00",
+      "yahoo:SLB:2026-10-30T19:45:11+00:00"
+    ],
+    "confidence": 0.77,
+    "expected_effect": "Make continuation theses easier to test and prevent retained breakout structure from being mistaken for evidence that the weekly profit forecast succeeded.",
+    "duration_weeks": 4,
+    "success_metric": "Each continuation proposal during the trial separately states structural survival, extension confirmation and the holding-window return prediction; reviews assess each against dated observations.",
+    "rollback_condition": "Retire at expiry if the distinction adds no useful review information or encourages unsupported precision; do not convert checkpoints into execution rules.",
+    "expiry": "2026-11-27",
+    "validation_errors": [],
+    "mode": "auto_bounded"
   }
 ]

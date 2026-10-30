@@ -1,7 +1,7 @@
 {
   "id": "paper-2026-10-12-2026-10-26",
   "monday": "2026-10-26",
-  "status": "OPEN",
+  "status": "COMPLETED",
   "label": "PAPER / SIMULATED",
   "data": {
     "research_scope": "market_wide_us_listed_common_stocks",
@@ -34,8 +34,22 @@
       "calendar",
       "ledger reconciliation"
     ],
-    "current_equity": "999.83",
-    "current_pnl": "5.01"
+    "pnl": "3.47",
+    "pnl_precise": "3.47352750",
+    "ending_equity": "998.30",
+    "exit_cutoff": "2026-10-30T19:45:04.854169+00:00",
+    "comparisons": [],
+    "benchmark_return": null,
+    "extended_holding": false,
+    "summary": "The PAPER / SIMULATED portfolio gained $3.47352750, approximately 0.349% of starting equity, ending at $998.29785535 before display rounding. SLB earned $9.71073750 after costs and more than offset RHI's $6.23721000 loss. Actual purchases deployed $439.73475750, approximately 44.20% of equity. Cash after purchases was $555.08957035: $497.412163925 deliberately unallocated plus $57.677406425 of unused allocation budgets. Cash generated no recorded return and reduced participation in the net-positive stock basket.\n\nAt entry, SLB had issuer-supported sequential revenue and earnings improvement, a strong completed-session reaction and sector support. RHI had improving earnings and a major post-release repricing, tempered by approximately flat enterprise revenue and an unusually large advance. These facts supported consideration without proving continuation. SLB subsequently advanced; RHI declined while retaining its stated gap floor. The latter contradicts the weekly positive-return forecast, not the historical disclosures or necessarily the entire selection process.\n\nResearch, forecasting, selection, sizing and execution warrant separate judgments. Research was reasonably sourced and cautious; forecasting had one positive directional result and one miss. Selection and relative sizing were defensible under the entry evidence. Execution followed the recorded simulation model. A bounded improvement is to distinguish structural checkpoint survival from successful weekly continuation; this sample does not justify parameter, allocation-policy or base-contract changes.",
+    "learning_results": [
+      {
+        "id": "paper-2026-10-12-2026-10-26:patch:0",
+        "status": "ACTIVE",
+        "errors": []
+      }
+    ],
+    "review_status": "AVAILABLE"
   },
   "proposals": [
     {
@@ -147,7 +161,90 @@
     ],
     "uncertainty": "Profit probabilities and return estimates are subjective. The packet lacks verified current fundamentals, news, earnings, halt status and comprehensive corporate actions; public observations are not executable quotes. Historical vendors differ, and Monday closing confirmation remains unavailable. Neither proposal has independent endorsement from researcher A."
   },
-  "review": null,
+  "review": {
+    "summary": "The PAPER / SIMULATED portfolio gained $3.47352750, approximately 0.349% of starting equity, ending at $998.29785535 before display rounding. SLB earned $9.71073750 after costs and more than offset RHI's $6.23721000 loss. Actual purchases deployed $439.73475750, approximately 44.20% of equity. Cash after purchases was $555.08957035: $497.412163925 deliberately unallocated plus $57.677406425 of unused allocation budgets. Cash generated no recorded return and reduced participation in the net-positive stock basket.\n\nAt entry, SLB had issuer-supported sequential revenue and earnings improvement, a strong completed-session reaction and sector support. RHI had improving earnings and a major post-release repricing, tempered by approximately flat enterprise revenue and an unusually large advance. These facts supported consideration without proving continuation. SLB subsequently advanced; RHI declined while retaining its stated gap floor. The latter contradicts the weekly positive-return forecast, not the historical disclosures or necessarily the entire selection process.\n\nResearch, forecasting, selection, sizing and execution warrant separate judgments. Research was reasonably sourced and cautious; forecasting had one positive directional result and one miss. Selection and relative sizing were defensible under the entry evidence. Execution followed the recorded simulation model. A bounded improvement is to distinguish structural checkpoint survival from successful weekly continuation; this sample does not justify parameter, allocation-policy or base-contract changes.",
+    "scorecards": [
+      {
+        "role": "researcher_a",
+        "score": 0.84,
+        "assessment": "Sound abstention process: independently investigated multiple industries, verified event timing, separated historical growth from prospective surprise, and recognized negative price trends. No proposal was submitted because a positive weekly mechanism was insufficiently supported. Comparable outcomes do not establish whether abstention helped or hurt."
+      },
+      {
+        "role": "researcher_b",
+        "score": 0.82,
+        "assessment": "Issuer-supported catalysts, listing checks, liquidity evidence and explicit historical-price caveats supported both proposals. SLB's higher rank was consistent with the matched-window outcome; RHI's reversal risk was identified and sized lower. RHI missed its positive forecast despite retaining its structural floor. This supports clearer forecast/checkpoint distinctions, not probability recalibration."
+      },
+      {
+        "role": "manager",
+        "score": 0.86,
+        "assessment": "The finalized decision selected both submitted proposals, respected their maxima and portfolio caps, retained substantial cash, and acknowledged reversal and quote limitations. Actual fills preserved the intended larger SLB exposure. Selection and sizing were defensible at entry; their optimality cannot be established from one profitable portfolio outcome."
+      }
+    ],
+    "forecast_comparisons": [
+      "SLB: the +1.2% expected return compared with approximately +3.85% between raw execution observations and +3.74% after costs. The +$9.71073750 result supports the predicted positive direction and relative ranking. Subsequent supplied completed closes above $53.45 support continuation confirmation. The result does not establish that earnings or sector strength caused the gain, or calibrate the stated 54% profit probability.",
+      "RHI: the +1.0% expected return compared with approximately -3.36% between raw execution observations and -3.46% after costs. The -$6.23721000 result contradicted positive weekly continuation. Supplied subsequent completed closes remained above $41 but below $47.14: gap retention survived while extension failed to appear. The -12% adverse scenario was not exceeded at exit; its intraperiod coverage cannot be established. One loss does not invalidate the stated 53% probability.",
+      "Researcher A issued no proposal or numerical forecast. Confirmed AMKR and RMBS earnings timing and favorable historical operations were weighed against falling prices and unresolved surprise expectations. Its abstention is assessable as research discipline, but its opportunity cost cannot be measured without comparable holding-window prices."
+    ],
+    "selected_vs_rejected": "Both submitted proposals were selected; the manager rejected none. Over the same execution window, SLB gained approximately 3.85% before costs while RHI lost 3.36%, consistent with the researcher's relative ranking. Larger SLB exposure produced $9.71073750 after costs versus RHI's $6.23721000 loss. Researcher A's investigated names were not allocation candidates. Researcher B's screened-out names have historical screening evidence but no comparable holding-window price pairs, so their realized performance and selection opportunity costs cannot be ranked. The supplied records support reviewing the screening rationale, not claiming selected stocks outperformed rejected alternatives.",
+    "execution_effects": "Four RHI shares cost $180.33012000 and returned $174.09291000; five SLB shares cost $259.40463750 and returned $269.11537500. Raw price movement contributed +$3.91500000; modeled spread/slippage deducted $0.44147250, leaving +$3.47352750. Fees were zero. Fills consistently apply 5 bps adversely on each side. Actual purchase spending was $0.90545000 below the manager's illustrative estimate, leaving correspondingly more cash. The four cash movements reconcile to precise ending equity of $998.29785535, displayed as $998.30. These are simulated observations and costs, not evidence of live execution quality.",
+    "error_categories": [
+      "RHI holding-window directional forecast miss",
+      "Limited linkage between structural checkpoints and weekly return forecasts"
+    ],
+    "successes": [
+      "Research separated historical operating improvement, event timing and uncertain weekly transmission rather than treating positive disclosures as sufficient forecasts.",
+      "SLB's sequential improvement and earnings reaction supported entry consideration; its realized positive direction and stronger relative outcome matched the submitted ranking.",
+      "RHI's extreme prior advance and reversal risk were explicitly recognized, with smaller proposed and actual exposure.",
+      "The finalized manager decision, whole-share fills, costs and cash ledger reconcile without an execution-model discrepancy."
+    ],
+    "weaknesses": [
+      "RHI's positive weekly forecast was not realized; surviving its broad $41 structural floor was insufficient evidence of profitable continuation.",
+      "Expected returns and profit probabilities remained subjective; the records do not establish a quantitative mapping from catalyst strength or checkpoint levels to those estimates.",
+      "Researcher A established several event dates but could not establish sufficiently supported directional surprise mechanisms; this constrains actionable coverage without proving abstention was mistaken."
+    ],
+    "limitations": "This is one simulated week with two selected stocks; the two recent cycles also provide only a small, dependent sample. Hindsight cannot establish which alternative decision was best or calibrate subjective probabilities. No matched entry/exit observations support rejected-name returns, and no entry benchmark price supports market-relative performance. Endpoint prices and supplied completed closes do not establish full intraperiod extremes or causal event attribution. Historical adjustment differences and unknown source publication times limit precision.",
+    "evidence_ids": [
+      "paper-2026-10-12-2026-10-26:researcher_a",
+      "paper-2026-10-12-2026-10-26:researcher_b",
+      "paper-2026-10-12-2026-10-26:researcher_b:1",
+      "paper-2026-10-12-2026-10-26:researcher_b:2",
+      "paper-2026-10-12-2026-10-26:manager",
+      "paper-2026-10-12-2026-10-26:BUY:RHI",
+      "paper-2026-10-12-2026-10-26:BUY:SLB",
+      "paper-2026-10-12-2026-10-26:SELL:RHI",
+      "paper-2026-10-12-2026-10-26:SELL:SLB",
+      "yahoo:RHI:2026-10-30T19:45:06+00:00",
+      "yahoo:SLB:2026-10-30T19:45:11+00:00",
+      "web-researcher_b-2",
+      "web-researcher_b-3",
+      "web-researcher_b-6",
+      "web-researcher_b-8",
+      "web-researcher_a-3",
+      "web-researcher_a-7"
+    ],
+    "patches": [
+      {
+        "target": "researcher_b",
+        "operation": "hypothesis",
+        "lesson_id": null,
+        "text": "For the next four weeks, distinguish structural retention from a positive weekly return forecast. RHI retained the $41 gap floor yet lost money over the actual holding window; SLB both advanced and subsequently showed completed closes above its confirmation level. State what additional demand or observable continuation would support the weekly forecast, and identify when that remains unassessed at the fresh entry price. Preserve subjective probability labels and treat checkpoints as research conditions.",
+        "parameter": null,
+        "value": null,
+        "evidence_ids": [
+          "paper-2026-10-12-2026-10-26:researcher_b:1",
+          "paper-2026-10-12-2026-10-26:researcher_b:2",
+          "yahoo:RHI:2026-10-30T19:45:06+00:00",
+          "yahoo:SLB:2026-10-30T19:45:11+00:00"
+        ],
+        "confidence": 0.77,
+        "expected_effect": "Make continuation theses easier to test and prevent retained breakout structure from being mistaken for evidence that the weekly profit forecast succeeded.",
+        "duration_weeks": 4,
+        "success_metric": "Each continuation proposal during the trial separately states structural survival, extension confirmation and the holding-window return prediction; reviews assess each against dated observations.",
+        "rollback_condition": "Retire at expiry if the distinction adds no useful review information or encourages unsupported precision; do not convert checkpoints into execution rules.",
+        "expiry": "2026-11-27"
+      }
+    ]
+  },
   "runs": [
     {
       "id": "paper-2026-10-12-2026-10-26:researcher_a",
@@ -592,6 +689,48 @@
         "event_stream_sha256": "d89aef0da128f458409172bf2881839c0904f9b47a80daef40bfb96440478f15",
         "verification": "observed Codex item.completed web_search events; source claims are model reports"
       }
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-26:analyst",
+      "role": "analyst",
+      "purpose": "REVIEW",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v2-complete-evidence",
+        "overlay_version": 0,
+        "lesson_ids": [],
+        "recent_week_ids": [
+          "paper-2026-10-12-2026-10-19",
+          "paper-2026-10-12-2026-10-12"
+        ],
+        "cutoff": "2026-10-30T19:45:11.642410+00:00",
+        "estimated_tokens": 9832,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 313,
+          "overlay": 32,
+          "current": 8110,
+          "recent": 579,
+          "older": 11,
+          "contract": 770
+        },
+        "reductions": []
+      },
+      "prompt_hash": "b5f5a5a33e8c362bb3e416c8dfe2a0f41b2b48c4578d6c82ed38b81eb807f4a7",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nFor this REVIEW task, use only supplied records. Web browsing is disabled for this purpose.\nYou are analyst, Riley. Review reconciled PAPER / SIMULATED outcomes before proposing bounded learning. Evaluate research, forecasting, selection, sizing and execution separately. Use selected and rejected matched-window comparisons; distinguish missing evidence from mistakes. Explicitly state small sample and hindsight limitations. Propose evidence-linked, expiring lessons only for researchers or manager. No tools, trading, credentials or base-contract changes. Return only the supplied JSON contract.\n\nUse the supplied finalized research reports, source findings, proposals, actual manager decision, entry/exit observations, fills, execution costs and cash movements. Analyze each thesis and forecast against the realized holding window; explain what supported the choice at entry, what the outcome contradicted, and what cannot be inferred. Attribute portfolio results to exposure, retained cash",
+      "research_summary": "",
+      "abstention_reason": null,
+      "investigated_tickers": [],
+      "sources": [],
+      "web_search_mode": "disabled",
+      "web_activity": {
+        "completed_calls": 0,
+        "calls": [],
+        "event_stream_sha256": "cd9c33b05a43298109611957db711fadb810f0a847e4d2e87c75b58e8e3402ee",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
     }
   ],
   "snapshots": [
@@ -755,6 +894,28 @@
           "redistribution": "metadata only; verify provider terms"
         }
       ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-26:exit",
+      "kind": "exit",
+      "provider": "yahoo-public",
+      "cutoff": "2026-10-30T19:45:11.642410+00:00",
+      "evidence": [
+        {
+          "id": "yahoo:RHI:2026-10-30T19:45:06+00:00",
+          "ticker": "RHI",
+          "observed_at": "2026-10-30T19:45:06+00:00",
+          "price": "43.545",
+          "redistribution": "metadata only; verify provider terms"
+        },
+        {
+          "id": "yahoo:SLB:2026-10-30T19:45:11+00:00",
+          "ticker": "SLB",
+          "observed_at": "2026-10-30T19:45:11+00:00",
+          "price": "53.85",
+          "redistribution": "metadata only; verify provider terms"
+        }
+      ]
     }
   ],
   "fills": [
@@ -785,6 +946,38 @@
       "fill_time": "2026-10-26T13:40:18+00:00",
       "fill_model": "spread-slippage-v1",
       "raw_price": "51.855"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-26:SELL:RHI",
+      "ticker": "RHI",
+      "quantity": "4.00000000",
+      "price": "43.52322750",
+      "fee": "0E-8",
+      "side": "SELL",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-30T19:45:06+00:00",
+      "fill_time": "2026-10-30T19:45:06+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "43.545",
+      "cost_basis_sold": "180.33012000",
+      "realized_pnl": "-6.23721000"
+    },
+    {
+      "id": "paper-2026-10-12-2026-10-26:SELL:SLB",
+      "ticker": "SLB",
+      "quantity": "5.00000000",
+      "price": "53.82307500",
+      "fee": "0E-8",
+      "side": "SELL",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-10-30T19:45:11+00:00",
+      "fill_time": "2026-10-30T19:45:11+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "53.85",
+      "cost_basis_sold": "259.40463750",
+      "realized_pnl": "9.71073750"
     }
   ],
   "timeline": [
@@ -795,6 +988,14 @@
     {
       "stage": "PURCHASES",
       "completed_at": "2026-10-26T13:40:24.945461+00:00"
+    },
+    {
+      "stage": "LIQUIDATION",
+      "completed_at": "2026-10-30T19:45:12.574282+00:00"
+    },
+    {
+      "stage": "REVIEW",
+      "completed_at": "2026-10-30T19:46:28.084422+00:00"
     }
   ],
   "meeting_ids": []
