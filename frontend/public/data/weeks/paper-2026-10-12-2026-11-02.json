@@ -1,0 +1,725 @@
+{
+  "id": "paper-2026-10-12-2026-11-02",
+  "monday": "2026-11-02",
+  "status": "OPEN",
+  "label": "PAPER / SIMULATED",
+  "data": {
+    "research_scope": "market_wide_us_listed_common_stocks",
+    "discovery_screening": {},
+    "starting_equity": "998.29785535",
+    "share_policy": "whole_shares_only",
+    "purchase_outcomes": [
+      {
+        "ticker": "GDDY",
+        "status": "FILLED",
+        "quantity": "2",
+        "cost": "238.50319200",
+        "unspent_allocation": "11.0712718375"
+      },
+      {
+        "ticker": "SBUX",
+        "status": "FILLED",
+        "quantity": "2",
+        "cost": "209.74482000",
+        "unspent_allocation": "39.8296438375"
+      }
+    ],
+    "entry_cutoff": "2026-11-02T14:38:02.780329+00:00",
+    "risk_checks": [
+      "proposal membership",
+      "combined ticker concentration",
+      "deployment cap",
+      "cash arithmetic",
+      "quote freshness",
+      "calendar",
+      "ledger reconciliation"
+    ],
+    "current_equity": "998.07",
+    "current_pnl": "-0.22"
+  },
+  "proposals": [
+    {
+      "id": "paper-2026-10-12-2026-11-02:researcher_a:1",
+      "run_id": "paper-2026-10-12-2026-11-02:researcher_a",
+      "role": "researcher_a",
+      "ticker": "SBUX",
+      "company": "Starbucks Corporation",
+      "rank": 1,
+      "max_allocation": "0.3",
+      "expected_return": 0.008,
+      "downside": -0.065,
+      "probability_profit": 0.53,
+      "confidence": 0.56,
+      "thesis": "Starbucks offers the strongest tentative combination of operating support, an identifiable weekly event and whole-share affordability among the investigated alternatives. October 29 results reported U.S. comparable sales growth of 7.7%, including 2.4% transaction growth, and non-GAAP operating margin of 14.0%. These are historical operating facts, not proof of weekly upside. The November 5 holiday launch supplies the horizon bridge: fresh attention to execution and customer demand could support a modest continuation response during this holding week. Incremental information relative to expectations is unresolved, and Friday's reversal warrants limited sizing. Fiscal 2027 repurchase plans are future intentions, not evidence of purchases this week.",
+      "catalysts": [
+        "November 5 holiday menu launch creates a within-window opportunity for renewed attention to transaction growth; promotional timing does not establish realized sales.",
+        "Continued digestion of October 29 results could support demand for shares if investors emphasize U.S. transactions and operating improvement.",
+        "Positive checkpoint: regain the October 29 close of $105.51 while holding Friday's $102.24 low. Neutral outcome: launch proceeds without incremental demand evidence; adverse outcome: operational disruption or a break below that low."
+      ],
+      "risks": [
+        "Friday's decline largely reversed Thursday's gain, weakening evidence of post-release continuation.",
+        "The holiday launch was announced October 5 and may be fully reflected in expectations.",
+        "International transactions declined; China restructuring complicates consolidated comparisons.",
+        "Market volatility can overwhelm issuer fundamentals, and actual losses can exceed the downside scenario.",
+        "No fresh supported execution observation is supplied; this remains a research proposal."
+      ],
+      "invalidation": "A completed-session close below the October 30 low of $102.24 defeats the immediate continuation setup; credible evidence of launch disruption or weakening demand also invalidates it. Holding that level alone does not establish a successful weekly forecast. The downside estimate is not a guaranteed loss limit.",
+      "assumptions": [
+        "Backend must independently verify a fresh supported USD regular-session price, liquidity, history and risk eligibility before allocation.",
+        "A 0.30 allocation equals approximately $299.49. At the historical $103.67 close, two whole shares fit; actual affordability depends on the verified entry price and costs.",
+        "The holiday launch is already public; incremental demand relative to investor expectations is unresolved.",
+        "Forecasts cover November 2–6 and are subjective estimates, not calibrated probabilities."
+      ],
+      "evidence_ids": [
+        "web-researcher_a-1",
+        "web-researcher_a-2",
+        "web-researcher_a-3",
+        "web-researcher_a-4",
+        "web-researcher_a-5"
+      ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:researcher_b:1",
+      "run_id": "paper-2026-10-12-2026-11-02:researcher_b",
+      "role": "researcher_b",
+      "ticker": "GDDY",
+      "company": "GoDaddy Inc.",
+      "rank": 1,
+      "max_allocation": "0.3",
+      "expected_return": 0.018,
+      "downside": -0.09,
+      "probability_profit": 0.55,
+      "confidence": 0.61,
+      "thesis": "GoDaddy offers a comparatively measured earnings-continuation hypothesis. Its October 30 advance overcame the preceding pullback and exceeded the October 23 high, while the technology sector weakened. Issuer results support the repricing: revenue grew 6%, operating income 22%, and Airo's annualized bookings exceeded $100 million. Rank first because the reaction was less extreme than CareDx's and the cash-generation evidence is stronger. Structural retention alone does not establish a profitable week; further demand and a completed close above the reaction high would support that separate forecast.",
+      "catalysts": [
+        "Post-earnings reassessment of improving profitability and Airo monetization.",
+        "Further demand after the strong October 30 reversal could extend the advance."
+      ],
+      "risks": [
+        "The large earnings-day range permits substantial retracement.",
+        "Technology-sector weakness could overwhelm company-specific strength.",
+        "Revenue growth remains modest despite faster profit growth.",
+        "A higher fresh entry price would reduce the appeal of this forecast."
+      ],
+      "invalidation": "Review completed daily closes: below $114.77 weakens breakout retention; below $105.89 undermines the earnings repricing. A close above $118.11 confirms extension. October 30 retained the former threshold but did not confirm extension. Subsequent closes and fresh-entry continuation remain unassessed. These are research checkpoints, not execution orders or loss limits.",
+      "assumptions": [
+        "Backend must validate a fresh regular-session USD observation, eligibility and affordability before allocation.",
+        "A 0.30 allocation represents about $299.49; two shares fit at the historical $117.24 close before costs.",
+        "Expected return and profit probability are subjective Monday-to-Friday estimates, not calibrated forecasts."
+      ],
+      "evidence_ids": [
+        "web-researcher_b-1",
+        "web-researcher_b-2",
+        "web-researcher_b-5",
+        "web-researcher_b-10"
+      ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:researcher_b:2",
+      "run_id": "paper-2026-10-12-2026-11-02:researcher_b",
+      "role": "researcher_b",
+      "ticker": "CDNA",
+      "company": "CareDx, Inc.",
+      "rank": 2,
+      "max_allocation": "0.2",
+      "expected_return": 0.02,
+      "downside": -0.13,
+      "probability_profit": 0.53,
+      "confidence": 0.56,
+      "thesis": "CareDx combines a rising pre-release trend with a strong earnings reaction during a weak market session. The issuer reported 39% revenue growth and doubled adjusted EBITDA, providing a plausible basis for continued attention. This smaller company is a credible alternative to technology leaders, but the exceptionally large jump limits confidence and sizing. The latest completed close supports structural retention, while its retreat from the session high tempers immediate continuation. A positive weekly return requires additional demand beyond merely preserving Friday's breakout.",
+      "catalysts": [
+        "Continued digestion of the October 29 earnings release.",
+        "Evidence of expanding testing adoption and oncology integration could sustain investor attention."
+      ],
+      "risks": [
+        "A 22.22% one-session jump creates acute exhaustion and reversal risk.",
+        "The reaction-day range was wide, indicating unstable short-term pricing.",
+        "Acquired oncology revenue and prior-period collections complicate organic growth interpretation.",
+        "Reimbursement, integration and clinical-development risks remain material.",
+        "Retention of the breakout could coexist with a losing holding week."
+      ],
+      "invalidation": "Review completed daily closes: below the October 30 low of $80.44 weakens reaction retention; below the prior $73.43 high undermines breakout structure. A close above $90.87 confirms extension. October 30 retained structure but closed below its high, leaving extension unconfirmed. Later closes and fresh-entry conditions are unassessed; intraday prints cannot confirm closing checkpoints.",
+      "assumptions": [
+        "Backend must independently confirm fresh regular-session price, listing, liquidity and allocation compliance.",
+        "A 0.20 allocation represents about $199.66; two shares fit at the historical $87.41 close before costs.",
+        "The weekly return estimate assumes some post-earnings continuation rather than a repeat of Friday's jump.",
+        "Profit probability and adverse return are subjective scenarios."
+      ],
+      "evidence_ids": [
+        "web-researcher_b-3",
+        "web-researcher_b-4",
+        "web-researcher_b-5",
+        "web-researcher_b-6",
+        "web-researcher_b-9"
+      ]
+    }
+  ],
+  "decision": {
+    "reviewed_ids": [
+      "paper-2026-10-12-2026-11-02:researcher_a:1",
+      "paper-2026-10-12-2026-11-02:researcher_b:1",
+      "paper-2026-10-12-2026-11-02:researcher_b:2"
+    ],
+    "allocations": [
+      {
+        "proposal_id": "paper-2026-10-12-2026-11-02:researcher_b:1",
+        "amount": "249.5744638375",
+        "percent": "0.25",
+        "rationale": "Select GDDY below its 30% proposal ceiling. Issuer-supported profit and cash-flow growth supports the continuation hypothesis (web-researcher_b-1). The verified $118.47 observation implies $118.529235 per share including 5 bps costs; this budget buys two whole shares for $237.05847. The intraday price above $118.11 does not establish completed-close confirmation. Retracement risk warrants limited exposure."
+      },
+      {
+        "proposal_id": "paper-2026-10-12-2026-11-02:researcher_a:1",
+        "amount": "249.5744638375",
+        "percent": "0.25",
+        "rationale": "Select SBUX below its 30% proposal ceiling. U.S. transaction improvement and the verified November 5 launch provide a modest weekly mechanism (web-researcher_a-1 and web-researcher_a-2), although incremental demand remains unproven. The verified $104.63 observation implies $104.682315 per share including costs; this budget buys two whole shares for $209.36463. Friday's reversal limits conviction."
+      }
+    ],
+    "rejections": [
+      {
+        "proposal_id": "paper-2026-10-12-2026-11-02:researcher_b:2",
+        "rationale": "Reject CDNA despite verified eligibility and affordability: two shares would cost $174.22707 including costs, within its 20% ceiling. The 22.22% completed-session jump and $80.44–$90.87 reaction range create substantial exhaustion risk (web-researcher_b-4). Acquisitions and prior-period collections qualify reported growth (web-researcher_b-3). Its 53% subjective profit probability does not provide enough conviction to add this exposure."
+      }
+    ],
+    "retained_cash": "499.148927675",
+    "hold_cash": false,
+    "summary": "Allocate 25% each to GDDY and SBUX, targeting two whole shares apiece at supplied observations and modeled costs. Reject CDNA because its extreme earnings reaction makes continuation less attractive relative to reversal risk. Retain half the account deliberately because weekly edges remain modest and uncertain; whole-share rounding increases expected actual cash to approximately 55.28%. Recent mixed outcomes do not justify changing allocation rules or treating subjective probabilities as calibrated.",
+    "risk_considerations": [
+      "Both finalized independent sets were reviewed. All three submitted tickers are independently purchase-eligible; discovery_screening is empty.",
+      "Each selected ticker receives 25%; total allocation is 50%, within researcher ceilings, the combined 40% ticker limit and 95% deployment limit.",
+      "Costs include 2 bps spread, 3 bps slippage and zero fees. At supplied prices, estimated purchases total $446.42310.",
+      "Deliberately unallocated cash is $499.148927675. Whole-share rounding leaves another $52.725827675 unused, producing estimated post-purchase cash of $551.87475535; unused budgets are not redistributed.",
+      "Both selections depend on additional demand following public information. Broad market weakness could impair both positions.",
+      "Daily-close invalidation checkpoints are research review levels, not guaranteed exits or loss limits. Structural retention alone does not establish a profitable week.",
+      "Application code controls execution. Changed prices or failed execution checks can reduce shares or skip an allocation, increasing retained cash."
+    ],
+    "uncertainty": "The packet supplies fresh observations, verified listings and eligible status, but prices are not executable quotes. News, fundamentals, halts and comprehensive corporate actions are not independently verified by the market provider. Research findings have publication and adjustment limitations. Forecast probabilities are subjective; event timing and operating improvement do not establish incremental demand or weekly gains."
+  },
+  "review": null,
+  "runs": [
+    {
+      "id": "paper-2026-10-12-2026-11-02:researcher_b",
+      "role": "researcher_b",
+      "purpose": "RESEARCH",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v3-market-wide-discovery",
+        "overlay_version": 3,
+        "lesson_ids": [
+          "paper-2026-10-12-2026-10-12:patch:1",
+          "paper-2026-10-12-2026-10-19:patch:1",
+          "paper-2026-10-12-2026-10-26:patch:0"
+        ],
+        "recent_week_ids": [
+          "paper-2026-10-12-2026-10-26",
+          "paper-2026-10-12-2026-10-19",
+          "paper-2026-10-12-2026-10-12"
+        ],
+        "cutoff": "2026-11-02T14:35:05.802261+00:00",
+        "estimated_tokens": 3629,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 658,
+          "overlay": 1021,
+          "current": 228,
+          "recent": 915,
+          "older": 11,
+          "contract": 778
+        },
+        "reductions": []
+      },
+      "prompt_hash": "27e724c517d5fc441a4ff17f9341431c2e6933ace01091c79c37736c2c5be346",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nYou are researcher_b, Morgan, an independent momentum and price-behavior researcher for a PAPER / SIMULATED Monday-to-Friday experiment. When independent_web_research is true, actively use live web search and open sources yourself for price/volume history, market/sector relative strength, volatility and trend stability. Search public financial data and issuer disclosures; verify dates, distinguish adjusted history from raw observations, and compare stocks across the supported U.S. exchange-listed market when research_scope is market_wide_us_listed_common_stocks. Do not simply assess the supplied packet or abstain because it is empty. Independently choose up to three eligible eligible U.S. exchange-listed common stocks with sourced theses, or give a substantive source-backed abstention. Never receive the other researcher's findings before finalizing yours.\n\nReturn research_summary explaining searches, comparisons, findings and limitations; investigated_tickers; and sources with ID",
+      "research_summary": "Independently searched dated October 30 market movers, November 2 premarket activity, October momentum rankings, issuer earnings and price histories across Nasdaq, NYSE and NYSE American. Compared healthcare, software, consumer, industrial, financial and commodity names, including smaller companies; this was not exhaustive coverage. Selected GDDY and CDNA for issuer-supported earnings reactions and strength against a falling market. GDDY ranks higher for its less extreme reaction; CDNA offers stronger momentum with greater reversal risk. REGN's $927.89 observation exceeds the approximately $399.32 ticker cap. INO and UAMY were below $5. UEC showed weak price behavior. CLRO's sharp speculative premarket move lacked verified sustained liquidity. CPRI, FDXF and MEOH remained discovery leads without sufficiently complete corroboration for proposals; INTC and RDDT had severe negative reactions.\nCalculated simple average daily share volume from the 20 completed sessions October 5–30: approximately 1.428 million for CDNA and 1.672 million for GDDY. Both histories provide over 20 sessions. Historical tables distinguish Close and Adjusted Close; selected closes coincide, but the provider adjusts past prices for splits, so these are historical reference levels rather than independently audited raw tape. No ATR, annualized volatility or other unsupported indicator was estimated. Wide reaction-day ranges and earlier pullbacks temper trend stability.\nOnly dated pre-cutoff observations were used. History pages showed November 2 premarket observations, which are not regular-session confirmations. A subsequently opened CDNA quote displayed 09:36 EST, after cutoff, and was excluded. Twelve Data's opened page was stale relative to its search excerpt; used only for security classification. Dynamic pages lack established original publication timestamps, recorded as null; historical row dates establish observation dates, not archival publication provenance. Fresh executable observations remain unavailable here and require backend validation. Allocation budgets respect whole-share affordability and the 0.40 cap. Checkpoints distinguish structural retention, extension and weekly return; all forecasts remain subjective.",
+      "abstention_reason": null,
+      "investigated_tickers": [
+        "GDDY",
+        "CDNA",
+        "CPRI",
+        "FDXF",
+        "MEOH",
+        "REGN",
+        "GPN",
+        "CBOE",
+        "VLTO",
+        "MDLZ",
+        "INTC",
+        "RDDT",
+        "UEC",
+        "UAMY",
+        "INO",
+        "CLRO"
+      ],
+      "sources": [
+        {
+          "id": "web-researcher_b-1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1609711/000160971126000117/gddyex991-20260930xq3earni.htm",
+          "title": "GoDaddy Reports Third Quarter 2026 Financial Results",
+          "published_at": "2026-10-29",
+          "finding": "Release dated October 29 identifies NYSE:GDDY. Revenue increased 6%, operating income 22% and free cash flow 9%. Airo annualized bookings exceeded $100 million. Exact publication time was not established."
+        },
+        {
+          "id": "web-researcher_b-2",
+          "url": "https://stockanalysis.com/stocks/gddy/history/",
+          "title": "GoDaddy Stock Price History",
+          "published_at": null,
+          "finding": "October 30 close was $117.24, up 10.72%, on 3,574,957 shares; range $103.70–$118.11. October 23 high was $114.77 and October 29 close $105.89. October 5–30 rows yield a 20-session average of 1,672,435.55 shares. Close and adjusted close coincide for these rows. Dynamic page publication time is unknown."
+        },
+        {
+          "id": "web-researcher_b-3",
+          "url": "https://www.caredx.com/newsroom/press-releases/caredx-announces-third-quarter-2026-financial-results",
+          "title": "CareDx Announces Third Quarter 2026 Financial Results",
+          "published_at": "2026-10-29",
+          "finding": "October 29 issuer release identifies Nasdaq:CDNA. Revenue rose 39% to $139 million, adjusted EBITDA increased to $30 million from $15 million, and testing volumes rose 51%. Acquisitions and prior-period revenue contributed; exact release time was not established."
+        },
+        {
+          "id": "web-researcher_b-4",
+          "url": "https://stockanalysis.com/stocks/cdna/history/",
+          "title": "CareDx Stock Price History",
+          "published_at": null,
+          "finding": "October 30 close was $87.41, up 22.22%, on 3,554,610 shares; range $80.44–$90.87. October 28 high was $73.43. October 5–30 rows yield a 20-session average of 1,427,828.4 shares. Close and adjusted close coincide for selected rows; past prices are split-adjusted. Original publication time is unknown."
+        },
+        {
+          "id": "web-researcher_b-5",
+          "url": "https://quant500.com/sp500-gainers-losers",
+          "title": "S&P 500 Top Gainers and Losers: October 30, 2026",
+          "published_at": null,
+          "finding": "Dated October 30 session comparison reports SPY down 1.77%, technology median down 3.87% and consumer defensive median up 1.63%. GDDY gained 10.72%; REGN closed at $927.89. Returns are split-adjusted close-to-close changes excluding dividends. Page publication timestamp is unknown."
+        },
+        {
+          "id": "web-researcher_b-6",
+          "url": "https://www.cot-trading.com/post?slug=top-stock-movers-october-30-2026",
+          "title": "Top Stock Movers – October 30, 2026",
+          "published_at": null,
+          "finding": "October 30 recap independently corroborates CDNA's $87.41 price and 22.22% gain, and identifies CPRI, FDXF and MEOH as discovery leads. INTC and RDDT suffered steep declines. Exact publication timestamp and adjustment methodology are unspecified."
+        },
+        {
+          "id": "web-researcher_b-7",
+          "url": "https://markets.financialcontent.com/wss/quote/ny%3Auec",
+          "title": "Uranium Energy Corp. Common Stock Quote",
+          "published_at": null,
+          "finding": "Quote explicitly dated October 30 reports UEC at $7.71, 62.1% below its 52-week high, with approximately 9.1 million three-month average daily shares. Weak price position made it a less attractive continuation lead. Original page publication time is unknown."
+        },
+        {
+          "id": "web-researcher_b-8",
+          "url": "https://www.financecharts.com/stocks/UAMY/summary/price",
+          "title": "United States Antimony Stock Price History",
+          "published_at": null,
+          "finding": "Reports UAMY's October 30 closing price as $2.98, down 5.70%, below the experiment's $5 eligibility floor. Original page publication timestamp is unknown."
+        },
+        {
+          "id": "web-researcher_b-9",
+          "url": "https://materials.proxyvote.com/Approved/14167L/20260415/AR_633338.PDF",
+          "title": "CareDx 2025 Form 10-K",
+          "published_at": null,
+          "finding": "Annual report for the year ended December 31, 2025 identifies CDNA as common stock registered on Nasdaq. The hosted document's exact publication timestamp was not established; the report predates the cutoff."
+        },
+        {
+          "id": "web-researcher_b-10",
+          "url": "https://twelvedata.com/markets/747012/stock/nyse/gddy/historical-data",
+          "title": "GoDaddy Inc. Class A Common Stock — Historical Data",
+          "published_at": null,
+          "finding": "Identifies GoDaddy GDDY as NYSE-listed Class A Common Stock denominated in USD. Opened content showed stale September pricing inconsistent with the search excerpt; no price or performance inference uses this page. Publication timestamp is unknown."
+        }
+      ],
+      "web_search_mode": "live",
+      "web_activity": {
+        "completed_calls": 7,
+        "calls": [
+          {
+            "type": "search",
+            "queries": [
+              "stocks October 30 2026 market winners earnings volume",
+              "November 2 2026 stock market premarket earnings gainers"
+            ]
+          },
+          {
+            "type": "open_page",
+            "url": "https://www.cot-trading.com/post?slug=top-stock-movers-october-30-2026"
+          },
+          {
+            "type": "search",
+            "queries": [
+              "CareDx third quarter 2026 results October 2026 CDNA",
+              "Capri Holdings October 30 2026 results raised outlook",
+              "GoDaddy third quarter 2026 results October 29 2026",
+              "NYSE American October 30 2026 stocks gainers earnings"
+            ]
+          },
+          {
+            "type": "search",
+            "query": "NYSE American UAMY UEC October 30 2026 stock momentum volume"
+          },
+          {
+            "type": "other"
+          },
+          {
+            "type": "search",
+            "queries": [
+              "CDNA common stock Nasdaq November 2 2026 87",
+              "GDDY class A common stock NYSE October 2026"
+            ]
+          },
+          {
+            "type": "open_page",
+            "url": "https://twelvedata.com/markets/747012/stock/nyse/gddy/historical-data"
+          }
+        ],
+        "event_stream_sha256": "d679643cb9bf66821bc4dcd7f513e03eb4efc64142cfe7dceb6b1c36735aaf0e",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:researcher_a",
+      "role": "researcher_a",
+      "purpose": "RESEARCH",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v3-market-wide-discovery",
+        "overlay_version": 2,
+        "lesson_ids": [
+          "paper-2026-10-12-2026-10-12:patch:0",
+          "paper-2026-10-12-2026-10-19:patch:0"
+        ],
+        "recent_week_ids": [
+          "paper-2026-10-12-2026-10-26",
+          "paper-2026-10-12-2026-10-19",
+          "paper-2026-10-12-2026-10-12"
+        ],
+        "cutoff": "2026-11-02T14:35:05.802261+00:00",
+        "estimated_tokens": 3322,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 685,
+          "overlay": 687,
+          "current": 228,
+          "recent": 915,
+          "older": 11,
+          "contract": 778
+        },
+        "reductions": []
+      },
+      "prompt_hash": "b454e8925dd802e02a3330b581d74b59781cf68830968f7efcd28949d7dd01f9",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nYou are researcher_a, Avery, an independent fundamentals and catalysts researcher for a PAPER / SIMULATED Monday-to-Friday experiment. When independent_web_research is true, actively use live web search and open primary sources yourself: issuer investor-relations releases, SEC filings, earnings/calendar announcements and credible timestamped reporting. Run several targeted searches; do not simply assess the supplied packet or abstain because its quotes/fundamentals/news are empty. Independently investigate the U.S. exchange-listed market when research_scope is market_wide_us_listed_common_stocks; choose up to three eligible common stocks with sourced theses, or provide a substantive, source-backed abstention. Do not see or depend on the other researcher's work.\n\nReturn research_summary explaining searches, comparisons, findings and limitations; investigated_tickers; and sources with stable IDs web-researcher_a-1, web-researcher_a-2, etc., HTTPS URLs, titles, publication timestamp",
+      "research_summary": "Ran targeted live searches for weekly earnings, recent guidance increases, issuer releases, historical reactions and NYSE American opportunities across consumer, healthcare, industrial, energy and nuclear businesses. Opened primary disclosures directly and compared smaller Forum Energy and medium-sized opportunities with larger issuers; this was not exhaustive market coverage. SBUX is the sole finalist because transaction growth, affordability and a verified November 5 launch provide a modest, testable weekly bridge. Expectations upside remains unresolved. FET's improving results were attractive, but its displayed 20-day average volume of 179,256 falls below the required million shares. PWR's strong release did not overcome affordability: its October 30 close of $620.73 exceeds the approximately $399.32 configured ticker cap. ILMN raised guidance, but its 18.641% Friday decline argues against assuming positive continuation. HSY and UPS releases were reviewed, while LNG's dividend dates fall outside the week; none established a stronger weekly mechanism. NYSE American searches identified UEC's advisory-council announcement and UUUU earnings timing, but expansion plans and event timing did not establish positive earnings surprise evidence. No engine quote was treated as necessary for investigation or any web observation as executable. Historical observations precede the cutoff; dynamic statistics pages have unknown publication timestamps and uncertain archival freshness, so their screening figures require backend verification. No subsequent announcement is used. Dates shown without times retain date-only precision.",
+      "abstention_reason": null,
+      "investigated_tickers": [
+        "SBUX",
+        "ILMN",
+        "FET",
+        "PWR",
+        "HSY",
+        "UPS",
+        "UEC",
+        "UUUU",
+        "LNG"
+      ],
+      "sources": [
+        {
+          "id": "web-researcher_a-1",
+          "url": "https://investor.starbucks.com/news/financial-releases/news-details/2026/Starbucks-Reports-Q4-and-Full-Fiscal-Year-2026-Results/default.aspx",
+          "title": "Starbucks Reports Q4 and Full Fiscal Year 2026 Results",
+          "published_at": "2026-10-29",
+          "finding": "Issuer reports U.S. comparable sales growth of 7.7%, including 2.4% transaction growth, and non-GAAP operating margin of 14.0%. Consolidated revenue declined 4%, primarily reflecting China's conversion to a licensed joint venture. International transactions declined 2.8%. These comparisons support operating improvement with material qualifications."
+        },
+        {
+          "id": "web-researcher_a-2",
+          "url": "https://about.starbucks.com/stories/2026/starbucks-holiday-menu-is-coming-to-town-nov-5/",
+          "title": "Starbucks holiday menu is coming to town Nov. 5",
+          "published_at": "2026-10-05",
+          "finding": "Issuer announcement dated October 5 schedules the holiday menu for November 5, including new Tiramisu Velvet drinks and seasonal food and merchandise. This establishes timing, not incremental sales or an earnings surprise."
+        },
+        {
+          "id": "web-researcher_a-3",
+          "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922426000130/sbux-20260628.htm",
+          "title": "Starbucks Form 10-Q for the quarter ended June 28, 2026",
+          "published_at": "2026-07-29",
+          "finding": "Form 10-Q identifies Starbucks Corporation common stock, symbol SBUX, registered on the Nasdaq Global Select Market. The filing index establishes July 29 publication. The filing also distinguishes available repurchase authorization from actual purchases."
+        },
+        {
+          "id": "web-researcher_a-4",
+          "url": "https://stockanalysis.com/stocks/sbux/history/",
+          "title": "Starbucks Stock Price History",
+          "published_at": null,
+          "finding": "Historical USD table displays October 30 close $103.67, low $102.24 and volume 14,220,253; October 29 close was $105.51. Earlier session rows establish trading history. Publication timestamp is unknown; observations are dated historical evidence, not executable prices."
+        },
+        {
+          "id": "web-researcher_a-5",
+          "url": "https://stockanalysis.com/stocks/sbux/statistics/",
+          "title": "Starbucks Statistics and Valuation",
+          "published_at": null,
+          "finding": "Dynamic statistics page displays 20-day average volume of 10,074,668 shares, supporting preliminary liquidity screening. Exact publication time and frozen historical availability are unverified, so backend must independently confirm."
+        },
+        {
+          "id": "web-researcher_a-6",
+          "url": "https://ir.f-e-t.com/news-releases/news-release-details/forum-energy-technologies-announces-third-quarter-2026-results",
+          "title": "Forum Energy Technologies Announces Third Quarter 2026 Results; Raises Full Year Guidance",
+          "published_at": "2026-10-29",
+          "finding": "NYSE:FET issuer release reports sequential revenue growth of 5%, adjusted EBITDA growth of 14% and raised full-year guidance. Operating improvement merited investigation but did not establish liquidity eligibility."
+        },
+        {
+          "id": "web-researcher_a-7",
+          "url": "https://stockanalysis.com/stocks/fet/statistics/",
+          "title": "Forum Energy Technologies Statistics and Valuation",
+          "published_at": null,
+          "finding": "Dynamic page displays FET 20-day average volume of 179,256 shares, below the required one million. Publication timestamp is unknown and archival freshness is uncertain; this supports conservative rejection rather than execution."
+        },
+        {
+          "id": "web-researcher_a-8",
+          "url": "https://investors.quantaservices.com/_assets/_01c9c3f1ac58364ad0eaebaeeddaa06e/quantaservices/news/2026-10-29_QUANTA_SERVICES_REPORTS_THIRD_QUARTER_2026_407.pdf",
+          "title": "Quanta Services Reports Third Quarter 2026 Results",
+          "published_at": "2026-10-29",
+          "finding": "NYSE:PWR issuer reports record quarterly revenue, earnings and backlog and raises 2026 expectations. Acquisitions contribute to reported growth, limiting interpretation as entirely organic improvement."
+        },
+        {
+          "id": "web-researcher_a-9",
+          "url": "https://stockanalysis.com/stocks/pwr/history/",
+          "title": "Quanta Services Stock Price History",
+          "published_at": null,
+          "finding": "Historical table shows PWR October 30 close $620.73, above the approximately $399.32 maximum ticker budget. One share would not fit at that historical observation. Page publication time is unknown; fresh execution verification remains separate."
+        },
+        {
+          "id": "web-researcher_a-10",
+          "url": "https://investor.illumina.com/static-files/425680f5-fad9-4b9e-af2b-d863bdaa9ac9",
+          "title": "Illumina Reports Financial Results for Third Quarter of Fiscal Year 2026",
+          "published_at": "2026-10-29",
+          "finding": "Nasdaq:ILMN issuer reports quarterly revenue of $1.13 billion, up 4.2%, and raises full-year revenue and earnings guidance. Favorable operating disclosures alone do not establish a favorable price response."
+        },
+        {
+          "id": "web-researcher_a-11",
+          "url": "https://chartexchange.com/symbol/nasdaq-ilmn/historical",
+          "title": "Illumina Historical Prices",
+          "published_at": null,
+          "finding": "Dated historical table shows ILMN October 30 close $235.99, down 18.641%, on 5,390,386 shares. This weakens a continuation proposal without identifying the cause of the decline. Publication timestamp is unknown."
+        },
+        {
+          "id": "web-researcher_a-12",
+          "url": "https://www.uraniumenergy.com/news/releases/2026/index.php?content_id=1142",
+          "title": "Uranium Energy Corp Forms National Security Advisory Council",
+          "published_at": "2026-10-13",
+          "finding": "Issuer identifies NYSE American:UEC and announces a national security advisory council supporting expansion into uranium conversion. This is strategic context; no within-week operating or earnings outcome is established."
+        }
+      ],
+      "web_search_mode": "live",
+      "web_activity": {
+        "completed_calls": 10,
+        "calls": [
+          {
+            "type": "search",
+            "queries": [
+              "stocks earnings November 2 2026 November 6 2026 mid cap earnings outlook",
+              "site.businesswire.com \"October 30, 2026\" \"results\"",
+              "site.prnewswire.com \"October 29, 2026\" \"quarter\" earnings"
+            ]
+          },
+          {
+            "type": "other"
+          },
+          {
+            "type": "search",
+            "queries": [
+              "ILMN October 30 2026 shares rose volume earnings 2026",
+              "SBUX October 30 2026 stock shares earnings holiday November 2026",
+              "site.nasdaq.com ILMN historical October 30 2026",
+              "site.ir.ups.com \"2026\" \"October 27\" results"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.about.starbucks.com \"2026\" \"November 5\" holiday",
+              "site.investor.starbucks.com \"2026\" \"7.2%\"",
+              "site.investors.ups.com \"2026\" \"Raises\" \"October 27\"",
+              "NYSE American \"October\" \"2026\" \"third quarter\" earnings raises guidance"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.about.starbucks.com \"2026\" \"holiday\" \"November 5\"",
+              "NYSE American October 2026 earnings \"LNG\" \"Cheniere\" November 2026"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.about.starbucks.com/ \"2026\" \"Tiramisu\"",
+              "\"NYSE American\" \"October 29, 2026\" results"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.sec.gov/Archives/edgar/data/829224 \"2026\" \"Common Stock\" \"Nasdaq\"",
+              "\"NYSE American\" \"UUUU\" \"October\" \"2026\" earnings",
+              "\"NYSE American\" \"UEC\" \"October\" \"2026\""
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "Starbucks 2026 10-Q SBUX common stock Nasdaq July 2026 SEC",
+              "site.investor.starbucks.com \"Common Stock\" \"Nasdaq\" \"2026\""
+            ]
+          },
+          {
+            "type": "other"
+          },
+          {
+            "type": "find_in_page",
+            "pattern": "Average Volume"
+          }
+        ],
+        "event_stream_sha256": "89a9a571ac74106ff09f0d9c8f4816f65ed9f7ce0984f6ffcb9bcbdbe6f3c6d9",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:manager",
+      "role": "manager",
+      "purpose": "DECISION",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v1",
+        "overlay_version": 0,
+        "lesson_ids": [],
+        "recent_week_ids": [
+          "paper-2026-10-12-2026-10-26",
+          "paper-2026-10-12-2026-10-19",
+          "paper-2026-10-12-2026-10-12"
+        ],
+        "cutoff": "2026-11-02T14:38:02.780329+00:00",
+        "estimated_tokens": 9463,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 232,
+          "overlay": 32,
+          "current": 7823,
+          "recent": 915,
+          "older": 11,
+          "contract": 432
+        },
+        "reductions": []
+      },
+      "prompt_hash": "1d90ce5436e5fcd2db98de9b2896cf631ceb323e2944828bea11a2b4c2326fa4",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nFor this DECISION task, use only supplied records. Web browsing is disabled for this purpose.\nYou are manager, Casey. Review both finalized independent proposal sets. Select only submitted proposals or hold cash. Account is PAPER / SIMULATED, cash-funded long-only with whole shares only. Combined ticker allocation <=40%, total <=95%, fees included. Explain every rejection, retained cash and uncertainty. All referenced evidence must exist. Application code controls execution. No tools, external research, credentials or settings changes. Return only the supplied JSON contract.\n\nAllocate enough for at least one whole share at the supplied price plus spread, slippage and fees, within researcher and ticker limits. Share counts round down; unused allocations remain cash and are not redistributed automatically. Reject unaffordable proposals rather than requesting fractional shares. Price changes can cause an allocation to be skipped at execution.\n\nFor market-wide discoveries, eligible_d",
+      "research_summary": "",
+      "abstention_reason": null,
+      "investigated_tickers": [],
+      "sources": [],
+      "web_search_mode": "disabled",
+      "web_activity": {
+        "completed_calls": 0,
+        "calls": [],
+        "event_stream_sha256": "302c97a47a904761004fea72cdd01c04de43fec699ce6d2f7f335e679849db77",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "paper-2026-10-12-2026-11-02:entry",
+      "kind": "entry",
+      "provider": "yahoo-public",
+      "cutoff": "2026-11-02T14:35:05.802261+00:00",
+      "evidence": []
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:discovery",
+      "kind": "discovery",
+      "provider": "yahoo-public",
+      "cutoff": "2026-11-02T14:38:02.780329+00:00",
+      "evidence": [
+        {
+          "id": "yahoo:CDNA:2026-11-02T14:38:01+00:00",
+          "ticker": "CDNA",
+          "observed_at": "2026-11-02T14:38:01+00:00",
+          "price": "87.07",
+          "redistribution": "metadata only; verify provider terms"
+        },
+        {
+          "id": "yahoo:GDDY:2026-11-02T14:38:01+00:00",
+          "ticker": "GDDY",
+          "observed_at": "2026-11-02T14:38:01+00:00",
+          "price": "118.47",
+          "redistribution": "metadata only; verify provider terms"
+        },
+        {
+          "id": "yahoo:SBUX:2026-11-02T14:38:02+00:00",
+          "ticker": "SBUX",
+          "observed_at": "2026-11-02T14:38:02+00:00",
+          "price": "104.63",
+          "redistribution": "metadata only; verify provider terms"
+        }
+      ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:entry-execution",
+      "kind": "entry-execution",
+      "provider": "yahoo-public",
+      "cutoff": "2026-11-02T14:39:04.616442+00:00",
+      "evidence": [
+        {
+          "id": "yahoo:GDDY:2026-11-02T14:39:03+00:00",
+          "ticker": "GDDY",
+          "observed_at": "2026-11-02T14:39:03+00:00",
+          "price": "119.192",
+          "redistribution": "metadata only; verify provider terms"
+        },
+        {
+          "id": "yahoo:SBUX:2026-11-02T14:39:03+00:00",
+          "ticker": "SBUX",
+          "observed_at": "2026-11-02T14:39:03+00:00",
+          "price": "104.82",
+          "redistribution": "metadata only; verify provider terms"
+        }
+      ]
+    }
+  ],
+  "fills": [
+    {
+      "id": "paper-2026-10-12-2026-11-02:BUY:GDDY",
+      "ticker": "GDDY",
+      "quantity": "2.00000000",
+      "price": "119.25159600",
+      "fee": "0E-8",
+      "side": "BUY",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-11-02T14:39:03+00:00",
+      "fill_time": "2026-11-02T14:39:03+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "119.192"
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:BUY:SBUX",
+      "ticker": "SBUX",
+      "quantity": "2.00000000",
+      "price": "104.87241000",
+      "fee": "0E-8",
+      "side": "BUY",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-11-02T14:39:03+00:00",
+      "fill_time": "2026-11-02T14:39:03+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "104.82"
+    }
+  ],
+  "timeline": [
+    {
+      "stage": "MARKET_PACKET",
+      "completed_at": "2026-11-02T14:35:07.659511+00:00"
+    },
+    {
+      "stage": "PURCHASES",
+      "completed_at": "2026-11-02T14:39:05.474546+00:00"
+    }
+  ],
+  "meeting_ids": []
+}

@@ -1,13 +1,13 @@
 {
   "schema_version": "1",
-  "snapshot_id": "paper-2026-10-12-r118",
-  "source_revision": 118,
+  "snapshot_id": "paper-2026-10-12-r124",
+  "source_revision": 124,
   "experiment_id": "paper-2026-10-12",
   "label": "PAPER / SIMULATED",
   "synthetic": false,
-  "created_at": "2026-10-30T19:46:28.189493+00:00",
-  "source_cutoff": "2026-10-30T19:45:11.642410+00:00",
-  "valuation_time": "2026-10-30T19:45:11.642410+00:00",
+  "created_at": "2026-11-02T14:39:05.742662+00:00",
+  "source_cutoff": "2026-11-02T14:39:04.616442+00:00",
+  "valuation_time": "2026-11-02T14:39:04.616442+00:00",
   "next_expected_publication": "Trading days at 12:45 America/New_York, plus Monday / Friday workflow results",
   "files": [
     {
@@ -18,26 +18,26 @@
     },
     {
       "path": "frontend/public/data/operations.json",
-      "sha256": "84a309285a29281aacbe711eb0f756cd3b3d70ab1872b75ebb2f70792bb3950d",
-      "bytes": 36332,
+      "sha256": "9de4d1f88778e9a6bfa660bbe48e8ad4179858ec8a8198f339b4ecbf5f8cba63",
+      "bytes": 36483,
       "schema_version": "1"
     },
     {
       "path": "frontend/public/data/overview.json",
-      "sha256": "08d85392080287bd30baafa8aef9e093eb5cfe807bd35356806c4361346f922b",
-      "bytes": 8857,
+      "sha256": "adcee5933c6c17337ccddacd44b12c897ad04da1c6ef4c54982ab11ddbebcb7a",
+      "bytes": 10294,
       "schema_version": "1"
     },
     {
       "path": "frontend/public/data/performance.csv",
-      "sha256": "b9952855f9ab824f5fefa9f243503073ffe21419123a238bdeaacbaa8dc64faa",
-      "bytes": 219,
+      "sha256": "d802f82dd75117efd5e1e7882f43c1f308a163f27d7cb45742cf8a44b8577267",
+      "bytes": 272,
       "schema_version": "1"
     },
     {
       "path": "frontend/public/data/weeks/index.json",
-      "sha256": "7f0a4c51cb358d812861943af2ee228637a27aa72c36c9a05964a14fc94b3db2",
-      "bytes": 539,
+      "sha256": "6a5190a44d7ea4ac5681a9e430ecc3b4b4f4611a0bf8e05eea9f925d3df83701",
+      "bytes": 711,
       "schema_version": "1"
     },
     {
@@ -56,6 +56,12 @@
       "path": "frontend/public/data/weeks/paper-2026-10-12-2026-10-26.json",
       "sha256": "4a12123e8f61fe96feb828f661b94f036fcc33ea6a4ce7ad060d0c1024d680cd",
       "bytes": 64770,
+      "schema_version": "1"
+    },
+    {
+      "path": "frontend/public/data/weeks/paper-2026-10-12-2026-11-02.json",
+      "sha256": "0e5aa04dfce22964eab58faa0431756c0aa197bd999b80e83e3adf867f0c1664",
+      "bytes": 43934,
       "schema_version": "1"
     }
   ]

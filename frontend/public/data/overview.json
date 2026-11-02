@@ -2,20 +2,20 @@
   "label": "PAPER / SIMULATED",
   "currency": "USD",
   "initial_cash": "1000.00",
-  "equity": "998.30",
-  "cash": "998.30",
-  "invested_value": "0.00",
+  "equity": "998.07",
+  "cash": "550.05",
+  "invested_value": "448.02",
   "realized_pnl": "-1.70",
-  "unrealized_pnl": "0.00",
-  "cumulative_pnl": "-1.70",
-  "cumulative_return": "-0.17021446500",
-  "monthly_pnl": "-1.70",
+  "unrealized_pnl": "-0.22",
+  "cumulative_pnl": "-1.93",
+  "cumulative_return": "-0.19261566500",
+  "monthly_pnl": "0.00",
   "rolling_four_week_pnl": "-1.70",
   "target_monthly_profit": "100.00",
   "target_is_experimental": true,
   "completed_cycles": 3,
   "skipped_cycles": 0,
-  "valuation_time": "2026-10-30T19:45:11.642410+00:00",
+  "valuation_time": "2026-11-02T14:39:04.616442+00:00",
   "equity_series": [
     {
       "week": "Inception",
@@ -154,7 +154,28 @@
       "drawdown": "-0.2727190993276924767489485800"
     }
   ],
-  "positions": [],
+  "positions": [
+    {
+      "id": "paper-2026-10-12-2026-11-02:GDDY",
+      "ticker": "GDDY",
+      "quantity": "2.00000000",
+      "basis": "238.50",
+      "value": "238.38",
+      "status": "OPEN",
+      "label": "PAPER / SIMULATED",
+      "valuation_time": "2026-11-02T14:39:03+00:00"
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:SBUX",
+      "ticker": "SBUX",
+      "quantity": "2.00000000",
+      "basis": "209.74",
+      "value": "209.64",
+      "status": "OPEN",
+      "label": "PAPER / SIMULATED",
+      "valuation_time": "2026-11-02T14:39:03+00:00"
+    }
+  ],
   "fills": [
     {
       "id": "paper-2026-10-12-2026-10-12:BUY:AMZN",
@@ -305,6 +326,34 @@
       "raw_price": "53.85",
       "cost_basis_sold": "259.40463750",
       "realized_pnl": "9.71073750"
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:BUY:GDDY",
+      "ticker": "GDDY",
+      "quantity": "2.00000000",
+      "price": "119.25159600",
+      "fee": "0E-8",
+      "side": "BUY",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-11-02T14:39:03+00:00",
+      "fill_time": "2026-11-02T14:39:03+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "119.192"
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:BUY:SBUX",
+      "ticker": "SBUX",
+      "quantity": "2.00000000",
+      "price": "104.87241000",
+      "fee": "0E-8",
+      "side": "BUY",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-11-02T14:39:03+00:00",
+      "fill_time": "2026-11-02T14:39:03+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "104.82"
     }
   ],
   "latest_meeting": null
