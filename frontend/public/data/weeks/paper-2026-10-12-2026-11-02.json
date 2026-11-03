@@ -34,8 +34,8 @@
       "calendar",
       "ledger reconciliation"
     ],
-    "current_equity": "995.45",
-    "current_pnl": "-2.85"
+    "current_equity": "985.73",
+    "current_pnl": "-12.57"
   },
   "proposals": [
     {
@@ -698,6 +698,28 @@
           "ticker": "SBUX",
           "observed_at": "2026-11-02T17:46:17+00:00",
           "price": "103.76",
+          "redistribution": "metadata only; verify provider terms"
+        }
+      ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:valuation:2026-11-03",
+      "kind": "valuation-2026-11-03",
+      "provider": "yahoo-public",
+      "cutoff": "2026-11-03T17:45:07.223961+00:00",
+      "evidence": [
+        {
+          "id": "yahoo:GDDY:2026-11-03T17:44:53+00:00",
+          "ticker": "GDDY",
+          "observed_at": "2026-11-03T17:44:53+00:00",
+          "price": "113.548",
+          "redistribution": "metadata only; verify provider terms"
+        },
+        {
+          "id": "yahoo:SBUX:2026-11-03T17:45:06+00:00",
+          "ticker": "SBUX",
+          "observed_at": "2026-11-03T17:45:06+00:00",
+          "price": "104.29",
           "redistribution": "metadata only; verify provider terms"
         }
       ]
