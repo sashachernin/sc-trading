@@ -2,20 +2,20 @@
   "label": "PAPER / SIMULATED",
   "currency": "USD",
   "initial_cash": "1000.00",
-  "equity": "985.73",
+  "equity": "1005.07",
   "cash": "550.05",
-  "invested_value": "435.68",
+  "invested_value": "455.02",
   "realized_pnl": "-1.70",
-  "unrealized_pnl": "-12.57",
-  "cumulative_pnl": "-14.27",
-  "cumulative_return": "-1.42741566500",
+  "unrealized_pnl": "6.77",
+  "cumulative_pnl": "5.07",
+  "cumulative_return": "0.50698433500",
   "monthly_pnl": "0.00",
   "rolling_four_week_pnl": "-1.70",
   "target_monthly_profit": "100.00",
   "target_is_experimental": true,
   "completed_cycles": 3,
   "skipped_cycles": 0,
-  "valuation_time": "2026-11-03T17:45:07.223961+00:00",
+  "valuation_time": "2026-11-04T17:45:06.719251+00:00",
   "equity_series": [
     {
       "week": "Inception",
@@ -168,6 +168,14 @@
       "pnl": "0.00",
       "benchmark_equity": null,
       "drawdown": "-1.528425721506847946614986560"
+    },
+    {
+      "week": "paper-2026-10-12-2026-11-02",
+      "date": "2026-11-04",
+      "equity": "1005.07",
+      "pnl": "0.00",
+      "benchmark_equity": null,
+      "drawdown": "0"
     }
   ],
   "positions": [
@@ -176,20 +184,20 @@
       "ticker": "GDDY",
       "quantity": "2.00000000",
       "basis": "238.50",
-      "value": "227.10",
+      "value": "237.42",
       "status": "OPEN",
       "label": "PAPER / SIMULATED",
-      "valuation_time": "2026-11-03T17:44:53+00:00"
+      "valuation_time": "2026-11-04T17:45:02+00:00"
     },
     {
       "id": "paper-2026-10-12-2026-11-02:SBUX",
       "ticker": "SBUX",
       "quantity": "2.00000000",
       "basis": "209.74",
-      "value": "208.58",
+      "value": "217.60",
       "status": "OPEN",
       "label": "PAPER / SIMULATED",
-      "valuation_time": "2026-11-03T17:45:06+00:00"
+      "valuation_time": "2026-11-04T17:45:00+00:00"
     }
   ],
   "fills": [
