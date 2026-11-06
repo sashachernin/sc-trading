@@ -2,20 +2,20 @@
   "label": "PAPER / SIMULATED",
   "currency": "USD",
   "initial_cash": "1000.00",
-  "equity": "993.34",
-  "cash": "550.05",
-  "invested_value": "443.29",
-  "realized_pnl": "-1.70",
-  "unrealized_pnl": "-4.96",
-  "cumulative_pnl": "-6.66",
-  "cumulative_return": "-0.66601566500",
-  "monthly_pnl": "0.00",
-  "rolling_four_week_pnl": "-1.70",
+  "equity": "990.80",
+  "cash": "990.80",
+  "invested_value": "0.00",
+  "realized_pnl": "-9.20",
+  "unrealized_pnl": "0.00",
+  "cumulative_pnl": "-9.20",
+  "cumulative_return": "-0.92006416500",
+  "monthly_pnl": "-7.50",
+  "rolling_four_week_pnl": "-9.20",
   "target_monthly_profit": "100.00",
   "target_is_experimental": true,
-  "completed_cycles": 3,
+  "completed_cycles": 4,
   "skipped_cycles": 0,
-  "valuation_time": "2026-11-06T17:45:08.033468+00:00",
+  "valuation_time": "2026-11-06T20:45:13.510079+00:00",
   "equity_series": [
     {
       "week": "Inception",
@@ -184,30 +184,17 @@
       "pnl": "0.00",
       "benchmark_equity": null,
       "drawdown": "-1.167082889748972708368571340"
-    }
-  ],
-  "positions": [
-    {
-      "id": "paper-2026-10-12-2026-11-02:GDDY",
-      "ticker": "GDDY",
-      "quantity": "2.00000000",
-      "basis": "238.50",
-      "value": "232.36",
-      "status": "OPEN",
-      "label": "PAPER / SIMULATED",
-      "valuation_time": "2026-11-06T17:45:01+00:00"
     },
     {
-      "id": "paper-2026-10-12-2026-11-02:SBUX",
-      "ticker": "SBUX",
-      "quantity": "2.00000000",
-      "basis": "209.74",
-      "value": "210.93",
-      "status": "OPEN",
-      "label": "PAPER / SIMULATED",
-      "valuation_time": "2026-11-06T17:45:07+00:00"
+      "week": "paper-2026-10-12-2026-11-02",
+      "date": "2026-11-06",
+      "equity": "990.80",
+      "pnl": "-7.50",
+      "benchmark_equity": "1000.00",
+      "drawdown": "-1.419801605858298426975235560"
     }
   ],
+  "positions": [],
   "fills": [
     {
       "id": "paper-2026-10-12-2026-10-12:BUY:AMZN",
@@ -386,6 +373,38 @@
       "fill_time": "2026-11-02T14:39:03+00:00",
       "fill_model": "spread-slippage-v1",
       "raw_price": "104.82"
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:SELL:GDDY",
+      "ticker": "GDDY",
+      "quantity": "2.00000000",
+      "price": "115.26733750",
+      "fee": "0E-8",
+      "side": "SELL",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-11-06T20:45:11+00:00",
+      "fill_time": "2026-11-06T20:45:11+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "115.325",
+      "cost_basis_sold": "238.50319200",
+      "realized_pnl": "-7.96851700"
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:SELL:SBUX",
+      "ticker": "SBUX",
+      "quantity": "2.00000000",
+      "price": "105.10742000",
+      "fee": "0E-8",
+      "side": "SELL",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-11-06T20:45:09+00:00",
+      "fill_time": "2026-11-06T20:45:09+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "105.16",
+      "cost_basis_sold": "209.74482000",
+      "realized_pnl": "0.47002000"
     }
   ],
   "latest_meeting": null

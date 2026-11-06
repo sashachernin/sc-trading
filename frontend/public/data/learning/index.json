@@ -137,5 +137,60 @@
     "expiry": "2026-11-27",
     "validation_errors": [],
     "mode": "auto_bounded"
+  },
+  {
+    "id": "paper-2026-10-12-2026-11-02:patch:0",
+    "role": "researcher_b",
+    "status": "ACTIVE",
+    "version": 4,
+    "week_id": "paper-2026-10-12-2026-11-02",
+    "target": "researcher_b",
+    "operation": "add",
+    "lesson_id": null,
+    "text": "For earnings-continuation proposals, state the price anchoring the weekly return estimate and give a bounded higher-entry sensitivity scenario. Explain how paying above the reaction high changes remaining upside and retracement exposure. Keep completed-close confirmation separate from an intraday entry above that level. Treat this as forecast documentation, without changing allocation rules.",
+    "parameter": null,
+    "value": null,
+    "evidence_ids": [
+      "paper-2026-10-12-2026-11-02:researcher_b:1",
+      "paper-2026-10-12-2026-11-02:manager",
+      "paper-2026-10-12-2026-11-02:BUY:GDDY",
+      "paper-2026-10-12-2026-11-02:SELL:GDDY",
+      "web-researcher_b-2"
+    ],
+    "confidence": 0.8,
+    "expected_effect": "Make continuation forecasts assessable when the eventual entry is above the historical research reference.",
+    "duration_weeks": 4,
+    "success_metric": "For each continuation proposal during four weeks, identify the forecast reference price and one higher-entry scenario explaining whether expected upside remains attractive.",
+    "rollback_condition": "Revise or retire if the scenarios merely restate technical levels without clarifying forecast sensitivity or manager review.",
+    "expiry": "2026-12-04",
+    "validation_errors": [],
+    "mode": "auto_bounded"
+  },
+  {
+    "id": "paper-2026-10-12-2026-11-02:patch:1",
+    "role": "researcher_a",
+    "status": "ACTIVE",
+    "version": 3,
+    "week_id": "paper-2026-10-12-2026-11-02",
+    "target": "researcher_a",
+    "operation": "add",
+    "lesson_id": null,
+    "text": "Extend the existing event checkpoints by identifying what within-window evidence could distinguish incremental demand from a previously announced launch simply occurring. If no such observation is expected, label the mechanism as unverified and evaluate the price forecast separately. SBUX's small gain supports the forecast direction but does not demonstrate launch-driven demand.",
+    "parameter": null,
+    "value": null,
+    "evidence_ids": [
+      "paper-2026-10-12-2026-11-02:researcher_a:1",
+      "web-researcher_a-1",
+      "web-researcher_a-2",
+      "paper-2026-10-12-2026-11-02:SELL:SBUX"
+    ],
+    "confidence": 0.76,
+    "expected_effect": "Improve event attribution and prevent a favorable price direction from being treated as proof of an operating catalyst.",
+    "duration_weeks": 4,
+    "success_metric": "Every scheduled-event proposal during four weeks states an observable incremental-information test, or explicitly says the operating mechanism cannot be verified within the holding window.",
+    "rollback_condition": "Retire if this duplicates existing proposal fields without improving the distinction between event occurrence, demand evidence and price response.",
+    "expiry": "2026-12-04",
+    "validation_errors": [],
+    "mode": "auto_bounded"
   }
 ]

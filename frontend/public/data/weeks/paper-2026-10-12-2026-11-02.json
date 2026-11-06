@@ -1,7 +1,7 @@
 {
   "id": "paper-2026-10-12-2026-11-02",
   "monday": "2026-11-02",
-  "status": "OPEN",
+  "status": "COMPLETED",
   "label": "PAPER / SIMULATED",
   "data": {
     "research_scope": "market_wide_us_listed_common_stocks",
@@ -34,8 +34,27 @@
       "calendar",
       "ledger reconciliation"
     ],
-    "current_equity": "993.34",
-    "current_pnl": "-4.96"
+    "pnl": "-7.50",
+    "pnl_precise": "-7.49849700",
+    "ending_equity": "990.80",
+    "exit_cutoff": "2026-11-06T20:45:06.559962+00:00",
+    "comparisons": [],
+    "benchmark_return": null,
+    "extended_holding": false,
+    "summary": "The PAPER / SIMULATED portfolio lost $7.498497, approximately 0.751% of starting equity, ending at $990.80 after display rounding. GDDY's $7.968517 loss outweighed SBUX's $0.470020 gain. Price movement caused $7.054000 of loss and recorded execution costs another $0.444497. Actual purchases deployed approximately 44.90% of starting equity; the remaining 55.10% earned no recorded return and reduced exposure to the losing stock basket.\n\nResearch quality was stronger than the realized continuation forecasts. GDDY's operating income and cash-flow growth supported an earnings reassessment, while SBUX combined improving U.S. transactions with a dated weekly event. Neither established additional demand at the actual entry. GDDY's negative return contradicted its weekly forecast; SBUX's modest positive return agreed in direction but did not establish the proposed launch mechanism. CDNA's decline favored the manager's rejection in the comparable reference window.\n\nSelection and sizing were defensible under the entry evidence: the manager reduced both selected proposals to 25% budgets, acknowledged retracement risk and deliberately retained half the account before rounding. Execution complied with the supplied simulation model. Useful bounded learning concerns making higher-entry forecast sensitivity explicit and making scheduled-event mechanisms verifiable. These outcomes do not justify changing base contracts, allocation rules or probability parameters.",
+    "learning_results": [
+      {
+        "id": "paper-2026-10-12-2026-11-02:patch:0",
+        "status": "ACTIVE",
+        "errors": []
+      },
+      {
+        "id": "paper-2026-10-12-2026-11-02:patch:1",
+        "status": "ACTIVE",
+        "errors": []
+      }
+    ],
+    "review_status": "AVAILABLE"
   },
   "proposals": [
     {
@@ -194,7 +213,117 @@
     ],
     "uncertainty": "The packet supplies fresh observations, verified listings and eligible status, but prices are not executable quotes. News, fundamentals, halts and comprehensive corporate actions are not independently verified by the market provider. Research findings have publication and adjustment limitations. Forecast probabilities are subjective; event timing and operating improvement do not establish incremental demand or weekly gains."
   },
-  "review": null,
+  "review": {
+    "summary": "The PAPER / SIMULATED portfolio lost $7.498497, approximately 0.751% of starting equity, ending at $990.80 after display rounding. GDDY's $7.968517 loss outweighed SBUX's $0.470020 gain. Price movement caused $7.054000 of loss and recorded execution costs another $0.444497. Actual purchases deployed approximately 44.90% of starting equity; the remaining 55.10% earned no recorded return and reduced exposure to the losing stock basket.\n\nResearch quality was stronger than the realized continuation forecasts. GDDY's operating income and cash-flow growth supported an earnings reassessment, while SBUX combined improving U.S. transactions with a dated weekly event. Neither established additional demand at the actual entry. GDDY's negative return contradicted its weekly forecast; SBUX's modest positive return agreed in direction but did not establish the proposed launch mechanism. CDNA's decline favored the manager's rejection in the comparable reference window.\n\nSelection and sizing were defensible under the entry evidence: the manager reduced both selected proposals to 25% budgets, acknowledged retracement risk and deliberately retained half the account before rounding. Execution complied with the supplied simulation model. Useful bounded learning concerns making higher-entry forecast sensitivity explicit and making scheduled-event mechanisms verifiable. These outcomes do not justify changing base contracts, allocation rules or probability parameters.",
+    "scorecards": [
+      {
+        "role": "researcher_a",
+        "score": 0.82,
+        "assessment": "Research used issuer disclosures, investigated alternatives and distinguished event timing from incremental demand. SBUX's positive direction was consistent with the modest thesis, though its net return fell short of +0.8%. The launch mechanism remains unverified. Screening exclusions were reasoned; their later returns cannot be ranked without comparable observations."
+      },
+      {
+        "role": "researcher_b",
+        "score": 0.79,
+        "assessment": "Research corroborated earnings reactions, calculated liquidity and disclosed acquisition, adjustment and timestamp qualifications. Ranking GDDY above CDNA recognized relative exhaustion risk. Both positive continuation forecasts missed the reference window, but the reports anticipated retracement and distinguished structure from profitability. Fresh-entry return sensitivity warrants clearer quantification."
+      },
+      {
+        "role": "manager",
+        "score": 0.86,
+        "assessment": "Selection reviewed both finalized research sets, recognized all three proposals as eligible and rejected CDNA on thesis risk. Equal 25% budgets stayed below proposal ceilings; whole-share sizing and retained cash were explicit. Rejection performed favorably in the reference comparison, while GDDY drove the realized loss. Execution matched the model. This outcome supports no allocation-policy or probability-threshold change."
+      }
+    ],
+    "forecast_comparisons": [
+      "GDDY: expected return +1.8%, profit probability 55%, adverse scenario -9%. Actual raw-fill return was approximately -3.24%, or -3.34% after costs. Issuer profit growth, cash generation and the completed earnings reaction supported consideration at entry. The loss contradicted immediate positive continuation, without disproving historical operating improvement or exceeding the adverse scenario.",
+      "SBUX: expected return +0.8%, profit probability 53%, adverse scenario -6.5%. Actual raw-fill return was approximately +0.32%, or +0.22% after costs. Direction agreed with the forecast but magnitude fell short. U.S. transaction improvement and the scheduled November 5 launch supported the hypothesis; the small gain does not establish launch-driven incremental demand.",
+      "CDNA: expected return +2.0%, profit probability 53%, adverse scenario -13%. The decision's two-share cost implies a $87.07 reference price; the $78.18 exit observation represents approximately -10.21% before hypothetical costs. This contradicts continuation and is consistent with the stated exhaustion risk, while remaining inside the adverse scenario. No trade was executed.",
+      "The supplied close series shows GDDY extension above $118.11 and CDNA deterioration below $80.44 during the subsequent sessions; neither condition guarantees the final holding-window result. SBUX also traded through its positive reference before its modest exit gain. These paths reinforce the reports' distinction between structural checkpoints and profitable weekly continuation."
+    ],
+    "selected_vs_rejected": "Using decision reference prices through the common exit window, GDDY moved from $118.47 to $115.325, approximately -2.65%; SBUX from $104.63 to $105.16, +0.51%; and rejected CDNA from the decision-implied $87.07 to $78.18, -10.21%. CDNA therefore underperformed both selections over this indicative matched window. Its rejection was supported beforehand by the 22.22% reaction, wide range and qualified growth composition; the subsequent decline does not prove rejection skill. Actual selected fills occurred at higher prices and produced different returns. Other investigated names lack comparable entry/exit pairs here, so their realized opportunity costs cannot be ranked.",
+    "execution_effects": "Two shares of each selection filled. Purchases cost $448.248012; sales returned $440.749515. Raw price movement contributed -$7.054000 and modeled spread/slippage -$0.444497, with zero fees. GDDY lost $7.968517; SBUX gained $0.470020. Purchases exceeded decision estimates by $1.824912 because observations changed, without changing share counts. Recorded fills apply the configured 5 bps each way; there is no demonstrated execution error. Post-purchase cash was $550.04984335, comprising $499.148927675 deliberately retained and $50.900915675 unused budgets.",
+    "error_categories": [
+      "Positive continuation forecast miss",
+      "Fresh-entry forecast sensitivity",
+      "Unresolved catalyst attribution"
+    ],
+    "successes": [
+      "Research separated issuer operating facts, public event timing, historical prices and execution verification.",
+      "The finalized manager decision explicitly reviewed all proposals and treated CDNA as eligible before rejecting it on conviction and reversal risk.",
+      "Sizing respected proposal ceilings, concentration and deployment limits; unused whole-share budgets were not redistributed.",
+      "Cash movements, fills and precise P&L reconcile, and recorded execution follows the configured cost model."
+    ],
+    "weaknesses": [
+      "GDDY's positive weekly forecast did not survive the realized holding window despite subsequent extension in the supplied close series.",
+      "GDDY research warned that a higher fresh entry would reduce appeal but did not quantify the sensitivity of its +1.8% estimate to that entry.",
+      "SBUX's within-week event was verified at entry, but realized price appreciation cannot verify incremental operating demand.",
+      "CDNA's positive continuation estimate underestimated the realized reversal in the indicative comparison, although its adverse scenario and risk disclosures allowed substantial losses."
+    ],
+    "limitations": "This is a small sample: two executed selections and one comparable rejected proposal. One outcome cannot calibrate subjective probabilities, validate a selection rule or establish causation; hindsight favors the rejection after its decline. Decision-reference comparisons are indicative, not simultaneous executable counterfactuals. Historical series have adjustment and timestamp qualifications. Endpoint prices do not establish incremental customer demand or the cause of repricing. Benchmark-relative performance cannot be calculated from the supplied entry benchmark. Scores assess process judgment, not calibrated skill.",
+    "evidence_ids": [
+      "paper-2026-10-12-2026-11-02:researcher_a",
+      "paper-2026-10-12-2026-11-02:researcher_b",
+      "paper-2026-10-12-2026-11-02:researcher_a:1",
+      "paper-2026-10-12-2026-11-02:researcher_b:1",
+      "paper-2026-10-12-2026-11-02:researcher_b:2",
+      "paper-2026-10-12-2026-11-02:manager",
+      "paper-2026-10-12-2026-11-02:BUY:GDDY",
+      "paper-2026-10-12-2026-11-02:BUY:SBUX",
+      "paper-2026-10-12-2026-11-02:SELL:GDDY",
+      "paper-2026-10-12-2026-11-02:SELL:SBUX",
+      "web-researcher_a-1",
+      "web-researcher_a-2",
+      "web-researcher_a-4",
+      "web-researcher_b-1",
+      "web-researcher_b-2",
+      "web-researcher_b-3",
+      "web-researcher_b-4",
+      "yahoo:CDNA:2026-11-06T20:45:09+00:00",
+      "yahoo:GDDY:2026-11-06T20:45:11+00:00",
+      "yahoo:SBUX:2026-11-06T20:45:09+00:00"
+    ],
+    "patches": [
+      {
+        "target": "researcher_b",
+        "operation": "add",
+        "lesson_id": null,
+        "text": "For earnings-continuation proposals, state the price anchoring the weekly return estimate and give a bounded higher-entry sensitivity scenario. Explain how paying above the reaction high changes remaining upside and retracement exposure. Keep completed-close confirmation separate from an intraday entry above that level. Treat this as forecast documentation, without changing allocation rules.",
+        "parameter": null,
+        "value": null,
+        "evidence_ids": [
+          "paper-2026-10-12-2026-11-02:researcher_b:1",
+          "paper-2026-10-12-2026-11-02:manager",
+          "paper-2026-10-12-2026-11-02:BUY:GDDY",
+          "paper-2026-10-12-2026-11-02:SELL:GDDY",
+          "web-researcher_b-2"
+        ],
+        "confidence": 0.8,
+        "expected_effect": "Make continuation forecasts assessable when the eventual entry is above the historical research reference.",
+        "duration_weeks": 4,
+        "success_metric": "For each continuation proposal during four weeks, identify the forecast reference price and one higher-entry scenario explaining whether expected upside remains attractive.",
+        "rollback_condition": "Revise or retire if the scenarios merely restate technical levels without clarifying forecast sensitivity or manager review.",
+        "expiry": "2026-12-04"
+      },
+      {
+        "target": "researcher_a",
+        "operation": "add",
+        "lesson_id": null,
+        "text": "Extend the existing event checkpoints by identifying what within-window evidence could distinguish incremental demand from a previously announced launch simply occurring. If no such observation is expected, label the mechanism as unverified and evaluate the price forecast separately. SBUX's small gain supports the forecast direction but does not demonstrate launch-driven demand.",
+        "parameter": null,
+        "value": null,
+        "evidence_ids": [
+          "paper-2026-10-12-2026-11-02:researcher_a:1",
+          "web-researcher_a-1",
+          "web-researcher_a-2",
+          "paper-2026-10-12-2026-11-02:SELL:SBUX"
+        ],
+        "confidence": 0.76,
+        "expected_effect": "Improve event attribution and prevent a favorable price direction from being treated as proof of an operating catalyst.",
+        "duration_weeks": 4,
+        "success_metric": "Every scheduled-event proposal during four weeks states an observable incremental-information test, or explicitly says the operating mechanism cannot be verified within the holding window.",
+        "rollback_condition": "Retire if this duplicates existing proposal fields without improving the distinction between event occurrence, demand evidence and price response.",
+        "expiry": "2026-12-04"
+      }
+    ]
+  },
   "runs": [
     {
       "id": "paper-2026-10-12-2026-11-02:researcher_b",
@@ -619,6 +748,49 @@
         "event_stream_sha256": "302c97a47a904761004fea72cdd01c04de43fec699ce6d2f7f335e679849db77",
         "verification": "observed Codex item.completed web_search events; source claims are model reports"
       }
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:analyst",
+      "role": "analyst",
+      "purpose": "REVIEW",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v2-complete-evidence",
+        "overlay_version": 0,
+        "lesson_ids": [],
+        "recent_week_ids": [
+          "paper-2026-10-12-2026-10-26",
+          "paper-2026-10-12-2026-10-19",
+          "paper-2026-10-12-2026-10-12"
+        ],
+        "cutoff": "2026-11-06T20:45:13.510079+00:00",
+        "estimated_tokens": 10506,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 313,
+          "overlay": 32,
+          "current": 8448,
+          "recent": 915,
+          "older": 11,
+          "contract": 770
+        },
+        "reductions": []
+      },
+      "prompt_hash": "7c99de0eb35a50fd6ca4f2a716bc225179911719591a17d039454e6668f5ee0f",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nFor this REVIEW task, use only supplied records. Web browsing is disabled for this purpose.\nYou are analyst, Riley. Review reconciled PAPER / SIMULATED outcomes before proposing bounded learning. Evaluate research, forecasting, selection, sizing and execution separately. Use selected and rejected matched-window comparisons; distinguish missing evidence from mistakes. Explicitly state small sample and hindsight limitations. Propose evidence-linked, expiring lessons only for researchers or manager. No tools, trading, credentials or base-contract changes. Return only the supplied JSON contract.\n\nUse the supplied finalized research reports, source findings, proposals, actual manager decision, entry/exit observations, fills, execution costs and cash movements. Analyze each thesis and forecast against the realized holding window; explain what supported the choice at entry, what the outcome contradicted, and what cannot be inferred. Attribute portfolio results to exposure, retained cash",
+      "research_summary": "",
+      "abstention_reason": null,
+      "investigated_tickers": [],
+      "sources": [],
+      "web_search_mode": "disabled",
+      "web_activity": {
+        "completed_calls": 0,
+        "calls": [],
+        "event_stream_sha256": "14669f5590e284823bd8981e021699358af314f5fbbeada9f456270300328013",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
     }
   ],
   "snapshots": [
@@ -767,6 +939,35 @@
           "redistribution": "metadata only; verify provider terms"
         }
       ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:exit",
+      "kind": "exit",
+      "provider": "yahoo-public",
+      "cutoff": "2026-11-06T20:45:13.510079+00:00",
+      "evidence": [
+        {
+          "id": "yahoo:CDNA:2026-11-06T20:45:09+00:00",
+          "ticker": "CDNA",
+          "observed_at": "2026-11-06T20:45:09+00:00",
+          "price": "78.18",
+          "redistribution": "metadata only; verify provider terms"
+        },
+        {
+          "id": "yahoo:GDDY:2026-11-06T20:45:11+00:00",
+          "ticker": "GDDY",
+          "observed_at": "2026-11-06T20:45:11+00:00",
+          "price": "115.325",
+          "redistribution": "metadata only; verify provider terms"
+        },
+        {
+          "id": "yahoo:SBUX:2026-11-06T20:45:09+00:00",
+          "ticker": "SBUX",
+          "observed_at": "2026-11-06T20:45:09+00:00",
+          "price": "105.16",
+          "redistribution": "metadata only; verify provider terms"
+        }
+      ]
     }
   ],
   "fills": [
@@ -797,6 +998,38 @@
       "fill_time": "2026-11-02T14:39:03+00:00",
       "fill_model": "spread-slippage-v1",
       "raw_price": "104.82"
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:SELL:GDDY",
+      "ticker": "GDDY",
+      "quantity": "2.00000000",
+      "price": "115.26733750",
+      "fee": "0E-8",
+      "side": "SELL",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-11-06T20:45:11+00:00",
+      "fill_time": "2026-11-06T20:45:11+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "115.325",
+      "cost_basis_sold": "238.50319200",
+      "realized_pnl": "-7.96851700"
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-02:SELL:SBUX",
+      "ticker": "SBUX",
+      "quantity": "2.00000000",
+      "price": "105.10742000",
+      "fee": "0E-8",
+      "side": "SELL",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-11-06T20:45:09+00:00",
+      "fill_time": "2026-11-06T20:45:09+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "105.16",
+      "cost_basis_sold": "209.74482000",
+      "realized_pnl": "0.47002000"
     }
   ],
   "timeline": [
@@ -807,6 +1040,14 @@
     {
       "stage": "PURCHASES",
       "completed_at": "2026-11-02T14:39:05.474546+00:00"
+    },
+    {
+      "stage": "LIQUIDATION",
+      "completed_at": "2026-11-06T20:45:14.213840+00:00"
+    },
+    {
+      "stage": "REVIEW",
+      "completed_at": "2026-11-06T20:46:32.049809+00:00"
     }
   ],
   "meeting_ids": []

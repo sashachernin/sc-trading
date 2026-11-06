@@ -2,10 +2,10 @@
   {
     "id": "paper-2026-10-12-2026-11-02",
     "monday": "2026-11-02",
-    "status": "OPEN",
-    "pnl": null,
+    "status": "COMPLETED",
+    "pnl": "-7.50",
     "proposal_count": 3,
-    "review_available": false
+    "review_available": true
   },
   {
     "id": "paper-2026-10-12-2026-10-26",
