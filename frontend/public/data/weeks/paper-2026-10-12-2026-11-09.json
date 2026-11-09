@@ -1,0 +1,652 @@
+{
+  "id": "paper-2026-10-12-2026-11-09",
+  "monday": "2026-11-09",
+  "status": "OPEN",
+  "label": "PAPER / SIMULATED",
+  "data": {
+    "research_scope": "market_wide_us_listed_common_stocks",
+    "discovery_screening": {},
+    "starting_equity": "990.79935835",
+    "share_policy": "whole_shares_only",
+    "purchase_outcomes": [
+      {
+        "ticker": "ABNB",
+        "status": "FILLED",
+        "quantity": "1",
+        "cost": "195.89790000",
+        "unspent_allocation": "51.8019395875"
+      }
+    ],
+    "entry_cutoff": "2026-11-09T14:37:54.650050+00:00",
+    "risk_checks": [
+      "proposal membership",
+      "combined ticker concentration",
+      "deployment cap",
+      "cash arithmetic",
+      "quote freshness",
+      "calendar",
+      "ledger reconciliation"
+    ],
+    "current_equity": "990.70",
+    "current_pnl": "-0.10"
+  },
+  "proposals": [
+    {
+      "id": "paper-2026-10-12-2026-11-09:researcher_a:1",
+      "run_id": "paper-2026-10-12-2026-11-09:researcher_a",
+      "role": "researcher_a",
+      "ticker": "ABNB",
+      "company": "Airbnb, Inc.",
+      "rank": 1,
+      "max_allocation": "0.25",
+      "expected_return": 0.012,
+      "downside": -0.07,
+      "probability_profit": 0.54,
+      "confidence": 0.57,
+      "thesis": "Airbnb offers the strongest researched continuation case: its issuer release reports Q3 revenue growth of 19%, Nights and Seats Booked growth of 16%, and a raised annual outlook. The SEC filing corroborates operating growth and Nasdaq Class A common-stock registration. The horizon bridge is modest continued reassessment of newly disclosed acceleration during November 9–13, rather than an established new operating catalyst. Friday's strong price response supports attention but also raises exhaustion risk. No within-week demand test is established, so the price forecast stands separately from the business thesis. The $12 billion additional repurchase authorization is optional capacity, not evidence of purchases this week.",
+      "catalysts": [
+        "November 5 results disclosed accelerating bookings and raised annual revenue-growth and margin expectations.",
+        "Potential continued portfolio adjustment after November 6's earnings reaction; additional upside relative to expectations remains unresolved.",
+        "Positive observable checkpoint: sustained closes above the November 6 low of $184.05. This measures price continuation, not incremental demand."
+      ],
+      "risks": [
+        "The approximately 11.7% earnings-day advance may already incorporate the favorable information.",
+        "No verified new company event or incremental demand disclosure is expected during this week.",
+        "Q4 guidance includes currency support and slightly lower adjusted EBITDA margin year over year.",
+        "Travel sensitivity, regulatory exposure and broad-market weakness could overwhelm company evidence.",
+        "Historical web observations are not executable prices; a materially higher entry reduces the estimated advantage."
+      ],
+      "invalidation": "A completed-session close below the November 6 low of $184.05 defeats the immediate continuation setup. A new material reduction in bookings or revenue outlook defeats the operating premise. Holding above that level alone does not establish a profitable weekly forecast.",
+      "assumptions": [
+        "All forecasts concern November 9–13 and are subjective estimates, not calibrated probabilities.",
+        "No new operating-demand observation is established within the holding window; the mechanism is continued earnings reassessment.",
+        "At 25% of supplied cash, the budget is approximately $247.70. One share fits at the historical $189.99 close; fresh supported pricing and costs must confirm affordability.",
+        "Backend must independently confirm current listing, USD regular-session price, liquidity, history and risk eligibility before any simulated fill."
+      ],
+      "evidence_ids": [
+        "web-researcher_a-1",
+        "web-researcher_a-2",
+        "web-researcher_a-3",
+        "web-researcher_a-4"
+      ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-09:researcher_b:1",
+      "run_id": "paper-2026-10-12-2026-11-09:researcher_b",
+      "role": "researcher_b",
+      "ticker": "ABNB",
+      "company": "Airbnb, Inc.",
+      "rank": 1,
+      "max_allocation": "0.25",
+      "expected_return": 0.015,
+      "downside": -0.1,
+      "probability_profit": 0.53,
+      "confidence": 0.57,
+      "thesis": "Airbnb offers the clearest researched earnings-continuation setup, although its early Monday extension leaves only a modest estimated edge. Issuer results show revenue growth of 19%, Nights and Seats Booked growth of 16%, and a raised outlook. Friday's 11.67% advance contrasted with a declining market week. History also shows a pre-release pullback, so this is a catalyst-driven breakout rather than a smooth established trend. Monday's supported intraday observation strengthens directional evidence but weakens entry attractiveness. Structural survival, closing extension confirmation and a positive holding-window return remain separate hypotheses.",
+      "catalysts": [
+        "November 5 earnings disclosure reported accelerating revenue and bookings growth and raised the full-year outlook.",
+        "A newly authorized additional $12 billion share repurchase provides sentiment support, although authorization does not establish purchases during this holding window.",
+        "Post-earnings demand could continue as investors reassess the growth outlook."
+      ],
+      "risks": [
+        "The latest observation is already above Friday's reaction high, reducing remaining upside and increasing retracement exposure.",
+        "Friday closed below its opening price despite the large gain; post-release buying was not uniformly persistent.",
+        "The broader market experienced a negative week, increasing the risk that market pressure overwhelms company-specific strength.",
+        "Travel demand, regulation and valuation reassessment can reverse sentiment.",
+        "Public providers disagree on consolidated volume and occasionally return stale pages; no executable quote or calibrated volatility model is available."
+      ],
+      "invalidation": "Review each completed daily close. Structural retention: above Friday's $184.05 low; confirmed by Friday's $189.99 close. Extension: a subsequent close above $192.50; Monday remains unassessed despite the $196.35 intraday observation. A close below $184.05 weakens structure; below $177.49 undermines the gap thesis. Retaining structure alone does not validate the positive weekly forecast. These are research checkpoints, not execution instructions.",
+      "assumptions": [
+        "The subjective Monday-to-Friday forecast is anchored to the November 9, 09:33:45 EST observation of $196.35, before the cutoff.",
+        "At a 0.25 allocation, the $247.70 budget accommodates one reference-price share before costs; two shares exceed this proposed budget. Backend affordability and eligibility checks remain binding.",
+        "The $199.30 subjective expected endpoint implies approximately 0.015 return at $196.35. At a hypothetical $202 entry, the same endpoint implies approximately -0.013; that higher-entry scenario is unattractive.",
+        "Additional demand must persist beyond the opening minutes; an intraday observation above resistance does not establish closing confirmation.",
+        "Forecasts are judgmental, uncalibrated estimates; downside is an adverse scenario rather than a guaranteed loss limit."
+      ],
+      "evidence_ids": [
+        "web-researcher_b-1",
+        "web-researcher_b-2",
+        "web-researcher_b-3",
+        "web-researcher_b-4",
+        "web-researcher_b-5",
+        "web-researcher_b-6",
+        "web-researcher_b-12"
+      ]
+    }
+  ],
+  "decision": {
+    "reviewed_ids": [
+      "paper-2026-10-12-2026-11-09:researcher_a:1",
+      "paper-2026-10-12-2026-11-09:researcher_b:1"
+    ],
+    "allocations": [
+      {
+        "proposal_id": "paper-2026-10-12-2026-11-09:researcher_b:1",
+        "amount": "247.6998395875",
+        "percent": "0.25",
+        "rationale": "Select a modest ABNB position supported by issuer results and the explicitly entry-sensitive forecast (web-researcher_b-1, web-researcher_b-2). ABNB is independently purchase-eligible. The supplied $195.85 quote implies $195.947925 for one share including 5 bps spread/slippage and zero fees. The 25% budget affords one share within researcher, combined ticker and deployment limits. Continued earnings reassessment is plausible, but the extended entry warrants restrained exposure."
+      }
+    ],
+    "rejections": [
+      {
+        "proposal_id": "paper-2026-10-12-2026-11-09:researcher_a:1",
+        "rationale": "The operating evidence supports consideration, but this duplicates the selected ABNB earnings-continuation exposure without diversification. Researcher B more explicitly addresses current entry-price sensitivity. After the selected 25% budget, the remaining 15% ticker allowance is $148.6199037525, insufficient for another whole share costing approximately $195.947925. Reject this additional allocation."
+      }
+    ],
+    "retained_cash": "743.0995187625",
+    "hold_cash": false,
+    "summary": "Allocate 25% to researcher B's ABNB proposal, targeting one simulated whole share at supplied pricing and costs. Reject researcher A's overlapping proposal and retain the remaining budget as cash. Independent agreement supports the historical operating evidence but does not provide diversification or establish continued demand. Retained_cash reports deliberately unallocated funds; whole-share rounding should increase actual retained cash as described.",
+    "risk_considerations": [
+      "Retain 75% deliberately because both proposals express the same modest, uncertain continuation thesis. Total allocated budget is 25%, below the 40% ticker and 95% deployment caps.",
+      "At the supplied price and costs, one share leaves $51.7519145875 unused within the allocation; expected cash after purchase is $794.85143335. Unused funds remain cash without automatic redistribution.",
+      "The approximately 11.7% earnings-day advance and subsequent extension may already reflect favorable disclosures; no verified new operating-demand event is established for the holding week.",
+      "A completed close below $184.05 weakens the continuation setup. This research checkpoint is not a guaranteed exit or loss limit.",
+      "Travel sensitivity, regulation and broad-market weakness can overwhelm company-specific strength. Repurchase authorization does not establish purchases this week.",
+      "Application code controls whole-share execution; price changes can cause the allocation to be skipped."
+    ],
+    "uncertainty": "Profit probabilities and expected returns are subjective and uncalibrated. The fresh public quote is an observation, not an executable price. The packet lacks verified current fundamentals, news, earnings, halts and comprehensive corporate actions. Historical growth and structural price survival do not establish a positive weekly return; a higher execution price reduces the estimated edge."
+  },
+  "review": null,
+  "runs": [
+    {
+      "id": "paper-2026-10-12-2026-11-09:researcher_a",
+      "role": "researcher_a",
+      "purpose": "RESEARCH",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v3-market-wide-discovery",
+        "overlay_version": 3,
+        "lesson_ids": [
+          "paper-2026-10-12-2026-10-12:patch:0",
+          "paper-2026-10-12-2026-10-19:patch:0",
+          "paper-2026-10-12-2026-11-02:patch:1"
+        ],
+        "recent_week_ids": [
+          "paper-2026-10-12-2026-11-02",
+          "paper-2026-10-12-2026-10-26",
+          "paper-2026-10-12-2026-10-19",
+          "paper-2026-10-12-2026-10-12"
+        ],
+        "cutoff": "2026-11-09T14:35:06.977252+00:00",
+        "estimated_tokens": 3928,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 685,
+          "overlay": 968,
+          "current": 229,
+          "recent": 1239,
+          "older": 11,
+          "contract": 778
+        },
+        "reductions": []
+      },
+      "prompt_hash": "6fb8955f3e487e67737570a7cebadaae8db5b06318c6b5b0b417ea955763f724",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nYou are researcher_a, Avery, an independent fundamentals and catalysts researcher for a PAPER / SIMULATED Monday-to-Friday experiment. When independent_web_research is true, actively use live web search and open primary sources yourself: issuer investor-relations releases, SEC filings, earnings/calendar announcements and credible timestamped reporting. Run several targeted searches; do not simply assess the supplied packet or abstain because its quotes/fundamentals/news are empty. Independently investigate the U.S. exchange-listed market when research_scope is market_wide_us_listed_common_stocks; choose up to three eligible common stocks with sourced theses, or provide a substantive, source-backed abstention. Do not see or depend on the other researcher's work.\n\nReturn research_summary explaining searches, comparisons, findings and limitations; investigated_tickers; and sources with stable IDs web-researcher_a-1, web-researcher_a-2, etc., HTTPS URLs, titles, publication timestamp",
+      "research_summary": "Ran targeted live searches for the November 9–13 earnings calendar, recent guidance changes, earnings reactions, industrial/logistics opportunities, healthcare, power, semiconductor suppliers and NYSE American issuers. Opened issuer releases, an SEC operating filing, historical observations and timestamped reporting. Coverage was selective, not exhaustive. Compared smaller-company leads including REI and CECO, mid-sized industrial GXO, and larger technology/travel issuers; share price was not used as a market-cap proxy. ABNB's fresh operating acceleration plus a documented earnings response produced the clearest, though modest, weekly directional case. GXO had 6.4% organic growth but flat adjusted EBITDA, lower cash generation and its investor day outside the window. CSCO and AMAT have within-window earnings timing, but timing alone did not establish favorable surprises; CSCO's historical growth did not resolve expectations. REI's approximately $1.11 historical close fails the $5 floor. CECO's issuer site flagged a listing transfer, leaving exchange eligibility unresolved. GFS/VTRS/BWXT/VST were discovery leads without a stronger fully corroborated weekly setup; DKNG's reported guidance cut and CRWV's event risk weakened their comparisons. Submitted one finalist rather than force three. Two primary sources support ABNB. Historical daily data show more than 20 sessions and substantial volume, but no fresh cutoff-valid engine quote exists. Undated historical pages have null publication timestamps: only dated observations preceding cutoff are used, and retrospective revision remains possible. No subsequent earnings outcomes or unverified same-day previews were used. All allocation and execution checks remain binding.",
+      "abstention_reason": null,
+      "investigated_tickers": [
+        "ABNB",
+        "GXO",
+        "CSCO",
+        "AMAT",
+        "CECO",
+        "REI",
+        "VST",
+        "GFS",
+        "VTRS",
+        "BWXT",
+        "DKNG",
+        "CRWV"
+      ],
+      "sources": [
+        {
+          "id": "web-researcher_a-1",
+          "url": "https://news.airbnb.com/airbnb-q3-2026-financial-results",
+          "title": "Airbnb Q3 2026 financial results",
+          "published_at": "2026-11-05",
+          "finding": "Issuer reports Q3 revenue growth of 19%, bookings growth of 16%, and raised annual revenue-growth and adjusted-margin outlooks. Q4 revenue guidance is $3.22–$3.28 billion. Additional $12 billion repurchase authorization does not establish actual future purchases."
+        },
+        {
+          "id": "web-researcher_a-2",
+          "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000032/abnb-20260930.htm",
+          "title": "Airbnb Form 10-Q for quarter ended September 30, 2026",
+          "published_at": null,
+          "finding": "SEC quarterly filing identifies ABNB as Nasdaq-listed Class A common stock. Revenue growth outpaced expense growth; a lower income-tax provision also contributed to net-income improvement, so earnings growth should not all be attributed to operations. Exact publication time was not independently established."
+        },
+        {
+          "id": "web-researcher_a-3",
+          "url": "https://www.kiplinger.com/investing/stocks/nasdaq-adds-264-points-in-tech-rebound-but-ends-the-week-lower-stock-market-today",
+          "title": "Nasdaq Adds 264 Points in Tech Rebound: Stock Market Today",
+          "published_at": "2026-11-06T21:09:39Z",
+          "finding": "Timestamped reporting describes ABNB advancing 11.7% following results while the Nasdaq remained down for the week. It reports DKNG falling after disappointing results and reduced guidance. These observations inform reaction and reversal risk, not execution prices."
+        },
+        {
+          "id": "web-researcher_a-4",
+          "url": "https://www.quiverquant.com/stock/ABNB/historical-prices/",
+          "title": "ABNB Historical Stock Prices & Daily Price Data",
+          "published_at": null,
+          "finding": "Historical table shows November 6 close $189.99, low $184.05 and volume 12,749,658 shares, with more than 20 preceding completed sessions displaying volumes above one million. Supports preliminary affordability/history assessment only. Page publication time is unknown and historical records may be revised."
+        },
+        {
+          "id": "web-researcher_a-5",
+          "url": "https://gxo.com/news_article/gxo-reports-third-quarter-2026-results/",
+          "title": "GXO reports third quarter 2026 results",
+          "published_at": "2026-11-03",
+          "finding": "GXO identifies NYSE listing and reports 6.4% organic growth, unchanged adjusted EBITDA of $251 million and operating cash flow declining to $156 million from $232 million. Annual guidance reaffirmed. November 16 investor day falls beyond the holding week."
+        },
+        {
+          "id": "web-researcher_a-6",
+          "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/cisco-reports-fourth-quarter-earnings.html",
+          "title": "Cisco Reports Fourth Quarter Earnings",
+          "published_at": "2026-08-12",
+          "finding": "Cisco's issuer release identifies Nasdaq ticker CSCO and reports fiscal Q4 revenue of $17.3 billion and non-GAAP EPS of $1.22. These historical operating results supply context but do not independently establish a favorable November earnings surprise."
+        },
+        {
+          "id": "web-researcher_a-7",
+          "url": "https://investor.cisco.com/events-and-presentations/default.aspx",
+          "title": "Cisco Events & Presentations",
+          "published_at": null,
+          "finding": "Issuer event listing identifies November 12, 2026 Q1FY27 earnings results. Publication timestamp is unknown, and the dynamically rendered page was sparse when opened; timing was also corroborated by dated reporting, but no future outcome was assumed."
+        },
+        {
+          "id": "web-researcher_a-8",
+          "url": "https://investor.appliedmaterials.com/news-releases/news-release-details/applied-materials-report-fourth-quarter-and-fiscal-2026-results",
+          "title": "Applied Materials to Report Fourth Quarter and Fiscal 2026 Results on Nov. 12, 2026",
+          "published_at": "2026-10-22",
+          "finding": "Issuer identifies Nasdaq ticker AMAT and schedules its fiscal fourth-quarter and annual results call for November 12 at 4:30 p.m. Eastern. This verifies a within-window event without establishing upside direction."
+        },
+        {
+          "id": "web-researcher_a-9",
+          "url": "https://www.sec.gov/Archives/edgar/data/1384195/000138419526000088/reiq32026earningsrelease.htm",
+          "title": "Ring Energy Reports Third Quarter 2026 Results",
+          "published_at": "2026-11-05",
+          "finding": "SEC-hosted issuer release identifies Ring Energy as NYSE American REI and discusses higher adjusted earnings despite lower realized oil prices, debt reduction and portfolio changes. Operating improvements do not override the minimum-share-price requirement."
+        },
+        {
+          "id": "web-researcher_a-10",
+          "url": "https://stockanalysis.com/stocks/rei/history/",
+          "title": "Ring Energy Stock Price History",
+          "published_at": null,
+          "finding": "Dated historical table gives REI's November 6 regular-session close as $1.11, below the $5 eligibility floor. Publication timestamp is unknown; used only to reject this discovery lead, not as an executable quote."
+        },
+        {
+          "id": "web-researcher_a-11",
+          "url": "https://investors.cecoenviro.com/",
+          "title": "CECO Environmental Investor Relations",
+          "published_at": null,
+          "finding": "Issuer news index lists an October 2 announcement of transfer to the Texas Stock Exchange and a November 9 earnings call. Listing continuity on the requested discovery exchanges was unresolved, so CECO was not proposed. Index publication timestamp is unknown."
+        }
+      ],
+      "web_search_mode": "live",
+      "web_activity": {
+        "completed_calls": 7,
+        "calls": [
+          {
+            "type": "search",
+            "queries": [
+              "November 2026 earnings November 9 2026 November 13 2026 companies earnings calendar",
+              "site.businesswire.com November 2026 third quarter 2026 results raises outlook",
+              "site.globenewswire.com November 2026 third quarter 2026 financial results raises"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "November 6 2026 earnings raised guidance NYSE Nasdaq small mid cap results",
+              "site.investors.cisco.com 2026 November 12 first quarter 2027 results",
+              "site.ir.amat.com 2026 November 12 results",
+              "site.investors.gxo.com 2026 third quarter results November"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.investor.vistracorp.com \"2026\" \"November 6\" results",
+              "site.investors.airbnb.com \"2026\" \"third quarter\"",
+              "NYSE American \"November\" \"2026\" \"third quarter\" results revenue",
+              "\"2026\" \"November\" \"CECO\" \"results\""
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "site.newsroom.cisco.com \"2026\" \"fourth quarter\" \"18\"",
+              "site.investor.cisco.com \"2026\" \"November 12\" \"October\"",
+              "site.investor.vistracorp.com \"2026-11-06\"",
+              "\"NYSE American\" \"November 5, 2026\" earnings"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "ABNB November 6 2026 close stock price volume",
+              "GXO November 6 2026 stock average volume market cap",
+              "REI Ring Energy November 6 2026 stock price",
+              "Cisco reports fourth quarter fiscal 2026 results August 12 2026 revenue AI orders"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "ABNB \"November 6, 2026\" \"Average Volume\"",
+              "Cisco \"October\" \"2026\" \"November 12, 2026\" earnings conference call"
+            ]
+          },
+          {
+            "type": "open_page",
+            "url": "https://stockanalysis.com/stocks/rei/history/"
+          }
+        ],
+        "event_stream_sha256": "973b471328bd938598a799676dc16d5facc31b9f5cc71a279fe7c09b700c3e91",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-09:researcher_b",
+      "role": "researcher_b",
+      "purpose": "RESEARCH",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v3-market-wide-discovery",
+        "overlay_version": 4,
+        "lesson_ids": [
+          "paper-2026-10-12-2026-10-12:patch:1",
+          "paper-2026-10-12-2026-10-19:patch:1",
+          "paper-2026-10-12-2026-10-26:patch:0",
+          "paper-2026-10-12-2026-11-02:patch:0"
+        ],
+        "recent_week_ids": [
+          "paper-2026-10-12-2026-11-02",
+          "paper-2026-10-12-2026-10-26",
+          "paper-2026-10-12-2026-10-19",
+          "paper-2026-10-12-2026-10-12"
+        ],
+        "cutoff": "2026-11-09T14:35:06.977252+00:00",
+        "estimated_tokens": 4263,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 658,
+          "overlay": 1330,
+          "current": 229,
+          "recent": 1239,
+          "older": 11,
+          "contract": 778
+        },
+        "reductions": []
+      },
+      "prompt_hash": "145799ffe8469a11759331332d4141fb834509df003833d0340030b64a36d47d",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nYou are researcher_b, Morgan, an independent momentum and price-behavior researcher for a PAPER / SIMULATED Monday-to-Friday experiment. When independent_web_research is true, actively use live web search and open sources yourself for price/volume history, market/sector relative strength, volatility and trend stability. Search public financial data and issuer disclosures; verify dates, distinguish adjusted history from raw observations, and compare stocks across the supported U.S. exchange-listed market when research_scope is market_wide_us_listed_common_stocks. Do not simply assess the supplied packet or abstain because it is empty. Independently choose up to three eligible eligible U.S. exchange-listed common stocks with sourced theses, or give a substantive source-backed abstention. Never receive the other researcher's findings before finalizing yours.\n\nReturn research_summary explaining searches, comparisons, findings and limitations; investigated_tickers; and sources with ID",
+      "research_summary": "Independently searched November 6 gainers, unusual volume, weekly performance and recent earnings across Nasdaq, NYSE and NYSE American, then opened issuer/SEC disclosures and public history. Discovery included smaller-company opportunities alongside larger issuers across travel, defense, solar infrastructure, photonics, uranium, software and semiconductors; this was not exhaustive market coverage or a verified market-cap ranking. ABNB was the strongest adequately documented finalist. KRMN had strong reported growth but a 42.13% session jump created substantially greater extension risk. ARRY's merger announcement complicated a standalone continuation forecast. COHR's rebound followed a larger earnings-session decline and did not restore its pre-release close. UEC's rebound remained within a pronounced monthly decline. THM and GOGO were below $5 in discovery observations; AMD's $449.04 reference exceeded the approximately $396.32 ticker cap even for one share. APP/RKLB were discovery comparisons without sufficient follow-up verification to propose; DKNG showed adverse earnings momentum. ABNB's positive weekly direction contrasted with reported S&P 500 and Nasdaq weekly declines, but sector-relative strength was not independently quantified. Opened history establishes more than 20 completed ABNB sessions, with displayed October daily volumes exceeding one million; another provider reports a 3.76 million 30-day average. Volume totals differ across providers, so no exact relative-volume statistic is asserted. November 9's partial bar is intraday, not a completed close. Separate raw-close and adjusted-close columns agree in the opened older history; ChartExchange's adjustment methodology was not established. No ATR, realized-volatility estimate or moving-average indicator was invented. Undated dynamic pages are assigned null publication timestamps; only explicitly dated observations before the cutoff were used. Search snippets sometimes differed from opened pages, and Yahoo history was rate-limited. Fresh backend prices, liquidity, corporate actions and affordability still require validation. Estimates are subjective and conditional on entry price; no other researcher's findings were received.",
+      "abstention_reason": null,
+      "investigated_tickers": [
+        "ABNB",
+        "KRMN",
+        "ARRY",
+        "COHR",
+        "UEC",
+        "APP",
+        "RKLB",
+        "AMD",
+        "DKNG",
+        "THM",
+        "GOGO"
+      ],
+      "sources": [
+        {
+          "id": "web-researcher_b-1",
+          "url": "https://news.airbnb.com/airbnb-q3-2026-financial-results",
+          "title": "Airbnb Q3 2026 financial results",
+          "published_at": null,
+          "finding": "Issuer page dated November 5, 2026; exact publication time unavailable. Reported revenue of $4.9 billion, up 19%; Nights and Seats Booked increased 16%; adjusted EBITDA rose 22%. Raised full-year revenue-growth and adjusted-margin outlook and announced an additional $12 billion repurchase authorization."
+        },
+        {
+          "id": "web-researcher_b-2",
+          "url": "https://chartexchange.com/symbol/nasdaq-abnb/historical/",
+          "title": "ABNB Historical Prices — ChartExchange",
+          "published_at": null,
+          "finding": "Dynamic page has no publication timestamp. Opened page explicitly observed November 9 at 09:33:45 EST: $196.35 USD, before cutoff. November 6 completed bar: open $191.15, high $192.50, low $184.05, close $189.99, approximately 12.75 million shares. November 5 high was $177.49. Displayed history extends well beyond 20 completed sessions. Adjustment methodology was not established; Monday's row is partial."
+        },
+        {
+          "id": "web-researcher_b-3",
+          "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526449727/d437988d8k.htm",
+          "title": "Airbnb November 5, 2026 Form 8-K",
+          "published_at": null,
+          "finding": "November 5 report identifies Airbnb's Class A common stock, ticker ABNB, as registered on The Nasdaq Stock Market and confirms issuance of third-quarter results that day. Exact filing publication time was not established."
+        },
+        {
+          "id": "web-researcher_b-4",
+          "url": "https://marketchameleon.com/Overview/ABNB/Summary/",
+          "title": "Airbnb Class A stock summary — Market Chameleon",
+          "published_at": null,
+          "finding": "Search-indexed November 6 summary reports a $189.99 close and 30-day average volume of 3,761,101 shares. Its session-volume total differs from ChartExchange, and a subsequent open timed out; used as approximate liquidity corroboration, not a precise volume-ratio calculation. Publication timestamp unavailable."
+        },
+        {
+          "id": "web-researcher_b-5",
+          "url": "https://fwnbc.marketminute.com/quote/NQ:ABNB/historical",
+          "title": "Historical Prices for Airbnb Class A Common Stock",
+          "published_at": null,
+          "finding": "Opened page returned older history through October 28 rather than the fresher search snippet. It independently identifies Nasdaq Class A common stock and displays more than 20 completed sessions, with separate close and adjusted-close columns agreeing on shown dates. Displayed October volumes support substantial baseline liquidity. Publication timestamp unavailable."
+        },
+        {
+          "id": "web-researcher_b-6",
+          "url": "https://www.kiplinger.com/investing/stocks/nasdaq-adds-264-points-in-tech-rebound-but-ends-the-week-lower-stock-market-today",
+          "title": "Nasdaq Adds 264 Points in Tech Rebound: Stock Market Today",
+          "published_at": null,
+          "finding": "November 6 market recap reports Nasdaq up 1.1% Friday but down 3.4% for the week, and S&P 500 up 0.3% Friday but down 2.7% for the week. This provides broad-market context rather than a fresh SPY quote. Exact publication time unavailable."
+        },
+        {
+          "id": "web-researcher_b-7",
+          "url": "https://www.sec.gov/Archives/edgar/data/2040127/000119312526449899/krmn-ex99_1.htm",
+          "title": "Karman Space & Defense Reports Third Quarter Fiscal Year 2026 Financial Results",
+          "published_at": null,
+          "finding": "Release dated November 5 identifies NYSE ticker KRMN and reports $202 million quarterly revenue, 66% total and 25% organic growth, $13 million free cash flow, and $1.7 billion backlog. Strong fundamentals supported investigation, but did not resolve the risk of chasing its subsequent price jump. Exact publication time unavailable."
+        },
+        {
+          "id": "web-researcher_b-8",
+          "url": "https://stocksetups.com/movers/nyse",
+          "title": "NYSE Gainers and Losers — November 6, 2026",
+          "published_at": null,
+          "finding": "November 6 completed-session NYSE screen lists KRMN at $45.61, up 42.13%, on approximately 10.18 million shares; THM at $1.54 failed the price requirement. This was discovery evidence, not independent validation of every screen constituent. Exact publication timestamp unavailable."
+        },
+        {
+          "id": "web-researcher_b-9",
+          "url": "https://stockanalysis.com/stocks/cohr/history/",
+          "title": "Coherent Stock Price History — Stock Analysis",
+          "published_at": null,
+          "finding": "Daily history identifies NYSE COHR in USD. November 4 close was $195.09; November 5 fell 12.98% to $169.76; November 6 rebounded 13.58% to $192.81. Separate close and adjusted-close columns agree on these dates. The rebound had not recovered the pre-release close. Publication timestamp unavailable."
+        },
+        {
+          "id": "web-researcher_b-10",
+          "url": "https://ir.arraytechinc.com/news-releases/news-release-details/array-technologies-reports-financial-results-third-quarter-2026",
+          "title": "ARRAY Technologies Reports Financial Results for the Third Quarter 2026",
+          "published_at": null,
+          "finding": "Issuer release dated November 4 identifies Nasdaq ARRY, reports a $2.6 billion orderbook, and announces an agreement for a stock-for-stock combination with Shoals. Transaction-related repricing makes the setup less clean for this momentum forecast. Exact publication time unavailable."
+        },
+        {
+          "id": "web-researcher_b-11",
+          "url": "https://www.quiverquant.com/stock/UEC/historical-prices/",
+          "title": "Uranium Energy Historical Stock Prices — Quiver Quantitative",
+          "published_at": null,
+          "finding": "Dated history reports UEC closing November 6 at $6.92 versus $6.48 November 5, while one-month adjusted performance was -26.93%. The rebound therefore lacked convincing trend stability. Page separates close and adjusted close; publication timestamp unavailable."
+        },
+        {
+          "id": "web-researcher_b-12",
+          "url": "https://www.prnewswire.com/news-releases/airbnb-announces-third-quarter-2026-results-302917687.html",
+          "title": "Airbnb Announces Third Quarter 2026 Results",
+          "published_at": "2026-11-05T16:03:00-05:00",
+          "finding": "Issuer-distributed announcement explicitly timestamped November 5 at 16:03 ET confirms Nasdaq ABNB posted third-quarter results and scheduled its results webcast that evening, establishing disclosure availability before the research cutoff."
+        }
+      ],
+      "web_search_mode": "live",
+      "web_activity": {
+        "completed_calls": 7,
+        "calls": [
+          {
+            "type": "search",
+            "queries": [
+              "stocks biggest gainers November 6 2026 earnings NYSE Nasdaq",
+              "stock market November 6 2026 weekly performance small cap earnings"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "Array Technologies third quarter 2026 results November 2026 ARRY",
+              "Airbnb third quarter 2026 results November 2026 investor",
+              "Karman third quarter 2026 results November 2026 KRMN"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "ABNB historical data November 6 2026 189.99 volume",
+              "KRMN historical data November 6 2026 earnings results",
+              "NYSE American November 6 2026 UAMY UEC earnings stock gainers",
+              "Coherent reports first quarter fiscal 2027 November 2026 results"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "NYSE American gainers November 6 2026 UEC LEU stock",
+              "COHR historical prices November 6 2026 November 5 2026",
+              "Karman space defense third quarter 2026 November 5 2026 revenue backlog"
+            ]
+          },
+          {
+            "type": "search",
+            "queries": [
+              "NYSE American November 6 2026 stock gainers UEC LEU",
+              "UEC historical stock November 6 2026 stockanalysis",
+              "ABNB November 9 2026 9:33 stock 196.35"
+            ]
+          },
+          {
+            "type": "open_page",
+            "url": "https://www.kiplinger.com/investing/stocks/nasdaq-adds-264-points-in-tech-rebound-but-ends-the-week-lower-stock-market-today"
+          },
+          {
+            "type": "open_page",
+            "url": "https://fwnbc.marketminute.com/quote/NQ%3AABNB/historical"
+          }
+        ],
+        "event_stream_sha256": "1c2057312e5a903b5efd414c0bc11408ec6448b278a0d5b2779c9987db8eaf5d",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-09:manager",
+      "role": "manager",
+      "purpose": "DECISION",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v1",
+        "overlay_version": 0,
+        "lesson_ids": [],
+        "recent_week_ids": [
+          "paper-2026-10-12-2026-11-02",
+          "paper-2026-10-12-2026-10-26",
+          "paper-2026-10-12-2026-10-19",
+          "paper-2026-10-12-2026-10-12"
+        ],
+        "cutoff": "2026-11-09T14:37:54.650050+00:00",
+        "estimated_tokens": 8689,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 232,
+          "overlay": 32,
+          "current": 6725,
+          "recent": 1239,
+          "older": 11,
+          "contract": 432
+        },
+        "reductions": []
+      },
+      "prompt_hash": "6ebb954eedfdbaf7ecd926147f2c6f910d8ccdd886548a1fa32aff04586cfbf4",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nFor this DECISION task, use only supplied records. Web browsing is disabled for this purpose.\nYou are manager, Casey. Review both finalized independent proposal sets. Select only submitted proposals or hold cash. Account is PAPER / SIMULATED, cash-funded long-only with whole shares only. Combined ticker allocation <=40%, total <=95%, fees included. Explain every rejection, retained cash and uncertainty. All referenced evidence must exist. Application code controls execution. No tools, external research, credentials or settings changes. Return only the supplied JSON contract.\n\nAllocate enough for at least one whole share at the supplied price plus spread, slippage and fees, within researcher and ticker limits. Share counts round down; unused allocations remain cash and are not redistributed automatically. Reject unaffordable proposals rather than requesting fractional shares. Price changes can cause an allocation to be skipped at execution.\n\nFor market-wide discoveries, eligible_d",
+      "research_summary": "",
+      "abstention_reason": null,
+      "investigated_tickers": [],
+      "sources": [],
+      "web_search_mode": "disabled",
+      "web_activity": {
+        "completed_calls": 0,
+        "calls": [],
+        "event_stream_sha256": "bcefef6f3524f09635faab0e19cead25f75947a08033abf89924c153cfbd283b",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "paper-2026-10-12-2026-11-09:entry",
+      "kind": "entry",
+      "provider": "yahoo-public",
+      "cutoff": "2026-11-09T14:35:06.977252+00:00",
+      "evidence": []
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-09:entry-execution",
+      "kind": "entry-execution",
+      "provider": "yahoo-public",
+      "cutoff": "2026-11-09T14:38:32.703426+00:00",
+      "evidence": [
+        {
+          "id": "yahoo:ABNB:2026-11-09T14:38:30+00:00",
+          "ticker": "ABNB",
+          "observed_at": "2026-11-09T14:38:30+00:00",
+          "price": "195.8",
+          "redistribution": "metadata only; verify provider terms"
+        }
+      ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-09:discovery",
+      "kind": "discovery",
+      "provider": "yahoo-public",
+      "cutoff": "2026-11-09T14:37:54.650050+00:00",
+      "evidence": [
+        {
+          "id": "yahoo:ABNB:2026-11-09T14:37:52+00:00",
+          "ticker": "ABNB",
+          "observed_at": "2026-11-09T14:37:52+00:00",
+          "price": "195.85",
+          "redistribution": "metadata only; verify provider terms"
+        }
+      ]
+    }
+  ],
+  "fills": [
+    {
+      "id": "paper-2026-10-12-2026-11-09:BUY:ABNB",
+      "ticker": "ABNB",
+      "quantity": "1.00000000",
+      "price": "195.89790000",
+      "fee": "0E-8",
+      "side": "BUY",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-11-09T14:38:30+00:00",
+      "fill_time": "2026-11-09T14:38:30+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "195.8"
+    }
+  ],
+  "timeline": [
+    {
+      "stage": "MARKET_PACKET",
+      "completed_at": "2026-11-09T14:35:09.063477+00:00"
+    },
+    {
+      "stage": "PURCHASES",
+      "completed_at": "2026-11-09T14:38:33.300009+00:00"
+    }
+  ],
+  "meeting_ids": []
+}

@@ -2,20 +2,20 @@
   "label": "PAPER / SIMULATED",
   "currency": "USD",
   "initial_cash": "1000.00",
-  "equity": "990.80",
-  "cash": "990.80",
-  "invested_value": "0.00",
+  "equity": "990.70",
+  "cash": "794.90",
+  "invested_value": "195.80",
   "realized_pnl": "-9.20",
-  "unrealized_pnl": "0.00",
-  "cumulative_pnl": "-9.20",
-  "cumulative_return": "-0.92006416500",
+  "unrealized_pnl": "-0.10",
+  "cumulative_pnl": "-9.30",
+  "cumulative_return": "-0.92985416500",
   "monthly_pnl": "-7.50",
-  "rolling_four_week_pnl": "-9.20",
+  "rolling_four_week_pnl": "-5.02",
   "target_monthly_profit": "100.00",
   "target_is_experimental": true,
   "completed_cycles": 4,
   "skipped_cycles": 0,
-  "valuation_time": "2026-11-06T20:45:13.510079+00:00",
+  "valuation_time": "2026-11-09T14:38:32.703426+00:00",
   "equity_series": [
     {
       "week": "Inception",
@@ -194,7 +194,18 @@
       "drawdown": "-1.419801605858298426975235560"
     }
   ],
-  "positions": [],
+  "positions": [
+    {
+      "id": "paper-2026-10-12-2026-11-09:ABNB",
+      "ticker": "ABNB",
+      "quantity": "1.00000000",
+      "basis": "195.90",
+      "value": "195.80",
+      "status": "OPEN",
+      "label": "PAPER / SIMULATED",
+      "valuation_time": "2026-11-09T14:38:30+00:00"
+    }
+  ],
   "fills": [
     {
       "id": "paper-2026-10-12-2026-10-12:BUY:AMZN",
@@ -405,6 +416,20 @@
       "raw_price": "105.16",
       "cost_basis_sold": "209.74482000",
       "realized_pnl": "0.47002000"
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-09:BUY:ABNB",
+      "ticker": "ABNB",
+      "quantity": "1.00000000",
+      "price": "195.89790000",
+      "fee": "0E-8",
+      "side": "BUY",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-11-09T14:38:30+00:00",
+      "fill_time": "2026-11-09T14:38:30+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "195.8"
     }
   ],
   "latest_meeting": null
