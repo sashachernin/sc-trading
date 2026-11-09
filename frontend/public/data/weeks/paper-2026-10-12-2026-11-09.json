@@ -27,8 +27,8 @@
       "calendar",
       "ledger reconciliation"
     ],
-    "current_equity": "990.70",
-    "current_pnl": "-0.10"
+    "current_equity": "988.62",
+    "current_pnl": "-2.18"
   },
   "proposals": [
     {
@@ -617,6 +617,21 @@
           "ticker": "ABNB",
           "observed_at": "2026-11-09T14:37:52+00:00",
           "price": "195.85",
+          "redistribution": "metadata only; verify provider terms"
+        }
+      ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-09:valuation:2026-11-09",
+      "kind": "valuation-2026-11-09",
+      "provider": "yahoo-public",
+      "cutoff": "2026-11-09T17:45:07.015269+00:00",
+      "evidence": [
+        {
+          "id": "yahoo:ABNB:2026-11-09T17:44:40+00:00",
+          "ticker": "ABNB",
+          "observed_at": "2026-11-09T17:44:40+00:00",
+          "price": "193.717",
           "redistribution": "metadata only; verify provider terms"
         }
       ]
