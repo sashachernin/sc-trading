@@ -2,20 +2,20 @@
   "label": "PAPER / SIMULATED",
   "currency": "USD",
   "initial_cash": "1000.00",
-  "equity": "980.24",
+  "equity": "976.81",
   "cash": "794.90",
-  "invested_value": "185.34",
+  "invested_value": "181.91",
   "realized_pnl": "-9.20",
-  "unrealized_pnl": "-10.56",
-  "cumulative_pnl": "-19.76",
-  "cumulative_return": "-1.97585416500",
+  "unrealized_pnl": "-13.99",
+  "cumulative_pnl": "-23.19",
+  "cumulative_return": "-2.31885416500",
   "monthly_pnl": "-7.50",
   "rolling_four_week_pnl": "-5.02",
   "target_monthly_profit": "100.00",
   "target_is_experimental": true,
   "completed_cycles": 4,
   "skipped_cycles": 0,
-  "valuation_time": "2026-11-10T17:45:10.213317+00:00",
+  "valuation_time": "2026-11-11T17:45:07.518208+00:00",
   "equity_series": [
     {
       "week": "Inception",
@@ -208,6 +208,14 @@
       "pnl": "0.00",
       "benchmark_equity": null,
       "drawdown": "-2.470474693304943934253335590"
+    },
+    {
+      "week": "paper-2026-10-12-2026-11-09",
+      "date": "2026-11-11",
+      "equity": "976.81",
+      "pnl": "0.00",
+      "benchmark_equity": null,
+      "drawdown": "-2.811744455610057010954460880"
     }
   ],
   "positions": [
@@ -216,10 +224,10 @@
       "ticker": "ABNB",
       "quantity": "1.00000000",
       "basis": "195.90",
-      "value": "185.34",
+      "value": "181.91",
       "status": "OPEN",
       "label": "PAPER / SIMULATED",
-      "valuation_time": "2026-11-10T17:45:09+00:00"
+      "valuation_time": "2026-11-11T17:45:03+00:00"
     }
   ],
   "fills": [
