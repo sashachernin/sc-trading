@@ -1,7 +1,7 @@
 {
   "id": "paper-2026-10-12-2026-11-09",
   "monday": "2026-11-09",
-  "status": "OPEN",
+  "status": "COMPLETED",
   "label": "PAPER / SIMULATED",
   "data": {
     "research_scope": "market_wide_us_listed_common_stocks",
@@ -27,8 +27,27 @@
       "calendar",
       "ledger reconciliation"
     ],
-    "current_equity": "980.80",
-    "current_pnl": "-10.00"
+    "pnl": "-9.47",
+    "pnl_precise": "-9.47116000",
+    "ending_equity": "981.33",
+    "exit_cutoff": "2026-11-13T20:45:06.454274+00:00",
+    "comparisons": [],
+    "benchmark_return": null,
+    "extended_holding": false,
+    "summary": "The PAPER / SIMULATED portfolio lost $9.471160, approximately 0.956% of starting equity, ending at $981.33 after rounding. ABNB's raw price decline contributed $9.28 and recorded execution costs another $0.191160. Actual purchase deployment was $195.897900, approximately 19.77% of equity. Cash after purchase was $794.90145835: $743.0995187625 deliberately unallocated plus $51.8019395875 unused within the allocation. Cash earned no recorded return and limited exposure to the declining stock.\n\nResearch supported consideration: issuer disclosures showed 19% revenue growth, 16% bookings growth and a raised outlook, followed by a large earnings reaction. Forecasting was weaker than the historical operating case: both modest positive weekly estimates missed as the raw execution observations fell from $195.80 to $186.52. The decline does not disprove those disclosures or establish why continuation failed.\n\nSelection favored B's explicit entry-price sensitivity; sizing restrained duplicate exposure and anticipated rounding. Both were defensible under the entry evidence. Execution followed the simulation model. Useful bounded learning is to quantify A's entry sensitivity and make B's closing checkpoints easier to assess later. This outcome does not justify probability, allocation-policy or base-contract changes.",
+    "learning_results": [
+      {
+        "id": "paper-2026-10-12-2026-11-09:patch:0",
+        "status": "ACTIVE",
+        "errors": []
+      },
+      {
+        "id": "paper-2026-10-12-2026-11-09:patch:1",
+        "status": "ACTIVE",
+        "errors": []
+      }
+    ],
+    "review_status": "AVAILABLE"
   },
   "proposals": [
     {
@@ -146,7 +165,108 @@
     ],
     "uncertainty": "Profit probabilities and expected returns are subjective and uncalibrated. The fresh public quote is an observation, not an executable price. The packet lacks verified current fundamentals, news, earnings, halts and comprehensive corporate actions. Historical growth and structural price survival do not establish a positive weekly return; a higher execution price reduces the estimated edge."
   },
-  "review": null,
+  "review": {
+    "summary": "The PAPER / SIMULATED portfolio lost $9.471160, approximately 0.956% of starting equity, ending at $981.33 after rounding. ABNB's raw price decline contributed $9.28 and recorded execution costs another $0.191160. Actual purchase deployment was $195.897900, approximately 19.77% of equity. Cash after purchase was $794.90145835: $743.0995187625 deliberately unallocated plus $51.8019395875 unused within the allocation. Cash earned no recorded return and limited exposure to the declining stock.\n\nResearch supported consideration: issuer disclosures showed 19% revenue growth, 16% bookings growth and a raised outlook, followed by a large earnings reaction. Forecasting was weaker than the historical operating case: both modest positive weekly estimates missed as the raw execution observations fell from $195.80 to $186.52. The decline does not disprove those disclosures or establish why continuation failed.\n\nSelection favored B's explicit entry-price sensitivity; sizing restrained duplicate exposure and anticipated rounding. Both were defensible under the entry evidence. Execution followed the simulation model. Useful bounded learning is to quantify A's entry sensitivity and make B's closing checkpoints easier to assess later. This outcome does not justify probability, allocation-policy or base-contract changes.",
+    "scorecards": [
+      {
+        "role": "researcher_a",
+        "score": 0.8,
+        "assessment": "Primary issuer and SEC evidence supported operating acceleration, and discovery exclusions were reasoned. The proposal distinguished historical fundamentals from weekly demand and acknowledged exhaustion risk. Its positive forecast missed, and entry-price sensitivity remained qualitative despite a materially higher actual entry. The loss alone does not invalidate the research process."
+      },
+      {
+        "role": "researcher_b",
+        "score": 0.85,
+        "assessment": "Documented disclosure timing, source disagreements, intraday versus completed bars and explicit endpoint sensitivity. These supported preference at entry. The positive endpoint forecast failed, while no realized operating evidence disproved the historical thesis. Closing-checkpoint outcomes remain unassessed from the supplied endpoint observation."
+      },
+      {
+        "role": "manager",
+        "score": 0.87,
+        "assessment": "Selected the more entry-sensitive proposal, rejected duplicate exposure and respected whole-share affordability and concentration constraints. A 25% budget produced only 19.77% actual deployment, with unused funds retained as anticipated. Selection and sizing were defensible at entry; the result does not establish optimal sizing or justify changing allocation rules."
+      }
+    ],
+    "forecast_comparisons": [
+      "Researcher A forecast +1.2%, 54% probability of profit and a -7% adverse scenario. The matched execution-observation window returned -4.74% gross and -4.83% after costs. Positive continuation failed; the adverse scenario was not exceeded. Its historical $189.99 reference was not the actual entry.",
+      "Researcher B forecast +1.5% from $196.35, with a $199.30 expected endpoint, 53% profit probability and -10% adverse scenario. The $186.52 endpoint was approximately -5.01% from that research anchor and $12.78 below the expected endpoint. The realized one-share net return was -4.83%; the adverse scenario was not exceeded.",
+      "The exit observation exceeded the $184.05 structural floor but fell below $192.50 extension resistance. It was an intraday observation, so it cannot establish completed-close checkpoint outcomes. Structural survival would not validate either positive weekly forecast.",
+      "The decline contradicts immediate earnings continuation, while leaving the historical revenue, bookings and outlook disclosures intact. Neither the decline nor the recorded prices identify the cause of the reversal or calibrate the stated probabilities."
+    ],
+    "selected_vs_rejected": "Selected B and rejected A proposed the same stock for the same week. At identical one-share execution prices, either proposal would have produced the same -$9.471160 result; selecting B did not demonstrate realized return superiority. B supplied a clearer current-price anchor and higher-entry scenario, supporting the manager's process preference. Rejecting A avoided duplicate exposure: after B's budget, the remaining 15% ticker allowance could not afford another share. Both forecasts missed the common declining window. Other discovery leads have no comparable entry-to-exit prices in these records, so their rejection cannot be judged by realized performance.",
+    "execution_effects": "One simulated share bought at raw $195.80 filled at $195.897900; sale at raw $186.52 filled at $186.426740. The configured 2 bps spread plus 3 bps slippage per side cost $0.191160 total; fees were zero. Raw price movement lost $9.28, producing net loss $9.471160. Buy and sell cash movements reconcile to ending equity $981.32819835, displayed as $981.33. Execution followed the recorded model; these observations do not establish live executable prices.",
+    "error_categories": [
+      "Positive holding-window forecast misses",
+      "Researcher A's entry-price sensitivity was not quantified"
+    ],
+    "successes": [
+      "Issuer results and SEC records supported historical operating growth; neither researcher treated repurchase authorization as proof of purchases during the week.",
+      "Both researchers distinguished a plausible earnings reassessment from a verified new within-week demand catalyst.",
+      "Researcher B quantified how a higher entry could eliminate the forecast edge and separated intraday strength from closing confirmation.",
+      "The manager recognized overlapping exposure, anticipated whole-share residual cash and sized cautiously.",
+      "Fills, modeled costs and cash movements reconcile."
+    ],
+    "weaknesses": [
+      "Both proposals relied on further reassessment after a large earnings advance without verified incremental demand during the holding week; the realized continuation forecast failed.",
+      "Researcher A identified higher-entry risk without providing B's explicit endpoint-based sensitivity.",
+      "Independent agreement concerned the same issuer evidence and exposure, providing neither diversification nor independent realized forecast trials."
+    ],
+    "limitations": "This is one selected stock and two overlapping forecasts, a small sample with substantial hindsight limitations. Recent summaries add context but do not supply independent calibration or matched alternative prices. The supplied observations do not establish each completed daily-close checkpoint, a holding-week operating-demand change or causal attribution for the decline. Benchmark-relative performance cannot be calculated from an exit-only benchmark price. Scores assess documented process, not calibrated skill.",
+    "evidence_ids": [
+      "web-researcher_a-1",
+      "web-researcher_a-2",
+      "web-researcher_a-4",
+      "web-researcher_b-1",
+      "web-researcher_b-2",
+      "web-researcher_b-12",
+      "paper-2026-10-12-2026-11-09:researcher_a",
+      "paper-2026-10-12-2026-11-09:researcher_b",
+      "paper-2026-10-12-2026-11-09:researcher_a:1",
+      "paper-2026-10-12-2026-11-09:researcher_b:1",
+      "paper-2026-10-12-2026-11-09:manager",
+      "paper-2026-10-12-2026-11-09:BUY:ABNB",
+      "paper-2026-10-12-2026-11-09:SELL:ABNB",
+      "yahoo:ABNB:2026-11-13T20:45:07+00:00"
+    ],
+    "patches": [
+      {
+        "target": "researcher_a",
+        "operation": "add",
+        "lesson_id": null,
+        "text": "For continuation proposals, pair expected return with an explicit reference price and an approximate expected endpoint or endpoint range. Recompute implied return at the latest supported observation and a higher-entry scenario. Researcher B demonstrated this distinction; A acknowledged higher-entry risk without quantifying it. Label these subjective scenarios and distinguish research prices from simulated fills.",
+        "parameter": null,
+        "value": null,
+        "evidence_ids": [
+          "paper-2026-10-12-2026-11-09:researcher_a:1",
+          "paper-2026-10-12-2026-11-09:researcher_b:1",
+          "web-researcher_b-2",
+          "paper-2026-10-12-2026-11-09:BUY:ABNB"
+        ],
+        "confidence": 0.86,
+        "expected_effect": "Make the modest estimated edge assessable when the entry moves materially beyond the historical reference.",
+        "duration_weeks": 4,
+        "success_metric": "For the next four applicable proposals, record the forecast anchor and show implied return at the latest supported price and one higher-entry scenario.",
+        "rollback_condition": "Retire if endpoint precision becomes misleading; retain explicit anchor and entry-sensitivity disclosure.",
+        "expiry": "2026-12-11"
+      },
+      {
+        "target": "researcher_b",
+        "operation": "hypothesis",
+        "lesson_id": null,
+        "text": "Preserve the existing separation between structure, closing extension and holding-window profit. When proposing daily-close checkpoints, specify the dated completed-close evidence needed to assess them and label unassessed checkpoints explicitly. This cycle's $186.52 exit observation cannot resolve the proposed daily-close sequence. This is a research documentation trial, not an exit rule.",
+        "parameter": null,
+        "value": null,
+        "evidence_ids": [
+          "paper-2026-10-12-2026-11-09:researcher_b:1",
+          "web-researcher_b-2",
+          "yahoo:ABNB:2026-11-13T20:45:07+00:00"
+        ],
+        "confidence": 0.77,
+        "expected_effect": "Improve later assessment of structural retention and extension without confusing an intraday endpoint with a completed close.",
+        "duration_weeks": 4,
+        "success_metric": "Next four applicable proposals specify timestamped completed-close evidence for each checkpoint; subsequent reviews mark each as confirmed, breached or unassessed.",
+        "rollback_condition": "Retire if checkpoint documentation adds no interpretive value across four applicable reviews or encourages treating checkpoints as execution instructions.",
+        "expiry": "2026-12-11"
+      }
+    ]
+  },
   "runs": [
     {
       "id": "paper-2026-10-12-2026-11-09:researcher_a",
@@ -581,6 +701,50 @@
         "event_stream_sha256": "bcefef6f3524f09635faab0e19cead25f75947a08033abf89924c153cfbd283b",
         "verification": "observed Codex item.completed web_search events; source claims are model reports"
       }
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-09:analyst",
+      "role": "analyst",
+      "purpose": "REVIEW",
+      "status": "COMPLETED",
+      "manifest": {
+        "base_prompt": "v2-complete-evidence",
+        "overlay_version": 0,
+        "lesson_ids": [],
+        "recent_week_ids": [
+          "paper-2026-10-12-2026-11-02",
+          "paper-2026-10-12-2026-10-26",
+          "paper-2026-10-12-2026-10-19",
+          "paper-2026-10-12-2026-10-12"
+        ],
+        "cutoff": "2026-11-13T20:45:08.158557+00:00",
+        "estimated_tokens": 9331,
+        "estimator": "o200k_base-or-utf8-upper-bound",
+        "section_sizes": {
+          "rules": 313,
+          "overlay": 32,
+          "current": 6949,
+          "recent": 1239,
+          "older": 11,
+          "contract": 770
+        },
+        "reductions": []
+      },
+      "prompt_hash": "960a70e55cea87e724a431e2aadacecce406c9b7d9a82322e2d329129562c070",
+      "model": "gpt-6.1-sol",
+      "reasoning": "medium",
+      "prompt_excerpt": "RULES\nFor this REVIEW task, use only supplied records. Web browsing is disabled for this purpose.\nYou are analyst, Riley. Review reconciled PAPER / SIMULATED outcomes before proposing bounded learning. Evaluate research, forecasting, selection, sizing and execution separately. Use selected and rejected matched-window comparisons; distinguish missing evidence from mistakes. Explicitly state small sample and hindsight limitations. Propose evidence-linked, expiring lessons only for researchers or manager. No tools, trading, credentials or base-contract changes. Return only the supplied JSON contract.\n\nUse the supplied finalized research reports, source findings, proposals, actual manager decision, entry/exit observations, fills, execution costs and cash movements. Analyze each thesis and forecast against the realized holding window; explain what supported the choice at entry, what the outcome contradicted, and what cannot be inferred. Attribute portfolio results to exposure, retained cash",
+      "research_summary": "",
+      "abstention_reason": null,
+      "investigated_tickers": [],
+      "sources": [],
+      "web_search_mode": "disabled",
+      "web_activity": {
+        "completed_calls": 0,
+        "calls": [],
+        "event_stream_sha256": "af6aa9d8cae767a1b7129463df8c61404048d813b80c61a95e32e62f5046e3e4",
+        "verification": "observed Codex item.completed web_search events; source claims are model reports"
+      }
     }
   ],
   "snapshots": [
@@ -695,6 +859,21 @@
           "redistribution": "metadata only; verify provider terms"
         }
       ]
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-09:exit",
+      "kind": "exit",
+      "provider": "yahoo-public",
+      "cutoff": "2026-11-13T20:45:08.158557+00:00",
+      "evidence": [
+        {
+          "id": "yahoo:ABNB:2026-11-13T20:45:07+00:00",
+          "ticker": "ABNB",
+          "observed_at": "2026-11-13T20:45:07+00:00",
+          "price": "186.52",
+          "redistribution": "metadata only; verify provider terms"
+        }
+      ]
     }
   ],
   "fills": [
@@ -711,6 +890,22 @@
       "fill_time": "2026-11-09T14:38:30+00:00",
       "fill_model": "spread-slippage-v1",
       "raw_price": "195.8"
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-09:SELL:ABNB",
+      "ticker": "ABNB",
+      "quantity": "1.00000000",
+      "price": "186.42674000",
+      "fee": "0E-8",
+      "side": "SELL",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-11-13T20:45:07+00:00",
+      "fill_time": "2026-11-13T20:45:07+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "186.52",
+      "cost_basis_sold": "195.89790000",
+      "realized_pnl": "-9.47116000"
     }
   ],
   "timeline": [
@@ -721,6 +916,14 @@
     {
       "stage": "PURCHASES",
       "completed_at": "2026-11-09T14:38:33.300009+00:00"
+    },
+    {
+      "stage": "LIQUIDATION",
+      "completed_at": "2026-11-13T20:45:09.973275+00:00"
+    },
+    {
+      "stage": "REVIEW",
+      "completed_at": "2026-11-13T20:46:43.661813+00:00"
     }
   ],
   "meeting_ids": []

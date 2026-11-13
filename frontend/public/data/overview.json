@@ -2,20 +2,20 @@
   "label": "PAPER / SIMULATED",
   "currency": "USD",
   "initial_cash": "1000.00",
-  "equity": "980.80",
-  "cash": "794.90",
-  "invested_value": "185.90",
-  "realized_pnl": "-9.20",
-  "unrealized_pnl": "-10.00",
-  "cumulative_pnl": "-19.20",
-  "cumulative_return": "-1.91985416500",
-  "monthly_pnl": "-7.50",
-  "rolling_four_week_pnl": "-5.02",
+  "equity": "981.33",
+  "cash": "981.33",
+  "invested_value": "0.00",
+  "realized_pnl": "-18.67",
+  "unrealized_pnl": "0.00",
+  "cumulative_pnl": "-18.67",
+  "cumulative_return": "-1.86718016500",
+  "monthly_pnl": "-16.97",
+  "rolling_four_week_pnl": "-14.49",
   "target_monthly_profit": "100.00",
   "target_is_experimental": true,
-  "completed_cycles": 4,
+  "completed_cycles": 5,
   "skipped_cycles": 0,
-  "valuation_time": "2026-11-13T17:45:07.318642+00:00",
+  "valuation_time": "2026-11-13T20:45:08.158557+00:00",
   "equity_series": [
     {
       "week": "Inception",
@@ -232,20 +232,17 @@
       "pnl": "0.00",
       "benchmark_equity": null,
       "drawdown": "-2.414757181091864248261315130"
-    }
-  ],
-  "positions": [
+    },
     {
-      "id": "paper-2026-10-12-2026-11-09:ABNB",
-      "ticker": "ABNB",
-      "quantity": "1.00000000",
-      "basis": "195.90",
-      "value": "185.90",
-      "status": "OPEN",
-      "label": "PAPER / SIMULATED",
-      "valuation_time": "2026-11-13T17:44:59+00:00"
+      "week": "paper-2026-10-12-2026-11-09",
+      "date": "2026-11-13",
+      "equity": "981.33",
+      "pnl": "-9.47",
+      "benchmark_equity": "1000.00",
+      "drawdown": "-2.362024535604485259733152910"
     }
   ],
+  "positions": [],
   "fills": [
     {
       "id": "paper-2026-10-12-2026-10-12:BUY:AMZN",
@@ -470,6 +467,22 @@
       "fill_time": "2026-11-09T14:38:30+00:00",
       "fill_model": "spread-slippage-v1",
       "raw_price": "195.8"
+    },
+    {
+      "id": "paper-2026-10-12-2026-11-09:SELL:ABNB",
+      "ticker": "ABNB",
+      "quantity": "1.00000000",
+      "price": "186.42674000",
+      "fee": "0E-8",
+      "side": "SELL",
+      "label": "PAPER / SIMULATED",
+      "provider": "yahoo-public",
+      "observation_time": "2026-11-13T20:45:07+00:00",
+      "fill_time": "2026-11-13T20:45:07+00:00",
+      "fill_model": "spread-slippage-v1",
+      "raw_price": "186.52",
+      "cost_basis_sold": "195.89790000",
+      "realized_pnl": "-9.47116000"
     }
   ],
   "latest_meeting": null

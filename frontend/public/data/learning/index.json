@@ -192,5 +192,58 @@
     "expiry": "2026-12-04",
     "validation_errors": [],
     "mode": "auto_bounded"
+  },
+  {
+    "id": "paper-2026-10-12-2026-11-09:patch:0",
+    "role": "researcher_a",
+    "status": "ACTIVE",
+    "version": 4,
+    "week_id": "paper-2026-10-12-2026-11-09",
+    "target": "researcher_a",
+    "operation": "add",
+    "lesson_id": null,
+    "text": "For continuation proposals, pair expected return with an explicit reference price and an approximate expected endpoint or endpoint range. Recompute implied return at the latest supported observation and a higher-entry scenario. Researcher B demonstrated this distinction; A acknowledged higher-entry risk without quantifying it. Label these subjective scenarios and distinguish research prices from simulated fills.",
+    "parameter": null,
+    "value": null,
+    "evidence_ids": [
+      "paper-2026-10-12-2026-11-09:researcher_a:1",
+      "paper-2026-10-12-2026-11-09:researcher_b:1",
+      "web-researcher_b-2",
+      "paper-2026-10-12-2026-11-09:BUY:ABNB"
+    ],
+    "confidence": 0.86,
+    "expected_effect": "Make the modest estimated edge assessable when the entry moves materially beyond the historical reference.",
+    "duration_weeks": 4,
+    "success_metric": "For the next four applicable proposals, record the forecast anchor and show implied return at the latest supported price and one higher-entry scenario.",
+    "rollback_condition": "Retire if endpoint precision becomes misleading; retain explicit anchor and entry-sensitivity disclosure.",
+    "expiry": "2026-12-11",
+    "validation_errors": [],
+    "mode": "auto_bounded"
+  },
+  {
+    "id": "paper-2026-10-12-2026-11-09:patch:1",
+    "role": "researcher_b",
+    "status": "ACTIVE",
+    "version": 5,
+    "week_id": "paper-2026-10-12-2026-11-09",
+    "target": "researcher_b",
+    "operation": "hypothesis",
+    "lesson_id": null,
+    "text": "Preserve the existing separation between structure, closing extension and holding-window profit. When proposing daily-close checkpoints, specify the dated completed-close evidence needed to assess them and label unassessed checkpoints explicitly. This cycle's $186.52 exit observation cannot resolve the proposed daily-close sequence. This is a research documentation trial, not an exit rule.",
+    "parameter": null,
+    "value": null,
+    "evidence_ids": [
+      "paper-2026-10-12-2026-11-09:researcher_b:1",
+      "web-researcher_b-2",
+      "yahoo:ABNB:2026-11-13T20:45:07+00:00"
+    ],
+    "confidence": 0.77,
+    "expected_effect": "Improve later assessment of structural retention and extension without confusing an intraday endpoint with a completed close.",
+    "duration_weeks": 4,
+    "success_metric": "Next four applicable proposals specify timestamped completed-close evidence for each checkpoint; subsequent reviews mark each as confirmed, breached or unassessed.",
+    "rollback_condition": "Retire if checkpoint documentation adds no interpretive value across four applicable reviews or encourages treating checkpoints as execution instructions.",
+    "expiry": "2026-12-11",
+    "validation_errors": [],
+    "mode": "auto_bounded"
   }
 ]
